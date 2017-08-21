@@ -175,8 +175,7 @@ h2, p{
 
 .App{
     height: 100%;
-    background: url("img/turkey-flag-2.jpg") $nrf center;
-    background-size: cover;
+    background: $white;
 }
 
 
@@ -184,9 +183,16 @@ h2, p{
 .One{
     position: relative;
     height: 130vh;
-    background: url("./img/maidens-tower.jpg") $nrf 50% 50%;
+    background: url("./img/turkey-flag-2.jpg") $nrf 50% 50%;
     background-size: cover;
     //animation: change-background 4s infinite;
+    
+    .One-inner{
+        position: relative;
+        height: 130vh;
+        background: url("./img/maidens-tower.jpg") $nrf 50% 50%;
+        background-size: cover;
+    }
     
         
     #title{
@@ -214,6 +220,7 @@ h2, p{
         font-size: 3em;
     }
 }
+
 
 .Two {
     position: relative;
@@ -279,52 +286,84 @@ h2, p{
         
         &:nth-child(2){
             width: 700px;
-            background: url("img/turkey-flag-2.jpg") $nrs 50% 50%;
+            background: url("img/turkey-flag-1.jpg") $nrs 50% 50%;
             background-size: cover;
         }
         
         &:nth-child(3){
             width: 700px;
-            background: url("img/byzantine-art-2.JPG") $nrs 50% 50%;
+            background: url("img/virgin-mary-house.jpg") $nrs 50% 50%;
             background-size: cover;
+            
+            h2{
+                position: relative;
+                top: 240px;
+                color: $white;
+                font-size: 2.5em;
+            }
         }
         
         &:nth-child(4){
             width: 500px;
             background: url("img/seljuk-eagle-1.png") $nrs 50% 50%;
-            background-size:contain;
+            background-size: contain;
+            
+            h1{
+                position: relative;
+                top: 240px;
+                color: $red;
+                font-size: 2.5em;
+            }
+            
+            h2{
+                position: relative;
+                top: 250px;
+                color: $red;
+                font-size: 1.5em;
+            }
         }
     }
 }
 
 .Three{
     position: relative;
-    height: 110vh;
-    background: url("img/uzungol-1.jpg") $nrf 50% 50%;
+    height: 150vh;
+    background: url("img/cappadocia-1.jpg") $nrf 50% 50%;
     background-size: cover;
     
-    h1{
-        &:nth-child(1){
-            position: relative;
-            top: 10vh;
-            color: $white;
-            font-size: 5em;            
-        }
-        
-        &:nth-child(3){
-            position: relative;
-            top: 70vh;
-            color: $white;
-            font-size: 3em;            
-        }
-        
+    .Three-inner{
+        position: relative;
+        height: 150vh;
+        background: url("img/uzungol-1.jpg") $nrf 50% 50%;
+        background-size: cover;
     }
     
-    h2{
+    #cografya{
+        position: relative;
+        top: 10vh;
+        color: $white;
+        font-size: 5em;            
+    }
+    
+    h1:nth-child(3){
+        position: relative;
+        top: 65vh;
+        color: $white;
+        font-size: 3em;            
+    }
+    
+    #geography{
         position: relative;
         top: 10vh;
         color: $turquoise;
         font-size: 2em;
+    }
+    
+    #cappadocia{
+        position: relative;
+        top: -25vh;
+        color: $white;
+        font-size: 3em;            
     }
     
 
@@ -346,24 +385,38 @@ h2, p{
     
     h1{
         position: relative;
-        top: 35vh;
+        top: 30vh;
         color: $white;
         font-size: 4em;
     }
     
     h2{
         position: relative;
-        top: 35vh;
+        top: 30vh;
         color: $turquoise;
         font-size: 2em;
     }
     
     p{
         position: relative;
-        top: 42vh;
+        top: 35vh;
         font-size: 1.5em;
         color: $white;
     }
+}
+
+.Five{
+    position: relative; 
+    height: 110vh;
+    background: url("./img/pamukkale.jpg") $nrf 50% 0%;
+    background-size: cover;
+}
+
+.Six{
+    position: relative; 
+    height: 110vh;
+    background: url("./img/sumela-monastery.JPG") $nrf 50% 0%;
+    background-size: cover;
 }
     
 

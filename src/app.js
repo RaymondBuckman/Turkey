@@ -48,10 +48,15 @@ $(window).scroll(function(){
         }   
         
         
-        $('.One').css({
+        $('.One-inner').css({
             //'background-position':  '50% ' + (50 - wScroll/10) + '%',
             'filter': 'grayscale(' + (wScroll/1.5) + '%',
-            'opacity': 1 - Math.pow((wScroll/200), 5)
+            'opacity': 1 - Math.pow((wScroll/200), 4)
+        })
+        
+        $('.One').css({
+            //'background-position':  '50% ' + (50 - wScroll/10) + '%',
+            'opacity': 1 - Math.pow((wScroll/800), 8)
         })
         
         /*
@@ -59,8 +64,14 @@ $(window).scroll(function(){
             'opacity': Math.pow((wScroll/300),10)
         })*/
         
+        $('.Three-inner').css({
+            'background-position':  '50% ' + (50 + wScroll/45) + '%',
+            'opacity': 1 - Math.pow((wScroll/1950),20)
+        })
+        
         $('.Three').css({
-            'background-position':  '50% ' + (50 + wScroll/45) + '%'
+            'background-position':  '50% ' + (50 + wScroll/45) + '%',
+            'opacity': 1 - Math.pow((wScroll/2700),20)
         })
         
         /*if(wScroll > 1500){
