@@ -5,10 +5,7 @@ import ReactDOM from 'react-dom';
 //import Header from './components/header/Header';
 import Intro from './components/intro/Intro';
 import Geography from'./components/geography/Geography';
-import Exterior from './components/exterior/Exterior';
-import Interior from './components/interior/Interior';
-import Specs from './components/specs/Specs';
-import Footer from './components/footer/Footer';
+import Cities from'./components/cities/Cities';
 import $ from "jquery";
 
 ReactDOM.render(
@@ -16,6 +13,7 @@ ReactDOM.render(
         data-target=".navbar-default" data-offset="450">
             <Intro />
             <Geography />
+            <Cities />
     </div>,
     document.getElementById('root')
 );
@@ -72,6 +70,14 @@ $(window).scroll(function(){
         $('.Three').css({
             'background-position':  '50% ' + (50 + wScroll/45) + '%',
             'opacity': 1 - Math.pow((wScroll/2700),20)
+        })
+        
+        $('.Six-inner-2').css({
+            'opacity': 1 - Math.pow((wScroll/5700),20)
+        })
+        
+        $('.Six-inner-1').css({
+            'opacity': 1 - Math.pow((wScroll/6300),20)
         })
         
         

@@ -513,11 +513,40 @@ h2, p{
     }
 }
 
-.Six{
+.Six-inner-2{
     position: relative; 
-    height: 110vh;
-    background: url("./img/sumela-monastery.JPG") $nrf 50% 0%;
+    height: 250vh;
+    background: url("./img/istanbul-1.jpg") $nrf 50% 0%;
+    background-size: cover;
+    
+    #sehirler{
+        position: relative;
+        top: 10vh;
+        color: $white;
+        font-size: 5em;            
+    }
+    
+    #cities{
+        position: relative;
+        top: 10vh;
+        color: $turquoise;
+        font-size: 2em;            
+    }
+}
+
+.Six-inner-1{
+    position: relative; 
+    height: 250vh;
+    background: url("./img/ankara-1.jpg") $nrf 50% 0%;
     background-size: cover;
 }
+
+.Six{
+    position: relative; 
+    height: 250vh;
+    background: url("./img/izmir-1.jpg") $nrf 50% 0%;
+    background-size: cover;
+}
+
     
 
