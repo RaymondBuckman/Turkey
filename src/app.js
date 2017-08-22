@@ -73,11 +73,11 @@ $(window).scroll(function(){
         })
         
         $('.Six-inner-2').css({
-            'opacity': 1 - Math.pow((wScroll/5700),20)
+            'opacity': 1 - Math.pow((wScroll/5600),100)
         })
         
         $('.Six-inner-1').css({
-            'opacity': 1 - Math.pow((wScroll/6300),20)
+            'opacity': 1 - Math.pow((wScroll/6200),100)
         })
         
         

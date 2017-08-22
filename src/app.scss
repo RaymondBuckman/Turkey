@@ -165,7 +165,7 @@ html, body {
     cursor: default;  
 }
 
-h1{
+h1 {
     @include main-font;
 }
 
@@ -289,12 +289,15 @@ h2, p{
             width: 700px;
             background: url("img/turkey-flag-1.jpg") $nrs 50% 50%;
             background-size: cover;
+            
         }
         
         &:nth-child(3){
             width: 700px;
             background: url("img/virgin-mary-house.jpg") $nrs 50% 50%;
             background-size: cover;
+            -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
             
             h2{
                 position: relative;
@@ -516,7 +519,7 @@ h2, p{
 .Six-inner-2{
     position: relative; 
     height: 250vh;
-    background: url("./img/istanbul-1.jpg") $nrf 50% 0%;
+    background: url("./img/istanbul-2.jpg") $nrf 50% 40%;
     background-size: cover;
     
     #sehirler{
@@ -532,6 +535,19 @@ h2, p{
         color: $turquoise;
         font-size: 2em;            
     }
+    
+    #istanbul{
+        @include secondary-font;
+        color: $turquoise;
+        font-size: 2em;
+    }
+    
+    #istanbul-description{
+        position: relative;
+        top: 50vh;
+        color: $white;
+        font-size: 1.8em;
+    }    
 }
 
 .Six-inner-1{
@@ -539,13 +555,39 @@ h2, p{
     height: 250vh;
     background: url("./img/ankara-1.jpg") $nrf 50% 0%;
     background-size: cover;
+    
+    #ankara{
+        @include secondary-font;
+        color: $turquoise;
+        font-size: 2em;
+    }
+    
+    #ankara-description{
+        position: relative;
+        top: -110vh;
+        color: $white;
+        font-size: 1.8em;
+    }
 }
 
 .Six{
     position: relative; 
     height: 250vh;
-    background: url("./img/izmir-1.jpg") $nrf 50% 0%;
+    background: url("./img/izmir-2.jpg") $nrf 40% 40%;
     background-size: cover;
+    
+    #izmir{
+        @include secondary-font;
+        color: $turquoise;
+        font-size: 2em;
+    }
+    
+    #izmir-description{
+        position: relative;
+        top: -80vh;
+        color: $white;
+        font-size: 1.8em;
+    }
 }
 
     
