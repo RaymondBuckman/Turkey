@@ -61,33 +61,34 @@ var CityRow = React.createClass({
 class Cities extends Component {
     render() {
         return(
-        <div>
-            <div className="Six">            
-                <div className="Six-inner-1">
-                    <div className="Six-inner-2">  
-                        <h1 id="sehirler" className="text-center">En Büyük Şehirler</h1>
-                        <h2 id="cities" className="text-center">Largest Cities</h2> 
+        <div className="Six">
+            <div className="Six-inner-1">
+                <div className="Six-inner-2">            
+                    <div className="Six-inner-3">
+                        <div className="Six-inner-4"> 
+                            <h1 id="sehirler" className="text-center">En Büyük Şehirler</h1>
+                            <h2 id="cities" className="text-center">Largest Cities</h2> 
+                            <div className="container">
+                                <p id="istanbul-description" className="col-lg-6 col-lg-offset-6 text-right">
+                                    <span id="istanbul">İstanbul</span><br/>
+                                    Economic & Cultural Center<br/>
+                                    Location: Marmara<br/>
+                                    Population: 14.8 million<br/>
+                                    Current time: <CityRow name="CityRow" UTCOffset="5"/>
+                                </p>
+                            </div>
+                        </div> {/*End of Six-inner-4*/}
                         <div className="container">
-                            <p id="istanbul-description" className="col-lg-6 col-lg-offset-6 text-right">
-                                <span id="istanbul">İstanbul</span><br/>
-                                Economic & Cultural Center<br/>
-                                Location: Marmara<br/>
-                                Population: 14.8 million<br/>
+                            <p id="ankara-description" className="col-lg-6 col-lg-offset-0 text-left">
+                                <span id="ankara">Ankara</span><br/>
+                                Capital City<br/>
+                                Location: Central Anatolia<br/>
+                                Population: 5.3 million<br/>
                                 Current time: <CityRow name="CityRow" UTCOffset="5"/>
                             </p>
                         </div>
-                    </div> {/*End of Six-inner-2*/}
+                    </div>{/*End of Six-inner-3*/}
                     <div className="container">
-                        <p id="ankara-description" className="col-lg-6 col-lg-offset-0 text-left">
-                            <span id="ankara">Ankara</span><br/>
-                            Capital City<br/>
-                            Location: Central Anatolia<br/>
-                            Population: 5.3 million<br/>
-                            Current time: <CityRow name="CityRow" UTCOffset="5"/>
-                        </p>
-                    </div>
-                </div>{/*End of Six-inner-1*/}
-                <div className="container">
                         <p id="izmir-description" className="col-lg-6 col-lg-offset-6 text-right">
                             <span id="izmir">İzmir</span><br/>
                             Crusiseline hotspot<br/>
@@ -96,8 +97,27 @@ class Cities extends Component {
                             Current time: <CityRow name="CityRow" UTCOffset="5"/>
                         </p>
                     </div>
+                </div>{/*End of Six-inner-2*/}
+                <div className="container">
+                    <p id="bursa-description" className="col-lg-6 col-lg-offset-0 text-left">
+                        <span id="bursa">Bursa</span><br/>
+                        ~300 Year Capital of Ottoman Empire<br/>
+                        Location: Marmara<br/>
+                        Population: 2.3 million<br/>
+                        Current time: <CityRow name="CityRow" UTCOffset="5"/>
+                    </p>
+                </div>
+            </div>{/*End of Six-inner-1*/}
+            <div className="container">
+                <p id="konya-description" className="col-lg-6 col-lg-offset-6 text-right">
+                    <span id="konya">Konya</span><br/>
+                    ~300 Year Capital of Ottoman Empire<br/>
+                    Location: Central Anatolia<br/>
+                    Population: 2.1 million<br/>
+                    Current time: <CityRow name="CityRow" UTCOffset="5"/>
+                </p>
             </div>
-        </div>
+        </div>{/*End of Six*/}
         );
     }
 }

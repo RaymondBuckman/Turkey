@@ -72,12 +72,20 @@ $(window).scroll(function(){
             'opacity': 1 - Math.pow((wScroll/2700),20)
         })
         
-        $('.Six-inner-2').css({
+        $('.Six-inner-4').css({
             'opacity': 1 - Math.pow((wScroll/5600),100)
         })
         
-        $('.Six-inner-1').css({
+        $('.Six-inner-3').css({
             'opacity': 1 - Math.pow((wScroll/6200),100)
+        })
+        
+        $('.Six-inner-2').css({
+            'opacity': 1 - Math.pow((wScroll/6800),100)
+        })
+        
+        $('.Six-inner-1').css({
+            'opacity': 1 - Math.pow((wScroll/7400),100)
         })
         
         

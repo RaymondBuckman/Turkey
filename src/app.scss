@@ -516,9 +516,9 @@ h2, p{
     }
 }
 
-.Six-inner-2{
+.Six-inner-4{
     position: relative; 
-    height: 250vh;
+    height: 450vh;
     background: url("./img/istanbul-2.jpg") $nrf 50% 40%;
     background-size: cover;
     
@@ -550,9 +550,9 @@ h2, p{
     }    
 }
 
-.Six-inner-1{
+.Six-inner-3{
     position: relative; 
-    height: 250vh;
+    height: 450vh;
     background: url("./img/ankara-1.jpg") $nrf 50% 0%;
     background-size: cover;
     
@@ -564,15 +564,15 @@ h2, p{
     
     #ankara-description{
         position: relative;
-        top: -110vh;
+        top: -310vh;
         color: $white;
         font-size: 1.8em;
     }
 }
 
-.Six{
+.Six-inner-2{
     position: relative; 
-    height: 250vh;
+    height: 450vh;
     background: url("./img/izmir-2.jpg") $nrf 40% 40%;
     background-size: cover;
     
@@ -584,7 +584,47 @@ h2, p{
     
     #izmir-description{
         position: relative;
-        top: -80vh;
+        top: -260vh;
+        color: $white;
+        font-size: 1.8em;
+    }
+}
+
+.Six-inner-1{
+    position: relative; 
+    height: 450vh;
+    background: url("./img/bursa-1.jpg") $nrf 40% 40%;
+    background-size: cover;
+    
+    #bursa{
+        @include secondary-font;
+        color: $turquoise;
+        font-size: 2em;
+    }
+    
+    #bursa-description{
+        position: relative;
+        top: -210vh;
+        color: $white;
+        font-size: 1.8em;
+    }
+}
+
+.Six{
+    position: relative; 
+    height: 450vh;
+    background: url("./img/konya-1.jpg") $nrf 40% 40%;
+    background-size: cover;
+    
+    #konya{
+        @include secondary-font;
+        color: $turquoise;
+        font-size: 2em;
+    }
+    
+    #konya-description{
+        position: relative;
+        top: -180vh;
         color: $white;
         font-size: 1.8em;
     }
