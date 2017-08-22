@@ -63,15 +63,6 @@ class Geography extends Component {
                     </li>
                 </ul>
             </div>
-            <div className="Six">
-            
-            </div>
-            <div className="Seven">
-            
-            </div>
-            <div className="Eight">
-            
-            </div>
         </div>
         );
     }
