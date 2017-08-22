@@ -2,12 +2,17 @@ import React, { Component } from 'react';
 
 var CityRow = React.createClass({
   setTime: function(){
-  
-  	var currentdate = new Date();
+      
+    var localTime = new Date(); //get your local time
+    var utcTime = localTime.getUTCHours(); // find UTC hours
+    var currentdate = new Date(); // create a new date object for the EST time
+    currentdate.setHours(utcTime+3); // adjust it for EST hours.
+      
+      
   	var hours = currentdate.getUTCHours() + parseInt(this.props.UTCOffset);    
 
         // correct for number over 24, and negatives
-        if( hours >= 24 ){ hours -= 24; }
+        if( hours >= 12 ){ hours -= 12; }
         if( hours < 0   ){ hours += 12; }
 
         // add leading zero, first convert hours to string
