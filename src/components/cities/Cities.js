@@ -117,7 +117,7 @@ class Cities extends Component {
                     Current time: <CityRow name="CityRow" UTCOffset="5"/>
                 </p>
             </div>
-        </div>{/*End of Six*/}
+        </div>
         );
     }
 }
