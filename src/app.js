@@ -74,6 +74,8 @@ $(window).scroll(function(){
             'opacity': 1 - Math.pow((wScroll/2700),20)
         })
         
+        
+        
         /*if(wScroll > 1500){
             $('.App').css({
                 'background':  'url(/"/img/ataturk-1.jpg/") no-repeat fixed center'

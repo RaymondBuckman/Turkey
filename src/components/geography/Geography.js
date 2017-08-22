@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import pamukkale from '../../img/pamukkale.jpg';
+import pamukkale from '../../img/pamukkale-1.jpg';
 import basilica from '../../img/basilica-cistern.JPG';
 import sumela from '../../img/sumela-monastery.JPG';
+import image1 from '../../img/pamukkale-1.jpg';
+import image2 from '../../img/hagia-sophia-drawing.jpg';
 import $ from 'jquery';
 
 //import Draggable from "gsap/Draggable";
@@ -34,7 +36,32 @@ class Geography extends Component {
                 </div>
             </div>
             <div className="Five">
-            
+                <ul className="flex-container">
+                    <li className="flex-item">
+                        <h1>Marmara Bölgesi</h1>
+                        <h2>Marmara region (Northwest)</h2>
+                    </li>
+                    <li className="flex-item">
+                        <h1>Ege Bölgesi</h1>
+                        <h2>Aegean region (Center west)</h2>
+                    </li>
+                    <li className="flex-item">
+                        <h1>Akdeniz Bölgesi</h1>
+                        <h2>Mediterranean region (Southwest)</h2>
+                    </li>
+                    <li className="flex-item"> 
+                        <h1>İç Anadolu Bölgesi</h1>
+                        <h2>Central Anatolia region</h2>
+                    </li>
+                    <li className="flex-item"> 
+                        <h1>Karadeniz Bölgesi</h1>
+                        <h2>Black sea region (Northeast)</h2>
+                    </li>
+                    <li className="flex-item"> 
+                        <h1>Doğu Anadolu Bölgesi</h1>
+                        <h2>Eastern Anatolia Region</h2>
+                    </li>
+                </ul>
             </div>
             <div className="Six">
             
