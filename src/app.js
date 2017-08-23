@@ -6,17 +6,58 @@ import ReactDOM from 'react-dom';
 import Intro from './components/intro/Intro';
 import Geography from'./components/geography/Geography';
 import Cities from'./components/cities/Cities';
+import Sights from'./components/sights/Sights';
 import $ from "jquery";
 
 ReactDOM.render(
-    <div className="App" data-spy="scroll"
-        data-target=".navbar-default" data-offset="450">
+    <div className="App">
             <Intro />
             <Geography />
             <Cities />
+            
     </div>,
     document.getElementById('root')
 );
+
+$(function() {
+  $(".img-w").each(function() {
+    $(this).wrap("<div class='img-c'></div>")
+    let imgSrc = $(this).find("img").attr("src");
+     $(this).css('background-image', 'url(' + imgSrc + ')');
+  })
+            
+  
+  $(".img-c").click(function() {
+    let w = $(this).outerWidth()
+    let h = $(this).outerHeight()
+    let x = $(this).offset().left
+    let y = $(this).offset().top
+    
+    
+    $(".active").not($(this)).remove()
+    let copy = $(this).clone();
+    copy.insertAfter($(this)).height(h).width(w).delay(500).addClass("active")
+    $(".active").css('top', y - 8);
+    $(".active").css('left', x - 8);
+    
+      setTimeout(function() {
+    copy.addClass("positioned")
+  }, 0)
+    
+  }) 
+  
+  
+
+  
+})
+
+$(document).on("click", ".img-c.active", function() {
+  let copy = $(this)
+  copy.removeClass("positioned active").addClass("postactive")
+  setTimeout(function() {
+    copy.remove();
+  }, 500)
+})
 
 
 
@@ -72,25 +113,30 @@ $(window).scroll(function(){
             'opacity': 1 - Math.pow((wScroll/2700),20)
         })
         
+        $('.Four').css({
+            'background-position':  '50% ' + (50 + -wScroll/90) + '%'
+        })
+        
+        $('.Four-inner-1').css({
+            'opacity': 1 - Math.pow((wScroll/3000),80)
+        })
+        
+        /*
         $('.Six-inner-4').css({
-            'opacity': 1 - Math.pow((wScroll/5600),100)
+            'opacity': 1 - Math.pow((wScroll/6100),100)
+        })
+    
+        $('.Eight').css({
+            'opacity': 1 - Math.pow((wScroll/7000),100)
         })
         
-        $('.Six-inner-3').css({
-            'opacity': 1 - Math.pow((wScroll/6200),100)
-        })
-        
-        $('.Six-inner-2').css({
-            'opacity': 1 - Math.pow((wScroll/6800),100)
-        })
-        
-        $('.Six-inner-1').css({
-            'opacity': 1 - Math.pow((wScroll/7400),100)
+        $('.Ten').css({
+            'opacity': 1 - Math.pow((wScroll/7900),100)
         })
         
         
         
-        /*if(wScroll > 1500){
+        if(wScroll > 1500){
             $('.App').css({
                 'background':  'url(/"/img/ataturk-1.jpg/") no-repeat fixed center'
             })
