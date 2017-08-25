@@ -6,7 +6,7 @@ import grand2 from '../../img/grand-bazaar-3.jpg';
 import basilica1 from '../../img/basilica-cistern-1.jpg';
 import basilica2 from '../../img/basilica-cistern-4.jpg';
 import cappadocia1 from '../../img/cappadocia-3.jpg';
-import cappadocia2 from '../../img/cappadocia-2.jpg';
+import cappadocia2 from '../../img/cappadocia-4.jpg';
 import hagia1 from '../../img/hagia-sophia-2.jpg';
 import hagia2 from '../../img/hagia-sophia-3.jpg';
 import library1 from '../../img/library-of-celsus-1.jpg';

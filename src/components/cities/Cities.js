@@ -58,7 +58,7 @@ var CityRow = React.createClass({
 });
 
 
-class Cities extends Component {
+export default class Cities extends Component {
     render() {
         return(
         <div>
@@ -115,4 +115,3 @@ class Cities extends Component {
     }
 }
 
-export default Cities;

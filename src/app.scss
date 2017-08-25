@@ -383,7 +383,7 @@ h2, p{
     .Four-inner-1{
         position: relative;
         height: 110vh;
-        background: url("./img/map-5.png") $nrs 50% 50%;
+        background: url("./img/map-4.png") $nrs 50% 50%;
         background-size: cover;
         
     }
@@ -498,7 +498,7 @@ h2, p{
         }
         
         &:nth-child(2){
-            background: url("img/pamukkale-1.jpg") $nrs 50% 50%;
+            background: url("img/aegean-1.jpg") $nrs 50% 50%;
             background-size: cover;
             
             .map{
@@ -512,7 +512,7 @@ h2, p{
         }
         
         &:nth-child(3){
-            background: url("img/antalya-mini.jpg") $nrs 50% 50%;
+            background: url("img/mediterranean-mini.jpg") $nrs 50% 50%;
             background-size: cover;
             
             .map{
@@ -542,7 +542,7 @@ h2, p{
         }
         
         &:nth-child(6){
-            background: url("img/lake-van-mini.jpg") $nrs 50% 50%;
+            background: url("img/eastern-mini.jpg") $nrs 50% 50%;
             background-size: cover;
             
             .map{
@@ -552,7 +552,7 @@ h2, p{
         }
         
         &:nth-child(7){
-            background: url("img/batman-1.jpg") $nrs 50% 50%;
+            background: url("img/southeastern-1.jpg") $nrs 50% 50%;
             background-size: cover;
             
             .map{
