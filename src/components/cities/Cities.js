@@ -110,39 +110,6 @@ class Cities extends Component {
                     Current time: <CityRow name="CityRow" UTCOffset="5"/>
                 </p>
             </div>{/*End of Ten*/}
-            <div className="Six-sights">
-                <ul className="flex-container">
-                    <li className="flex-item">
-                        <h1 className="text-center manzaralar">Manzaralar</h1>
-                        <h2 className="text-center sights">Sights</h2>
-                    </li>
-                    <li className="flex-item">
-                        <div className="map"></div>
-                        <h1>Ege Bölgesi</h1>
-                        <h2>Aegean region</h2>
-                    </li>
-                    <li className="flex-item">
-                        <div className="map"></div>
-                        <h1>Akdeniz Bölgesi</h1>
-                        <h2>Mediterranean region</h2>
-                    </li>
-                    <li className="flex-item">
-                        <div className="map"></div>
-                        <h1>İç Anadolu Bölgesi</h1>
-                        <h2>Central Anatolia region</h2>
-                    </li>
-                    <li className="flex-item"> 
-                        <div className="map"></div>
-                        <h1>Karadeniz Bölgesi</h1>
-                        <h2>Black sea region</h2>
-                    </li>
-                    <li className="flex-item"> 
-                        <div className="map"></div>
-                        <h1>Doğu Anadolu Bölgesi</h1>
-                        <h2>Eastern Anatolia Region</h2>
-                    </li>
-                </ul>
-            </div>
         </div>
         );
     }
