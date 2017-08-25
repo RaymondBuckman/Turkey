@@ -191,7 +191,7 @@ h2, p{
     .One-inner{
         position: relative;
         height: 130vh;
-        background: url("./img/maidens-tower.jpg") $nrf 50% 50%;
+        background: url("./img/maidens-tower-1.jpg") $nrf 50% 50%;
         background-size: cover;
     }
     
@@ -821,7 +821,7 @@ h2, p{
         }
         
         &:nth-child(6){
-            background: url("img/library-of-celsus-1.jpg") $nrs 50% 50%;
+            background: url("img/library-of-celsus-1.jpg") $nrs 30% 50%;
             background-size: cover;
         }
         
@@ -831,7 +831,7 @@ h2, p{
         }
         
         &:nth-child(8){
-            background: url("img/dolmabahce-1.jpg") $nrs 50% 50%;
+            background: url("img/dolmabahce-1.jpg") $nrs 60% 50%;
             background-size: cover;
             
         }
@@ -842,7 +842,7 @@ h2, p{
         }
         
         &:nth-child(10){
-            background: url("img/nemrut-1.jpg") $nrs 50% 50%;
+            background: url("img/nemrut-1.jpg") $nrs 30% 50%;
             background-size: cover;
         }
         
@@ -852,32 +852,72 @@ h2, p{
         }
         
         &:nth-child(12){
-            background: url("img/sumela-monastery-1.jpg") $nrs 50% 50%;
+            background: url("img/sumela-monastery-2.jpg") $nrs 50% 50%;
             background-size: cover;
         }
         
         &:nth-child(13){
-            background: url("img/anitkabir-1.jpg") $nrs 50% 50%;
+            background: url("img/anitkabir-1.jpg") $nrs 40% 50%;
             background-size: cover;
         }
         
         &:nth-child(14){
-            background: url("img/blue-mosque-1.jpg") $nrs 50% 50%;
+            background: url("img/blue-mosque-1.jpg") $nrs 90% 50%;
             background-size: cover;
         }
         
         &:nth-child(15){
-            background: url("img/temple-of-artemis-1.jpg") $nrs 50% 50%;
+            background: url("img/temple-of-artemis-1.jpg") $nrs 10% 50%;
             background-size: cover;
         }
         
         &:nth-child(16){
-            background: url("img/bodrum-castle-1.jpg") $nrs 50% 50%;
+            background: url("img/bodrum-castle-1.jpg") $nrs 70% 50%;
             background-size: cover;
         }
         
         &:nth-child(17){
             background: url("img/virgin-mary-house-2.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(18){
+            background: url("img/duden-1.jpg") $nrs 80% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(19){
+            background: url("img/gulhane-1.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(20){
+            background: url("img/topkapi-1.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(21){
+            background: url("img/uzungol-2.jpg") $nrs 60% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(22){
+            background: url("img/mevlana-1.jpg") $nrs 20% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(23){
+            background: url("img/taksim-3.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(24){
+            background: url("img/maidens-tower-2.jpg") $nrs 90% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(25){
+            background: url("img/aspendos-1.jpg") $nrs 50% 50%;
             background-size: cover;
         }
         

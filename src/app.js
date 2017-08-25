@@ -7,7 +7,6 @@ import Intro from './components/intro/Intro';
 import Geography from './components/geography/Geography';
 import Cities from './components/cities/Cities';
 import Sights from './components/sights/Sights';
-import Modal from './components/modal/Modal';
 import $ from "jquery";
 
 ReactDOM.render(
@@ -16,7 +15,6 @@ ReactDOM.render(
             <Geography />
             <Cities />
             <Sights /> 
-            <Modal />
     </div>,
     document.getElementById('root')
 );
