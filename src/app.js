@@ -63,7 +63,7 @@ $(window).scroll(function(){
         
         $('.Three-inner').css({
             'background-position':  '50% ' + (50 + wScroll/45) + '%',
-            'opacity': 1 - Math.pow((wScroll/1950),20)
+            'opacity': 1 - Math.pow((wScroll/2100),20)
         })
         
         $('.Three').css({
