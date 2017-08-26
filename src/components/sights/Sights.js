@@ -103,6 +103,77 @@ const images = [
     aspendos1,
     aspendosl2,    
 ];
+
+const titles = [
+    (<h1 className="carousel-title"> Grand Bazaar </h1>),
+    (<h1 className="carousel-title"> Grand Bazaar </h1>),
+    (<h1 className="carousel-title"> Basilica Cistern </h1>),
+    (<h1 className="carousel-title"> Basilica Cistern </h1>),
+    (<h1 className="carousel-title"> Cappadocia </h1>),
+    (<h1 className="carousel-title"> Cappadocia </h1>),
+    (<h1 className="carousel-title"> Hagia Sophia </h1>),
+    (<h1 className="carousel-title"> Hagia Sophia </h1>),
+    (<h1 className="carousel-title"> Library of Celsus </h1>),
+    (<h1 className="carousel-title"> Library of Celsus </h1>),
+    (<h1 className="carousel-title"> Chora Church </h1>),
+    (<h1 className="carousel-title"> Chora Church </h1>),  
+    (<h1 className="carousel-title"> Dolmabahçe </h1>),
+    (<h1 className="carousel-title"> Dolmabahçe </h1>),
+    (<h1 className="carousel-title"> Miniatürk </h1>),
+    (<h1 className="carousel-title"> Miniatürk </h1>),
+    (<h1 className="carousel-title"> Nemrut </h1>),
+    (<h1 className="carousel-title"> Nemrut </h1>),
+    (<h1 className="carousel-title"> Pamukkale </h1>),
+    (<h1 className="carousel-title"> Pamukkale </h1>),
+    (<h1 className="carousel-title"> Sumela Monastery </h1>),
+    (<h1 className="carousel-title"> Sumela Monastery </h1>),
+    (<h1 className="carousel-title"> Anıtkabir </h1>),
+    (<h1 className="carousel-title"> Anıtkabir </h1>),
+    (<h1 className="carousel-title"> Blue Mosque </h1>),
+    (<h1 className="carousel-title"> Blue Mosque </h1>),
+    (<h1 className="carousel-title"> Temple of Artemis </h1>),
+    (<h1 className="carousel-title"> Temple of Artemis </h1>),
+    (<h1 className="carousel-title"> Bodrum Castle </h1>),
+    (<h1 className="carousel-title"> Bodrum Castle </h1>),
+    (<h1 className="carousel-title"> House of the Virgin Mary </h1>),
+    (<h1 className="carousel-title"> House of the Virgin Mary </h1>),
+    (<h1 className="carousel-title"> Düden Waterfalls </h1>),
+    (<h1 className="carousel-title"> Düden Waterfalls </h1>),
+    (<h1 className="carousel-title"> Gülhane Park </h1>),
+    (<h1 className="carousel-title"> Gülhane Park </h1>),  
+    (<h1 className="carousel-title"> Topkapı Palace </h1>),
+    (<h1 className="carousel-title"> Topkapı Palace </h1>),
+    (<h1 className="carousel-title"> Uzungöl </h1>),
+    (<h1 className="carousel-title"> Uzungöl </h1>),
+    (<h1 className="carousel-title"> Mevlana Museum </h1>),
+    (<h1 className="carousel-title"> Mevlana Museum </h1>),
+    (<h1 className="carousel-title"> Taksim Square </h1>),
+    (<h1 className="carousel-title"> Taksim Square </h1>),
+    (<h1 className="carousel-title"> Maiden's Tower </h1>),
+    (<h1 className="carousel-title"> Maiden's Tower </h1>),
+    (<h1 className="carousel-title"> Aspendos </h1>),
+    (<h1 className="carousel-title"> Aspendos </h1>),
+];
+      
+const captions = [
+    "The Grand Bazaar is one of the largest and oldest covered markets in the world, with over 60 covered streets and over 4,000 shops which attract several hundred thousand visitors daily.",
+    "The Grand Bazaar is located inside the Walled city of Istanbul, in the district of Fatih and in the neighbourhood (mahalle) bearing the same name (Kapalıçarşı). It stretches roughly from west to east between the mosques of Beyazit and of Nuruosmaniye. The Bazaar can easily be reached from Sultanahmet and Sirkeci by trams (Beyazıt-Kapalıçarşı stop).",
+    (<p>
+        .. not in the&nbsp;
+        <em>
+            mood
+        </em>
+        &nbsp;for games right now<br />
+        ...<br />
+        ...<br />
+        ...<br />
+        ...<br />
+        ...<br />
+        ...<br />
+        C&#39;mon. Seriously.
+    </p>),
+    '',
+];
  
 export default class Sights extends Component {
     constructor(props) {
@@ -110,14 +181,14 @@ export default class Sights extends Component {
  
         this.state = {
             photoIndex: 1,
-            isOpen: false
+            isOpen: false,
         };
     }
  
     render() {
         const {
             photoIndex,
-            isOpen,
+            isOpen
         } = this.state;
  
         return (
@@ -128,7 +199,7 @@ export default class Sights extends Component {
                         <h2>Sights</h2>
                     </li>
                     <li className="flex-item" 
-                    onClick={() => this.setState({photoIndex:0, isOpen: true })}>
+                    onClick={() => this.setState({photoIndex:0, isOpen: true,  })}>
                         <h2>Grand Bazaar</h2>
                     </li>
                     <li className="flex-item" 
@@ -238,6 +309,9 @@ export default class Sights extends Component {
                         onMoveNextRequest={() => this.setState({
                             photoIndex: (photoIndex + 1) % images.length,
                         })}
+                        
+                        imageTitle={titles[this.state.photoIndex]}
+                        imageCaption={captions[this.state.photoIndex]}
                     />
                 }
             </div>
