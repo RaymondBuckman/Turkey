@@ -35,6 +35,23 @@ const images = [
     southeastern2,
 ];
 
+const titles = [
+    (<h1 className="carousel-title"> Marmara Region </h1>),
+    (<h1 className="carousel-title"> Marmara Region </h1>),
+    (<h1 className="carousel-title"> Aegean Region </h1>),
+    (<h1 className="carousel-title"> Aegean Region </h1>),
+    (<h1 className="carousel-title"> Mediterranean Region</h1>),
+    (<h1 className="carousel-title"> Mediterranean Region </h1>),
+    (<h1 className="carousel-title"> Central Anatolia Region </h1>),
+    (<h1 className="carousel-title"> Central Anatolia Region </h1>),
+    (<h1 className="carousel-title"> Black Sea Region </h1>),
+    (<h1 className="carousel-title"> Black Sea Region </h1>),
+    (<h1 className="carousel-title"> Eastern Anatolia Region </h1>),
+    (<h1 className="carousel-title"> Eastern Anatolia Region </h1>),  
+    (<h1 className="carousel-title"> Southeastern Anatolia Region </h1>),
+    (<h1 className="carousel-title"> Southeastern Anatolia Region </h1>),
+];
+
 //import Draggable from "gsap/Draggable";
 
 
@@ -148,6 +165,8 @@ export default class Geography extends Component {
                         onMoveNextRequest={() => this.setState({
                             photoIndex: (photoIndex + 1) % images.length,
                         })}
+                        
+                        imageTitle={titles[this.state.photoIndex]}
                     />
                 }
         </div>

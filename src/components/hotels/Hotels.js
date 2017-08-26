@@ -20,11 +20,11 @@ export default class Hotels extends Component {
             <div className="Thirteen">            
                 <div className="Thirteen-inner">            
                     <div className="container">
-                        <h1 className="text-right">Raffles, İstanbul</h1>
+                        <h1 className="text-right">Kayakapi Hotel, Ürgüp</h1>
                     </div>
                 </div>
                 <div className="container">
-                    <h1 id="raffles-pool" className="text-left">Raffles Pool & Spa</h1>
+                    <h1 id="kayakapi-pool" className="text-left">Kayakapi Pool & Spa</h1>
                 </div>
             </div>
         </div>

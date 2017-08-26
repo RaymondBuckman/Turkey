@@ -81,11 +81,19 @@ $(window).scroll(function(){
         })
         
         $('.Twelve-inner').css({
-            'opacity': 1 - Math.pow((wScroll/13300),180)
+            'opacity': 1 - Math.pow((wScroll/13600),180)
         })
         
         $('.Twelve').css({
             'opacity': 1 - Math.pow((wScroll/15700),20)
+        })
+        
+        $('.Thirteen-inner').css({
+            'opacity': 1 - Math.pow((wScroll/14600),300)
+        })
+        
+        $('.Thirteen').css({
+            'opacity': 1 - Math.pow((wScroll/17700),20)
         })
         /*
         $('.Six-inner-4').css({

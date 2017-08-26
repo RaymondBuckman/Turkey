@@ -174,7 +174,8 @@ h2, p{
 
 .App{
     height: 100%;
-    background: $white;
+    background: url("img/white-2.png") $nrf center;
+    background-size: cover;
     overflow-x: hidden;
 }
 
@@ -227,7 +228,7 @@ h2, p{
     position: relative;
     top: 0vh;
     height: auto;
-    background: url("./img/white-1.png") $nrf center;
+    background: url("./img/white-2.png") $nrf center;
     background-size: cover;
     font-size: large;
     z-index: 19;
@@ -747,7 +748,7 @@ h2, p{
 .Eleven{
     position: relative; 
     height: auto;
-    background: url("./img/white-1.png") $nrf center;
+    background: url("./img/white-2.png") $nrf center;
     background-size: cover;
     
     .flex-container {
@@ -1047,8 +1048,38 @@ h2, p{
 }
 
 .Thirteen{
-    position:relative;
-    height: 100vh;
+    position: relative;
+    height: 350vh;
+    background: url("img/hotel-5.jpg") $nrf 50% 50%;
+    background-size: cover;
+    
+    .Thirteen-inner{
+        position: relative;
+        height: 150vh;
+        background: url("img/hotel-4.jpg") $nrf 50% 50%;
+        background-size: cover;
+    }
+    
+    h1:nth-child(2){
+        position: relative;
+        top: 65vh;
+        color: $white;
+        font-size: 3em;            
+    }
+    
+    h1:nth-child(3){
+        position: relative;
+        top: 65vh;
+        color: $white;
+        font-size: 3em;            
+    }
+    
+    #kayakapi-pool{
+        position: relative;
+        top: -25vh;
+        color: $white;
+        font-size: 3em;            
+    }
 }
 
 
@@ -1068,10 +1099,47 @@ h2, p{
 
 .navButtonPrev___2vBS8{
     background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjM0Ij48cGF0aCBkPSJtIDE5LDMgLTIsLTIgLTE2LDE2IDE2LDE2IDEsLTEgLTE1LC0xNSAxNSwtMTUgeiIgZmlsbD0iI0ZGRiIvPjwvc3ZnPg==") no-repeat 50%;
+    
+     &:focus{
+        border: none;
+        outline: none;
+    }  
 }
 
 .navButtonNext___30R2i{
     background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjM0Ij48cGF0aCBkPSJtIDEsMyAyLC0yIDE2LDE2IC0xNiwxNiAtMSwtMSAxNSwtMTUgLTE1LC0xNSB6IiBmaWxsPSIjRkZGIi8+PC9zdmc+") no-repeat 50%;
-    border: none;
+    
+     &:focus{
+        border: none;
+        outline: none;
+    }  
 }
+
+.outer___2lDXy{
+    &:focus{
+        border: none;
+        outline: none;
+    }
+}
+
+.caption___3vDh_ {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.toolbar___1xYly {
+    background-color: rgba(0,0,0,0);
+}
+
+.toolbarItemChild___2U_MP > h1{
+    font-size: 1.8em;
+    text-align: right;
+    color: $white;
+    @include main-font;
+}
+
+.captionContent___30kw2{
+    margin: 0vh 10vw 50px 10vw;
+    @include secondary-font;
+}
+
 
