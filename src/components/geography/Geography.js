@@ -81,6 +81,10 @@ export default class Geography extends Component {
             </div>
             <div className="Five">
                 <ul className="flex-container">
+                    <li className="flex-item">
+                        <h1>Türkiye'nın Bölgeleri</h1>
+                        <h2>Regions of Turkey</h2>
+                    </li>
                     <li className="flex-item" 
                     onClick={() => this.setState({photoIndex:0, isOpen: true })}>
                         <div className="map"></div>

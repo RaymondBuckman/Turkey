@@ -7,7 +7,7 @@ import Intro from './components/intro/Intro';
 import Geography from './components/geography/Geography';
 import Cities from './components/cities/Cities';
 import Sights from './components/sights/Sights';
-import $ from "jquery";
+import Hotels from './components/hotels/Hotels'
 
 ReactDOM.render(
     <div className="App">
@@ -15,6 +15,7 @@ ReactDOM.render(
             <Geography />
             <Cities />
             <Sights /> 
+            <Hotels />
     </div>,
     document.getElementById('root')
 );
@@ -79,6 +80,13 @@ $(window).scroll(function(){
             'opacity': 1 - Math.pow((wScroll/3000),80)
         })
         
+        $('.Twelve-inner').css({
+            'opacity': 1 - Math.pow((wScroll/13300),180)
+        })
+        
+        $('.Twelve').css({
+            'opacity': 1 - Math.pow((wScroll/15700),20)
+        })
         /*
         $('.Six-inner-4').css({
             'opacity': 1 - Math.pow((wScroll/6100),100)

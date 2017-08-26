@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Lightbox from 'lightbox-react';
 
-import grand1 from '../../img/grand-bazaar-2.jpg';
+import grand1 from '../../img/grand-bazaar-4.jpg';
 import grand2 from '../../img/grand-bazaar-3.jpg';
 import basilica1 from '../../img/basilica-cistern-1.jpg';
 import basilica2 from '../../img/basilica-cistern-4.jpg';
