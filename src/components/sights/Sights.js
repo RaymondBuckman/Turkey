@@ -157,7 +157,6 @@ const titles = [
       
 const captions = [
     "The Grand Bazaar is one of the largest and oldest covered markets in the world, with over 60 covered streets and over 4,000 shops which attract several hundred thousand visitors daily.",
-<<<<<<< HEAD
      
     "The Grand Bazaar is located inside the Walled city of Istanbul, in the district of Fatih and in the neighbourhood (mahalle) bearing the same name (Kapalıçarşı). It stretches roughly from west to east between the mosques of Beyazit and of Nuruosmaniye. The Bazaar can easily be reached from Sultanahmet and Sirkeci by trams (Beyazıt-Kapalıçarşı stop).",
      
@@ -251,25 +250,7 @@ const captions = [
      
     "Aspendos or Aspendus was an ancient Greco-Roman city in Antalya province of Turkey. The site is located 4.3 mi northeast of central Serik.",
      
-    "Aspendos is known for having the best-preserved theatre of antiquity. With a diameter of 315 ft, the theatre provided seating for 12,000. The theatre was built in 155 by the Greek architect Zenon, a native of the city. It was periodically repaired by the Seljuqs, who used it as a caravanserai, and in the 13th century the stage building was converted into a palace by the Seljuqs of Rum.",    
-=======
-    "The Grand Bazaar is located inside the Walled city of Istanbul, in the district of Fatih and in the neighbourhood (mahalle) bearing the same name (Kapalıçarşı). It stretches roughly from west to east between the mosques of Beyazit and of Nuruosmaniye. The Bazaar can easily be reached from Sultanahmet and Sirkeci by trams (Beyazıt-Kapalıçarşı stop).",
-    (<p>
-        .. not in the&nbsp;
-        <em>
-            mood
-        </em>
-        &nbsp;for games right now<br />
-        ...<br />
-        ...<br />
-        ...<br />
-        ...<br />
-        ...<br />
-        ...<br />
-        C&#39;mon. Seriously.
-    </p>),
-    '',
->>>>>>> 6d416a2e9355f90bf5f993bc3719f961ec041f0b
+    "Aspendos is known for having the best-preserved theatre of antiquity. With a diameter of 315 ft, the theatre provided seating for 12,000. The theatre was built in 155 by the Greek architect Zenon, a native of the city. It was periodically repaired by the Seljuqs, who used it as a caravanserai, and in the 13th century the stage building was converted into a palace by the Seljuqs of Rum.",   
 ];
  
 export default class Sights extends Component {

@@ -4,17 +4,17 @@ import Lightbox from 'lightbox-react';
 import marmara1 from '../../img/marmara-1.jpg';
 import marmara2 from '../../img/marmara-2.jpg';
 import aegean1 from '../../img/aegean-1.jpg';
-import aegean2 from '../../img/aegean-2.jpg';
+import aegean2 from '../../img/aegean-3.jpg';
 import mediterranean1 from '../../img/mediterranean-1.jpg';
-import mediterranean2 from '../../img/mediterranean-2.jpg';
+import mediterranean2 from '../../img/mediterranean-3.jpg';
 import central1 from '../../img/central-1.jpg';
-import central2 from '../../img/central-2.jpg';
+import central2 from '../../img/central-3.jpg';
 import blacksea1 from '../../img/black-sea-2.jpg';
-import blacksea2 from '../../img/black-sea-3.jpg';
+import blacksea2 from '../../img/black-sea-4.jpg';
 import eastern1 from '../../img/eastern-2.jpg';
 import eastern2 from '../../img/eastern-1.jpg';
-import southeastern1 from '../../img/southeastern-1.jpg';
-import southeastern2 from '../../img/southeastern-3.jpg';
+import southeastern1 from '../../img/southeastern-5.jpg';
+import southeastern2 from '../../img/southeastern-4.jpg';
 
 
  
@@ -50,6 +50,23 @@ const titles = [
     (<h1 className="carousel-title"> Eastern Anatolia Region </h1>),  
     (<h1 className="carousel-title"> Southeastern Anatolia Region </h1>),
     (<h1 className="carousel-title"> Southeastern Anatolia Region </h1>),
+];
+     
+const captions = [
+     "The famous Bosphorus strait.",
+     "Marmara island, located in the middle of the Marmara sea.",
+     "The oceanfront area of İzmir.",
+     "Çeşme marina. The Greek island of Chios is less than a stone's throw away.",
+     "The Mediterranean region of Turkey is famous for its seemingly endless beaches.",
+     "Göynük Canyon, near Antalya, Turkey",
+     "The unique landscape within the Cappadocia region in central Turkey.",
+     "Ürgüp, Turkey.",
+     "The lush & green landscape around the Black Sea.",
+     "Artvin (pictured) is a city in northeastern Turkey about 19 miles inland from the Black Sea. It is located on a hill overlooking the Çoruh River near the Deriner Dam.",
+     "Lake Van",
+     "Ağrı Dağı (aka Mount Ararat). It's rumored that the remains of Noah's Ark are somewhere within the vicinity.",
+     "Batman, Turkey. Yes....you read that correctly!",
+     "Balıklıgöl, a religious site in Şanlıurfa, Turkey",    
 ];
 
 //import Draggable from "gsap/Draggable";
@@ -167,6 +184,7 @@ export default class Geography extends Component {
                         })}
                         
                         imageTitle={titles[this.state.photoIndex]}
+                        imageCaption={captions[this.state.photoIndex]}
                     />
                 }
         </div>

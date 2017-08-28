@@ -571,7 +571,7 @@ h2, p{
         }
         
         &:nth-child(8){
-            background: url("img/southeastern-1.jpg") $nrs 50% 50%;
+            background: url("img/southeastern-5.jpg") $nrs 50% 50%;
             background-size: cover;
             
             .map{
@@ -1007,13 +1007,13 @@ h2, p{
 
 .Twelve{
     position: relative;
-    height: 150vh;
+    height: 170vh;
     background: url("img/hotel-3.jpg") $nrf 50% 50%;
     background-size: cover;
     
     .Twelve-inner{
         position: relative;
-        height: 150vh;
+        height: 170vh;
         background: url("img/hotel-1.jpg") $nrf 50% 50%;
         background-size: cover;
     }
@@ -1049,25 +1049,25 @@ h2, p{
 
 .Thirteen{
     position: relative;
-    height: 350vh;
+    height: 170vh;
     background: url("img/hotel-5.jpg") $nrf 50% 50%;
     background-size: cover;
     
     .Thirteen-inner{
         position: relative;
-        height: 150vh;
+        height: 170vh;
         background: url("img/hotel-4.jpg") $nrf 50% 50%;
         background-size: cover;
     }
     
-    h1:nth-child(2){
+    h1:nth-child(1){
         position: relative;
-        top: 65vh;
+        top: 85vh;
         color: $white;
         font-size: 3em;            
     }
     
-    h1:nth-child(3){
+    h1:nth-child(2){
         position: relative;
         top: 65vh;
         color: $white;
@@ -1079,6 +1079,114 @@ h2, p{
         top: -25vh;
         color: $white;
         font-size: 3em;            
+    }
+}
+
+.Fourteen {
+    position: relative;
+    top: 0vh;
+    height: 100vh;
+    background: url("./img/white-2.png") $nrf center;
+    background-size: cover;
+    font-size: large;
+    z-index: 19;
+    
+    .flex-container {
+        position: relative;
+        padding: 30px;
+        margin: 0;
+        list-style: none;
+        overflow: hidden;
+
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        -webkit-flex-flow: row wrap;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .flex-item{
+        padding: 5px;
+        height: 330px;
+        margin: 10px 0px;
+  
+        line-height: 30px;
+        font-family: $main-font, Arial, Helvetica, serif;
+        //font-size: 3em;
+        text-align: center;
+        
+        &:nth-child(1){
+            width: 500px;
+            //background: $white;
+            border-radius: 80px;
+            transition: all 0.3s ease-in-out;
+            
+            h1{
+                top: 30px;
+                font-size: 2.5em;
+                font-weight: 700;
+                color: $red;
+            }
+            
+            h2{
+                position: relative;
+                top: 20px;
+                font-size: 1.5em;
+                color: $turquoise;
+            }
+            
+            p{
+                position: relative;
+                top: 35px;
+                color: $red;
+            }
+        }
+        
+        &:nth-child(2){
+            width: 700px;
+            background: url("img/turkey-flag-1.jpg") $nrs 50% 50%;
+            background-size: cover;
+            
+        }
+        
+        &:nth-child(3){
+            width: 700px;
+            background: url("img/virgin-mary-house-1.jpg") $nrs 50% 50%;
+            background-size: cover;
+            -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+            
+            h2{
+                position: relative;
+                top: 240px;
+                color: $white;
+                font-size: 2.5em;
+            }
+        }
+        
+        &:nth-child(4){
+            width: 500px;
+            background: url("img/seljuk-eagle-1.png") $nrs 50% 50%;
+            background-size: contain;
+            
+            h1{
+                position: relative;
+                top: 240px;
+                color: $red;
+                font-size: 2.5em;
+            }
+            
+            h2{
+                position: relative;
+                top: 250px;
+                color: $red;
+                font-size: 1.5em;
+            }
+        }
     }
 }
 
@@ -1123,11 +1231,7 @@ h2, p{
 }
 
 .caption___3vDh_ {
-<<<<<<< HEAD
     background-color: rgba(0,0,0,0.7);
-=======
-    background-color: rgba(0,0,0,0.5);
->>>>>>> 6d416a2e9355f90bf5f993bc3719f961ec041f0b
 }
 
 .toolbar___1xYly {
