@@ -942,6 +942,7 @@ h2, p{
         }
         
         &:nth-child(n+2):hover{
+            cursor: pointer;
             filter: grayscale(0%);
             transform: scale(1.03);
             border-top: $turquoise 4px solid;
@@ -949,61 +950,6 @@ h2, p{
         }
     }
 }
-
-.modal-open {
-     overflow: auto;
-	padding-right:0 !important;
- }
- /*End modal fix*/
-
- .modal-dialog {
-	 border-radius: 20px;
-	 width: 60%;
- }
-
-.modal-header, .modal-body, .modal-footer {
-	background-color:  $red;
-}
- .modal-title{
-	font-family: $secondary-font, Arial, Helvetica, serif;
-	font-size: 30px;
-	letter-spacing: 4px;
-	color: $white;
-	text-align: center;
- }
-
- .modal-footer > button {
-     &:before {
-        content:'';
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 0px;
-        height: 45px;
-        background: rgba(255,255,255,0.2);
-        border-radius: 10px;
-        transition: all 0.9s ease-in-out;
-     }
-     
-	font-family: $secondary-font, Arial, Helvetica, serif;
-	color: $white;
-	letter-spacing: 2px;
-    border-color: transparent;
-    border-radius: 10px;
-    transition: all 0.9s ease-in-out;
-     
-    &:hover:before, &:active:before{
-       width: 100%;
-	   border-radius:30px;   
-    }
-     
-    &:hover, &:active{
-       color: $white;
-	   background-color: rgb(130,130,130);
-       border-color: transparent;
-	   border-radius:30px;    
-    }
- }
 
 .Twelve{
     position: relative;
@@ -1085,7 +1031,7 @@ h2, p{
 .Fourteen {
     position: relative;
     top: 0vh;
-    height: 100vh;
+    height: auto;
     background: url("./img/white-2.png") $nrf center;
     background-size: cover;
     font-size: large;
@@ -1111,81 +1057,96 @@ h2, p{
 
     .flex-item{
         padding: 5px;
-        height: 330px;
+        height: 400px;
+        width: 350px;
         margin: 10px 0px;
   
         line-height: 30px;
         font-family: $main-font, Arial, Helvetica, serif;
         //font-size: 3em;
+        border-top: transparent 4px solid;
+        border-bottom: transparent 4px solid;
         text-align: center;
+        filter: grayscale(50%);
+        transition: all 0.3s ease-in;
+        
+        h2{
+            position: relative;
+            top: 350px;
+            font-size: 1.8em;
+            text-align: center;
+            color: $white;
+        }
+        
+        a{
+            color: transparent;
+            text-decoration: none !important;
+        }
+        
+        
+        &:nth-child(even), a:nth-child(even){
+            -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%) !important;
+            clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%) !important;
+        }
+        
+        &:nth-child(odd), a:nth-child(odd){
+            -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+        }
         
         &:nth-child(1){
-            width: 500px;
-            //background: $white;
-            border-radius: 80px;
-            transition: all 0.3s ease-in-out;
-            
-            h1{
-                top: 30px;
-                font-size: 2.5em;
-                font-weight: 700;
-                color: $red;
-            }
-            
-            h2{
-                position: relative;
-                top: 20px;
-                font-size: 1.5em;
-                color: $turquoise;
-            }
-            
-            p{
-                position: relative;
-                top: 35px;
-                color: $red;
-            }
+            background: url("img/hotel-istanbul.jpg") $nrs center;
+            background-size: cover;
         }
         
         &:nth-child(2){
-            width: 700px;
-            background: url("img/turkey-flag-1.jpg") $nrs 50% 50%;
+            background: url("img/hotel-izmir.jpg") $nrs 50% 50%;
             background-size: cover;
-            
         }
         
         &:nth-child(3){
-            width: 700px;
-            background: url("img/virgin-mary-house-1.jpg") $nrs 50% 50%;
+            background: url("img/hotel-antalya.jpg") $nrs 50% 50%;
             background-size: cover;
-            -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-            
-            h2{
-                position: relative;
-                top: 240px;
-                color: $white;
-                font-size: 2.5em;
-            }
         }
         
         &:nth-child(4){
-            width: 500px;
-            background: url("img/seljuk-eagle-1.png") $nrs 50% 50%;
-            background-size: contain;
-            
-            h1{
-                position: relative;
-                top: 240px;
-                color: $red;
-                font-size: 2.5em;
-            }
-            
-            h2{
-                position: relative;
-                top: 250px;
-                color: $red;
-                font-size: 1.5em;
-            }
+            background: url("img/hotel-ankara.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(5){
+            background: url("img/hotel-cappadocia.jpg") $nrs center;
+            background-size: cover;
+        }
+        
+        &:nth-child(6){
+            background: url("img/hotel-trabzon.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(7){
+            background: url("img/hotel-bursa.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(8){
+            background: url("img/hotel-konya.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+        
+        
+        
+        &:nth-child(n):hover{
+            cursor: pointer;
+            filter: grayscale(0%);
+            transform: scale(1.03);
+            border-top: $turquoise 4px solid;
+            border-bottom: $turquoise 4px solid;
+        }
+        
+        a:hover{
+            text-decoration: none;
+            color: none;
         }
     }
 }

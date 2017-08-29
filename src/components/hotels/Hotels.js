@@ -30,23 +30,32 @@ export default class Hotels extends Component {
             
             
             <div className="Fourteen">
-            {/*<ul className="flex-container">
-                    <li className="flex-item">
-                        <h1>Türk bayrağı</h1>
-                        <h2>The Turkish flag</h2>
-                        <p>No one is 100% sure about the origins of the Turkish flag. Some say the crescent moon refers to the Byzantine goddess Artemis while others say that it's an Islamic symbol. The star is assumed to have been adopted from the Byzantine empire, where Emporer Constantine decided Istanbul (then Constantinople) to the Virgin Mary. The flag was used during the Ottoman Empire & the proportions were slightly altered when it became a republic on October 29, 1923.</p>
-                    </li>
-                    <li className="flex-item">
-                        
-                    </li>
-                    <li className="flex-item">
-                        <h2>House of the Virgin Mary</h2>
-                    </li>
-                    <li className="flex-item"> 
-                        <h1>Öksökö</h1>
-                        <h2>Symbol from Tuskish Mythology</h2>
-                    </li>
-                </ul>         */}   
+            <ul className="flex-container">
+                    <a  href="https://www.trivago.com/istanbul-32123/hotel"><li className="flex-item">
+                        <h2>İstanbul Hotels</h2>
+                    </li></a>
+                    <a  href="https://www.trivago.com/izmir-32103/hotel"><li className="flex-item">
+                        <h2>İzmir Hotels</h2>
+                    </li></a>
+                    <a  href="https://www.trivago.com/antalya-32134/hotel"><li className="flex-item">
+                        <h2>Antalya Hotels</h2>
+                    </li></a>
+                    <a  href="https://www.trivago.com/ankara-32205/hotel"><li className="flex-item">
+                        <h2>Ankara Hotels</h2>
+                    </li></a>
+                    <a  href="https://www.trivago.com/nevsehir-509044/hotel"><li className="flex-item">
+                        <h2>Cappadocia Hotels</h2>
+                    </li></a>
+                    <a  href="https://www.trivago.com/trabzon-32190/hotel/novotel-trabzon-950093"><li className="flex-item">
+                        <h2>Trabzon Hotels</h2>
+                    </li></a>
+                    <a  href="https://www.trivago.com/bursa-509192/hotel"><li className="flex-item">
+                        <h2>Bursa Hotels</h2>
+                    </li></a>
+                    <a  href="https://www.trivago.com/konya-509022/hotel"><li className="flex-item">
+                        <h2>Konya Hotels</h2>
+                    </li></a>
+                </ul>           
             </div>
         </div>
         );

@@ -186,7 +186,7 @@ export default class Geography extends Component {
                         imageTitle={titles[this.state.photoIndex]}
                         imageCaption={captions[this.state.photoIndex]}
                     />
-                }
+            }
         </div>
         );
     }
