@@ -620,6 +620,7 @@ h2, p{
         }
         
         &:nth-child(n+2):hover{
+            cursor: pointer;
             filter: grayscale(0%);
             transform: scale(1.03);
             border-top: $turquoise 4px solid;
@@ -1356,7 +1357,35 @@ h2, p{
     }
 }
 
-.Eightteen{
+.Eighteen{
+    position: relative;
+    height: 170vh;
+    background: url("img/cuisine-9.jpg") $nrf 50% 50%;
+    background-size: cover;
+    
+    .Eighteen-inner{
+        position: relative;
+        height: 170vh;
+        background: url("img/cuisine-8.jpg") $nrf 50% 50%;
+        background-size: cover;
+    }
+    
+    h1:nth-child(1){
+        position: relative;
+        top: 65vh;
+        color: $white;
+        font-size: 3em;            
+    }
+    
+    #kokorec{
+        position: relative;
+        top: -30vh;
+        color: $white;
+        font-size: 3em;            
+    }
+}
+
+.Nineteen{
     position: relative;
     height: 100vh;
 }
