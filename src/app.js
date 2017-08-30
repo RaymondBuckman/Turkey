@@ -92,11 +92,11 @@ $(window).scroll(function(){
         })
         
         $('.Thirteen-inner').css({
-            'opacity': 1 - Math.pow((wScroll/14600),300)
+            'opacity': 1 - Math.pow((wScroll/14800),250)
         })
         
         $('.Thirteen').css({
-            'opacity': 1 - Math.pow((wScroll/17700),20)
+            'opacity': 1 - Math.pow((wScroll/15600),250)
         })
         
         $('.Fourteen > .flex-container > .flex-item:nth-child(1)').on('click', function(){
@@ -130,5 +130,21 @@ $(window).scroll(function(){
         $('.Fourteen .flex-item:nth-child(8)').on('click', function(){
            window.location = "https://www.trivago.com/konya-509022/hotel"; 
         });
+        
+        $('.Fifteen-inner').css({
+            'opacity': 1 - Math.pow((wScroll/16900),400)
+        })
+        
+        $('.Fifteen').css({
+            'opacity': 1 - Math.pow((wScroll/17700),400)
+        })
+        
+        $('.Seventeen-inner').css({
+            'opacity': 1 - Math.pow((wScroll/18800),400)
+        })
+        
+        $('.Seventeen').css({
+            'opacity': 1 - Math.pow((wScroll/19900),400)
+        })
     }
 })
