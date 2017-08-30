@@ -143,8 +143,12 @@ $(window).scroll(function(){
             'opacity': 1 - Math.pow((wScroll/18800),400)
         })
         
-        $('.Seventeen').css({
-            'opacity': 1 - Math.pow((wScroll/19700),400)
+        $('.Eighteen-inner').css({
+            'opacity': 1 - Math.pow((wScroll/20100),400)
+        })
+        
+        $('.Eighteen').css({
+            'opacity': 1 - Math.pow((wScroll/21000),400)
         })
     }
 })
