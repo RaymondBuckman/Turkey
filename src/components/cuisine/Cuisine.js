@@ -6,28 +6,47 @@ export default class Cuisine extends Component {
     render() {
         return(
         <div>
-            <div className="Fifteen">
-                <div className="One-inner">
-                    <h1 id="title" className="text-center">T&#252;rkiye'ye hoş geldiniz!</h1>
-                    <h2 className="text-center">Welcome to Turkey!</h2>
+            <div className="Fifteen">            
+                <div className="Fifteen-inner">            
+                    <div className="container">
+                        <h1 id="mutfak" className="text-center">Mutfak</h1>
+                        <h2 id="cuisine" className="text-center">Cuisine</h2> 
+                        <h1 className="text-right">Turkish Meze</h1>
+                    </div>
+                </div>
+                <div className="container">
+                    <h1 id="doner" className="text-left">Doner Kebab</h1>
                 </div>
             </div>
             <div className="Sixteen">
                 <ul className="flex-container">
                     <li className="flex-item">
-                        <h1>Türk bayrağı</h1>
-                        <h2>The Turkish flag</h2>
-                        <p>No one is 100% sure about the origins of the Turkish flag. Some say the crescent moon refers to the Byzantine goddess Artemis while others say that it's an Islamic symbol. The star is assumed to have been adopted from the Byzantine empire, where Emporer Constantine decided Istanbul (then Constantinople) to the Virgin Mary. The flag was used during the Ottoman Empire & the proportions were slightly altered when it became a republic on October 29, 1923.</p>
+                        <h1>Türk yemeği</h1>
+                        <h2>Turkish food</h2>
+                        <p>They say the history of a country can be seen in its food, & Turkish food is certainly no exception. The Greeks, Persians, Arabs, & other groups have all left their mark to form what is one of the most unique yet familiar cuisine in the world. A meal in Turkey can consist of anything from kebabs with massive swaths of meat to stuffed vegetables (Dolma). Popular beverages are Turkish tea & rakı, a clear alcoholic drink from in the Balkans. Turkish delight & baklava are Turkey's most famous desserts. Dig in!</p>
                     </li>
-                    <li className="flex-item"></li>
                     <li className="flex-item">
-                        <h2>House of the Virgin Mary</h2>
+                        <h2>Baklava</h2>
+                    </li>
+                    <li className="flex-item">
+                        <h2>Adana Kebab</h2>
                     </li>
                     <li className="flex-item"> 
-                        {/*<h1>Öksökö</h1>
-                        <h2>Symbol from Tuskish Mythology</h2>*/}
+                        <h2>Rakı</h2>
                     </li>
                 </ul>
+            </div>
+            <div className="Seventeen">            
+                <div className="Seventeen-inner">            
+                    <div className="container"> 
+                        <h1 className="text-right">Turkish Delight</h1>
+                    </div>
+                </div>
+                <div className="container">
+                    <h1 id="dolma" className="text-left">Dolma</h1>
+                </div>
+            </div>
+            <div className="Eightteen">
             </div>
         </div>
         );
