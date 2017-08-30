@@ -7,7 +7,9 @@ import Intro from './components/intro/Intro';
 import Geography from './components/geography/Geography';
 import Cities from './components/cities/Cities';
 import Sights from './components/sights/Sights';
-import Hotels from './components/hotels/Hotels'
+import Hotels from './components/hotels/Hotels';
+import Cuisine from './components/cuisine/Cuisine';
+
 
 ReactDOM.render(
     <div className="App">
@@ -16,6 +18,7 @@ ReactDOM.render(
             <Cities />
             <Sights /> 
             <Hotels />
+            <Cuisine />
     </div>,
     document.getElementById('root')
 );
