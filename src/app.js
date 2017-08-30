@@ -144,7 +144,7 @@ $(window).scroll(function(){
         })
         
         $('.Seventeen').css({
-            'opacity': 1 - Math.pow((wScroll/19900),400)
+            'opacity': 1 - Math.pow((wScroll/19700),400)
         })
     }
 })

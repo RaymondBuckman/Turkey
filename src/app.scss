@@ -583,7 +583,7 @@ h2, p{
             }
             
             h1, h2{
-                left: -20px;
+                left: 20px;
             }
         }
         
@@ -902,6 +902,10 @@ h2, p{
         &:nth-child(17){
             background: url("img/virgin-mary-house-2.jpg") $nrs 50% 50%;
             background-size: cover;
+            
+            h2{
+                left: -20px;
+            }
         }
         
         &:nth-child(18){
@@ -1090,6 +1094,10 @@ h2, p{
         &:nth-child(even), a:nth-child(even){
             -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%) !important;
             clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%) !important;
+            
+            h2{
+                left: 20px;
+            }
         }
         
         &:nth-child(odd), a:nth-child(odd){
@@ -1100,16 +1108,25 @@ h2, p{
         &:nth-child(1){
             background: url("img/hotel-istanbul.jpg") $nrs center;
             background-size: cover;
+            
+            h2{
+                left: -25px;
+            }
         }
         
         &:nth-child(2){
             background: url("img/hotel-izmir.jpg") $nrs 50% 50%;
             background-size: cover;
+            
         }
         
         &:nth-child(3){
             background: url("img/hotel-antalya.jpg") $nrs 50% 50%;
             background-size: cover;
+            
+            h2{
+                left: -25px;
+            }
         }
         
         &:nth-child(4){
@@ -1120,6 +1137,10 @@ h2, p{
         &:nth-child(5){
             background: url("img/hotel-cappadocia.jpg") $nrs center;
             background-size: cover;
+            
+            h2{
+                left: -30px;
+            }
         }
         
         &:nth-child(6){
@@ -1130,6 +1151,10 @@ h2, p{
         &:nth-child(7){
             background: url("img/hotel-bursa.jpg") $nrs 50% 50%;
             background-size: cover;
+            
+            h2{
+                left: -25px;
+            }
         }
         
         &:nth-child(8){
