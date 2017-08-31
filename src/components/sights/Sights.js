@@ -270,10 +270,10 @@ export default class Sights extends Component {
         } = this.state;
  
         return (
-            <div className="Eleven">
+            <div className="Eleven" id="Eleven">
                  <ul className="flex-container">
                     <li className="flex-item" >
-                        <h1>Manzaralar</h1>
+                        <h1 id="manzaralar">Manzaralar</h1>
                         <h2>Sights</h2>
                     </li>
                     <li className="flex-item" 

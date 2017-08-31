@@ -62,7 +62,7 @@ export default class Cities extends Component {
     render() {
         return(
         <div>
-            <div className="Six"> 
+            <div className="Six" id="Six"> 
                 <h1 id="sehirler" className="text-center">En Büyük Şehirler</h1>
                 <h2 id="cities" className="text-center">Largest Cities</h2> 
                 <p id="istanbul-description" className="col-lg-6 col-lg-offset-6 text-right">

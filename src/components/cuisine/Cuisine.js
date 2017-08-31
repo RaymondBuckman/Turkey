@@ -5,7 +5,7 @@ export default class Cuisine extends Component {
     render() {
         return(
         <div>
-            <div className="Fifteen">            
+            <div className="Fifteen" id="Fifteen">            
                 <div className="Fifteen-inner">            
                     <div className="container">
                         <h1 id="mutfak" className="text-center">Mutfak</h1>
@@ -54,8 +54,6 @@ export default class Cuisine extends Component {
                 <div className="container">
                     <h1 id="kokorec" className="text-left">Kokoreç</h1>
                 </div>
-            </div>
-            <div className="Nineteen">
             </div>
         </div>
         );

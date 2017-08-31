@@ -9,7 +9,7 @@ import Cities from './components/cities/Cities';
 import Sights from './components/sights/Sights';
 import Hotels from './components/hotels/Hotels';
 import Cuisine from './components/cuisine/Cuisine';
-
+import Language from './components/language/Language';
 
 ReactDOM.render(
     <div className="App">
@@ -19,6 +19,7 @@ ReactDOM.render(
             <Sights /> 
             <Hotels />
             <Cuisine />
+            <Language />
     </div>,
     document.getElementById('root')
 );
@@ -57,7 +58,7 @@ $(window).scroll(function(){
         
         $('.One').css({
             //'background-position':  '50% ' + (50 - wScroll/10) + '%',
-            'opacity': 1 - Math.pow((wScroll/800), 8)
+            'opacity': 1 - Math.pow((wScroll/900), 8)
         })
         
         /*
@@ -72,7 +73,15 @@ $(window).scroll(function(){
         
         $('.Three').css({
             'background-position':  '50% ' + (50 + wScroll/45) + '%',
-            'opacity': 1 - Math.pow((wScroll/2700),20)
+            'opacity': 1 - Math.pow((wScroll/2650),70)
+        })
+        
+        $('#ataturk').css({
+            'opacity': Math.pow((wScroll/3000),200)
+        })
+        
+        $('#founder').css({
+            'opacity': Math.pow((wScroll/3000),200)
         })
         
         $('.Four').css({

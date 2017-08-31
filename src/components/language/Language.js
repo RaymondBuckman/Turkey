@@ -4,7 +4,7 @@ export default class Language extends Component {
     render() {
         return(
         <div>
-            <div className="Twenty" id="arrow-dest">
+            <div className="Nineteen" id="Nineteen">
                 <ul className="flex-container">
                     <li className="flex-item">
                         <h1>Türk Dili</h1>

@@ -90,7 +90,7 @@ export default class Geography extends Component {
         
         return(
         <div>
-            <div className="Three">            
+            <div className="Three" id="Three">            
                 <div className="Three-inner">            
                     <div className="container">
                         <h1 id="cografya" className="text-center">Coğrafya</h1>

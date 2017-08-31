@@ -61,9 +61,9 @@ $color-hover: color 0.3s ease-in-out;
     
 }
 
-@keyframes occasional-brightness{
-    20%, 30%	{-webkit-filter: brightness(100%); -moz-filter: brightness(100%);}
-	25%		    {-webkit-filter: brightness(110%); -moz-filter: brightness(110%);}
+@keyframes occasional-blur{
+    20%, 30%	{-webkit-filter: blur(0px); -moz-filter: blur(0px);}
+	25%		    {-webkit-filter: blur(1px); -moz-filter: blur(1px);}
 }
 
 @keyframes moveArrows{
@@ -85,8 +85,8 @@ $color-hover: color 0.3s ease-in-out;
 }
 
 
-@mixin occasional-brightness{
-    animation: occasional-brightness 8s infinite;
+@mixin occasional-blur{
+    animation: occasional-blur 8s infinite;
 }
 
 @mixin global-padding{
@@ -184,7 +184,6 @@ h2, p{
 }
 
 
-
 .One{
     position: relative;
     height: 130vh;
@@ -198,12 +197,61 @@ h2, p{
         height: 130vh;
         background: url("./img/maidens-tower-1.jpg") $nrf 50% 50%;
         background-size: cover;
+        
+        .navbar{
+            position: relative;
+            //top: -25px;
+            height: 40px;
+            width: 100vw;
+            background: transparent;
+            border: none;
+            border-radius: 0px;
+            margin-bottom: 0px;
+            z-index: 16;
+        }
+
+        .navbar-default .navbar-nav > li > a {
+            position: relative;
+            //top: -10px;
+
+            text-decoration: none;
+            display: block;
+            padding: 0 1em;
+            color: $white;
+            @include secondary-font;
+            font-size: 1.2em;
+            transition: all 0.3s ease-in;
+
+            &:hover{
+                color: $red; 
+                transform: scale(1.2);
+                @include occasional-blur;
+            }
+        }
+
+
+        .navbar-default .navbar-nav > li:nth-child(n) > a {
+            position: relative;
+            top: 15px;
+            //height: 20px;
+        }
+
+        .navbar-default .navbar-nav>.active > a,
+        .navbar-default .navbar-nav>.active > a:focus {
+            color: $turquoise;
+            background: transparent;
+        }
+
+        .navbar-default .navbar-nav>.active > a:hover{
+             color: red;
+             background: transparent;
+        }
     }
     
         
     #title{
         position: relative;
-        top:75vh;
+        top:70vh;
         color: $white;
         @include main-font;
         font-size: 5em;
@@ -220,7 +268,7 @@ h2, p{
     
     h2{
         position: relative;
-        top:75vh;
+        top:70vh;
         color: $turquoise;
         @include secondary-font;
         font-size: 3em;
@@ -1385,10 +1433,113 @@ h2, p{
     }
 }
 
-.Nineteen{
+.Nineteen {
     position: relative;
-    height: 100vh;
+    top: 0vh;
+    height: auto;
+    background: url("./img/white-2.png") $nrf center;
+    background-size: cover;
+    font-size: large;
+    z-index: 19;
+    
+    .flex-container {
+        position: relative;
+        padding: 30px;
+        margin: 0;
+        list-style: none;
+        overflow: hidden;
+
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        -webkit-flex-flow: row wrap;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .flex-item{
+        padding: 5px;
+        height: 330px;
+        margin: 10px 0px;
+  
+        line-height: 30px;
+        font-family: $main-font, Arial, Helvetica, serif;
+        //font-size: 3em;
+        text-align: center;
+        @include border-radius;
+        
+        &:nth-child(1){
+            width: 500px;
+            //background: $white;
+            border-radius: 80px;
+            transition: all 0.3s ease-in-out;
+            
+            h1{
+                top: 30px;
+                font-size: 2.5em;
+                font-weight: 700;
+                color: $red;
+            }
+            
+            h2{
+                position: relative;
+                top: 20px;
+                font-size: 1.5em;
+                color: $turquoise;
+            }
+            
+            p{
+                position: relative;
+                top: 35px;
+                color: $red;
+            }
+        }
+        
+        &:nth-child(2){
+            width: 700px;
+            background: url("img/cuisine-3.jpg") $nrs 50% 50%;
+            background-size: cover;
+            
+            h2{
+                position: relative;
+                top: 240px;
+                color: $white;
+                font-size: 2.5em;
+            }
+            
+        }
+        
+        &:nth-child(3){
+            width: 700px;
+            background: url("img/cuisine-4.jpg") $nrs 50% 50%;
+            background-size: cover;
+            
+            h2{
+                position: relative;
+                top: 240px;
+                color: $white;
+                font-size: 2.5em;
+            }
+        }
+        
+        &:nth-child(4){
+            width: 500px;
+            background: url("img/cuisine-5.jpg") $nrs 50% 50%;
+            background-size: cover;
+            
+            h2{
+                position: relative;
+                top: 240px;
+                color: $red;
+                font-size: 2.5em;
+            }
+        }
+    }
 }
+
 
 
 .image___2FLq2, .inner___1rfRQ {

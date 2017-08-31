@@ -5,7 +5,7 @@ export default class Hotels extends Component {
     render() {
         return(
         <div>
-            <div className="Twelve">            
+            <div className="Twelve" id="Twelve">            
                 <div className="Twelve-inner">            
                     <div className="container">
                         <h1 id="oteleler" className="text-center">Oteleler</h1>
