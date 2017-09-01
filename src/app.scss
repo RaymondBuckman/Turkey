@@ -162,9 +162,18 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+::selection {
+    color: $white;
+    background: $turquoise; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    color: $white;
+    background: $turquoise; /* WebKit/Blink Browsers */
+}
+
 html, body {
     height: 100%;
-    user-select: none;
+    //user-select: default;
     cursor: default;  
 }
 
@@ -172,7 +181,7 @@ h1 {
     @include main-font;
 }
 
-h2, p{
+h2, p, a{
     @include secondary-font;
 }
 
@@ -218,7 +227,6 @@ h2, p{
             display: block;
             padding: 0 1em;
             color: $white;
-            @include secondary-font;
             font-size: 1.2em;
             transition: all 0.3s ease-in;
 
@@ -1536,7 +1544,7 @@ h2, p{
 
 .Twenty{
     position: relative;
-    height: 100vh;
+    height: 110vh;
     background: url("img/ataturk-2.jpg") $nrf 50% 50%;
     background-size: cover;
     
@@ -1556,9 +1564,54 @@ h2, p{
     
     h2:nth-child(3){
         position: relative;
-        top: 50vh;
+        top: 30vh;
         color: $white; 
         font-size: 1.5em;
+    }
+    
+    a{
+        
+        text-decoration: none;
+        color: $red;
+        font-size: 1em;
+        transition: all 0.2s ease-in;
+        
+        &:hover{
+            color: $turquoise; 
+            @include occasional-blur;
+        }        
+    }
+}
+
+.Twenty-one{
+    position: relative;
+    height: 110vh;
+    background: url("img/red-1.jpg") $nrf 50% 50%;
+    background-size: cover;
+    
+    #cumleler{
+        position: relative;
+        top: 10vh;
+        color: $white;
+        font-size: 5em;            
+    }
+    
+    #phrases{
+        position: relative;
+        top: 10vh;
+        color: $turquoise;
+        font-size: 3em;            
+    }
+    
+    h2:nth-child(3){
+        position: relative;
+        top: 15vh;
+        color: $white; 
+        font-size: 1.5em;
+    }
+    
+    span{
+        color: $turquoise;
     }
 }
 
