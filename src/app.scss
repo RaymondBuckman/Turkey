@@ -1466,7 +1466,7 @@ h2, p{
         @include border-radius;
         
         &:nth-child(1){
-            width: 500px;
+            width: 700px;
             //background: $white;
             border-radius: 80px;
             transition: all 0.3s ease-in-out;
@@ -1493,8 +1493,8 @@ h2, p{
         }
         
         &:nth-child(2){
-            width: 700px;
-            background: url("img/cuisine-3.jpg") $nrs 50% 50%;
+            width: 500px;
+            background: url("img/turkish-1.jpg") $nrs 50% 50%;
             background-size: cover;
             
             h2{
@@ -1507,30 +1507,58 @@ h2, p{
         }
         
         &:nth-child(3){
-            width: 700px;
-            background: url("img/cuisine-4.jpg") $nrs 50% 50%;
+            width: 500px;
+            background: url("img/turkish-2.jpg") $nrs 50% 50%;
             background-size: cover;
             
             h2{
                 position: relative;
                 top: 240px;
                 color: $white;
-                font-size: 2.5em;
+                font-size: 2em;
             }
         }
         
         &:nth-child(4){
-            width: 500px;
-            background: url("img/cuisine-5.jpg") $nrs 50% 50%;
+            width: 700px;
+            background: url("img/turkish-4.jpg") $nrs 50% 50%;
             background-size: cover;
             
             h2{
                 position: relative;
                 top: 240px;
-                color: $red;
-                font-size: 2.5em;
+                color: $white;
+                font-size: 2em;
             }
         }
+    }
+}
+
+.Twenty{
+    position: relative;
+    height: 100vh;
+    background: url("img/ataturk-2.jpg") $nrf 50% 50%;
+    background-size: cover;
+    
+    #alfabe{
+        position: relative;
+        top: 10vh;
+        color: $white;
+        font-size: 5em;            
+    }
+    
+    #alphabet{
+        position: relative;
+        top: 10vh;
+        color: $red;
+        font-size: 3em;            
+    }
+    
+    h2:nth-child(3){
+        position: relative;
+        top: 50vh;
+        color: $white; 
+        font-size: 1.5em;
     }
 }
 
