@@ -1,7 +1,53 @@
 import React, { Component } from 'react';
+import Lightbox from 'lightbox-react';
+
+import pronounciation from '../../img/turkish-5.jpg';
+import harmony from '../../img/turkish-6.jpg';
+import pronouns from '../../img/turkish-7.jpg';
+import adjectives from '../../img/turquoise-2.jpg';
+import accusative from '../../img/turkish-8.jpg';
+import possessive from '../../img/turkish-9.jpg';
+import questions from '../../img/turkish-10.jpg';
+import numbers from '../../img/turkish-11.jpg';
+
+const images = [
+    pronounciation,
+    harmony,
+    pronouns,
+    adjectives,
+    accusative,
+    possessive,
+    questions,
+    numbers,
+];
+
+const titles = [
+    (<h1 className="carousel-title"> Pronounciation </h1>),
+    (<h1 className="carousel-title"> Vowel Harmony </h1>),
+    (<h1 className="carousel-title"> Pronouns </h1>),
+    (<h1 className="carousel-title"> Adjectives </h1>),
+    (<h1 className="carousel-title"> Accusative </h1>),
+    (<h1 className="carousel-title"> Possessive </h1>),
+    (<h1 className="carousel-title"> Questions </h1>),
+    (<h1 className="carousel-title"> Numbers </h1>),
+];
 
 export default class Language extends Component {
+    constructor(props) {
+        super(props);
+ 
+        this.state = {
+            photoIndex: 1,
+            isOpen: false,
+        };
+    }
+    
     render() {
+        const {
+            photoIndex,
+            isOpen
+        } = this.state;
+        
         return(
         <div>
             <div className="Nineteen" id="Nineteen">
@@ -25,7 +71,7 @@ export default class Language extends Component {
                     <h2 className="col-lg-8 col-lg-offset-4 text-right">
                         A	B	C	Ç	D	E	F	G	Ğ	H	I	İ	J	K	L	M	N	O	Ö	P	R	S	Ş	T	U	Ü	V	Y	Z
                         <br/><br/>
-                        The Turkish alphabet consists of 29 letters. There are 8 vowels (A, E, I, İ, O, Ö, U, Ü) & the rest are consonants. It was written using an Arabic script until Atatürk (pictured) changed it to a Latin-based alphabet in 1929 as part of his reforms to modernize Turkey after the fall of the Ottoman Empire. It's highly phonetic (each letter only makes one sound) & you'll never find large numbers of consonents grouped together.
+                        The Turkish alphabet consists of 29 letters. There are 8 vowels (A, E, I, İ, O, Ö, U, Ü) & the rest are consonants. It was written using an Arabic script until Mustafa Kemal Atatürk (pictured) changed it to a Latin-based alphabet in 1929 as part of his reforms to modernize Turkey after the fall of the Ottoman Empire. It's highly phonetic (each letter only makes one sound) & you'll never find large numbers of consonents grouped together.
                         <br/><br/>
                         <a href="https://www.youtube.com/watch?v=TOZ0CwkRtxI" target="_blank">More info</a>
                     </h2>
@@ -53,6 +99,64 @@ export default class Language extends Component {
                         Yardım edebilir misiniz? - <span>Can you help me?</span><br/>
                     </h2>
                 </div>
+            </div>
+            <div className="Twenty-two">
+                 <ul className="flex-container">
+                    <li className="flex-item" >
+                        <h1 id="konular">Diğer Konular</h1>
+                        <h2 id="topics">Other Topics</h2>
+                    </li>
+                    <li className="flex-item" 
+                    onClick={() => this.setState({photoIndex:0, isOpen: true,  })}>
+                        <h2>Pronounciation</h2>
+                    </li>
+                    <li className="flex-item" 
+                    onClick={() => this.setState({photoIndex:1, isOpen: true })}>
+                        <h2>Vowel Harmony</h2>
+                    </li>
+                    <li className="flex-item" 
+                    onClick={() => this.setState({photoIndex:2, isOpen: true })}>
+                        <h2>Pronouns</h2>
+                    </li>
+                    <li className="flex-item" 
+                    onClick={() => this.setState({photoIndex:3, isOpen: true })}>
+                        <h2>Adjectives</h2>
+                    </li>
+                    <li className="flex-item" 
+                    onClick={() => this.setState({photoIndex:4, isOpen: true })}>
+                        <h2>Accusative</h2>
+                    </li>
+                    <li className="flex-item" 
+                    onClick={() => this.setState({photoIndex:5, isOpen: true })}>
+                        <h2>Possessive</h2>
+                    </li>
+                    <li className="flex-item" 
+                    onClick={() => this.setState({photoIndex:6, isOpen: true })}>
+                        <h2>Questions</h2>
+                    </li>
+                    <li className="flex-item" 
+                    onClick={() => this.setState({photoIndex:7, isOpen: true })}>
+                        <h2>Numbers</h2>
+                    </li>
+                </ul>
+ 
+                {isOpen &&
+                    <Lightbox
+                        mainSrc={images[photoIndex]}
+                        nextSrc={images[(photoIndex + 1) % images.length]}
+                        prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+ 
+                        onCloseRequest={() => this.setState({ isOpen: false })}
+                        onMovePrevRequest={() => this.setState({
+                            photoIndex: (photoIndex + images.length - 1) % images.length,
+                        })}
+                        onMoveNextRequest={() => this.setState({
+                            photoIndex: (photoIndex + 1) % images.length,
+                        })}
+                        
+                        imageTitle={titles[this.state.photoIndex]}
+                    />
+                }
             </div>
         </div>
         );
