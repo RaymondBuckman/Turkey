@@ -62,8 +62,8 @@ $color-hover: color 0.3s ease-in-out;
 }
 
 @keyframes occasional-blur{
-    20%, 30%	{-webkit-filter: blur(0px); -moz-filter: blur(0px);}
-	25%		    {-webkit-filter: blur(1px); -moz-filter: blur(1px);}
+    20%, 40%	{-webkit-filter: blur(0px); -moz-filter: blur(0px);}
+	30%		    {-webkit-filter: blur(1px); -moz-filter: blur(1px);}
 }
 
 @keyframes moveArrows{
@@ -86,7 +86,7 @@ $color-hover: color 0.3s ease-in-out;
 
 
 @mixin occasional-blur{
-    animation: occasional-blur 8s infinite;
+    animation: occasional-blur 6s infinite;
 }
 
 @mixin global-padding{
@@ -102,12 +102,15 @@ $color-hover: color 0.3s ease-in-out;
 }
 
 
+<<<<<<< HEAD
+=======
 
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+>>>>>>> 0e8a4379f52e832d93e1641446a201fc1a814f09
 //------------RESET-------------
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -1553,7 +1556,7 @@ h2, p, a{
 
 .Twenty-one{
     position: relative;
-    height: 110vh;
+    height: 115vh;
     background: url("img/red-1.jpg") $nrf 50% 50%;
     background-size: cover;
     
@@ -1573,7 +1576,7 @@ h2, p, a{
     
     h2:nth-child(3){
         position: relative;
-        top: 15vh;
+        top: 10vh;
         color: $white; 
         font-size: 1.5em;
     }
