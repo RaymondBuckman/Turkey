@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import Lightbox from 'lightbox-react';
 
-import pronounciation from '../../img/turkish-5.jpg';
-import harmony from '../../img/turkish-6.jpg';
-import pronouns from '../../img/turkish-7.jpg';
-import adjectives from '../../img/turquoise-2.jpg';
+import pronounciation from '../../img/alphabet-1.png';
+import harmony from '../../img/harmony-1.jpg';
+import pronouns from '../../img/pronouns-1.jpg';
+import adjectives from '../../img/adjectives-1.jpg';
 import accusative from '../../img/turkish-8.jpg';
-import possessive from '../../img/turkish-9.jpg';
-import questions from '../../img/turkish-10.jpg';
-import numbers from '../../img/turkish-11.jpg';
+import possessive from '../../img/possessive-1.jpg';
+import questions from '../../img/questions-1.jpg';
+import numbers from '../../img/numbers-1.jpg';
 
 const images = [
     pronounciation,

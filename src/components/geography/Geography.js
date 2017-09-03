@@ -95,7 +95,7 @@ export default class Geography extends Component {
                     <div className="container">
                         <h1 id="cografya" className="text-center">Coğrafya</h1>
                         <h2 id="geography" className="text-center">Geography</h2> 
-                        <h1 className="text-right">Lake Uzungöl, Trabzon</h1>
+                        <h1 className="text-right">Uzungöl, Trabzon</h1>
                     </div>
                 </div>
                 <div className="container">

@@ -159,5 +159,9 @@ $(window).scroll(function(){
         $('.Eighteen').css({
             'opacity': 1 - Math.pow((wScroll/21000),400)
         })
+        
+        $('.Twenty-one').css({
+            'opacity': 1 - Math.pow((wScroll/23400),400)
+        })
     }
 })
