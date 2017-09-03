@@ -9,6 +9,7 @@ import Sights from './components/sights/Sights';
 import Hotels from './components/hotels/Hotels';
 import Cuisine from './components/cuisine/Cuisine';
 import Language from './components/language/Language';
+import Footer from './components/footer/Footer';
 
 ReactDOM.render(
     <div className="App">
@@ -19,6 +20,7 @@ ReactDOM.render(
             <Hotels />
             <Cuisine />
             <Language />
+            <Footer />
     </div>,
     document.getElementById('root')
 );

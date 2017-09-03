@@ -9,17 +9,17 @@ export default class Intro extends Component {
             <div className="One">
                 <div className="One-inner">
                     <nav className="navbar navbar-default visible-lg" data-spy="affix" role="navigation">
-                <div className="container">
-                    <ul className="nav navbar-nav navbar-right">
-                        <li><a href="#Three">Geography</a></li>
-                        <li><a href="#sehirler">Cities</a></li>
-                        <li><a href="#Eleven">Sights</a></li>
-                        <li><a href="#oteleler">Hotels</a></li>
-                        <li><a href="#mutfak">Cuisine</a></li>
-                        <li><a href="#Nineteen">Language</a></li>
-                    </ul>
-                </div>
-            </nav>
+                        <div className="container">
+                            <ul className="nav navbar-nav navbar-right">
+                                <li><a href="#Three">Geography</a></li>
+                                <li><a href="#sehirler">Cities</a></li>
+                                <li><a href="#Eleven">Sights</a></li>
+                                <li><a href="#oteleler">Hotels</a></li>
+                                <li><a href="#mutfak">Cuisine</a></li>
+                                <li><a href="#Nineteen">Language</a></li>
+                            </ul>
+                        </div>
+                    </nav>
                     <h1 id="title" className="text-center">T&#252;rkiye'ye hoş geldiniz!</h1>
                     <h2 className="text-center">Welcome to Turkey!</h2>
                 </div>
