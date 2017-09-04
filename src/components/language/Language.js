@@ -31,6 +31,24 @@ const titles = [
     (<h1 className="carousel-title"> Questions </h1>),
     (<h1 className="carousel-title"> Numbers </h1>),
 ];
+     
+const captions = [
+    "The pronounciation in Turkish is fairly straightforward.  Most letters are pronounced like their English counterparts. The main differences are the 'ç' & 'ş', which are pronounced like 'ch' & 'sh', respectively. Also the letter 'c' is pronounced like the English  'j'. Also there's 'ı', which looks like an i without the dot.  It's pronounced like 'uh',  or the German 'ö'. The last new letter is ğ. It's completely silent & never shows up at the beginning  of a word.",
+     
+    "There are two groups of vowels in Turkish: the undotted A vowels (A I O U) and the dotted e vowels (E İ Ö Ü). Many Turkish suffixes that are added on to words  have vowels that fall in one of these groups. For example in Turkish to make something plural, you either have add the suffix 'lar' or 'ler' depending on the last vowel in the word. If the last vowel is an undotted A vowel, the plural suffix is 'lar'. For example the word 'at', which means horse, turns into 'atlar' when pluralized. If the last vowel is a dotted E vowel, you use the 'ler' suffix (i.e. 'ev', which means house, becomes 'evler' in plural form).",
+     
+    "The Basilica Cistern is the largest of several hundred ancient cisterns that lie beneath the city of Istanbul (formerly Constantinople), Turkey. The cistern, located 500 feet southwest of the Hagia Sophia on the historical peninsula of Sarayburnu, was built in the 6th century during the reign of Byzantine Emperor Justinian I.",
+     
+    "This cathedral-size cistern is an underground chamber approximately 453 ft by 212 ft – about 105,000 sq ft in area – capable of holding 2,800,000 cu ft of water. The ceiling is supported by a forest of 336 marble columns, each 30 ft tall, arranged in 12 rows of 28 columns each spaced 16 ft apart.",
+     
+    "Cappadocia is a historical region in Central Anatolia, largely in the Nevşehir, Kayseri, Kırşehir, Aksaray, and Niğde Provinces in Turkey. The relief consists of a high plateau over 1000 m in altitude that is pierced by volcanic peaks, with Mount Erciyes (ancient Argaeus) near Kayseri (ancient Caesarea) being the tallest at 3916 m.",
+     
+    "The earliest record of the name of Cappadocia dates from the late 6th century BC, when it appears in the trilingual inscriptions of two early Achaemenid kings, Darius I and Xerxes, as one of the countries of the Persian Empire. In these lists of countries, the Old Persian name is Haspaduya, which according to some researchers is derived from Iranian Huw-aspa-dahyu- 'the land of beautiful horses'",
+     
+    "Hagia Sophia was a Greek Orthodox Christian patriarchal basilica (church), later an imperial mosque, and now a museum (Ayasofya Müzesi) in Istanbul, Turkey. The Roman Empire's first Christian Cathedral, from the date of its construction in 537 AD, and until 1453, it served as an Eastern Orthodox cathedral and seat of the Patriarch of Constantinople, except between 1204 and 1261, when it was converted by the Fourth Crusaders to a Roman Catholic cathedral under the Latin Empire. The building was later converted into an Ottoman mosque from 29 May 1453 until 1931. It was then secularized and opened as a museum on 1 February 1935.",
+     
+    "Famous in particular for its massive dome, it is considered the epitome of Byzantine architecture and is said to have 'changed the history of architecture'. It remained the world's largest cathedral for nearly a thousand years, until Seville Cathedral was completed in 1520.",
+];
 
 export default class Language extends Component {
     constructor(props) {
@@ -154,6 +172,7 @@ export default class Language extends Component {
                             photoIndex: (photoIndex + 1) % images.length,
                         })}
                         
+                        imageTitle={titles[this.state.photoIndex]}
                         imageTitle={titles[this.state.photoIndex]}
                     />
                 }
