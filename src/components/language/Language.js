@@ -173,7 +173,7 @@ export default class Language extends Component {
                         })}
                         
                         imageTitle={titles[this.state.photoIndex]}
-                        imageTitle={titles[this.state.photoIndex]}
+                        imageCaption={captions[this.state.photoIndex]}
                     />
                 }
             </div>
