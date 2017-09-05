@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-//import Draggable from "gsap/Draggable";
 
 
 export default class Intro extends Component {
