@@ -15,8 +15,8 @@ export default class Footer extends Component {
                             <ul className="nav navbar-nav navbar-right">
                                 <li><a href="http://www.historyworld.net/wrldhis/PlainTextHistories.asp?historyid=ac94" target="_blank">History</a></li>
                                 <li><a href="http://www.turkishlanguage.co.uk/" target="_blank">Detailed Language Info</a></li>
-                                <li><a href="https://travel.state.gov/content/passports/en/alertswarnings/turkey-travel-warning.html" target="_blank">Travel Warnings</a></li>
                                 <li><a href="http://www.turkishculture.org/" target="_blank">Culture</a></li>
+                                <li><a href="#top-of-page">Jump to Top</a></li>
                             </ul>
                         </div>
                 </nav>
