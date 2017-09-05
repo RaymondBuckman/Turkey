@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-//import Draggable from "gsap/Draggable";
 
 
 export default class Intro extends Component {
     render() {
         return(
         <div>
-            <div className="One">
+            <div id="top-of-page" className="One">
                 <div className="One-inner">
                     <nav className="navbar navbar-default visible-lg" data-spy="affix" role="navigation">
                         <div className="container">
