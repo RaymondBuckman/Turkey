@@ -84,6 +84,11 @@ $color-hover: color 0.3s ease-in-out;
     border-radius: 10px;
 }
 
+@mixin more-legible-paragraph{
+    background: rgba(0,0,0,0.6);
+    border-radius: 10px;
+}
+
 
 @mixin occasional-blur{
     animation: occasional-blur 6s infinite;
@@ -1197,7 +1202,7 @@ h2, p, a{
 
 .Fifteen{
     position: relative;
-    height: 170vh;
+    height: 180vh;
     background: url("img/cuisine-2.jpg") $nrf 50% 50%;
     background-size: cover;
     
@@ -1215,13 +1220,6 @@ h2, p, a{
         font-size: 5em;            
     }
     
-    h1:nth-child(3){
-        position: relative;
-        top: 65vh;
-        color: $white;
-        font-size: 3em;            
-    }
-    
     #cuisine{
         position: relative;
         top: 10vh;
@@ -1229,12 +1227,41 @@ h2, p, a{
         font-size: 2em;
     }
     
-    #doner{
+    #meze{
         position: relative;
-        top: -30vh;
+        top: 55vh;
         color: $white;
         font-size: 3em;            
     }
+    
+    #meze-desc{
+        position: relative;
+        top: 55vh;
+        color: $white;
+        font-size: 1.5em;
+        padding: 10px;
+        @include more-legible-paragraph;
+    }   
+    
+    #doner{
+        position: relative;
+        top: -40vh;
+        color: $white;
+        font-size: 3em;            
+    }
+    
+    #doner-desc{
+        position: relative;
+        top: -40vh;
+        color: $white;
+        font-size: 1.5em;
+        padding: 10px;
+        @include more-legible-paragraph;
+    }
+}
+
+#Fifteen > div.container{
+    height: 0vh;
 }
 
 .Sixteen {
@@ -1248,7 +1275,9 @@ h2, p, a{
     
     .flex-container {
         position: relative;
-        padding: 30px;
+        top: -5vh;
+        width: 100vw;
+        padding: 0px 30px 30px 30px;
         margin: 0;
         list-style: none;
         overflow: hidden;
@@ -1357,46 +1386,82 @@ h2, p, a{
         background-size: cover;
     }
     
-    h1:nth-child(1){
+    #delight{
         position: relative;
-        top: 65vh;
-        color: $turquoise;
+        top: 55vh;
+        color: $white;
         font-size: 3em;            
+    }
+    
+    #delight-desc{
+        position: relative;
+        top: 55vh;
+        color: $white;
+        font-size: 1.5em;
+        padding: 10px;
+        @include more-legible-paragraph;
     }
     
     #dolma{
         position: relative;
-        top: -30vh;
+        top: -40vh;
         color: $white;
         font-size: 3em;            
+    }
+    
+    #dolma-desc{
+        position: relative;
+        top: -40vh;
+        color: $white;
+        font-size: 1.5em;
+        padding: 10px;
+        @include more-legible-paragraph;
     }
 }
 
 .Eighteen{
     position: relative;
-    height: 170vh;
+    height: 180vh;
     background: url("img/cuisine-9.jpg") $nrf 50% 50%;
     background-size: cover;
     
     .Eighteen-inner{
         position: relative;
-        height: 170vh;
+        height: 180vh;
         background: url("img/cuisine-8.jpg") $nrf 50% 50%;
         background-size: cover;
     }
     
-    h1:nth-child(1){
+    #simit{
         position: relative;
-        top: 65vh;
+        top: 55vh;
         color: $white;
         font-size: 3em;            
     }
     
+    #simit-desc{
+        position: relative;
+        top: 55vh;
+        color: $white;
+        font-size: 1.5em;   
+        padding: 10px;
+        @include more-legible-paragraph;
+    }
+    
     #kokorec{
         position: relative;
-        top: -30vh;
+        top: -40vh;
         color: $white;
         font-size: 3em;            
+    }
+    
+    #kokorec-desc{
+        position: relative;
+        top: -40vh;
+        color: $white;
+        font-size: 1.5em;
+        padding: 10px;
+        @include more-legible-paragraph;
     }
 }
 
@@ -1411,7 +1476,9 @@ h2, p, a{
     
     .flex-container {
         position: relative;
-        padding: 30px;
+        top: -10vh;
+        width: 100vw;
+        padding: 0px 30px 0px 30px;
         margin: 0;
         list-style: none;
         overflow: hidden;

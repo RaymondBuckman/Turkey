@@ -54,7 +54,7 @@ $(window).scroll(function(){
         $('.One-inner').css({
             //'background-position':  '50% ' + (50 - wScroll/10) + '%',
             'filter': 'grayscale(' + (wScroll/1.5) + '%',
-            'opacity': 1 - Math.pow((wScroll/200), 4)
+            'opacity': 1 - Math.pow((wScroll/300), 4)
         })
         
         $('.One').css({
@@ -150,19 +150,19 @@ $(window).scroll(function(){
         })
         
         $('.Seventeen-inner').css({
-            'opacity': 1 - Math.pow((wScroll/18800),400)
+            'opacity': 1 - Math.pow((wScroll/19000),400)
         })
         
         $('.Eighteen-inner').css({
-            'opacity': 1 - Math.pow((wScroll/20100),400)
+            'opacity': 1 - Math.pow((wScroll/20400),400)
         })
         
         $('.Eighteen').css({
-            'opacity': 1 - Math.pow((wScroll/21000),400)
+            'opacity': 1 - Math.pow((wScroll/21200),400)
         })
         
         $('.Twenty-one').css({
-            'opacity': 1 - Math.pow((wScroll/23400),400)
+            'opacity': 1 - Math.pow((wScroll/23700),400)
         })
     }
 })

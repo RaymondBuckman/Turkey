@@ -31,6 +31,24 @@ const titles = [
     (<h1 className="carousel-title"> Questions </h1>),
     (<h1 className="carousel-title"> Numbers </h1>),
 ];
+     
+const captions = [
+    "The pronounciation in Turkish is fairly straightforward.  Most letters are pronounced like their English counterparts. The main differences are the 'ç' & 'ş', which are pronounced like 'ch' & 'sh', respectively. Also the letter 'c' is pronounced like the English  'j'. Also there's 'ı', which looks like an i without the dot.  It's pronounced like 'uh',  or the German 'ö'. The last new letter is ğ. It's completely silent & never shows up at the beginning  of a word.",
+     
+    "There are two groups of vowels in Turkish: the undotted A vowels (A I O U) and the dotted e vowels (E İ Ö Ü). Many Turkish suffixes that are added on to words  have vowels that fall in one of these groups. For example in Turkish to make something plural, you either have add the suffix 'lar' or 'ler' depending on the last vowel in the word. If the last vowel is an undotted A vowel, the plural suffix is 'lar'. For example the word 'at', which means horse, turns into 'atlar' when pluralized. If the last vowel is a dotted E vowel, you use the 'ler' suffix (i.e. 'ev', which means house, becomes 'evler' in plural form). Choosing between these two categories is called 2-way vowel harmony. There's also 4-way vowel harmony, but that will be  discussed later.",
+     
+    "There are six personal pronouns in Turkish: Ben - I, Sen - You, O - he/she/it, Biz - We, Siz - You(plural/formal), Onlar - they. These are their forms as the subject (or 'önze') of the sentence. Unlike romance languages there isn't any gender in Turkish, so only 'O' replaces the English 3rd person singular words he & she. Also, like Spanish, these personal pronounces (in subject form) can be dropped in many cases. View the chart above to view their forms as the obect (nesne), possessive form (sahiplik), reflexive form(yansima) and interest form (ilgi).",
+     
+    "Here are some useful adjectives (as well as adverbs) to know in Turkish. Keep in mind that in Turkish the adjective comes before the 'a' instead of after like in English. For example, in the English phrase 'a blue car', the adjective 'blue' comes after the word 'a'. In the Turkish equivalent 'mavi bir araba', the word for blue 'mavi' comes before the word for a 'bir. Literally, it's 'blue a car' instead of 'a blue car'. Obviously this takes some getting used to.",
+     
+    "The accusative case is used when a subject is applying an action to an object. The suffix for the accussative tense is (y)İ, the 'y' being only for words ending in a vowel & the İ representing the vowel harmony letter. This is where 4-way vowel harmony comes in. In the simplest possible terms, if the last vowel ends in an i or e, it becomes i. Likewise ı or a becomes ı,  u or o becomes u, and ü or ö becomes ü. For example in the sentence 'Sen çorbayı içiyorsun' (which means 'You're drinking the soup'), the words for soup 'çorba' gets a yı suffix because 'soup' is the direct object. In the sentence 'İstanbul'u seviyorlar' ('They love Istanbul' in English), İstanbul receives a u suffix because its last vowel is a u. This takes a lot of practice & it some cases the last constanent will change too." ,
+     
+    "Unfortunately, memorizing the possessive (sahiplik) column in the chart several slides ago isn't enough to express ownership in Turkish. The object being possessed also needs a suffix. In the example above, you can see the different forms of the word 'ev' (house) depending on whose house it is. 'My house' would be 'Benim evim' (or just 'evim' for short). For a more complex example, the word for orange (the fruit) is 'portakal'. If you wanted to say 'our oranges', you'd say 'bizim portakallarız' (or 'portakallarız'). Broken down, it's portakal + lar (plural 2-way vowel harmony) + ız (possessive 4-way vowel harmony). You can imagine how complicated this can get with 5 or more suffixes added on.",
+     
+    "Some useful question words for beginners.",
+     
+    "Although the vocabulary is different, the way numbers combine grammatically to form larger numbers is identical to English.",
+];
 
 export default class Language extends Component {
     constructor(props) {
@@ -55,7 +73,7 @@ export default class Language extends Component {
                     <li className="flex-item">
                         <h1>Türk Dili</h1>
                         <h2>The Turkish Language</h2>
-                        <p>By now you've probably noticed some foreign words with odd looking characters. This is the Turkish language. Linguistically, Turkish is unrelated to English, Spanish, or any romance or germanic language. It has an SOV sentence structure (subjuct -> object -> verb), & is highly agglutinative, meaning that numerous suffixes are added on to words to expand their meaning. The longest word in Turkish has 70 letters with more than 10 suffixes! Dont' worry though...being fluent isn't required for tourists as English is fairly widely spoken in the tourist areas, but some knowledge is still required to get by. Let's get into it!</p>
+                        <p>By now you've probably noticed some foreign words with odd looking characters. This is the Turkish language. Linguistically, Turkish is unrelated to English, Spanish, or any romance or germanic language. It has an SOV sentence structure (subjuct -> object -> verb), & is highly agglutinative, meaning that numerous suffixes are added on to words to expand their meaning. The longest word in Turkish has 70 letters with more than 10 suffixes! Don't worry though...words like this aren't used in daily speech & being fluent isn't required for tourists as English is fairly widely spoken in the tourist areas. Still, knowing a little Turkish goes a long way. Let's get into it!</p>
                     </li>
                     <li className="flex-item"></li>
                     <li className="flex-item">
@@ -155,6 +173,7 @@ export default class Language extends Component {
                         })}
                         
                         imageTitle={titles[this.state.photoIndex]}
+                        imageCaption={captions[this.state.photoIndex]}
                     />
                 }
             </div>

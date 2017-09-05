@@ -9,12 +9,18 @@ export default class Cuisine extends Component {
                 <div className="Fifteen-inner">            
                     <div className="container">
                         <h1 id="mutfak" className="text-center">Mutfak</h1>
-                        <h2 id="cuisine" className="text-center">Cuisine</h2> 
-                        <h1 className="text-right">Turkish Meze</h1>
+                        <h2 id="cuisine" className="text-center">Cuisine</h2>
+                        <div className="col-lg-6 col-lg-offset-6">
+                            <h1 id="meze" className="text-right">Turkish Meze</h1>
+                            <p id="meze-desc">The poster boy of Turkish cuisine, the döner kebab is a world-famous Turkish kebab usually consisting of lamb cooked on a vertical rotisserie.</p>
+                        </div>
                     </div>
                 </div>
                 <div className="container">
-                    <h1 id="doner" className="text-left">Döner Kebab</h1>
+                    <div className="col-lg-6 text-left">
+                        <h1 id="doner">Döner Kebab</h1>
+                        <p id="doner-desc">The poster boy of Turkish cuisine, the döner kebab is a world-famous Turkish kebab usually consisting of lamb cooked on a vertical rotisserie.</p>
+                    </div>
                 </div>
             </div>
             <div className="Sixteen">
@@ -38,21 +44,36 @@ export default class Cuisine extends Component {
             <div className="Seventeen">            
                 <div className="Seventeen-inner">            
                     <div className="container"> 
-                        <h1 className="text-right">Turkish Delight</h1>
+                        <div className="col-lg-6 col-lg-offset-6 text-right"> 
+                            <h1 id="delight">Turkish Delight</h1>   
+                            <p id="delight-desc">Turkish delight, or 'lokum' in Turkish, is a variety of desserts made from sugar and gel. You can find a plethora of different flavors including pistachio, walnut & cinnamon.</p>
+                        </div>
                     </div>
                 </div>
                 <div className="container">
-                    <h1 id="dolma" className="text-left">Dolma</h1>
+                    <div className="col-lg-6 text-left">
+                        <h1 id="dolma">Dolma</h1>
+                        <p id="dolma-desc">Dolma is a family of stuffed vegetable dishes that can be found all over the Balkans, Middle East, & Central Asia. Common vegetables to stuff include tomato, pepper, onion, zucchini, eggplant, and garlic.</p>
+                    </div>
+                </div>
+                <div className="container">   
+                    
                 </div>
             </div>
             <div className="Eighteen">            
                 <div className="Eighteen-inner">            
                     <div className="container"> 
-                        <h1 className="text-right">Simit</h1>
+                        <div className="col-lg-6 col-lg-offset-6 text-right"> 
+                            <h1 id="simit">Simit</h1>   
+                            <p id="simit-desc">Simit is a circular bread with sesame seeds & is the Turkish equivalent of a bagel. Its texture, size, & sweetness varies by region.</p>
+                        </div>
                     </div>
                 </div>
                 <div className="container">
-                    <h1 id="kokorec" className="text-left">Kokoreç</h1>
+                    <div className="col-lg-6 text-left">
+                        <h1 id="kokorec">Kokoreç</h1>
+                        <p id="kokorec-desc">Kokoreç is a dish consisting of lamb or goat intestines wrapped around either seasoned meat or bread. In Turkey it's served mostly as fast-food.</p>
+                    </div>
                 </div>
             </div>
         </div>
