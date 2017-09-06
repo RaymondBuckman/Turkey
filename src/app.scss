@@ -678,14 +678,24 @@ h2, p, a{
         position: relative;
         top: 10vh;
         color: $white;
-        font-size: 5em;            
+        font-size: 5em;
+        opacity: 0;
+        transform: rotate(-10deg);
+        transition: all 0.5s ease-in-out;    
     }
     
     #cities{
         position: relative;
         top: 10vh;
         color: $turquoise;
-        font-size: 2em;            
+        font-size: 2em;
+        opacity: 0;
+        transform: rotate(10deg);
+        transition: all 0.5s ease-in-out;    
+    }
+    
+    #sehirler.fade-in, #cities.fade-in{
+        @include scrollmagic-header-finish;
     }
     
     #istanbul{
@@ -846,21 +856,30 @@ h2, p, a{
         &:nth-child(1){
             height: 200px;
             width: 100%;
-            filter: grayscale(0%);
             
-            h1{
+            #manzaralar{
                 position: relative;
                 top: 50px;
                 color: $red;
                 font-size: 5em;
+                opacity: 0;
+                transform: rotate(-10deg);
+                transition: all 0.5s ease-in-out;
             }
             
-            h2{
+            #sights{
                 position: relative;
                 top: 80px;
                 color: $turquoise;
                 font-size: 3em;
-            }            
+                opacity: 0;
+                transform: rotate(10deg);
+                transition: all 0.5s ease-in-out;    
+            }
+    
+            #manzaralar.fade-in, #sights.fade-in{
+                @include scrollmagic-header-finish;
+            }
         }
         
         &:nth-child(2){
@@ -1015,7 +1034,24 @@ h2, p, a{
         position: relative;
         top: 10vh;
         color: $white;
-        font-size: 5em;            
+        font-size: 5em; 
+        opacity: 0;
+        transform: rotate(10deg);
+        transition: all 0.5s ease-in-out;   
+    }
+    
+    #hotels{
+        position: relative;
+        top: 10vh;
+        color: $turquoise;
+        font-size: 2em;
+        opacity: 0;
+        transform: rotate(10deg);
+        transition: all 0.5s ease-in-out;    
+    }
+    
+    #oteleler.fade-in, #hotels.fade-in{
+        @include scrollmagic-header-finish;
     }
     
     h1:nth-child(3){
@@ -1025,12 +1061,6 @@ h2, p, a{
         font-size: 3em;            
     }
     
-    #hotels{
-        position: relative;
-        top: 10vh;
-        color: $turquoise;
-        font-size: 2em;
-    }
     
     #raffles-pool{
         position: relative;
@@ -1236,7 +1266,10 @@ h2, p, a{
         position: relative;
         top: 10vh;
         color: $white;
-        font-size: 5em;            
+        font-size: 5em;  
+        opacity: 0;
+        transform: rotate(-10deg);
+        transition: all 0.5s ease-in-out; 
     }
     
     #cuisine{
@@ -1244,6 +1277,13 @@ h2, p, a{
         top: 10vh;
         color: $turquoise;
         font-size: 2em;
+        opacity: 0;
+        transform: rotate(10deg);
+        transition: all 0.5s ease-in-out;    
+    }
+    
+    #mutfak.fade-in, #cuisine.fade-in{
+        @include scrollmagic-header-finish;
     }
     
     #meze{
@@ -1530,18 +1570,28 @@ h2, p, a{
             border-radius: 80px;
             transition: all 0.3s ease-in-out;
             
-            h1{
+            #dili{
                 top: 30px;
                 font-size: 2.5em;
                 font-weight: 700;
                 color: $red;
+                opacity: 0;
+                transform: rotate(-5deg);
+                transition: all 0.5s ease-in-out;
             }
             
-            h2{
+            #language{
                 position: relative;
                 top: 20px;
                 font-size: 1.5em;
                 color: $turquoise;
+                opacity: 0;
+                transform: rotate(5deg);
+                transition: all 0.5s ease-in-out;    
+            }
+    
+            #dili.fade-in, #language.fade-in{
+                @include scrollmagic-header-finish;
             }
             
             p{
@@ -1603,14 +1653,24 @@ h2, p, a{
         position: relative;
         top: 10vh;
         color: $white;
-        font-size: 5em;            
+        font-size: 5em;
+        opacity: 0;
+        transform: rotate(-5deg);
+        transition: all 0.5s ease-in-out;
     }
     
     #alphabet{
         position: relative;
         top: 10vh;
         color: $red;
-        font-size: 3em;            
+        font-size: 3em;
+        opacity: 0;
+        transform: rotate(5deg);
+        transition: all 0.5s ease-in-out;    
+    }
+    
+    #alfabe.fade-in, #alphabet.fade-in{
+        @include scrollmagic-header-finish;
     }
     
     h2:nth-child(3){
@@ -1620,8 +1680,7 @@ h2, p, a{
         font-size: 1.5em;
     }
     
-    a{
-        
+    a{ 
         text-decoration: none;
         color: $red;
         font-size: 1em;
@@ -1644,14 +1703,24 @@ h2, p, a{
         position: relative;
         top: 10vh;
         color: $white;
-        font-size: 5em;            
+        font-size: 5em;
+        opacity: 0;
+        transform: rotate(-10deg);
+        transition: all 0.5s ease-in-out;
     }
     
     #phrases{
         position: relative;
         top: 10vh;
         color: $turquoise;
-        font-size: 3em;            
+        font-size: 3em;
+        opacity: 0;
+        transform: rotate(10deg);
+        transition: all 0.5s ease-in-out;    
+    }
+    
+    #cumleler.fade-in, #phrases.fade-in{
+        @include scrollmagic-header-finish;
     }
     
     h2:nth-child(3){
@@ -1726,19 +1795,29 @@ h2, p, a{
             width: 100%;
             filter: grayscale(0%);
             
-            h1{
+            #konular{
                 position: relative;
                 top: 50px;
                 color: $red;
                 font-size: 5em;
+                opacity: 0;
+                transform: rotate(-10deg);
+                transition: all 0.5s ease-in-out;
             }
             
-            h2{
+            #topics{
                 position: relative;
                 top: 80px;
                 color: $turquoise;
                 font-size: 3em;
-            }            
+                opacity: 0;
+                transform: rotate(10deg);
+                transition: all 0.5s ease-in-out;    
+            }
+    
+            #konular.fade-in, #topics.fade-in{
+                @include scrollmagic-header-finish;
+            }
         }
         
         &:nth-child(2){
@@ -1797,18 +1876,28 @@ h2, p, a{
     background: url("./img/istanbul-3.jpg") $nrf center;
     background-size: cover;
     
-    h1{
+    #yolculuk{
         position: relative;
         top: 10vh;
         color: $white;
         font-size: 5em;
+        opacity: 0;
+        transform: rotate(-5deg);
+        transition:  all 0.5s ease-in-out;
     }
     
-    h2{
+    #voyage{
         position: relative;
         top: 10vh;
         color: $turquoise;
         font-size: 3em;
+        opacity: 0;
+        transform: rotate(5deg);
+        transition: all 0.5s ease-in-out;    
+    }
+            
+    #yolculuk.fade-in, #voyage.fade-in{
+        @include scrollmagic-header-finish;
     }
     
     .navbar{
@@ -1859,64 +1948,6 @@ h2, p, a{
              background: transparent;
         }
 }
-
-.Twenty-four {
-    position: relative;
-    top: 0vh;
-    height: auto;
-    background: url("./img/white-2.png") $nrf center;
-    background-size: cover;
-    font-size: large;
-    z-index: 19;
-    
-    .flex-container {
-        position: relative;
-        padding: 20px;
-        margin: 0;
-        list-style: none;
-        overflow: hidden;
-
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-
-        -webkit-flex-flow: row wrap;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    .flex-item{
-        padding: 5px;
-        height: 5vh;
-        width: 300px;
-        margin: 10px 0px;
-  
-        line-height: 30px;
-        font-family: $main-font, Arial, Helvetica, serif;
-        //font-size: 3em;
-        text-align: center;
-        @include border-radius;
-        
-        &:nth-child(n){
-            border-radius: 80px;
-            transition: all 0.3s ease-in-out;
-            
-            h2{
-                position: relative;
-                font-size: 1.5em;
-                color: $red;
-            }
-            
-            &:hover{
-                    background: black;
-                }
-        }
-    }
-}
-
-
 
 .image___2FLq2, .inner___1rfRQ {
     background: rgba(0,0,0,0)
