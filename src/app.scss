@@ -1036,7 +1036,7 @@ h2, p, a{
         color: $white;
         font-size: 5em; 
         opacity: 0;
-        transform: rotate(10deg);
+        transform: rotate(-10deg);
         transition: all 0.5s ease-in-out;   
     }
     
@@ -1369,19 +1369,30 @@ h2, p, a{
             border-radius: 80px;
             transition: all 0.3s ease-in-out;
             
-            h1{
+            #yemegi{
                 top: 30px;
                 font-size: 2.5em;
                 font-weight: 700;
                 color: $red;
+                opacity: 0;
+                transform: rotate(-5deg);
+                transition: all 0.5s ease-in-out;
             }
             
-            h2{
+            #food{
                 position: relative;
                 top: 20px;
                 font-size: 1.5em;
                 color: $turquoise;
+                opacity: 0;
+                transform: rotate(5deg);
+                transition: all 0.5s ease-in-out;    
             }
+    
+            #yemegi.fade-in, #food.fade-in{
+                @include scrollmagic-header-finish;
+            }
+    
             
             p{
                 position: relative;
