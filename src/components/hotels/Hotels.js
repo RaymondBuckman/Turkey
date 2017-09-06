@@ -31,28 +31,28 @@ export default class Hotels extends Component {
             
             <div className="Fourteen">
                 <ul className="flex-container">
-                    <li className="flex-item">
+                    <li className="flex-item scrollmagic">
                         <h2>İstanbul Hotels</h2>
                     </li>
-                    <li className="flex-item">
+                    <li className="flex-item scrollmagic">
                         <h2>İzmir Hotels</h2>
                     </li>
-                    <li className="flex-item">
+                    <li className="flex-item scrollmagic">
                         <h2>Antalya Hotels</h2>
                     </li>
-                    <li className="flex-item">
+                    <li className="flex-item scrollmagic">
                         <h2>Ankara Hotels</h2>
                     </li>
-                    <li className="flex-item">
+                    <li className="flex-item scrollmagic">
                         <h2>Cappadocia Hotels</h2>
                     </li>
-                    <li className="flex-item">
+                    <li className="flex-item scrollmagic">
                         <h2>Trabzon Hotels</h2>
                     </li>
-                    <li className="flex-item">
+                    <li className="flex-item scrollmagic">
                         <h2>Bursa Hotels</h2>
                     </li>
-                    <li className="flex-item">
+                    <li className="flex-item scrollmagic">
                         <h2>Konya Hotels</h2>
                     </li>
                 </ul>           

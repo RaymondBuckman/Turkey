@@ -431,11 +431,22 @@ $(document).ready(function(){
     })
     .addTo(controller);
     
+    /*----- div animations -----*/
     
-    
-    
-    
-    
+    $('.scrollmagic').each(function(){
+        var divScene = new ScrollMagic.Scene({
+            triggerElement: this,
+            triggerHook: 0.8,
+            reverse: false
+        })
+        .setClassToggle(this, 'horizontal-fade')
+        .addIndicators({
+            name: 'horizontal fade',
+            colorTrigger: 'yellow',
+            colorStart: '#75C695'
+        })
+        .addTo(controller);
+    })   
     
     var hosGeldiniz = $('#hos-geldiniz');
     var welcome = $('#welcome');
@@ -509,35 +520,36 @@ $(window).scroll(function(){
         })
         
         $('.Fourteen > .flex-container > .flex-item:nth-child(1)').on('click', function(){
-           window.location = "https://www.trivago.com/istanbul-32123/hotel"; 
+            window.location = "https://www.trivago.com/istanbul-32123/hotel"; 
         });
         
         $('.Fourteen > .flex-container > .flex-item:nth-child(2)').on('click', function(){
-           window.location = "https://www.trivago.com/izmir-32103/hotel"; 
+            window.location = "https://www.trivago.com/izmir-32103/hotel"; 
         });
         
         $('.Fourteen > .flex-container > .flex-item:nth-child(3)').on('click', function(){
-           window.location = "https://www.trivago.com/antalya-32134/hotel"; 
+            window.location = "https://www.trivago.com/antalya-32134/hotel"; 
         });
         
         $('.Fourteen > .flex-container > .flex-item:nth-child(4)').on('click', function(){
-           window.location = "https://www.trivago.com/ankara-32205/hotel"; 
+            window.location = "https://www.trivago.com/ankara-32205/hotel"; 
         });
         
         $('.Fourteen .flex-item:nth-child(5)').on('click', function(){
-           window.location = "https://www.trivago.com/nevsehir-509044/hotel"; 
+            window.location = "https://www.trivago.com/nevsehir-509044/hotel"; 
         });
         
         $('.Fourteen .flex-item:nth-child(6)').on('click', function(){
-           window.location = "https://www.trivago.com/trabzon-32190/hotel/novotel-trabzon-950093"; 
+            window.location = "https://www.trivago.com/trabzon-32190/hotel/novotel-trabzon-950093"; 
         });
         
         $('.Fourteen .flex-item:nth-child(7)').on('click', function(){
-           window.location = "https://www.trivago.com/bursa-509192/hotel"; 
+            window.location = "https://www.trivago.com/bursa-509192/hotel";
         });
         
         $('.Fourteen .flex-item:nth-child(8)').on('click', function(){
-           window.location = "https://www.trivago.com/konya-509022/hotel"; 
+            window.location = ("https://www.trivago.com/konya-509022/hotel");
+            
         });
         
         $('.Fifteen-inner').css({

@@ -833,7 +833,6 @@ h2, p, a{
         border-top: transparent 4px solid;
         border-bottom: transparent 4px solid;
         text-align: center;
-        filter: grayscale(50%);
         transition: all 0.3s ease-in;
             
         h2{
@@ -844,11 +843,13 @@ h2, p, a{
         }
         
         &:nth-child(even){
+            filter: grayscale(50%);
             -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
             clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
         }
         
         &:nth-child(2n+3){
+            filter: grayscale(50%);
             -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
             clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
         }
@@ -856,6 +857,7 @@ h2, p, a{
         &:nth-child(1){
             height: 200px;
             width: 100%;
+            
             
             #manzaralar{
                 position: relative;
@@ -2017,6 +2019,16 @@ h2, p, a{
 .captionContent___30kw2{
     margin: 0vh 10vw 50px 10vw;
     @include secondary-font;
+}
+
+.scrollmagic{
+    opacity: 0;
+    transform: translateY(25px);
+}
+
+.horizontal-fade{
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 

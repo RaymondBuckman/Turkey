@@ -107,7 +107,7 @@ export default class Geography extends Component {
                     <div className="container">
                             <h1 id="merkezi" className="text-center">Dünyanın merkezi</h1>
                             <h2 id="center" className="text-center">The Center of the World</h2>
-                            <p id="ranging" className="col-xs-12 text-center">Ranging from the Southeastern Balkans to the mountainous southern Caucasus in the east, Turkey sits at the junction of Europe & Asia. Turkey is both geographically & history the center of the world. You'll find its fog-covered economic & historical center Istanbul in the Northwest, Antalya & its California-like surroundings in the Southwest, the mountainous Black Sea Region in the NorthEast with scenery resembling Lord of the Rings, &  the Kurdish region bordering Iran to the Southeast. In the center rests the capital Ankara along with the incredible & other-worldly Cappadocia region to the South. No other country on Earth is a geographically blessed as Turkey.</p>  
+                            <p id="ranging" className="col-xs-12 text-center">Ranging from the Southeastern Balkans to the mountainous southern Caucasus in the east, Turkey sits at the junction of Europe & Asia. Turkey is both geographically & historically the center of the world. You'll find its fog-covered economic & historical center Istanbul in the Northwest, Antalya & its California-like surroundings in the Southwest, the mountainous Black Sea Region in the NorthEast with scenery resembling Lord of the Rings, &  the Kurdish region bordering Iran to the Southeast. In the center rests the capital Ankara along with the incredible & other-worldly Cappadocia region to the South.</p>  
                     </div>        
                 </div>
                 <h1 id="ataturk" className="text-right">Mustafa Kemal Atatürk</h1>
@@ -119,49 +119,49 @@ export default class Geography extends Component {
                         <h1 id="bolgeleri">Türkiye'nın Bölgeleri</h1>
                         <h2 id="regions">Regions of Turkey</h2>
                     </li>
-                    <li className="flex-item" 
+                    <li className="flex-item scrollmagic" 
                     onClick={() => this.setState({photoIndex:0, isOpen: true })}>
                         <div className="map"></div>
                         <h1>Marmara Bölgesi</h1>
                         <h2>Marmara region</h2>
                     </li>
-                    <li className="flex-item" 
+                    <li className="flex-item scrollmagic" 
                     onClick={() => this.setState({photoIndex:2, isOpen: true })}>
                         <div className="map"></div>
                         <h1>Ege Bölgesi</h1>
                         <h2>Aegean region</h2>
                     </li>
-                    <li className="flex-item" 
+                    <li className="flex-item scrollmagic" 
                     onClick={() => this.setState({photoIndex:4, isOpen: true })}>
                         <div className="map"></div>
                         <h1>Akdeniz Bölgesi</h1>
                         <h2>Mediterranean region</h2>
                     </li>
-                    <li className="flex-item" 
+                    <li className="flex-item scrollmagic" 
                     onClick={() => this.setState({photoIndex:6, isOpen: true })}>
                         <div className="map"></div>
                         <h1>İç Anadolu Bölgesi</h1>
                         <h2>Central Anatolia region</h2>
                     </li>
-                    <li className="flex-item" 
+                    <li className="flex-item scrollmagic" 
                     onClick={() => this.setState({photoIndex:8, isOpen: true })}>
                         <div className="map"></div>
                         <h1>Karadeniz Bölgesi</h1>
                         <h2>Black sea region</h2>
                     </li>
-                    <li className="flex-item" 
+                    <li className="flex-item scrollmagic" 
                     onClick={() => this.setState({photoIndex:10, isOpen: true })}>
                         <div className="map"></div>
                         <h1>Doğu Anadolu Bölgesi</h1>
                         <h2>Eastern Anatolia Region</h2>
                     </li>
-                    <li className="flex-item" 
+                    <li className="flex-item scrollmagic" 
                     onClick={() => this.setState({photoIndex:12, isOpen: true })}>
                         <div className="map"></div>
                         <h1>Güney Doğu Anadolu Bölgesi</h1>
                         <h2>Southeastern Anatolia region</h2>
                     </li>
-                    <li className="flex-item" 
+                    <li className="flex-item scrollmagic" 
                     onClick={() => this.setState({photoIndex:13, isOpen: true })}>
                         <h1>Eğlenceli gerçek</h1>
                         <h2>Fun Fact</h2>
