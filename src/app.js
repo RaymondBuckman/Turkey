@@ -263,6 +263,34 @@ $(document).ready(function(){
     })
     .addTo(controller);
     
+    var yemegiScene = new ScrollMagic.Scene({
+        triggerElement: '#yemegi',
+        triggerHook: 0.7,
+        reverse: false
+    })
+    
+    .setClassToggle('#yemegi', 'fade-in')
+    .addIndicators({
+        name: 'fade scene',
+        colorTrigger: 'black',
+        colorStart: '#75C695'
+    })
+    .addTo(controller);
+    
+    var foodScene = new ScrollMagic.Scene({
+        triggerElement: '#food',
+        triggerHook: 0.7,
+        reverse: false
+    })
+    
+    .setClassToggle('#food', 'fade-in')
+    .addIndicators({
+        name: 'fade scene',
+        colorTrigger: 'black',
+        colorStart: '#75C695'
+    })
+    .addTo(controller);
+    
     var diliScene = new ScrollMagic.Scene({
         triggerElement: '#dili',
         triggerHook: 0.7,
