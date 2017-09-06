@@ -156,13 +156,6 @@ $(document).ready(function(){
     TweenLite.from(hosGeldiniz, 0.7, {delay: 0.5, y: -30, opacity: 0, rotation: -10});
     TweenLite.from(welcome, 0.7, {delay: 0.5, y: 30, opacity: 0, rotation: 10});
     TweenMax.staggerFrom("#top-nav li", 0.7, { ease:  Power0.easeNone, delay: 1, opacity: 0, y:25, rotation: 10}, 0.15);
-
-    /*
-    var oneInner = $('.One-inner');
-    var tl = new TimelineMax();
-
-    tl.to(oneInner, 3, {delay: 2, ease: Elastic.easeInOut.config(0.3, 0.1), opacity: 0.3, repeatDelay:2, repeat:-1, yoyo:true})
-    tl.play();*/
 });
 
 
