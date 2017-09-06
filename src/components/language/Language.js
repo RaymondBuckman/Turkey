@@ -71,8 +71,8 @@ export default class Language extends Component {
             <div className="Nineteen" id="Nineteen">
                 <ul className="flex-container">
                     <li className="flex-item">
-                        <h1>Türk Dili</h1>
-                        <h2>The Turkish Language</h2>
+                        <h1 id="dili">Türk Dili</h1>
+                        <h2 id="language">The Turkish Language</h2>
                         <p>By now you've probably noticed some foreign words with odd looking characters. This is the Turkish language. Linguistically, Turkish is unrelated to English, Spanish, or any romance or germanic language. It has an SOV sentence structure (subjuct -> object -> verb), & is highly agglutinative, meaning that numerous suffixes are added on to words to expand their meaning. The longest word in Turkish has 70 letters with more than 10 suffixes! Don't worry though...words like this aren't used in daily speech & being fluent isn't required for tourists as English is fairly widely spoken in the tourist areas. Still, knowing a little Turkish goes a long way. Let's get into it!</p>
                     </li>
                     <li className="flex-item"></li>

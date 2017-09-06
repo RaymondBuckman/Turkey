@@ -26,8 +26,8 @@ export default class Cuisine extends Component {
             <div className="Sixteen">
                 <ul className="flex-container">
                     <li className="flex-item">
-                        <h1>Türk yemeği</h1>
-                        <h2>Turkish food</h2>
+                        <h1 id="yemegi">Türk yemeği</h1>
+                        <h2 id="food">Turkish food</h2>
                         <p>They say the history of a country can be seen in its food, & Turkish food is certainly no exception. The Greeks, Persians, Arabs, & other groups have all left their mark to form what is one of the most unique yet familiar cuisines in the world. A meal in Turkey can consist of anything from kebabs with massive swaths of meat to stuffed vegetables (Dolma). Popular beverages are Turkish tea & rakı, a clear alcoholic drink from in the Balkans. Turkish delight & baklava are Turkey's most famous desserts. Dig in!</p>
                     </li>
                     <li className="flex-item">

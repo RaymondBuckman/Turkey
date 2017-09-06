@@ -274,7 +274,7 @@ export default class Sights extends Component {
                  <ul className="flex-container">
                     <li className="flex-item" >
                         <h1 id="manzaralar">Manzaralar</h1>
-                        <h2>Sights</h2>
+                        <h2 id="sights">Sights</h2>
                     </li>
                     <li className="flex-item" 
                     onClick={() => this.setState({photoIndex:0, isOpen: true,  })}>
