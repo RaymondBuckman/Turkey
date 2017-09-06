@@ -1,4 +1,12 @@
 const css = require('./app.scss');
+import {TweenMax, Power2, TimelineLite} from "gsap";
+import scrollTo from '../node_modules/gsap/ScrollToPlugin';
+import ScrollMagic from 'scrollmagic';
+import 'imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js';
+import 'imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js';
+
+
+
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -25,47 +33,159 @@ ReactDOM.render(
     document.getElementById('root')
 );
 
-$(window).scroll(function(){
+/*======================= ScrollMagic =======================*/
+$(document).ready(function(){
+    var controller = new ScrollMagic.Controller();
+    
+    var bayragiScene = new ScrollMagic.Scene({
+        triggerElement: '#bayragi',
+        triggerHook: 0.5,
+        offset: 50,
+        reverse: false
+    })
+    
+    .setClassToggle('#bayragi', 'fade-in')
+    .addIndicators({
+        name: 'fade scene',
+        colorTrigger: 'purple',
+        colorStart: '#75C695'
+    })
+    .addTo(controller);
+    
+    var flagScene = new ScrollMagic.Scene({
+        triggerElement: '#flag',
+        reverse: false
+    })
+    
+    .setClassToggle('#flag', 'fade-in')
+    .addIndicators({
+        name: 'fade scene',
+        colorTrigger: 'black',
+        colorStart: '#75C695'
+    })
+    .addTo(controller);
+    
+    var cografyaScene = new ScrollMagic.Scene({
+        triggerElement: '#cografya',
+        triggerHook: 0.5,
+        offset: 150,
+        reverse: false
+    })
+    
+    .setClassToggle('#cografya', 'fade-in')
+    .addIndicators({
+        name: 'fade scene',
+        colorTrigger: 'black',
+        colorStart: '#75C695'
+    })
+    .addTo(controller);
+    
+    var geograpghyScene = new ScrollMagic.Scene({
+        triggerElement: '#geography',
+        reverse: false
+    })
+    
+    .setClassToggle('#geography', 'fade-in')
+    .addIndicators({
+        name: 'fade scene',
+        colorTrigger: 'black',
+        colorStart: '#75C695'
+    })
+    .addTo(controller);
+    
+    var merkeziScene = new ScrollMagic.Scene({
+        triggerElement: '#merkezi',
+        triggerHook: 0.7,
+        reverse: false
+    })
+    
+    .setClassToggle('#merkezi', 'fade-in')
+    .addIndicators({
+        name: 'fade scene',
+        colorTrigger: 'black',
+        colorStart: '#75C695'
+    })
+    .addTo(controller);
+    
+    var centerScene = new ScrollMagic.Scene({
+        triggerElement: '#center',
+        triggerHook: 0.7,
+        reverse: false
+    })
+    
+    .setClassToggle('#center', 'fade-in')
+    .addIndicators({
+        name: 'fade scene',
+        colorTrigger: 'black',
+        colorStart: '#75C695'
+    })
+    .addTo(controller);
+    
+    var bolgeleriScene = new ScrollMagic.Scene({
+        triggerElement: '#bolgeleri',
+        triggerHook: 0.7,
+        reverse: false
+    })
+    
+    .setClassToggle('#bolgeleri', 'fade-in')
+    .addIndicators({
+        name: 'fade scene',
+        colorTrigger: 'black',
+        colorStart: '#75C695'
+    })
+    .addTo(controller);
+    
+    var regionsScene = new ScrollMagic.Scene({
+        triggerElement: '#regions',
+        triggerHook: 0.7,
+        reverse: false
+    })
+    
+    .setClassToggle('#regions', 'fade-in')
+    .addIndicators({
+        name: 'fade scene',
+        colorTrigger: 'black',
+        colorStart: '#75C695'
+    })
+    .addTo(controller);
+    
+    
+    
+    var hosGeldiniz = $('#hos-geldiniz');
+    var welcome = $('#welcome');
+    TweenLite.from(hosGeldiniz, 0.7, {delay: 0.5, y: -30, opacity: 0, rotation: -10});
+    TweenLite.from(welcome, 0.7, {delay: 0.5, y: 30, opacity: 0, rotation: 10});
+    TweenMax.staggerFrom("#top-nav li", 0.7, { ease:  Power0.easeNone, delay: 1, opacity: 0, y:25, rotation: 10}, 0.15);
+
+    /*
+    var oneInner = $('.One-inner');
+    var tl = new TimelineMax();
+
+    tl.to(oneInner, 3, {delay: 2, ease: Elastic.easeInOut.config(0.3, 0.1), opacity: 0.3, repeatDelay:2, repeat:-1, yoyo:true})
+    tl.play();*/
+});
+
+
+
+$(window).scroll(function(){    
     var wScroll = $(this).scrollTop();
     console.log(wScroll);
     var largeDesktop = window.matchMedia( "(min-width: 0px)" );
      
     
-    if(largeDesktop.matches){
-        /*if(wScroll > 0){
-            document.getElementById("title").innerHTML = "Welcome to Turkey!";
-        }*/
-        
-        if(wScroll > 100) {
-            $('#arrow-group > img:nth-child(1)').css({
-                'transform': 'rotateY(90deg)'
-            })
-
-            $('#arrow-group > img:nth-child(2)').css({
-                'transform': 'rotateY(90deg)'
-            })
-
-            $('#arrow-group > img:nth-child(3)').css({
-                'transform': 'rotateY(90deg)'
-            })
-        }   
-        
+    if(largeDesktop.matches){ 
         
         $('.One-inner').css({
-            //'background-position':  '50% ' + (50 - wScroll/10) + '%',
-            'filter': 'grayscale(' + (wScroll/1.5) + '%',
-            'opacity': 1 - Math.pow((wScroll/300), 4)
-        })
-        
-        $('.One').css({
-            //'background-position':  '50% ' + (50 - wScroll/10) + '%',
-            'opacity': 1 - Math.pow((wScroll/900), 8)
+            'background-position':  '50% ' + (50 + wScroll/45) + '%'
         })
         
         /*
-        $('.Two').css({
-            'opacity': Math.pow((wScroll/300),10)
-        })*/
+        if(wScroll > 300){
+            $('.One').css({
+                'background': 'transparent'
+            })
+        }
+        */
         
         $('.Three-inner').css({
             'background-position':  '50% ' + (50 + wScroll/45) + '%',

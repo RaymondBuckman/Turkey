@@ -19,46 +19,12 @@ $arrow-rotate-out: all 2.0s cubic-bezier(.37,1.01,.8,.99);
 $color-hover: color 0.3s ease-in-out;
 
 //keyframes
-@keyframes occasionalBlurOnHover{
-	20%, 52%	{-webkit-filter: blur(0px); -moz-filter: blur(0px);}
-	36%		    {-webkit-filter: blur(1.5px); -moz-filter: blur(1.5px);}
-}
 
-/*
+
 @keyframes change-background{
-	40%, 60%    {background: url("./img/maidens-tower.jpg") $nrf 50% 50%; background-size: cover;}
-    50%         {background: url('./img/turkey-flag-2.jpg') $nrs 50% 50%; background-size: cover;}
-}*/
-
-@keyframes title-change{
-    0%    {opacity: 0;}
-    2%    {content: "T"; opacity: 1;}
-    4%    {content: "Tü";}
-    6%    {content: "Tür";}
-    8%     {content: "Türk";}
-    10%    {content: "Türki";}
-    12%    {content: "Türkiy";}
-    14%    {content: "Türkiye";}
-    16%    {content: "Türkiye'";}
-    18%    {content: "Türkiye'y";}
-    20%    {content: "Türkiye'ye";}
-    22%    {content: "Türkiye'ye ";}
-    24%    {content: "Türkiye'ye h";}
-    26%    {content: "Türkiye'ye ho";}
-    28%    {content: "Türkiye'ye hoş";}
-    30%    {content: "Türkiye'ye hoşg";}
-    32%    {content: "Türkiye'ye hoşge";}
-    34%    {content: "Türkiye'ye hoşgel";}
-    36%    {content: "Türkiye'ye hoşgeld";}
-    38%    {content: "Türkiye'ye hoşgeldi";}
-    40%    {content: "Türkiye'ye hoşgeldin";}
-    42%    {content: "Türkiye'ye hoşgeldini";}
-    44%    {content: "Türkiye'ye hoşgeldiniz";}
-    46%    {content: "Türkiye'ye hoşgeldiniz!"; opacity: 1;}
-    60%    {content: "Türkiye'ye hoşgeldiniz!"; opacity: 0;}
-    75%    {content: "Welcome to Turkey!"; opacity: 0;}
-    89%,100%    {content: "Welcome to Turkey!"; opacity: 1;}
-    
+	45%     {opacity: 1;}
+    50%     {opacity: 0.8;}
+    100%     {opacity: 1;}
 }
 
 @keyframes occasional-blur{
@@ -104,6 +70,17 @@ $color-hover: color 0.3s ease-in-out;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+}
+
+@mixin scrollmagic-header-start($rotation){
+    opacity: 0;
+    transform: rotate($rotation);
+    transform : all 0.5s ease-in-out; 
+}
+
+@mixin scrollmagic-header-finish{
+    opacity: 1;
+    transform: rotate(0deg);
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -166,16 +143,18 @@ h2, p, a{
 .One{
     position: relative;
     height: 130vh;
-    background: url("./img/turkey-flag-3.jpg") $nrf 50% 50%;
+    background: url("./img/turkey-flag-1.jpg") $nrf 50% 50%;
     background-size: cover;
     z-index: 4;
-    //animation: change-background 4s infinite;
     
     .One-inner{
         position: relative;
         height: 130vh;
         background: url("./img/maidens-tower-1.jpg") $nrf 50% 50%;
         background-size: cover;
+        animation: change-background;
+        animation-duration: 10s;
+        animation-iteration-count: 1;
         
         .navbar{
             position: relative;
@@ -227,17 +206,17 @@ h2, p, a{
     }
     
         
-    #title{
+    #hos-geldiniz{
         position: relative;
         top: 65vh;
         color: $white;
         @include main-font;
         font-size: 5em;
         text-shadow: 4px 4px 2px rgba(0, 220, 232, 0.5);
-        transition: all 0.3s ease-in-out;
+        //transition: all 0.3s ease-in-out;
     }
     
-    h2{
+    #welcome{
         position: relative;
         top: 65vh;
         color: $white;
@@ -292,18 +271,28 @@ h2, p, a{
             border-radius: 80px;
             transition: all 0.3s ease-in-out;
             
-            h1{
+            #bayragi{
                 top: 30px;
                 font-size: 2.5em;
                 font-weight: 700;
                 color: $red;
+                opacity: 0;
+                transform: rotate(-5deg);
+                transition: all 0.5s ease-in-out;
             }
             
-            h2{
+            #flag{
                 position: relative;
                 top: 20px;
                 font-size: 1.5em;
                 color: $turquoise;
+                opacity: 0;
+                transform: rotate(5deg);
+                transition: all 0.5s ease-in-out;                
+            }
+            
+            #bayragi.fade-in, #flag.fade-in{
+                @include scrollmagic-header-finish;
             }
             
             p{
@@ -372,14 +361,10 @@ h2, p, a{
         position: relative;
         top: 10vh;
         color: $white;
-        font-size: 5em;            
-    }
-    
-    h1:nth-child(3){
-        position: relative;
-        top: 65vh;
-        color: $white;
-        font-size: 3em;            
+        font-size: 5em; 
+        opacity: 0;
+        transform: rotate(-10deg);
+        transition: all 0.5s ease-in-out;    
     }
     
     #geography{
@@ -387,6 +372,20 @@ h2, p, a{
         top: 10vh;
         color: $turquoise;
         font-size: 2em;
+        opacity: 0;
+        transform: rotate(10deg);
+        transition: all 0.5s ease-in-out;
+    }
+    
+    #cografya.fade-in, #geography.fade-in{
+        @include scrollmagic-header-finish;
+    }
+    
+    h1:nth-child(3){
+        position: relative;
+        top: 65vh;
+        color: $white;
+        font-size: 3em;            
     }
     
     #cappadocia{
@@ -413,11 +412,14 @@ h2, p, a{
         
     }
     
-    #dunyanin{
+    #merkezi{
         position: relative;
         top: 30vh;
         color: $white;
         font-size: 4em;
+        opacity: 0;
+        transform: rotate(-10deg);
+        transition: all 0.5s ease-in-out;
     }
     
     #center{
@@ -425,6 +427,13 @@ h2, p, a{
         top: 30vh;
         color: $turquoise;
         font-size: 2em;
+        opacity: 0;
+        transform: rotate(10deg);
+        transition: all 0.5s ease-in-out;
+    }
+    
+    #merkezi.fade-in, #center.fade-in{
+        @include scrollmagic-header-finish;
     }
     
     #ranging{
@@ -515,21 +524,31 @@ h2, p, a{
         &:nth-child(1){
             height: 200px;
             width: 100%;
-            text-align: center;
+            text-align: center; 
             
-            h1{
+            #bolgeleri{
                 position: relative;
                 top: 40px;
                 color: $white;
                 font-size: 5em;
+                opacity: 0;
+                transform: rotate(-10deg);
+                transition: all 0.5s ease-in-out;
             }
 
-            h2{
+            #regions{
                 position: relative;
                 top: 80px;
                 color: $turquoise;
                 font-size: 3em;
-            }            
+                opacity: 0;
+                transform: rotate(10deg);
+                transition: all 0.5s ease-in-out;
+            }
+
+            #bolgeleri.fade-in, #regions.fade-in{
+                @include scrollmagic-header-finish;
+            }
             
         }
         

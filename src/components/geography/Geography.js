@@ -105,7 +105,7 @@ export default class Geography extends Component {
             <div className="Four">
                 <div className="Four-inner-1">
                     <div className="container">
-                            <h1 id="dunyanin" className="text-center">Dünyanın merkezi</h1>
+                            <h1 id="merkezi" className="text-center">Dünyanın merkezi</h1>
                             <h2 id="center" className="text-center">The Center of the World</h2>
                             <p id="ranging" className="col-xs-12 text-center">Ranging from the Southeastern Balkans to the mountainous southern Caucasus in the east, Turkey sits at the junction of Europe & Asia. Turkey is both geographically & history the center of the world. You'll find its fog-covered economic & historical center Istanbul in the Northwest, Antalya & its California-like surroundings in the Southwest, the mountainous Black Sea Region in the NorthEast with scenery resembling Lord of the Rings, &  the Kurdish region bordering Iran to the Southeast. In the center rests the capital Ankara along with the incredible & other-worldly Cappadocia region to the South. No other country on Earth is a geographically blessed as Turkey.</p>  
                     </div>        
@@ -116,8 +116,8 @@ export default class Geography extends Component {
             <div className="Five">
                 <ul className="flex-container">
                     <li className="flex-item">
-                        <h1>Türkiye'nın Bölgeleri</h1>
-                        <h2>Regions of Turkey</h2>
+                        <h1 id="bolgeleri">Türkiye'nın Bölgeleri</h1>
+                        <h2 id="regions">Regions of Turkey</h2>
                     </li>
                     <li className="flex-item" 
                     onClick={() => this.setState({photoIndex:0, isOpen: true })}>
