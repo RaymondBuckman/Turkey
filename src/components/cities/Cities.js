@@ -63,9 +63,9 @@ export default class Cities extends Component {
         return(
         <div>
             <div className="Six" id="Six"> 
-                <h1 id="sehirler" className="text-center">En Büyük Şehirler</h1>
-                <h2 id="cities" className="text-center">Largest Cities</h2> 
-                <p id="istanbul-description" className="col-lg-6 col-lg-offset-6 text-right">
+                <h1 id="sehirler" className="text-center scrollmagic-header">En Büyük Şehirler</h1>
+                <h2 id="cities" className="text-center scrollmagic-header">Largest Cities</h2> 
+                <p id="istanbul-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
                     <span id="istanbul">İstanbul</span><br/>
                     Economic & Cultural Center<br/>
                     Location: Marmara<br/>
@@ -74,7 +74,7 @@ export default class Cities extends Component {
                 </p>
             </div> {/*End of Six*/}
             <div className="Seven">   
-                <p id="ankara-description" className="col-lg-6 col-lg-offset-0 text-left">
+                <p id="ankara-description" className="col-lg-6 col-lg-offset-0 text-left scrollmagic-desc">
                 <span id="ankara">Ankara</span><br/>
                                 Capital City<br/>
                                 Location: Central Anatolia<br/>
@@ -83,8 +83,7 @@ export default class Cities extends Component {
                             </p>
             </div>{/*End of Seven*/}
             <div className="Eight">            
-                    
-                        <p id="izmir-description" className="col-lg-6 col-lg-offset-6 text-right">
+                        <p id="izmir-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
                             <span id="izmir">İzmir</span><br/>
                             Crusiseline hotspot<br/>
                             Location: Aegean region<br/>
@@ -93,7 +92,7 @@ export default class Cities extends Component {
                         </p>
             </div>{/*End of Eight*/}    
             <div className="Nine">
-                    <p id="bursa-description" className="col-lg-6 col-lg-offset-0 text-left">
+                    <p id="bursa-description" className="col-lg-6 col-lg-offset-0 text-left scrollmagic-desc">
                         <span id="bursa">Bursa</span><br/>
                         ~300 Year Capital of the Ottoman Empire<br/>
                         Location: Marmara<br/>
@@ -102,7 +101,7 @@ export default class Cities extends Component {
                     </p>
             </div>{/*End of Nine*/}
             <div className="Ten">
-                <p id="konya-description" className="col-lg-6 col-lg-offset-6 text-right">
+                <p id="konya-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
                     <span id="konya">Konya</span><br/>
                     Pilgramige destination for Sufis<br/>
                     Location: Central Anatolia<br/>
