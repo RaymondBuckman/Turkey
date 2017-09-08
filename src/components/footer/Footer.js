@@ -7,10 +7,10 @@ export default class Footer extends Component {
         <div>
             <div className="Twenty-three">
                 <div className="container">
-                    <h1 id="yolculuk" className="text-left">İyi Yolculuk!</h1>
-                    <h2 id="voyage" className="text-left">Bon voyage!</h2>
+                    <h1 id="yolculuk" className="text-left scrollmagic-header">İyi Yolculuk!</h1>
+                    <h2 id="voyage" className="text-left scrollmagic-header">Bon voyage!</h2>
                 </div>
-                <nav className="navbar navbar-default visible-lg" data-spy="affix" role="navigation">
+                <nav id="bottom-nav" className="navbar navbar-default visible-lg" data-spy="affix" role="navigation">
                         <div className="container">
                             <ul className="nav navbar-nav navbar-right">
                                 <li><a href="http://www.historyworld.net/wrldhis/PlainTextHistories.asp?historyid=ac94" target="_blank">History</a></li>
