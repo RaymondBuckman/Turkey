@@ -71,8 +71,8 @@ export default class Language extends Component {
             <div className="Nineteen" id="Nineteen">
                 <ul className="flex-container">
                     <li className="flex-item">
-                        <h1 id="dili">Türk Dili</h1>
-                        <h2 id="language">The Turkish Language</h2>
+                        <h1 id="dili" className="scrollmagic-header">Türk Dili</h1>
+                        <h2 id="language" className="scrollmagic-header">The Turkish Language</h2>
                         <p>By now you've probably noticed some foreign words with odd looking characters. This is the Turkish language. Linguistically, Turkish is unrelated to English, Spanish, or any romance or germanic language. It has an SOV sentence structure (subjuct -> object -> verb), & is highly agglutinative, meaning that numerous suffixes are added on to words to expand their meaning. The longest word in Turkish has 70 letters with more than 10 suffixes! Don't worry though...words like this aren't used in daily speech & being fluent isn't required for tourists as English is fairly widely spoken in the tourist areas. Still, knowing a little Turkish goes a long way. Let's get into it!</p>
                     </li>
                     <li className="flex-item"></li>
@@ -84,9 +84,9 @@ export default class Language extends Component {
             </div>
             <div className="Twenty">            
                 <div className="container">
-                    <h1 id="alfabe" className="text-left">Alfabe</h1>
-                    <h2 id="alphabet" className="text-left">Alphabet</h2> 
-                    <h2 className="col-lg-8 col-lg-offset-4 text-right">
+                    <h1 id="alfabe" className="text-left scrollmagic-header">Alfabe</h1>
+                    <h2 id="alphabet" className="text-left scrollmagic-header">Alphabet</h2> 
+                    <h2 className="col-lg-8 col-lg-offset-4 text-right scrollmagic-desc">
                         A	B	C	Ç	D	E	F	G	Ğ	H	I	İ	J	K	L	M	N	O	Ö	P	R	S	Ş	T	U	Ü	V	Y	Z
                         <br/><br/>
                         The Turkish alphabet consists of 29 letters. There are 8 vowels (A, E, I, İ, O, Ö, U, Ü) & the rest are consonants. It was written using an Arabic script until Mustafa Kemal Atatürk (pictured) changed it to a Latin-based alphabet in 1929 as part of his reforms to modernize Turkey after the fall of the Ottoman Empire. It's highly phonetic (each letter only makes one sound) & you'll never find large numbers of consonents grouped together.
@@ -97,8 +97,8 @@ export default class Language extends Component {
             </div>
             <div className="Twenty-one">            
                 <div className="container">
-                    <h1 id="cumleler" className="text-center">Temel cümleler</h1>
-                    <h2 id="phrases" className="text-center">Basic Phrases</h2> 
+                    <h1 id="cumleler" className="text-center scrollmagic-header">Temel cümleler</h1>
+                    <h2 id="phrases" className="text-center scrollmagic-header">Basic Phrases</h2> 
                     <h2 className="col-lg-6 col-lg-offset-0 text-left">
                         Merhaba - <span>Hello</span><br/>
                         Güle güle - <span>Bye</span><br/>
@@ -121,8 +121,8 @@ export default class Language extends Component {
             <div className="Twenty-two">
                  <ul className="flex-container">
                     <li className="flex-item" >
-                        <h1 id="konular">Diğer Konular</h1>
-                        <h2 id="topics">Other Topics</h2>
+                        <h1 id="konular" className="scrollmagic-header">Diğer Konular</h1>
+                        <h2 id="topics" className="scrollmagic-header">Other Topics</h2>
                     </li>
                     <li className="flex-item scrollmagic" 
                     onClick={() => this.setState({photoIndex:0, isOpen: true,  })}>
