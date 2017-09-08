@@ -33,406 +33,67 @@ ReactDOM.render(
     document.getElementById('root')
 );
 
-/*======================= ScrollMagic =======================*/
+/*======================= Begin ScrollMagic Animations =======================*/
 
 /*----- h1/h2 rotations -----*/
 $(document).ready(function(){
+
+    var hosGeldiniz = $('#hos-geldiniz');
+    var welcome = $('#welcome');
+    
+    TweenLite.from(hosGeldiniz, 0.7, {delay: 0.5, y: -30, opacity: 0, rotation: -10});
+    
+    TweenLite.from(welcome, 0.7, {delay: 0.5, y: 30, opacity: 0, rotation: 10});
+    
+    TweenMax.staggerFrom("#top-nav li", 0.7, { ease:  Power0.easeNone, delay: 1, opacity: 0, y:25, rotation: 10}, 0.15); 
+    
     var controller = new ScrollMagic.Controller();
     
-    var bayragiScene = new ScrollMagic.Scene({
-        triggerElement: '#bayragi',
-        triggerHook: 0.5,
-        offset: 50,
+    
+    var pinTopNavScene = new ScrollMagic.Scene({
+        triggerElement: '#top-nav',
+        triggerHook: 0,
+        duration: '60%'
+    })
+    .setPin('#top-nav')
+    .addTo(controller);
+    
+    
+    var bottomNavTween = TweenMax.staggerFrom("#bottom-nav li", 0.7, { ease:  Power0.easeNone, delay: 0.3, opacity: 0, y:-25, rotation: 10}, 0.15);
+    
+    var bottomNavScene = new ScrollMagic.Scene({
+        triggerElement: '#bottom-nav',
+        triggerHook: .95,
         reverse: false
     })
     
-    .setClassToggle('#bayragi', 'fade-in')
+    .setTween(bottomNavTween)
     .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'purple',
-        colorStart: '#75C695'
+        name:"bottom-nav",
+        colorTrigger: 'green',
+        colorStart: '#FFF'
     })
     .addTo(controller);
     
-    var flagScene = new ScrollMagic.Scene({
-        triggerElement: '#flag',
-        reverse: false
-    })
+    /*----- header animations -----*/
+    $('.scrollmagic-header').each(function(){
+        var headerScene = new ScrollMagic.Scene({
+            triggerElement: this,
+            triggerHook: 0.7,
+            reverse: false
+        })
+        .setClassToggle(this, 'fade-in')
+        /*
+        .addIndicators({
+            name: 'fade scene',
+            colorTrigger: 'black',
+            colorStart: '#75C695'
+        })*/
+        .addTo(controller);
+    })   
     
-    .setClassToggle('#flag', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var cografyaScene = new ScrollMagic.Scene({
-        triggerElement: '#cografya',
-        triggerHook: 0.5,
-        offset: 150,
-        reverse: false
-    })
-    
-    .setClassToggle('#cografya', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var geograpghyScene = new ScrollMagic.Scene({
-        triggerElement: '#geography',
-        reverse: false
-    })
-    
-    .setClassToggle('#geography', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var merkeziScene = new ScrollMagic.Scene({
-        triggerElement: '#merkezi',
-        triggerHook: 0.7,
-        reverse: false
-    })
-    
-    .setClassToggle('#merkezi', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var centerScene = new ScrollMagic.Scene({
-        triggerElement: '#center',
-        triggerHook: 0.7,
-        reverse: false
-    })
-    
-    .setClassToggle('#center', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var bolgeleriScene = new ScrollMagic.Scene({
-        triggerElement: '#bolgeleri',
-        triggerHook: 0.7,
-        reverse: false
-    })
-    
-    .setClassToggle('#bolgeleri', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var regionsScene = new ScrollMagic.Scene({
-        triggerElement: '#regions',
-        triggerHook: 0.7,
-        reverse: false
-    })
-    
-    .setClassToggle('#regions', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-     var sehirlerScene = new ScrollMagic.Scene({
-        triggerElement: '#sehirler',
-        triggerHook: 0.7,
-        reverse: false
-    })
-    
-    .setClassToggle('#sehirler', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var citiesScene = new ScrollMagic.Scene({
-        triggerElement: '#cities',
-        triggerHook: 0.7,
-        reverse: false
-    })
-    
-    .setClassToggle('#cities', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var manzaralarScene = new ScrollMagic.Scene({
-        triggerElement: '#manzaralar',
-        triggerHook: 0.7,
-        reverse: false
-    })
-    
-    .setClassToggle('#manzaralar', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var sightsScene = new ScrollMagic.Scene({
-        triggerElement: '#sights',
-        triggerHook: 0.7,
-        reverse: false
-    })
-    
-    .setClassToggle('#sights', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var otelelerScene = new ScrollMagic.Scene({
-        triggerElement: '#oteleler',
-        triggerHook: 0.7,
-        reverse: false
-    })
-    
-    .setClassToggle('#oteleler', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var hotelsScene = new ScrollMagic.Scene({
-        triggerElement: '#hotels',
-        triggerHook: 0.7,
-        reverse: false
-    })
-    
-    .setClassToggle('#hotels', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var mutfakScene = new ScrollMagic.Scene({
-        triggerElement: '#mutfak',
-        triggerHook: 0.7,
-        reverse: false
-    })
-    
-    .setClassToggle('#mutfak', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var cuisineScene = new ScrollMagic.Scene({
-        triggerElement: '#cuisine',
-        triggerHook: 0.7,
-        reverse: false
-    })
-    
-    .setClassToggle('#cuisine', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var yemegiScene = new ScrollMagic.Scene({
-        triggerElement: '#yemegi',
-        triggerHook: 0.7,
-        reverse: false
-    })
-    
-    .setClassToggle('#yemegi', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var foodScene = new ScrollMagic.Scene({
-        triggerElement: '#food',
-        triggerHook: 0.7,
-        reverse: false
-    })
-    
-    .setClassToggle('#food', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var diliScene = new ScrollMagic.Scene({
-        triggerElement: '#dili',
-        triggerHook: 0.7,
-        reverse: false
-    })
-    
-    .setClassToggle('#dili', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var languageScene = new ScrollMagic.Scene({
-        triggerElement: '#language',
-        triggerHook: 0.7,
-        reverse: false
-    })
-    
-    .setClassToggle('#language', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var alfabeScene = new ScrollMagic.Scene({
-        triggerElement: '#alfabe',
-        triggerHook: 0.7,
-        reverse: false
-    })
-    
-    .setClassToggle('#alfabe', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var alphabetScene = new ScrollMagic.Scene({
-        triggerElement: '#alphabet',
-        triggerHook: 0.7,
-        reverse: false
-    })
-    
-    .setClassToggle('#alphabet', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var cumlelerScene = new ScrollMagic.Scene({
-        triggerElement: '#cumleler',
-        triggerHook: 0.7,
-        reverse: false
-    })
-    
-    .setClassToggle('#cumleler', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var phrasesScene = new ScrollMagic.Scene({
-        triggerElement: '#phrases',
-        triggerHook: 0.7,
-        reverse: false
-    })
-    
-    .setClassToggle('#phrases', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var konularScene = new ScrollMagic.Scene({
-        triggerElement: '#konular',
-        triggerHook: 0.7,
-        reverse: false
-    })
-    
-    .setClassToggle('#konular', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var topicsScene = new ScrollMagic.Scene({
-        triggerElement: '#topics',
-        triggerHook: 0.7,
-        reverse: false
-    })
-    
-    .setClassToggle('#topics', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var yolculukScene = new ScrollMagic.Scene({
-        triggerElement: '#yolculuk',
-        triggerHook: 0.7,
-        reverse: false
-    })
-    
-    .setClassToggle('#yolculuk', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
-    
-    var voyageScene = new ScrollMagic.Scene({
-        triggerElement: '#voyage',
-        triggerHook: 0.7,
-        reverse: false
-    })
-    
-    .setClassToggle('#voyage', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        colorStart: '#75C695'
-    })
-    .addTo(controller);
     
     /*----- div animations -----*/
-    
     $('.scrollmagic').each(function(){
         var divScene = new ScrollMagic.Scene({
             triggerElement: this,
@@ -440,19 +101,33 @@ $(document).ready(function(){
             reverse: false
         })
         .setClassToggle(this, 'horizontal-fade')
+        /*
         .addIndicators({
             name: 'horizontal fade',
             colorTrigger: 'yellow',
             colorStart: '#75C695'
-        })
+        })*/
         .addTo(controller);
     })   
     
-    var hosGeldiniz = $('#hos-geldiniz');
-    var welcome = $('#welcome');
-    TweenLite.from(hosGeldiniz, 0.7, {delay: 0.5, y: -30, opacity: 0, rotation: -10});
-    TweenLite.from(welcome, 0.7, {delay: 0.5, y: 30, opacity: 0, rotation: 10});
-    TweenMax.staggerFrom("#top-nav li", 0.7, { ease:  Power0.easeNone, delay: 1, opacity: 0, y:25, rotation: 10}, 0.15);
+    /*----- description animations -----*/
+    
+    $('.scrollmagic-desc').each(function(){
+        var descScene = new ScrollMagic.Scene({
+            triggerElement: this,
+            triggerHook: 0.8,
+            reverse: false
+        })
+        .setClassToggle(this, 'horizontal-fade')
+        /*
+        .addIndicators({
+            name: 'horizontal fade',
+            colorTrigger: 'yellow',
+            colorStart: '#75C695'
+        })*/
+        .addTo(controller);
+    }) 
+/*======================= End ScrollMagic Animations =======================*/
 });
 
 
