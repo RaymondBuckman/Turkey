@@ -142,7 +142,7 @@ h2, p, a{
 
 .One{
     position: relative;
-    height: 130vh;
+    height: 120vh;
     background: url("./img/turkey-flag-1.jpg") $nrf 50% 50%;
     background-size: cover;
     z-index: 4;
@@ -154,7 +154,7 @@ h2, p, a{
         background-size: cover;
         animation: change-background;
         animation-duration: 10s;
-        animation-iteration-count: 1;
+        animation-iteration-count: infinite; 
         
         .navbar{
             position: relative;
@@ -208,7 +208,7 @@ h2, p, a{
         
     #hos-geldiniz{
         position: relative;
-        top: 65vh;
+        top: 5vh; //used to be 65vh
         color: $white;
         @include main-font;
         font-size: 5em;
@@ -218,7 +218,7 @@ h2, p, a{
     
     #welcome{
         position: relative;
-        top: 65vh;
+        top: 5vh; //used to be 65vh
         color: $white;
         text-shadow: 4px 4px 2px rgba(200, 0, 0, 0.5);
         @include secondary-font;
@@ -2023,12 +2023,18 @@ h2, p, a{
 
 .scrollmagic{
     opacity: 0;
-    transform: translateY(25px);
+    transform: rotateY(45deg) translateY(15px);
+}
+
+.scrollmagic-desc{
+    opacity: 0;
+    transform: rotateY(45deg) translateY(15px);
+    transition:  all 0.5s ease-in-out;
 }
 
 .horizontal-fade{
     opacity: 1;
-    transform: translateY(0px);
+    transform: rotate(0deg) translateY(0px);
 }
 
 
