@@ -273,8 +273,8 @@ export default class Sights extends Component {
             <div className="Eleven" id="Eleven">
                  <ul className="flex-container">
                     <li className="flex-item" >
-                        <h1 id="manzaralar">Manzaralar</h1>
-                        <h2 id="sights">Sights</h2>
+                        <h1 id="manzaralar" className="scrollmagic-header">Manzaralar</h1>
+                        <h2 id="sights" className="scrollmagic-header">Sights</h2>
                     </li>
                     <li className="flex-item scrollmagic" 
                     onClick={() => this.setState({photoIndex:0, isOpen: true,  })}>
