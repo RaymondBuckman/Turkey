@@ -8,8 +8,8 @@ export default class Hotels extends Component {
             <div className="Twelve" id="Twelve">            
                 <div className="Twelve-inner">            
                     <div className="container">
-                        <h1 id="oteleler" className="text-center">Oteleler</h1>
-                        <h2 id="hotels" className="text-center">Hotels</h2> 
+                        <h1 id="oteleler" className="text-center scrollmagic-header">Oteleler</h1>
+                        <h2 id="hotels" className="text-center scrollmagic-header">Hotels</h2> 
                         <h1 className="text-right">Raffles Hotel, İstanbul</h1>
                     </div>
                 </div>
