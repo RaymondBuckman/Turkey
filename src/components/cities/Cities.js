@@ -100,7 +100,7 @@ export default class Cities extends Component {
                         Current time: <CityRow name="CityRow" UTCOffset="5"/>
                     </p>
             </div>{/*End of Nine*/}
-            <div className="Ten">
+            <div className="Ten scrollmagic-div-fadeout">
                 <p id="konya-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
                     <span id="konya">Konya</span><br/>
                     Pilgramige destination for Sufis<br/>

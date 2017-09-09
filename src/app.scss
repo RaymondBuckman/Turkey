@@ -23,7 +23,7 @@ $color-hover: color 0.3s ease-in-out;
 
 @keyframes change-background{
 	45%     {opacity: 1;}
-    50%     {opacity: 0.8;}
+    50%     {opacity: 0.85;}
     100%     {opacity: 1;}
 }
 
@@ -407,14 +407,14 @@ h2, p, a{
     .Four-inner-1{
         position: relative;
         height: 110vh;
-        background: url("./img/map-4.png") $nrs 50% 50%;
+        background: url("./img/map-5.png") $nrs 50% 50%;
         background-size: cover;
         
     }
     
     #merkezi{
         position: relative;
-        top: 30vh;
+        top: 32vh;
         color: $white;
         font-size: 4em;
         opacity: 0;
@@ -424,7 +424,7 @@ h2, p, a{
     
     #center{
         position: relative;
-        top: 30vh;
+        top: 32vh;
         color: $turquoise;
         font-size: 2em;
         opacity: 0;
@@ -464,7 +464,7 @@ h2, p, a{
 .Five{
     position: relative; 
     height: auto;
-    background: url("img/turkey-flag-4.jpg") $nrf 50% 50%;
+    background: url("img/white-2.png") $nrf 50% 50%;
     background-size: cover;
     
     .flex-container {
@@ -496,7 +496,6 @@ h2, p, a{
         border-top: transparent 4px solid;
         border-bottom: transparent 4px solid;
         text-align: center;
-        filter: grayscale(50%);
         transition: all 0.3s ease-in;
         
         h1{
@@ -529,7 +528,7 @@ h2, p, a{
             #bolgeleri{
                 position: relative;
                 top: 40px;
-                color: $white;
+                color: $red;
                 font-size: 5em;
                 opacity: 0;
                 transform: rotate(-10deg);
@@ -649,11 +648,13 @@ h2, p, a{
   
         
         &:nth-child(even){
+            filter: grayscale(50%);
             -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
             clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
         }
         
         &:nth-child(2n+3){
+            filter: grayscale(50%);
             -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
             clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
         }
@@ -2021,7 +2022,7 @@ h2, p, a{
     @include secondary-font;
 }
 
-.scrollmagic{
+.scrollmagic-chevron{
     opacity: 0;
     transform: rotateY(45deg) translateY(15px);
 }
@@ -2035,6 +2036,14 @@ h2, p, a{
 .horizontal-fade{
     opacity: 1;
     transform: rotate(0deg) translateY(0px);
+}
+
+.scrollmagic-div-fadeout{
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fadeout{
+    opacity: 0;
 }
 
 

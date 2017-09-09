@@ -90,7 +90,7 @@ export default class Geography extends Component {
         
         return(
         <div>
-            <div className="Three" id="Three">            
+            <div className="Three" id="Three">  
                 <div className="Three-inner">            
                     <div className="container">
                         <h1 id="cografya" className="text-center scrollmagic-header">Coğrafya</h1>
@@ -102,7 +102,7 @@ export default class Geography extends Component {
                     <h1 id="cappadocia" className="text-left">Cappadocia</h1>
                 </div>
             </div>
-            <div className="Four">
+            <div className="Four scrollmagic-div-fadeout">
                 <div className="Four-inner-1">
                     <div className="container">
                             <h1 id="merkezi" className="text-center scrollmagic-header">Dünyanın merkezi</h1>
@@ -119,49 +119,49 @@ export default class Geography extends Component {
                         <h1 id="bolgeleri" className="scrollmagic-header">Türkiye'nın Bölgeleri</h1>
                         <h2 id="regions" className="scrollmagic-header">Regions of Turkey</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:0, isOpen: true })}>
                         <div className="map"></div>
                         <h1>Marmara Bölgesi</h1>
                         <h2>Marmara region</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:2, isOpen: true })}>
                         <div className="map"></div>
                         <h1>Ege Bölgesi</h1>
                         <h2>Aegean region</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:4, isOpen: true })}>
                         <div className="map"></div>
                         <h1>Akdeniz Bölgesi</h1>
                         <h2>Mediterranean region</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:6, isOpen: true })}>
                         <div className="map"></div>
                         <h1>İç Anadolu Bölgesi</h1>
                         <h2>Central Anatolia region</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:8, isOpen: true })}>
                         <div className="map"></div>
                         <h1>Karadeniz Bölgesi</h1>
                         <h2>Black sea region</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:10, isOpen: true })}>
                         <div className="map"></div>
                         <h1>Doğu Anadolu Bölgesi</h1>
                         <h2>Eastern Anatolia Region</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:12, isOpen: true })}>
                         <div className="map"></div>
                         <h1>Güney Doğu Anadolu Bölgesi</h1>
                         <h2>Southeastern Anatolia region</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:13, isOpen: true })}>
                         <h1>Eğlenceli gerçek</h1>
                         <h2>Fun Fact</h2>

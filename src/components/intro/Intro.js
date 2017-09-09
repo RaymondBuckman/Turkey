@@ -5,7 +5,7 @@ export default class Intro extends Component {
     render() {
         return(
         <div>
-            <div id="top-of-page" className="One">
+            <div id="top-of-page" className="One scrollmagic-div-fadeout">
                 <div className="One-inner">
                     <nav id="top-nav" className="navbar navbar-default visible-lg" data-spy="affix" role="navigation">
                         <div className="container">

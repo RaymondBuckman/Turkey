@@ -5,7 +5,7 @@ export default class Cuisine extends Component {
     render() {
         return(
         <div>
-            <div className="Fifteen" id="Fifteen">            
+            <div className="Fifteen scrollmagic-div-fadeout" id="Fifteen">            
                 <div className="Fifteen-inner">            
                     <div className="container">
                         <h1 id="mutfak" className="text-center scrollmagic-header">Mutfak</h1>
@@ -56,11 +56,8 @@ export default class Cuisine extends Component {
                         <p id="dolma-desc" className="scrollmagic-desc">Dolma is a family of stuffed vegetable dishes that can be found all over the Balkans, Middle East, & Central Asia. Common vegetables to stuff include tomato, pepper, onion, zucchini, eggplant, and garlic.</p>
                     </div>
                 </div>
-                <div className="container">   
-                    
-                </div>
             </div>
-            <div className="Eighteen">            
+            <div className="Eighteen scrollmagic-div-fadeout">           
                 <div className="Eighteen-inner">            
                     <div className="container"> 
                         <div className="col-lg-6 col-lg-offset-6 text-right"> 
