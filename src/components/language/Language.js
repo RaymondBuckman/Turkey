@@ -124,35 +124,35 @@ export default class Language extends Component {
                         <h1 id="konular" className="scrollmagic-header">Diğer Konular</h1>
                         <h2 id="topics" className="scrollmagic-header">Other Topics</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:0, isOpen: true,  })}>
                         <h2>Pronounciation</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:1, isOpen: true })}>
                         <h2>Vowel Harmony</h2>
                     </li>
-                    <li className="flex-item  scrollmagic" 
+                    <li className="flex-item  scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:2, isOpen: true })}>
                         <h2>Pronouns</h2>
                     </li>
-                    <li className="flex-item  scrollmagic" 
+                    <li className="flex-item  scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:3, isOpen: true })}>
                         <h2>Adjectives</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:4, isOpen: true })}>
                         <h2>Accusative</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:5, isOpen: true })}>
                         <h2>Possessive</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:6, isOpen: true })}>
                         <h2>Questions</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:7, isOpen: true })}>
                         <h2>Numbers</h2>
                     </li>
