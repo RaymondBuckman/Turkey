@@ -276,99 +276,99 @@ export default class Sights extends Component {
                         <h1 id="manzaralar" className="scrollmagic-header">Manzaralar</h1>
                         <h2 id="sights" className="scrollmagic-header">Sights</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:0, isOpen: true,  })}>
                         <h2>Grand Bazaar</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:2, isOpen: true })}>
                         <h2>Basilica Cistern</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:4, isOpen: true })}>
                         <h2>Cappadocia</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:6, isOpen: true })}>
                         <h2>Hagia Sophia</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:8, isOpen: true })}>
                         <h2>Library of Celsus</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:10, isOpen: true })}>
                         <h2>Chora Church</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:12, isOpen: true })}>
                         <h2>Dolmabahçe</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:14, isOpen: true })}>
                         <h2>Miniatürk</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:16, isOpen: true })}>
                         <h2>Nemrut</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:18, isOpen: true })}>
                         <h2>Pamukkale</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:20, isOpen: true })}>
                         <h2>Sumela Monastery</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:22, isOpen: true })}>
                         <h2>Anıtkabir</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:24, isOpen: true })}>
                         <h2>Blue Mosque</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:26, isOpen: true })}>
                         <h2>Temple of Artemis</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:28, isOpen: true })}>
                         <h2>Bodrum Castle</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:30, isOpen: true })}>
                         <h2>House of the Virgin Mary</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:32, isOpen: true })}>
                         <h2>Düden Waterfalls</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:34, isOpen: true })}>
                         <h2>Gülhane Park</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:36, isOpen: true })}>
                         <h2>Topkapı Palace</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:38, isOpen: true })}>
                         <h2>Uzungöl</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:40, isOpen: true })}>
                         <h2>Mevlana Museum</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:42, isOpen: true })}>
                         <h2>Taksim Square</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:44, isOpen: true })}>
                         <h2>Maiden's Tower</h2>
                     </li>
-                    <li className="flex-item scrollmagic" 
+                    <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:46, isOpen: true })}>
                         <h2>Aspendos</h2>
                     </li>
