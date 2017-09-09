@@ -21,14 +21,14 @@ import Footer from './components/footer/Footer';
 
 ReactDOM.render(
     <div className="App">
-            <Intro />
-            <Geography />
-            <Cities />
-            <Sights /> 
-            <Hotels />
-            <Cuisine />
-            <Language />
-            <Footer />
+        <Intro />
+        <Geography />
+        <Cities />
+        <Sights /> 
+        <Hotels />
+        <Cuisine />
+        <Language />
+        <Footer />
     </div>,
     document.getElementById('root')
 );
@@ -79,7 +79,7 @@ $(document).ready(function(){
     $('.scrollmagic-header').each(function(){
         var headerScene = new ScrollMagic.Scene({
             triggerElement: this,
-            triggerHook: 0.7,
+            triggerHook: 0.8,
             reverse: false
         })
         .setClassToggle(this, 'fade-in')
@@ -92,10 +92,101 @@ $(document).ready(function(){
         .addTo(controller);
     })   
     
+    /*----- div fadeout animations -----*/
+    var oneFadeoutScene = new ScrollMagic.Scene({
+        triggerElement: '.One',
+        triggerHook: 0.1,
+        offset: 850,
+        reverse: true
+    })
+    .setClassToggle('.One', 'fadeout')
+        
+    .addIndicators({
+        name: 'div fadeout',
+        colorTrigger: 'yellow',
+        colorStart: '#75C695'
+    })
+    .addTo(controller);
     
-    /*----- div animations -----*/
-    $('.scrollmagic').each(function(){
-        var divScene = new ScrollMagic.Scene({
+    var fourFadeoutScene = new ScrollMagic.Scene({
+        triggerElement: '.Four',
+        triggerHook: 0.1,
+        offset: 700,
+        reverse: true
+    })
+    .setClassToggle('.Four', 'fadeout')
+        
+    .addIndicators({
+        name: 'div fadeout',
+        colorTrigger: 'yellow',
+        colorStart: '#75C695'
+    })
+    .addTo(controller);
+    
+    var tenFadeoutScene = new ScrollMagic.Scene({
+        triggerElement: '.Ten',
+        triggerHook: 0.1,
+        offset: 800,
+        reverse: true
+    })
+    .setClassToggle('.Ten', 'fadeout')
+        
+    .addIndicators({
+        name: 'div fadeout',
+        colorTrigger: 'yellow',
+        colorStart: '#75C695'
+    })
+    .addTo(controller);
+    
+    var thirteenFadeoutScene = new ScrollMagic.Scene({
+        triggerElement: '.Thirteen',
+        triggerHook: 0.1,
+        offset: 1200,
+        reverse: true
+    })
+    .setClassToggle('.Thirteen', 'fadeout')
+        
+    .addIndicators({
+        name: 'div fadeout',
+        colorTrigger: 'yellow',
+        colorStart: '#75C695'
+    })
+    .addTo(controller);
+    
+    var fifteenFadeoutScene = new ScrollMagic.Scene({
+        triggerElement: '.Fifteen',
+        triggerHook: 0.1,
+        offset: 1300,
+        reverse: true
+    })
+    .setClassToggle('.Fifteen', 'fadeout')
+        
+    .addIndicators({
+        name: 'div fadeout',
+        colorTrigger: 'yellow',
+        colorStart: '#75C695'
+    })
+    .addTo(controller);
+    
+    var eighteenFadeoutScene = new ScrollMagic.Scene({
+        triggerElement: '.Eighteen',
+        triggerHook: 0.1,
+        offset: 700,
+        reverse: true
+    })
+    .setClassToggle('.Eighteen', 'fadeout')
+        
+    .addIndicators({
+        name: 'div fadeout',
+        colorTrigger: 'yellow',
+        colorStart: '#75C695'
+    })
+    .addTo(controller);
+    
+    
+    /*----- chevron animations -----*/
+    $('.scrollmagic-chevron').each(function(){
+        var chevronScene = new ScrollMagic.Scene({
             triggerElement: this,
             triggerHook: 0.8,
             reverse: false
@@ -158,8 +249,7 @@ $(window).scroll(function(){
         })
         
         $('.Three').css({
-            'background-position':  '50% ' + (50 + wScroll/45) + '%',
-            'opacity': 1 - Math.pow((wScroll/2650),70)
+            'background-position':  '50% ' + (50 + wScroll/45) + '%'
         })
         
         $('#ataturk').css({
@@ -188,10 +278,6 @@ $(window).scroll(function(){
         
         $('.Thirteen-inner').css({
             'opacity': 1 - Math.pow((wScroll/14800),250)
-        })
-        
-        $('.Thirteen').css({
-            'opacity': 1 - Math.pow((wScroll/15600),250)
         })
         
         $('.Fourteen > .flex-container > .flex-item:nth-child(1)').on('click', function(){
@@ -229,10 +315,6 @@ $(window).scroll(function(){
         
         $('.Fifteen-inner').css({
             'opacity': 1 - Math.pow((wScroll/16900),400)
-        })
-        
-        $('.Fifteen').css({
-            'opacity': 1 - Math.pow((wScroll/17700),400)
         })
         
         $('.Seventeen-inner').css({
