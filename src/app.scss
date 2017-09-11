@@ -347,15 +347,9 @@ h2, p, a{
 .Three{
     position: relative;
     height: 150vh;
-    background: url("img/cappadocia-1.jpg") $nrf 50% 50%;
+    background: url("img/uzungol-1.jpg") $nrf 50% 50%;
     background-size: cover;
-    
-    .Three-inner{
-        position: relative;
-        height: 150vh;
-        background: url("img/uzungol-1.jpg") $nrf 50% 50%;
-        background-size: cover;
-    }
+    transition: background-image 0.5s ease-in-out;
     
     #cografya{
         position: relative;
@@ -381,7 +375,7 @@ h2, p, a{
         @include scrollmagic-header-finish;
     }
     
-    h1:nth-child(3){
+    #uzungol{
         position: relative;
         top: 65vh;
         color: $white;
@@ -390,7 +384,7 @@ h2, p, a{
     
     #cappadocia{
         position: relative;
-        top: -25vh;
+        top: 105vh;
         color: $white;
         font-size: 3em;            
     }
@@ -407,7 +401,7 @@ h2, p, a{
     .Four-inner-1{
         position: relative;
         height: 110vh;
-        background: url("./img/map-5.png") $nrs 50% 50%;
+        background: url("./img/map-3.png") $nrs 50% 50%;
         background-size: cover;
         
     }
@@ -671,9 +665,10 @@ h2, p, a{
 
 .Six{
     position: relative; 
-    height: 120vh;
+    height: 600vh;
     background: url("./img/istanbul-2.jpg") $nrf 50% 40%;
     background-size: cover;
+    transition: background-image 0.5s ease-in-out;
     
     #sehirler{
         position: relative;
@@ -711,14 +706,7 @@ h2, p, a{
         color: $white;
         font-size: 1.8em;
         padding: 0px 10vw;
-    }    
-}
-
-.Seven{
-    position: relative; 
-    height: 120vh;
-    background: url("./img/ankara-1.jpg") $nrf 50% 0%;
-    background-size: cover;
+    }   
     
     #ankara{
         @include secondary-font;
@@ -728,18 +716,11 @@ h2, p, a{
     
     #ankara-description{
         position: relative;
-        top: 60vh;
+        top: 90vh;
         color: $white;
         font-size: 1.8em;
         padding: 0px 10vw;
     }
-}
-
-.Eight{
-    position: relative; 
-    height: 120vh;
-    background: url("./img/izmir-2.jpg") $nrf 40% 40%;
-    background-size: cover;
     
     #izmir{
         @include secondary-font;
@@ -749,18 +730,11 @@ h2, p, a{
     
     #izmir-description{
         position: relative;
-        top: 60vh;
+        top: 130vh;
         color: $white;
         font-size: 1.8em;
         padding: 0px 10vw;
     }
-}
-
-.Nine{
-    position: relative; 
-    height: 120vh;
-    background: url("./img/bursa-1.jpg") $nrf 40% 40%;
-    background-size: cover;
     
     #bursa{
         @include secondary-font;
@@ -770,18 +744,39 @@ h2, p, a{
     
     #bursa-description{
         position: relative;
-        top: 60vh;
+        top: 170vh;
         color: $white;
         font-size: 1.8em;
         padding: 0px 10vw;
     }
-}
-
-.Ten{
-    position: relative; 
-    height: 120vh;
-    background: url("./img/konya-1.jpg") $nrf 40% 40%;
-    background-size: cover;
+    
+    #adana{
+        @include secondary-font;
+        color: $turquoise;
+        font-size: 2em;
+    }
+    
+    #adana-description{
+        position: relative;
+        top: 210vh;
+        color: $white;
+        font-size: 1.8em;
+        padding: 0px 10vw;
+    }
+    
+    #gaziantep{
+        @include secondary-font;
+        color: $turquoise;
+        font-size: 2em;
+    }
+    
+    #gaziantep-description{
+        position: relative;
+        top: 250vh;
+        color: $white;
+        font-size: 1.8em;
+        padding: 0px 10vw;
+    }
     
     #konya{
         @include secondary-font;
@@ -791,13 +786,12 @@ h2, p, a{
     
     #konya-description{
         position: relative;
-        top: 60vh;
+        top: 290vh;
         color: $white;
         font-size: 1.8em;
         padding: 0px 10vw;
     }
 }
-
 
 .Eleven{
     position: relative; 
@@ -1737,14 +1731,20 @@ h2, p, a{
         @include scrollmagic-header-finish;
     }
     
-    h2:nth-child(3){
+    li{
         position: relative;
         top: 10vh;
         color: $white; 
         font-size: 1.5em;
+        @include secondary-font;
+        list-style: none;
     }
     
-    span{
+    #pronunciation{
+        color: hotpink;
+    }
+    
+    #translation{
         color: $turquoise;
     }
 }
@@ -2027,6 +2027,12 @@ h2, p, a{
     transform: rotateY(45deg) translateY(15px);
 }
 
+.scrollmagic-info-squares{
+    opacity: 0;
+    transform: translateX(45px) translateY(15px);
+    transition:  all 0.5s ease-in-out;
+}
+
 .scrollmagic-desc{
     opacity: 0;
     transform: rotateY(45deg) translateY(15px);
@@ -2035,15 +2041,75 @@ h2, p, a{
 
 .horizontal-fade{
     opacity: 1;
-    transform: rotate(0deg) translateY(0px);
+    transform: rotate(0deg) rotateX(0deg) translateX(0px) translateY(0px);
 }
 
 .scrollmagic-div-fadeout{
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .fadeout{
     opacity: 0;
+}
+
+.scrollmagic-vocab{
+    opacity: 0;
+    transform: rotateY(45deg) translateY(15px);
+    transition:  all 0.5s ease-in-out;
+}
+
+.vocab-fadein{
+    opacity: 1;
+    transform: rotateY(0deg) translateY(0px);
+}
+
+.Three-background-change{
+    position: relative;
+    height: 150vh;
+    background: url("img/cappadocia-1.jpg") $nrf 50% 50%;
+    background-size: cover;
+}
+
+.Six-istanbul-background-change{
+    position: relative; 
+    height: 600vh;
+    background: url("./img/ankara-1.jpg") $nrf 50% 40%;
+    background-size: cover;
+}
+
+.Six-ankara-background-change{
+    position: relative; 
+    height: 600vh;
+    background: url("./img/izmir-1.jpg") $nrf 50% 40%;
+    background-size: cover;
+}
+
+.Six-izmir-background-change{
+    position: relative; 
+    height: 600vh;
+    background: url("./img/bursa-1.jpg") $nrf 50% 40%;
+    background-size: cover;
+}
+
+.Six-bursa-background-change{
+    position: relative; 
+    height: 600vh;
+    background: url("./img/adana-1.jpg") $nrf 50% 40%;
+    background-size: cover;
+}
+
+.Six-adana-background-change{
+    position: relative; 
+    height: 600vh;
+    background: url("./img/gaziantep-1.jpg") $nrf 50% 40%;
+    background-size: cover;
+}
+
+.Six-gaziantep-background-change{
+    position: relative; 
+    height: 600vh;
+    background: url("./img/konya-1.jpg") $nrf 50% 40%;
+    background-size: cover;
 }
 
 

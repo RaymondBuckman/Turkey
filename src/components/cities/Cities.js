@@ -72,43 +72,55 @@ export default class Cities extends Component {
                     Population: 14.8 million<br/>
                     Current time: <CityRow name="CityRow" UTCOffset="5"/>
                 </p>
-            </div> {/*End of Six*/}
-            <div className="Seven">   
+            
                 <p id="ankara-description" className="col-lg-6 col-lg-offset-0 text-left scrollmagic-desc">
                 <span id="ankara">Ankara</span><br/>
-                                Capital City<br/>
-                                Location: Central Anatolia<br/>
-                                Population: 5.3 million<br/>
-                                Current time: <CityRow name="CityRow" UTCOffset="5"/>
-                            </p>
-            </div>{/*End of Seven*/}
-            <div className="Eight">            
-                        <p id="izmir-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
-                            <span id="izmir">İzmir</span><br/>
-                            Crusiseline hotspot<br/>
-                            Location: Aegean region<br/>
-                            Population: 2.8 million<br/>
-                            Current time: <CityRow name="CityRow" UTCOffset="5"/>
-                        </p>
-            </div>{/*End of Eight*/}    
-            <div className="Nine">
-                    <p id="bursa-description" className="col-lg-6 col-lg-offset-0 text-left scrollmagic-desc">
-                        <span id="bursa">Bursa</span><br/>
-                        ~300 Year Capital of the Ottoman Empire<br/>
-                        Location: Marmara<br/>
-                        Population: 2.3 million<br/>
-                        Current time: <CityRow name="CityRow" UTCOffset="5"/>
-                    </p>
-            </div>{/*End of Nine*/}
-            <div className="Ten scrollmagic-div-fadeout">
-                <p id="konya-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
-                    <span id="konya">Konya</span><br/>
-                    Pilgramige destination for Sufis<br/>
+                    Capital City<br/>
                     Location: Central Anatolia<br/>
-                    Population: 2.1 million<br/>
+                    Population: 5.3 million<br/>
                     Current time: <CityRow name="CityRow" UTCOffset="5"/>
                 </p>
-            </div>{/*End of Ten*/}
+            
+                <p id="izmir-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
+                    <span id="izmir">İzmir</span><br/>
+                    Crusiseline hotspot<br/>
+                    Location: Aegean region<br/>
+                    Population: 2.8 million<br/>
+                    Current time: <CityRow name="CityRow" UTCOffset="5"/>
+                </p>
+            
+                <p id="bursa-description" className="col-lg-6 col-lg-offset-0 text-left scrollmagic-desc">
+                    <span id="bursa">Bursa</span><br/>
+                    ~300 Year Capital of the Ottoman Empire<br/>
+                    Location: Marmara<br/>
+                    Population: 2.3 million<br/>
+                    Current time: <CityRow name="CityRow" UTCOffset="5"/>
+                </p>
+            
+                <p id="adana-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
+                    <span id="adana">Adana</span><br/>
+                    Mediterranean Capital<br/>
+                    Location: Mediterranean Region<br/>
+                    Population: 1.7 million<br/>
+                    Current time: <CityRow name="CityRow" UTCOffset="5"/>
+                </p>
+                    
+                <p id="gaziantep-description" className="col-lg-6 col-lg-offset-0 text-left scrollmagic-desc">
+                    <span id="gaziantep">Gaziantep</span><br/>
+                    One of the oldest continually inhabited cities on earth<br/>
+                    Location: Southeastern Anatolia Region<br/>
+                    Population: 1.5 million<br/>
+                    Current time: <CityRow name="CityRow" UTCOffset="5"/>
+                </p>
+            
+                <p id="konya-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
+                    <span id="konya">Gaziantep</span><br/>
+                    Former capital of the Seljuk sultanate of Rum<br/>
+                    Location: Central Anatolia Region<br/>
+                    Population: 1 million<br/>
+                    Current time: <CityRow name="CityRow" UTCOffset="5"/>
+                </p>
+            </div> {/*End of Six*/}
         </div>
         );
     }

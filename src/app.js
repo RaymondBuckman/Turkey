@@ -56,8 +56,7 @@ $(document).ready(function(){
         duration: '60%'
     })
     .setPin('#top-nav')
-    .addTo(controller);
-    
+    .addTo(controller);    
     
     var bottomNavTween = TweenMax.staggerFrom("#bottom-nav li", 0.7, { ease:  Power0.easeNone, delay: 0.3, opacity: 0, y:-25, rotation: 10}, 0.15);
     
@@ -91,6 +90,205 @@ $(document).ready(function(){
         })*/
         .addTo(controller);
     })   
+    
+    /* ----- background change scenes  -----*/
+    var threeChangeScene = new ScrollMagic.Scene({
+        triggerElement: '.Three',
+        triggerHook: 0.6,
+        offset: 700,
+        reverse: true
+    })
+    .setClassToggle('.Three', 'Three-background-change')
+    .addIndicators({
+            name: 'background change scene',
+            colorTrigger: 'orange',
+            colorStart: 'white'
+        })
+    .addTo(controller);
+    
+    var threeChangeFadeoutHeaderScene = new ScrollMagic.Scene({
+        triggerElement: '.Three',
+        triggerHook: 0.6,
+        offset: 700,
+        reverse: true
+    })
+    .setClassToggle('#uzungol', 'fadeout')
+    .addIndicators({
+            name: 'background change scene',
+            colorTrigger: 'orange',
+            colorStart: 'white'
+        })
+    .addTo(controller);
+    
+    var sixChangeIstanbulScene = new ScrollMagic.Scene({
+        triggerElement: '.Six',
+        triggerHook: 0.3,
+        offset: 600,
+        reverse: true
+    })
+    .setClassToggle('.Six', 'Six-istanbul-background-change')
+    .addIndicators({
+            name: 'background change scene',
+            colorTrigger: 'orange',
+            colorStart: 'white'
+        })
+    .addTo(controller);
+    
+    var sixChangeFadeoutIstanbulScene = new ScrollMagic.Scene({
+        triggerElement: '.Six',
+        triggerHook: 0.3,
+        offset: 600,
+        reverse: true
+    })
+    .setClassToggle('#istanbul-description', 'fadeout')
+    .addIndicators({
+            name: 'background change scene',
+            colorTrigger: 'orange',
+            colorStart: 'white'
+        })
+    .addTo(controller);
+    
+    var sixChangeAnkaraScene = new ScrollMagic.Scene({
+        triggerElement: '.Six',
+        triggerHook: 0.3,
+        offset: 1150,
+        reverse: true
+    })
+    .setClassToggle('.Six', 'Six-ankara-background-change')
+    .addIndicators({
+            name: 'background change scene',
+            colorTrigger: 'orange',
+            colorStart: 'white'
+        })
+    .addTo(controller);
+    
+    var sixChangeFadeoutAnkaraScene = new ScrollMagic.Scene({
+        triggerElement: '.Six',
+        triggerHook: 0.3,
+        offset: 1150,
+        reverse: true
+    })
+    .setClassToggle('#ankara-description', 'fadeout')
+    .addIndicators({
+            name: 'background change scene',
+            colorTrigger: 'orange',
+            colorStart: 'white'
+        })
+    .addTo(controller);
+    
+    var sixChangeIzmirScene = new ScrollMagic.Scene({
+        triggerElement: '.Six',
+        triggerHook: 0.3,
+        offset: 1700,
+        reverse: true
+    })
+    .setClassToggle('.Six', 'Six-izmir-background-change')
+    .addIndicators({
+            name: 'background change scene',
+            colorTrigger: 'orange',
+            colorStart: 'white'
+        })
+    .addTo(controller);
+    
+    var sixChangeFadeoutIzmirScene = new ScrollMagic.Scene({
+        triggerElement: '.Six',
+        triggerHook: 0.3,
+        offset: 1700,
+        reverse: true
+    })
+    .setClassToggle('#izmir-description', 'fadeout')
+    .addIndicators({
+            name: 'background change scene',
+            colorTrigger: 'orange',
+            colorStart: 'white'
+        })
+    .addTo(controller);
+    
+    var sixChangeBursaScene = new ScrollMagic.Scene({
+        triggerElement: '.Six',
+        triggerHook: 0.3,
+        offset: 2250,
+        reverse: true
+    })
+    .setClassToggle('.Six', 'Six-bursa-background-change')
+    .addIndicators({
+            name: 'background change scene',
+            colorTrigger: 'orange',
+            colorStart: 'white'
+        })
+    .addTo(controller);
+    
+    var sixChangeFadeoutBursaScene = new ScrollMagic.Scene({
+        triggerElement: '.Six',
+        triggerHook: 0.3,
+        offset: 2250,
+        reverse: true
+    })
+    .setClassToggle('#bursa-description', 'fadeout')
+    .addIndicators({
+            name: 'background change scene',
+            colorTrigger: 'orange',
+            colorStart: 'white'
+        })
+    .addTo(controller);
+    
+    var sixChangeAdanaScene = new ScrollMagic.Scene({
+        triggerElement: '.Six',
+        triggerHook: 0.3,
+        offset: 2800,
+        reverse: true
+    })
+    .setClassToggle('.Six', 'Six-adana-background-change')
+    .addIndicators({
+            name: 'background change scene',
+            colorTrigger: 'orange',
+            colorStart: 'white'
+        })
+    .addTo(controller);
+    
+    var sixChangeFadeoutAdanaScene = new ScrollMagic.Scene({
+        triggerElement: '.Six',
+        triggerHook: 0.3,
+        offset: 2800,
+        reverse: true
+    })
+    .setClassToggle('#adana-description', 'fadeout')
+    .addIndicators({
+            name: 'background change scene',
+            colorTrigger: 'orange',
+            colorStart: 'white'
+        })
+    .addTo(controller);
+    
+    var sixChangeGaziantepScene = new ScrollMagic.Scene({
+        triggerElement: '.Six',
+        triggerHook: 0.3,
+        offset: 3350,
+        reverse: true
+    })
+    .setClassToggle('.Six', 'Six-gaziantep-background-change')
+    .addIndicators({
+            name: 'background change scene',
+            colorTrigger: 'orange',
+            colorStart: 'white'
+        })
+    .addTo(controller);
+    
+    var sixChangeFadeoutGaziantepScene = new ScrollMagic.Scene({
+        triggerElement: '.Six',
+        triggerHook: 0.3,
+        offset: 3350,
+        reverse: true
+    })
+    .setClassToggle('#gaziantep-description', 'fadeout')
+    .addIndicators({
+            name: 'background change scene',
+            colorTrigger: 'orange',
+            colorStart: 'white'
+        })
+    .addTo(controller);
+    
+    
     
     /*----- div fadeout animations -----*/
     var oneFadeoutScene = new ScrollMagic.Scene({
@@ -201,15 +399,48 @@ $(document).ready(function(){
         .addTo(controller);
     })   
     
-    /*----- description animations -----*/
-    
-    $('.scrollmagic-desc').each(function(){
-        var descScene = new ScrollMagic.Scene({
+    /*----- information square animations -----*/
+    $('.scrollmagic-info-squares').each(function(){
+        var chevronScene = new ScrollMagic.Scene({
             triggerElement: this,
             triggerHook: 0.8,
             reverse: false
         })
         .setClassToggle(this, 'horizontal-fade')
+        /*
+        .addIndicators({
+            name: 'horizontal fade',
+            colorTrigger: 'yellow',
+            colorStart: '#75C695'
+        })*/
+        .addTo(controller);
+    })   
+    
+    /*----- description animations -----*/
+    $('.scrollmagic-desc').each(function(){
+        var descScene = new ScrollMagic.Scene({
+            triggerElement: this,
+            triggerHook: 0.85,
+            reverse: false
+        })
+        .setClassToggle(this, 'horizontal-fade')
+        /*
+        .addIndicators({
+            name: 'horizontal fade',
+            colorTrigger: 'yellow',
+            colorStart: '#75C695'
+        })*/
+        .addTo(controller);
+    }) 
+    
+    /*----- vocabulary animations -----*/
+    $('.Twenty-one ul li').each(function(){
+        var vocabScene = new ScrollMagic.Scene({
+            triggerElement: this,
+            triggerHook: 0.95,
+            reverse: false
+        })
+        .setClassToggle(this, 'vocab-fadein')
         /*
         .addIndicators({
             name: 'horizontal fade',
@@ -232,7 +463,7 @@ $(window).scroll(function(){
     if(largeDesktop.matches){ 
         
         $('.One-inner').css({
-            'background-position':  '50% ' + (50 + wScroll/45) + '%'
+            'background-position':  '50% ' + (50 + wScroll/35) + '%'
         })
         
         /*
@@ -244,8 +475,7 @@ $(window).scroll(function(){
         */
         
         $('.Three-inner').css({
-            'background-position':  '50% ' + (50 + wScroll/45) + '%',
-            'opacity': 1 - Math.pow((wScroll/2100),20)
+            'background-position':  '50% ' + (50 + wScroll/45) + '%'
         })
         
         $('.Three').css({

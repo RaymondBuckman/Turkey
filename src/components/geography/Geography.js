@@ -90,17 +90,15 @@ export default class Geography extends Component {
         
         return(
         <div>
-            <div className="Three" id="Three">  
-                <div className="Three-inner">            
+            <div className="Three" id="Three">            
                     <div className="container">
                         <h1 id="cografya" className="text-center scrollmagic-header">Coğrafya</h1>
                         <h2 id="geography" className="text-center scrollmagic-header">Geography</h2> 
-                        <h1 className="text-right">Uzungöl, Trabzon</h1>
+                        <h1 id="uzungol" className="text-right scrollmagic-desc" >Uzungöl, Trabzon</h1>
                     </div>
-                </div>
-                <div className="container">
-                    <h1 id="cappadocia" className="text-left">Cappadocia</h1>
-                </div>
+                    <div className="container">
+                        <h1 id="cappadocia" className="text-left scrollmagic-desc">Cappadocia</h1>
+                    </div>
             </div>
             <div className="Four scrollmagic-div-fadeout">
                 <div className="Four-inner-1">

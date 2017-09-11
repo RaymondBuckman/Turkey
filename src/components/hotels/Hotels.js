@@ -10,22 +10,22 @@ export default class Hotels extends Component {
                     <div className="container">
                         <h1 id="oteleler" className="text-center scrollmagic-header">Oteleler</h1>
                         <h2 id="hotels" className="text-center scrollmagic-header">Hotels</h2> 
-                        <h1 className="text-right">Raffles Hotel, İstanbul</h1>
+                        <h1 className="text-right scrollmagic-desc">Raffles Hotel, İstanbul</h1>
                     </div>
                 </div>
                 <div className="container">
-                    <h1 id="raffles-pool" className="text-left">Raffles Pool & Spa</h1>
+                    <h1 id="raffles-pool" className="text-left scrollmagic-desc">Raffles Pool & Spa</h1>
                 </div>
             </div>
             
             <div className="Thirteen scrollmagic-div-fadeout">           
                 <div className="Thirteen-inner">            
                     <div className="container">
-                        <h1 className="text-right">Kayakapi Hotel, Ürgüp</h1>
+                        <h1 className="text-right scrollmagic-desc">Kayakapi Hotel, Ürgüp</h1>
                     </div>
                 </div>
                 <div className="container">
-                    <h1 id="kayakapi-pool" className="text-left">Kayakapi Pool & Spa</h1>
+                    <h1 id="kayakapi-pool" className="text-left scrollmagic-desc">Kayakapi Pool & Spa</h1>
                 </div>
             </div>
             

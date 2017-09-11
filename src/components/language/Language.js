@@ -70,16 +70,16 @@ export default class Language extends Component {
         <div>
             <div className="Nineteen" id="Nineteen">
                 <ul className="flex-container">
-                    <li className="flex-item">
+                    <li className="flex-item scrollmagic-info-squares">
                         <h1 id="dili" className="scrollmagic-header">Türk Dili</h1>
                         <h2 id="language" className="scrollmagic-header">The Turkish Language</h2>
                         <p>By now you've probably noticed some foreign words with odd looking characters. This is the Turkish language. Linguistically, Turkish is unrelated to English, Spanish, or any romance or germanic language. It has an SOV sentence structure (subjuct -> object -> verb), & is highly agglutinative, meaning that numerous suffixes are added on to words to expand their meaning. The longest word in Turkish has 70 letters with more than 10 suffixes! Don't worry though...words like this aren't used in daily speech & being fluent isn't required for tourists as English is fairly widely spoken in the tourist areas. Still, knowing a little Turkish goes a long way. Let's get into it!</p>
                     </li>
-                    <li className="flex-item"></li>
-                    <li className="flex-item">
+                    <li className="flex-item scrollmagic-info-squares"></li>
+                    <li className="flex-item scrollmagic-info-squares">
                         <h2>"Fishing is forbidden in this area"</h2>
                     </li>
-                    <li className="flex-item"></li>
+                    <li className="flex-item scrollmagic-info-squares"></li>
                 </ul>
             </div>
             <div className="Twenty">            
@@ -97,25 +97,40 @@ export default class Language extends Component {
             </div>
             <div className="Twenty-one">            
                 <div className="container">
-                    <h1 id="cumleler" className="text-center scrollmagic-header">Temel cümleler</h1>
+                    <h1 id="cumleler" className="text-center scrollmagic-header">Temel Cümleler</h1>
                     <h2 id="phrases" className="text-center scrollmagic-header">Basic Phrases</h2> 
-                    <h2 className="col-lg-6 col-lg-offset-0 text-left">
-                        Merhaba - <span>Hello</span><br/>
-                        Güle güle - <span>Bye</span><br/>
-                        Evet - <span>Yes</span><br/>
-                        Hayır - <span>No</span><br/>                        
-                        Nasılsın? - <span>How are you?</span><br/>
-                        İyiyim  - <span>I'm fine</span><br/>
-                        Teşekkürler - <span>Thanks</span><br/>
-                        Birşey değil - <span>You're welcome</span><br/>
-                        Lütfen - <span>Please</span><br/>
-                        Pardon - <span>Sorry</span><br/>
-                        Afedersiniz - <span>Excuse me</span><br/>
-                        Bu otele nerede? - <span>Where is this hotel?</span><br/>
-                        İngilizce biliyor musunuz? - <span>Do you speak English?</span><br/>
-                        Ne kedar? - <span>How much does it cost?</span><br/>
-                        Yardım edebilir misiniz? - <span>Can you help me?</span><br/>
-                    </h2>
+                    
+                    <ul className="col-lg-12 col-lg-offset-0 text-left">
+                        <li className="scrollmagic-vocab">Merhaba <span id="pronunciation">(mayor-ha-bah)</span>  - <span id="translation">Hello</span></li>
+                        
+                        <li className="scrollmagic-vocab">Güle güle <span id="pronunciation">(goo-lay-goo-lay)</span> - <span id="translation">Bye</span></li>
+                        
+                        <li className="scrollmagic-vocab">Evet <span id="pronunciation">(eh-vet)</span> - <span id="translation">Yes</span></li>
+                        
+                        <li className="scrollmagic-vocab">Hayır <span id="pronunciation">(hire)</span> - <span id="translation">No</span></li> 
+    
+                        <li className="scrollmagic-vocab">Nasılsın? <span id="pronunciation">(na-sul-sun)</span> - <span id="translation">How are you?</span></li>
+                        
+                        <li className="scrollmagic-vocab">İyiyim  <span id="pronunciation">(ee-yee-yim)</span> - <span id="translation">I'm fine</span></li>
+                        
+                        <li className="scrollmagic-vocab">Teşekkürler <span id="pronunciation">(te-shek-kur-lair)</span> - <span id="translation">Thanks</span></li>
+                        
+                        <li className="scrollmagic-vocab">Birşey değil <span id="pronunciation">(beer-shay-dee-ill)</span> - <span id="translation">You're welcome</span></li>
+                        
+                        <li className="scrollmagic-vocab">Lütfen <span id="pronunciation">(loot-fen)</span> - <span id="translation">Please</span></li>
+                        
+                        <li className="scrollmagic-vocab">Pardon <span id="pronunciation">(par-don)</span> - <span id="translation">Sorry</span></li>
+                        
+                        <li className="scrollmagic-vocab">Afedersiniz <span id="pronunciation">(ah-fair-dare-sin-is)</span> - <span id="translation">Excuse me</span></li>
+                        
+                        <li className="scrollmagic-vocab">Bu otele nerede? <span id="pronunciation">(bu-oh-tell-ay-nair-ray-day)</span> - <span id="translation">Where is this hotel?</span></li>
+                        
+                        <li className="scrollmagic-vocab">İngilizce biliyor musunuz? <span id="pronunciation">(en-gi-leez-jay-bill-ee-yor-moo-soo-nooz)</span> - <span id="translation">Do you speak English?</span></li>
+                        
+                        <li className="scrollmagic-vocab">Ne kedar? <span id="pronunciation">(nay-ka-dar)</span> - <span id="translation">How much does it cost?</span></li>
+                        
+                        <li className="scrollmagic-vocab">Yardım edebilir misiniz? <span id="pronunciation">(yar-dumb-edd-ay-bill-ear-mih-sin-is)</span> - <span id="translation">Can you help me?</span></li>
+                    </ul>
                 </div>
             </div>
             <div className="Twenty-two">
