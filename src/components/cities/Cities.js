@@ -114,7 +114,7 @@ export default class Cities extends Component {
                 </p>
             
                 <p id="konya-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
-                    <span id="konya">Gaziantep</span><br/>
+                    <span id="konya">Konya</span><br/>
                     Former capital of the Seljuk sultanate of Rum<br/>
                     Location: Central Anatolia Region<br/>
                     Population: 1 million<br/>
