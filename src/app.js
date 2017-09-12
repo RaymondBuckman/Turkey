@@ -48,6 +48,7 @@ $(document).ready(function(){
     TweenMax.staggerFrom("#top-nav li", 0.7, { ease:  Power0.easeNone, delay: 1, opacity: 0, y:25, rotation: 10}, 0.15); 
     
     var controller = new ScrollMagic.Controller();
+    var divFadeController = new ScrollMagic.Controller();
     
     
     var pinTopNavScene = new ScrollMagic.Scene({
@@ -132,7 +133,7 @@ $(document).ready(function(){
             colorTrigger: 'orange',
             colorStart: 'white'
         })
-    .addTo(controller);
+    .addTo(divFadeController);
     
     var sixChangeFadeoutIstanbulScene = new ScrollMagic.Scene({
         triggerElement: '.Six',
@@ -160,7 +161,7 @@ $(document).ready(function(){
             colorTrigger: 'orange',
             colorStart: 'white'
         })
-    .addTo(controller);
+    .addTo(divFadeController);
     
     var sixChangeFadeoutAnkaraScene = new ScrollMagic.Scene({
         triggerElement: '.Six',
@@ -188,7 +189,7 @@ $(document).ready(function(){
             colorTrigger: 'orange',
             colorStart: 'white'
         })
-    .addTo(controller);
+    .addTo(divFadeController);
     
     var sixChangeFadeoutIzmirScene = new ScrollMagic.Scene({
         triggerElement: '.Six',
@@ -216,7 +217,7 @@ $(document).ready(function(){
             colorTrigger: 'orange',
             colorStart: 'white'
         })
-    .addTo(controller);
+    .addTo(divFadeController);
     
     var sixChangeFadeoutBursaScene = new ScrollMagic.Scene({
         triggerElement: '.Six',
@@ -244,7 +245,7 @@ $(document).ready(function(){
             colorTrigger: 'orange',
             colorStart: 'white'
         })
-    .addTo(controller);
+    .addTo(divFadeController);
     
     var sixChangeFadeoutAdanaScene = new ScrollMagic.Scene({
         triggerElement: '.Six',
@@ -272,7 +273,7 @@ $(document).ready(function(){
             colorTrigger: 'orange',
             colorStart: 'white'
         })
-    .addTo(controller);
+    .addTo(divFadeController);
     
     var sixChangeFadeoutGaziantepScene = new ScrollMagic.Scene({
         triggerElement: '.Six',
