@@ -72,7 +72,8 @@ export default class Cities extends Component {
                     Population: 14.8 million<br/>
                     Current time: <CityRow name="CityRow" UTCOffset="5"/>
                 </p>
-            
+            </div>
+            <div className="Seven"> 
                 <p id="ankara-description" className="col-lg-6 col-lg-offset-0 text-left scrollmagic-desc">
                 <span id="ankara">Ankara</span><br/>
                     Capital City<br/>
@@ -80,7 +81,9 @@ export default class Cities extends Component {
                     Population: 5.3 million<br/>
                     Current time: <CityRow name="CityRow" UTCOffset="5"/>
                 </p>
+            </div>
             
+            <div className="Eight"> 
                 <p id="izmir-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
                     <span id="izmir">İzmir</span><br/>
                     Crusiseline hotspot<br/>
@@ -88,7 +91,9 @@ export default class Cities extends Component {
                     Population: 2.8 million<br/>
                     Current time: <CityRow name="CityRow" UTCOffset="5"/>
                 </p>
+            </div>
             
+            <div className="Nine">
                 <p id="bursa-description" className="col-lg-6 col-lg-offset-0 text-left scrollmagic-desc">
                     <span id="bursa">Bursa</span><br/>
                     ~300 Year Capital of the Ottoman Empire<br/>
@@ -96,7 +101,9 @@ export default class Cities extends Component {
                     Population: 2.3 million<br/>
                     Current time: <CityRow name="CityRow" UTCOffset="5"/>
                 </p>
+            </div>
             
+            <div className="Ten">
                 <p id="adana-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
                     <span id="adana">Adana</span><br/>
                     Mediterranean Capital<br/>
@@ -104,23 +111,7 @@ export default class Cities extends Component {
                     Population: 1.7 million<br/>
                     Current time: <CityRow name="CityRow" UTCOffset="5"/>
                 </p>
-                    
-                <p id="gaziantep-description" className="col-lg-6 col-lg-offset-0 text-left scrollmagic-desc">
-                    <span id="gaziantep">Gaziantep</span><br/>
-                    One of the oldest continually inhabited cities on earth<br/>
-                    Location: Southeastern Anatolia Region<br/>
-                    Population: 1.5 million<br/>
-                    Current time: <CityRow name="CityRow" UTCOffset="5"/>
-                </p>
-            
-                <p id="konya-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
-                    <span id="konya">Konya</span><br/>
-                    Former capital of the Seljuk sultanate of Rum<br/>
-                    Location: Central Anatolia Region<br/>
-                    Population: 1 million<br/>
-                    Current time: <CityRow name="CityRow" UTCOffset="5"/>
-                </p>
-            </div> {/*End of Six*/}
+            </div>
         </div>
         );
     }
