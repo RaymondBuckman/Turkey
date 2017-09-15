@@ -6,18 +6,19 @@ var CityRow = React.createClass({
     var localTime = new Date(); //get your local time
     var utcTime = localTime.getUTCHours(); // find UTC hours
     var currentdate = new Date(); // create a new date object for the EST time
-    currentdate.setHours(utcTime+3); // adjust it for EST hours.
+    
       
       
-  	var hours = currentdate.getUTCHours() + parseInt(this.props.UTCOffset);     
+  	var hours = currentdate.getUTCHours() + parseInt(this.props.UTCOffset); 
+    var hoursForAMPM = currentdate.getUTCHours() + parseInt(this.props.UTCOffset); 
       
     // correct for number over 24, and negatives
     if( hours >= 12 ){ hours -= 12; }
     if( hours < 0   ){ hours += 12; }     
 
-    // add leading zero, first convert hours to string
+    // convert hours to string
     hours = hours + "";
-    if( hours.length == 1 ){ hours = "0" + hours; }
+    
 
     // minutes are the same on every time zone
     var minutes = currentdate.getUTCMinutes();
@@ -34,7 +35,7 @@ var CityRow = React.createClass({
     //switches between am & pm
     var ampm;
       
-    if(hours >= 0 && hours < 12){
+    if(hoursForAMPM >= 0 && hoursForAMPM < 12){
         ampm = "am";
     }else{
         ampm  = "pm";
@@ -80,7 +81,7 @@ export default class Cities extends Component {
                     Economic & Cultural Center<br/>
                     Location: Marmara<br/>
                     Population: 14.8 million<br/>
-                    Current time: <CityRow name="CityRow" UTCOffset="5"/>
+                    Current time: <CityRow name="CityRow" UTCOffset="3"/>
                 </p>
             </div>
             <div className="Seven"> 
@@ -89,7 +90,7 @@ export default class Cities extends Component {
                     Capital City<br/>
                     Location: Central Anatolia<br/>
                     Population: 5.3 million<br/>
-                    Current time: <CityRow name="CityRow" UTCOffset="5"/>
+                    Current time: <CityRow name="CityRow" UTCOffset="3"/>
                 </p>
             </div>
             
@@ -99,7 +100,7 @@ export default class Cities extends Component {
                     Crusiseline hotspot<br/>
                     Location: Aegean region<br/>
                     Population: 2.8 million<br/>
-                    Current time: <CityRow name="CityRow" UTCOffset="5"/>
+                    Current time: <CityRow name="CityRow" UTCOffset="3"/>
                 </p>
             </div>
             
@@ -109,7 +110,7 @@ export default class Cities extends Component {
                     ~300 Year Capital of the Ottoman Empire<br/>
                     Location: Marmara<br/>
                     Population: 2.3 million<br/>
-                    Current time: <CityRow name="CityRow" UTCOffset="5"/>
+                    Current time: <CityRow name="CityRow" UTCOffset="3"/>
                 </p>
             </div>
             
@@ -119,7 +120,7 @@ export default class Cities extends Component {
                     Mediterranean Capital<br/>
                     Location: Mediterranean Region<br/>
                     Population: 1.7 million<br/>
-                    Current time: <CityRow name="CityRow" UTCOffset="5"/>
+                    Current time: <CityRow name="CityRow" UTCOffset="3"/>
                 </p>
             </div>
         </div>
