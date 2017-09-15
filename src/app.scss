@@ -665,7 +665,7 @@ h2, p, a{
 
 .Six{
     position: relative; 
-    height: 600vh;
+    height: 120vh;
     background: url("./img/istanbul-2.jpg") $nrf 50% 40%;
     background-size: cover;
     transition: background-image 0.5s ease-in-out;
@@ -707,6 +707,14 @@ h2, p, a{
         font-size: 1.8em;
         padding: 0px 10vw;
     }   
+}
+
+.Seven{
+    position: relative; 
+    height: 120vh;
+    background: url("./img/ankara-1.jpg") $nrf 50% 40%;
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
     
     #ankara{
         @include secondary-font;
@@ -716,12 +724,19 @@ h2, p, a{
     
     #ankara-description{
         position: relative;
-        top: 90vh;
+        top: 50vh;
         color: $white;
         font-size: 1.8em;
         padding: 0px 10vw;
     }
-    
+}
+
+.Eight{
+    position: relative; 
+    height: 120vh;
+    background: url("./img/izmir-1.JPG") $nrf 50% 40%;
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
     #izmir{
         @include secondary-font;
         color: $turquoise;
@@ -730,12 +745,19 @@ h2, p, a{
     
     #izmir-description{
         position: relative;
-        top: 130vh;
+        top: 50vh;
         color: $white;
         font-size: 1.8em;
         padding: 0px 10vw;
     }
-    
+}
+
+.Nine{
+    position: relative; 
+    height: 120vh;
+    background: url("./img/bursa-1.jpg") $nrf 50% 40%;
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
     #bursa{
         @include secondary-font;
         color: $turquoise;
@@ -744,12 +766,19 @@ h2, p, a{
     
     #bursa-description{
         position: relative;
-        top: 170vh;
+        top: 50vh;
         color: $white;
         font-size: 1.8em;
         padding: 0px 10vw;
     }
-    
+}
+
+.Ten{
+    position: relative; 
+    height: 120vh;
+    background: url("./img/adana-1.jpg") $nrf 50% 40%;
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
     #adana{
         @include secondary-font;
         color: $turquoise;
@@ -758,40 +787,12 @@ h2, p, a{
     
     #adana-description{
         position: relative;
-        top: 210vh;
+        top: 50vh;
         color: $white;
         font-size: 1.8em;
         padding: 0px 10vw;
     }
-    
-    #gaziantep{
-        @include secondary-font;
-        color: $turquoise;
-        font-size: 2em;
-    }
-    
-    #gaziantep-description{
-        position: relative;
-        top: 250vh;
-        color: $white;
-        font-size: 1.8em;
-        padding: 0px 10vw;
-    }
-    
-    #konya{
-        @include secondary-font;
-        color: $turquoise;
-        font-size: 2em;
-    }
-    
-    #konya-description{
-        position: relative;
-        top: 290vh;
-        color: $white;
-        font-size: 1.8em;
-        padding: 0px 10vw;
-    }
-}
+}    
 
 .Eleven{
     position: relative; 
@@ -2068,46 +2069,38 @@ h2, p, a{
     height: 150vh;
     background: url("img/cappadocia-1.jpg") $nrf 50% 50%;
     background-size: cover;
+    transition: background-image 0.5s ease-in-out;
 }
 
 .Six-istanbul-background-change{
-    position: relative; 
-    height: 600vh;
+    
     background: url("./img/ankara-1.jpg") $nrf 50% 40%;
     background-size: cover;
 }
 
-.Six-ankara-background-change{
-    position: relative; 
-    height: 600vh;
+.Six-ankara-background-change{ 
+    
     background: url("./img/izmir-1.jpg") $nrf 50% 40%;
     background-size: cover;
 }
 
 .Six-izmir-background-change{
-    position: relative; 
-    height: 600vh;
+ 
     background: url("./img/bursa-1.jpg") $nrf 50% 40%;
     background-size: cover;
 }
 
 .Six-bursa-background-change{
-    position: relative; 
-    height: 600vh;
     background: url("./img/adana-1.jpg") $nrf 50% 40%;
     background-size: cover;
 }
 
 .Six-adana-background-change{
-    position: relative; 
-    height: 600vh;
     background: url("./img/gaziantep-1.jpg") $nrf 50% 40%;
     background-size: cover;
 }
 
 .Six-gaziantep-background-change{
-    position: relative; 
-    height: 600vh;
     background: url("./img/konya-1.jpg") $nrf 50% 40%;
     background-size: cover;
 }

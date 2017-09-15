@@ -48,6 +48,7 @@ $(document).ready(function(){
     TweenMax.staggerFrom("#top-nav li", 0.7, { ease:  Power0.easeNone, delay: 1, opacity: 0, y:25, rotation: 10}, 0.15); 
     
     var controller = new ScrollMagic.Controller();
+    var divFadeController = new ScrollMagic.Controller();
     
     
     var pinTopNavScene = new ScrollMagic.Scene({
@@ -120,176 +121,8 @@ $(document).ready(function(){
         })
     .addTo(controller);
     
-    var sixChangeIstanbulScene = new ScrollMagic.Scene({
-        triggerElement: '.Six',
-        triggerHook: 0.3,
-        offset: 600,
-        reverse: true
-    })
-    .setClassToggle('.Six', 'Six-istanbul-background-change')
-    .addIndicators({
-            name: 'background change scene',
-            colorTrigger: 'orange',
-            colorStart: 'white'
-        })
-    .addTo(controller);
     
-    var sixChangeFadeoutIstanbulScene = new ScrollMagic.Scene({
-        triggerElement: '.Six',
-        triggerHook: 0.3,
-        offset: 600,
-        reverse: true
-    })
-    .setClassToggle('#istanbul-description', 'fadeout')
-    .addIndicators({
-            name: 'background change scene',
-            colorTrigger: 'orange',
-            colorStart: 'white'
-        })
-    .addTo(controller);
-    
-    var sixChangeAnkaraScene = new ScrollMagic.Scene({
-        triggerElement: '.Six',
-        triggerHook: 0.3,
-        offset: 1150,
-        reverse: true
-    })
-    .setClassToggle('.Six', 'Six-ankara-background-change')
-    .addIndicators({
-            name: 'background change scene',
-            colorTrigger: 'orange',
-            colorStart: 'white'
-        })
-    .addTo(controller);
-    
-    var sixChangeFadeoutAnkaraScene = new ScrollMagic.Scene({
-        triggerElement: '.Six',
-        triggerHook: 0.3,
-        offset: 1150,
-        reverse: true
-    })
-    .setClassToggle('#ankara-description', 'fadeout')
-    .addIndicators({
-            name: 'background change scene',
-            colorTrigger: 'orange',
-            colorStart: 'white'
-        })
-    .addTo(controller);
-    
-    var sixChangeIzmirScene = new ScrollMagic.Scene({
-        triggerElement: '.Six',
-        triggerHook: 0.3,
-        offset: 1700,
-        reverse: true
-    })
-    .setClassToggle('.Six', 'Six-izmir-background-change')
-    .addIndicators({
-            name: 'background change scene',
-            colorTrigger: 'orange',
-            colorStart: 'white'
-        })
-    .addTo(controller);
-    
-    var sixChangeFadeoutIzmirScene = new ScrollMagic.Scene({
-        triggerElement: '.Six',
-        triggerHook: 0.3,
-        offset: 1700,
-        reverse: true
-    })
-    .setClassToggle('#izmir-description', 'fadeout')
-    .addIndicators({
-            name: 'background change scene',
-            colorTrigger: 'orange',
-            colorStart: 'white'
-        })
-    .addTo(controller);
-    
-    var sixChangeBursaScene = new ScrollMagic.Scene({
-        triggerElement: '.Six',
-        triggerHook: 0.3,
-        offset: 2250,
-        reverse: true
-    })
-    .setClassToggle('.Six', 'Six-bursa-background-change')
-    .addIndicators({
-            name: 'background change scene',
-            colorTrigger: 'orange',
-            colorStart: 'white'
-        })
-    .addTo(controller);
-    
-    var sixChangeFadeoutBursaScene = new ScrollMagic.Scene({
-        triggerElement: '.Six',
-        triggerHook: 0.3,
-        offset: 2250,
-        reverse: true
-    })
-    .setClassToggle('#bursa-description', 'fadeout')
-    .addIndicators({
-            name: 'background change scene',
-            colorTrigger: 'orange',
-            colorStart: 'white'
-        })
-    .addTo(controller);
-    
-    var sixChangeAdanaScene = new ScrollMagic.Scene({
-        triggerElement: '.Six',
-        triggerHook: 0.3,
-        offset: 2800,
-        reverse: true
-    })
-    .setClassToggle('.Six', 'Six-adana-background-change')
-    .addIndicators({
-            name: 'background change scene',
-            colorTrigger: 'orange',
-            colorStart: 'white'
-        })
-    .addTo(controller);
-    
-    var sixChangeFadeoutAdanaScene = new ScrollMagic.Scene({
-        triggerElement: '.Six',
-        triggerHook: 0.3,
-        offset: 2800,
-        reverse: true
-    })
-    .setClassToggle('#adana-description', 'fadeout')
-    .addIndicators({
-            name: 'background change scene',
-            colorTrigger: 'orange',
-            colorStart: 'white'
-        })
-    .addTo(controller);
-    
-    var sixChangeGaziantepScene = new ScrollMagic.Scene({
-        triggerElement: '.Six',
-        triggerHook: 0.3,
-        offset: 3350,
-        reverse: true
-    })
-    .setClassToggle('.Six', 'Six-gaziantep-background-change')
-    .addIndicators({
-            name: 'background change scene',
-            colorTrigger: 'orange',
-            colorStart: 'white'
-        })
-    .addTo(controller);
-    
-    var sixChangeFadeoutGaziantepScene = new ScrollMagic.Scene({
-        triggerElement: '.Six',
-        triggerHook: 0.3,
-        offset: 3350,
-        reverse: true
-    })
-    .setClassToggle('#gaziantep-description', 'fadeout')
-    .addIndicators({
-            name: 'background change scene',
-            colorTrigger: 'orange',
-            colorStart: 'white'
-        })
-    .addTo(controller);
-    
-    
-    
+   
     /*----- div fadeout animations -----*/
     var oneFadeoutScene = new ScrollMagic.Scene({
         triggerElement: '.One',
@@ -321,6 +154,8 @@ $(document).ready(function(){
     })
     .addTo(controller);
     
+    /*
+    
     var tenFadeoutScene = new ScrollMagic.Scene({
         triggerElement: '.Ten',
         triggerHook: 0.1,
@@ -334,7 +169,7 @@ $(document).ready(function(){
         colorTrigger: 'yellow',
         colorStart: '#75C695'
     })
-    .addTo(controller);
+    .addTo(controller);*/
     
     var thirteenFadeoutScene = new ScrollMagic.Scene({
         triggerElement: '.Thirteen',
