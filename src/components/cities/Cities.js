@@ -2,40 +2,50 @@ import React, { Component } from 'react';
 
 var CityRow = React.createClass({
   setTime: function(){
-      
+
     var localTime = new Date(); //get your local time
     var utcTime = localTime.getUTCHours(); // find UTC hours
     var currentdate = new Date(); // create a new date object for the EST time
     currentdate.setHours(utcTime+3); // adjust it for EST hours.
       
       
-  	var hours = currentdate.getUTCHours() + parseInt(this.props.UTCOffset);    
-
-        // correct for number over 24, and negatives
-        if( hours >= 12 ){ hours -= 12; }
-        if( hours < 0   ){ hours += 12; }
-
-        // add leading zero, first convert hours to string
-        hours = hours + "";
-        if( hours.length == 1 ){ hours = "0" + hours; }
-
-        // minutes are the same on every time zone
-        var minutes = currentdate.getUTCMinutes();
-	  
-        // add leading zero, first convert hours to string
-        minutes = minutes + "";
-        if( minutes.length == 1 ){ minutes = "0" + minutes; }
-
-        var seconds = currentdate.getUTCSeconds();
+  	var hours = currentdate.getUTCHours() + parseInt(this.props.UTCOffset);     
       
-        seconds = seconds + "";
-        if( seconds.length == 1 ){ seconds = "0" + seconds; }
+    // correct for number over 24, and negatives
+    if( hours >= 12 ){ hours -= 12; }
+    if( hours < 0   ){ hours += 12; }     
+
+    // add leading zero, first convert hours to string
+    hours = hours + "";
+    if( hours.length == 1 ){ hours = "0" + hours; }
+
+    // minutes are the same on every time zone
+    var minutes = currentdate.getUTCMinutes();
+
+    // add leading zero, first convert hours to string
+    minutes = minutes + "";
+    if( minutes.length == 1 ){ minutes = "0" + minutes; }
+
+    var seconds = currentdate.getUTCSeconds();
       
-        this.setState({
-      	    hours: hours,
-            minutes: minutes,
-            seconds: seconds
-        });
+    seconds = seconds + "";
+    if( seconds.length == 1 ){ seconds = "0" + seconds; }
+      
+    //switches between am & pm
+    var ampm;
+      
+    if(hours >= 0 && hours < 12){
+        ampm = "am";
+    }else{
+        ampm  = "pm";
+    } 
+      
+    this.setState({
+        hours: hours,
+        minutes: minutes,
+        seconds: seconds,
+        ampm: ampm
+    });
   },
     
   componentWillMount: function(){
@@ -51,7 +61,7 @@ var CityRow = React.createClass({
   render: function() {    
     return(
       <div className="city-row" ref="cityRow">
-        <span className="city-time">{this.state.hours}:{this.state.minutes}:{this.state.seconds}</span>
+        <span className="city-time">{this.state.hours}:{this.state.minutes}:{this.state.seconds} {this.state.ampm}</span>
       </div>
     )
   }
