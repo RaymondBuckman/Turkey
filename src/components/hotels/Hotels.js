@@ -10,22 +10,26 @@ export default class Hotels extends Component {
                     <div className="container">
                         <h1 id="oteleler" className="text-center scrollmagic-header">Oteleler</h1>
                         <h2 id="hotels" className="text-center scrollmagic-header">Hotels</h2> 
-                        <h1 className="text-right scrollmagic-desc">Raffles Hotel, İstanbul</h1>
+                        <h1 id="raffles1" className="text-right scrollmagic-desc">Raffles Hotel, İstanbul</h1>
+                        <h2 id="raffles1-desc" className="text-right scrollmagic-desc">Lobby</h2>
                     </div>
                 </div>
                 <div className="container">
-                    <h1 id="raffles-pool" className="text-left scrollmagic-desc">Raffles Pool & Spa</h1>
+                    <h1 id="raffles2" className="text-left scrollmagic-desc">Raffles Hotel, İstanbul</h1>
+                    <h2 id="raffles2-desc" className="text-left scrollmagic-desc">Pool & Spa</h2>
                 </div>
             </div>
             
             <div className="Thirteen scrollmagic-div-fadeout">           
                 <div className="Thirteen-inner">            
                     <div className="container">
-                        <h1 className="text-right scrollmagic-desc">Kayakapi Hotel, Ürgüp</h1>
+                        <h1 id="kayakapi1" className="text-right scrollmagic-desc">Kayakapi Hotel, Ürgüp</h1>
+                        <h2 id="kayakapi1-desc" className="text-right scrollmagic-desc">Accomadations</h2>
                     </div>
                 </div>
                 <div className="container">
-                    <h1 id="kayakapi-pool" className="text-left scrollmagic-desc">Kayakapi Pool & Spa</h1>
+                    <h1 id="kayakapi2" className="text-left scrollmagic-desc">Kayakapi Hotel, Ürgüp</h1>
+                    <h2 id="kayakapi2-desc" className="text-left scrollmagic-desc">Pool</h2>
                 </div>
             </div>
             
