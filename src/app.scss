@@ -15,6 +15,12 @@ $red: #E30A17;
 $white: #fff;
 $turquoise: #00dce8;
 
+//font sizes
+$main-header-size: 5em;
+$main-subheader-size: 3em;
+$secondary-subheader-size: 2em;
+$desc-size: 1.5em;
+
 $arrow-rotate-out: all 2.0s cubic-bezier(.37,1.01,.8,.99);
 $color-hover: color 0.3s ease-in-out;
 
@@ -134,7 +140,7 @@ h2, p, a{
 
 .App{
     height: 100%;
-    background: url("img/white-2.png") $nrf center;
+    background: url("img/white-3.jpg") $nrf center;
     background-size: cover;
     overflow-x: hidden;
 }
@@ -205,13 +211,20 @@ h2, p, a{
         }
     }
     
+    //overrides automatic padding below navbar
+    /*
+    .scrollmagic-pin-spacer{
+        padding-top: 0vh !important;
+        padding-bottom: 0vh !important;
+    }*/
+    
         
     #hos-geldiniz{
         position: relative;
         top: 5vh; //used to be 65vh
         color: $white;
         @include main-font;
-        font-size: 5em;
+        font-size: $main-header-size;
         text-shadow: 4px 4px 2px rgba(0, 220, 232, 0.5);
         //transition: all 0.3s ease-in-out;
     }
@@ -226,12 +239,11 @@ h2, p, a{
     }
 }
 
-
 .Two {
     position: relative;
     top: 0vh;
     height: auto;
-    background: url("./img/white-2.png") $nrf center;
+    background: url("./img/white-3.jpg") $nrf center;
     background-size: cover;
     font-size: large;
     z-index: 19;
@@ -284,7 +296,7 @@ h2, p, a{
             #flag{
                 position: relative;
                 top: 20px;
-                font-size: 1.5em;
+                font-size: $desc-size;
                 color: $turquoise;
                 opacity: 0;
                 transform: rotate(5deg);
@@ -338,7 +350,7 @@ h2, p, a{
                 position: relative;
                 top: 250px;
                 color: $red;
-                font-size: 1.5em;
+                font-size: $desc-size;
             }
         }
     }
@@ -355,7 +367,7 @@ h2, p, a{
         position: relative;
         top: 10vh;
         color: $white;
-        font-size: 5em; 
+        font-size: $main-header-size; 
         opacity: 0;
         transform: rotate(-10deg);
         transition: all 0.5s ease-in-out;    
@@ -377,19 +389,31 @@ h2, p, a{
     
     #uzungol{
         position: relative;
-        top: 65vh;
+        top: 60vh;
         color: $white;
         font-size: 3em;            
+    }
+    
+    #uzungol-desc{
+        position: relative;
+        top: 60vh;
+        color: $turquoise;
+        font-size: $desc-size;            
     }
     
     #cappadocia{
         position: relative;
-        top: 105vh;
+        top: 95vh;
         color: $white;
         font-size: 3em;            
     }
     
-
+    #cappadocia-desc{
+        position: relative;
+        top: 95vh;
+        color: $turquoise;
+        font-size: $desc-size;            
+    }
 }
 
 .Four{
@@ -433,7 +457,7 @@ h2, p, a{
     #ranging{
         position: relative;
         top: 35vh;
-        font-size: 1.5em;
+        font-size: $desc-size;
         color: $white;
     }
     
@@ -458,7 +482,7 @@ h2, p, a{
 .Five{
     position: relative; 
     height: auto;
-    background: url("img/white-2.png") $nrf 50% 50%;
+    background: url("img/white-3.jpg") $nrf 50% 50%;
     background-size: cover;
     
     .flex-container {
@@ -503,7 +527,7 @@ h2, p, a{
             position: relative;
             top: 290px;
             color: $turquoise;
-            font-size: 1.5em;
+            font-size: $desc-size;
         }
         
         .map{
@@ -523,7 +547,7 @@ h2, p, a{
                 position: relative;
                 top: 40px;
                 color: $red;
-                font-size: 5em;
+                font-size: $main-header-size;
                 opacity: 0;
                 transform: rotate(-10deg);
                 transition: all 0.5s ease-in-out;
@@ -674,7 +698,7 @@ h2, p, a{
         position: relative;
         top: 10vh;
         color: $white;
-        font-size: 5em;
+        font-size: $main-header-size;
         opacity: 0;
         transform: rotate(-10deg);
         transition: all 0.5s ease-in-out;    
@@ -702,10 +726,15 @@ h2, p, a{
     
     #istanbul-description{
         position: relative;
-        top: 50vh;
+        top: 45vh;
         color: $white;
         font-size: 1.8em;
         padding: 0px 10vw;
+        list-style-type: none;
+        
+        li{
+            @include secondary-font;
+        }
     }   
 }
 
@@ -728,6 +757,11 @@ h2, p, a{
         color: $white;
         font-size: 1.8em;
         padding: 0px 10vw;
+        list-style-type: none;
+        
+        li{
+            @include secondary-font;
+        }
     }
 }
 
@@ -749,6 +783,11 @@ h2, p, a{
         color: $white;
         font-size: 1.8em;
         padding: 0px 10vw;
+        list-style-type: none;
+        
+        li{
+            @include secondary-font;
+        }
     }
 }
 
@@ -770,6 +809,11 @@ h2, p, a{
         color: $white;
         font-size: 1.8em;
         padding: 0px 10vw;
+        list-style-type: none;
+        
+        li{
+            @include secondary-font;
+        }
     }
 }
 
@@ -791,13 +835,18 @@ h2, p, a{
         color: $white;
         font-size: 1.8em;
         padding: 0px 10vw;
+        list-style-type: none;
+        
+        li{
+            @include secondary-font;
+        }
     }
 }    
 
 .Eleven{
     position: relative; 
     height: auto;
-    background: url("./img/white-2.png") $nrf center;
+    background: url("./img/white-3.jpg") $nrf center;
     background-size: cover;
     
     .flex-container {
@@ -835,7 +884,7 @@ h2, p, a{
             position: relative;
             top: 330px;
             color: $white;
-            font-size: 1.5em;
+            font-size: $desc-size;
         }
         
         &:nth-child(even){
@@ -859,7 +908,7 @@ h2, p, a{
                 position: relative;
                 top: 50px;
                 color: $red;
-                font-size: 5em;
+                font-size: $main-header-size;
                 opacity: 0;
                 transform: rotate(-10deg);
                 transition: all 0.5s ease-in-out;
@@ -1032,7 +1081,7 @@ h2, p, a{
         position: relative;
         top: 10vh;
         color: $white;
-        font-size: 5em; 
+        font-size: $main-header-size; 
         opacity: 0;
         transform: rotate(-10deg);
         transition: all 0.5s ease-in-out;   
@@ -1052,19 +1101,34 @@ h2, p, a{
         @include scrollmagic-header-finish;
     }
     
-    h1:nth-child(3){
+    #raffles1{
         position: relative;
         top: 65vh;
         color: $white;
-        font-size: 3em;            
+        font-size: $main-subheader-size;
+                   
+    }
+    
+    #raffles1-desc{
+        position: relative;
+        top: 65vh;
+        color: $turquoise;
+        font-size: $secondary-subheader-size;            
     }
     
     
-    #raffles-pool{
+    #raffles2{
         position: relative;
         top: -25vh;
         color: $white;
-        font-size: 3em;            
+        font-size: $main-subheader-size;           
+    }
+    
+    #raffles2-desc{
+        position: relative;
+        top: -25vh;
+        color: $turquoise;
+        font-size: $secondary-subheader-size;            
     }
 }
 
@@ -1081,25 +1145,32 @@ h2, p, a{
         background-size: cover;
     }
     
-    h1:nth-child(1){
+    #kayakapi1{
         position: relative;
         top: 85vh;
         color: $white;
-        font-size: 3em;            
+        font-size: $main-subheader-size;             
     }
     
-    h1:nth-child(2){
+    #kayakapi1-desc{
         position: relative;
-        top: 65vh;
-        color: $white;
-        font-size: 3em;            
+        top: 85vh;
+        color: $turquoise;
+        font-size: $secondary-subheader-size;            
     }
     
-    #kayakapi-pool{
+    #kayakapi2{
         position: relative;
         top: -25vh;
         color: $white;
-        font-size: 3em;            
+        font-size: $main-subheader-size;             
+    }
+    
+    #kayakapi2-desc{
+        position: relative;
+        top: -25vh;
+        color: $turquoise;
+        font-size: $secondary-subheader-size;            
     }
 }
 
@@ -1107,7 +1178,7 @@ h2, p, a{
     position: relative;
     top: 0vh;
     height: auto;
-    background: url("./img/white-2.png") $nrf center;
+    background: url("./img/white-3.jpg") $nrf center;
     background-size: cover;
     font-size: large;
     z-index: 19;
@@ -1264,7 +1335,7 @@ h2, p, a{
         position: relative;
         top: 10vh;
         color: $white;
-        font-size: 5em;  
+        font-size: $main-header-size;  
         opacity: 0;
         transform: rotate(-10deg);
         transition: all 0.5s ease-in-out; 
@@ -1288,14 +1359,14 @@ h2, p, a{
         position: relative;
         top: 55vh;
         color: $white;
-        font-size: 3em;            
+        font-size: $main-subheader-size;         
     }
     
     #meze-desc{
         position: relative;
         top: 55vh;
         color: $white;
-        font-size: 1.5em;
+        font-size: $desc-size;
         padding: 10px;
         @include more-legible-paragraph;
     }   
@@ -1304,14 +1375,14 @@ h2, p, a{
         position: relative;
         top: -40vh;
         color: $white;
-        font-size: 3em;            
+        font-size: $main-subheader-size;            
     }
     
     #doner-desc{
         position: relative;
         top: -40vh;
         color: $white;
-        font-size: 1.5em;
+        font-size: $desc-size;
         padding: 10px;
         @include more-legible-paragraph;
     }
@@ -1325,7 +1396,7 @@ h2, p, a{
     position: relative;
     top: 0vh;
     height: auto;
-    background: url("./img/white-2.png") $nrf center;
+    background: url("./img/white-3.jpg") $nrf center;
     background-size: cover;
     font-size: large;
     z-index: 19;
@@ -1380,7 +1451,7 @@ h2, p, a{
             #food{
                 position: relative;
                 top: 20px;
-                font-size: 1.5em;
+                font-size: $desc-size;
                 color: $turquoise;
                 opacity: 0;
                 transform: rotate(5deg);
@@ -1465,7 +1536,7 @@ h2, p, a{
         position: relative;
         top: 55vh;
         color: $white;
-        font-size: 1.5em;
+        font-size: $desc-size;
         padding: 10px;
         @include more-legible-paragraph;
     }
@@ -1481,7 +1552,7 @@ h2, p, a{
         position: relative;
         top: -40vh;
         color: $white;
-        font-size: 1.5em;
+        font-size: $desc-size;
         padding: 10px;
         @include more-legible-paragraph;
     }
@@ -1511,7 +1582,7 @@ h2, p, a{
         position: relative;
         top: 55vh;
         color: $white;
-        font-size: 1.5em;   
+        font-size: $desc-size;   
         padding: 10px;
         @include more-legible-paragraph;
     }
@@ -1527,7 +1598,7 @@ h2, p, a{
         position: relative;
         top: -40vh;
         color: $white;
-        font-size: 1.5em;
+        font-size: $desc-size;
         padding: 10px;
         @include more-legible-paragraph;
     }
@@ -1537,7 +1608,7 @@ h2, p, a{
     position: relative;
     top: 0vh;
     height: auto;
-    background: url("./img/white-2.png") $nrf center;
+    background: url("./img/white-3.jpg") $nrf center;
     background-size: cover;
     font-size: large;
     z-index: 19;
@@ -1592,7 +1663,7 @@ h2, p, a{
             #language{
                 position: relative;
                 top: 20px;
-                font-size: 1.5em;
+                font-size: $desc-size;
                 color: $turquoise;
                 opacity: 0;
                 transform: rotate(5deg);
@@ -1633,6 +1704,8 @@ h2, p, a{
                 position: relative;
                 top: 240px;
                 color: $white;
+                background-color: rgba(0,0,0,0.5);
+                padding: 5px 0px;
                 font-size: 2em;
             }
         }
@@ -1662,7 +1735,7 @@ h2, p, a{
         position: relative;
         top: 10vh;
         color: $white;
-        font-size: 5em;
+        font-size: $main-header-size;
         opacity: 0;
         transform: rotate(-5deg);
         transition: all 0.5s ease-in-out;
@@ -1686,7 +1759,7 @@ h2, p, a{
         position: relative;
         top: 30vh;
         color: $white; 
-        font-size: 1.5em;
+        font-size: $desc-size;
     }
     
     a{ 
@@ -1712,7 +1785,7 @@ h2, p, a{
         position: relative;
         top: 10vh;
         color: $white;
-        font-size: 5em;
+        font-size: $main-header-size;
         opacity: 0;
         transform: rotate(-10deg);
         transition: all 0.5s ease-in-out;
@@ -1736,7 +1809,7 @@ h2, p, a{
         position: relative;
         top: 10vh;
         color: $white; 
-        font-size: 1.5em;
+        font-size: $desc-size;
         @include secondary-font;
         list-style: none;
     }
@@ -1753,7 +1826,7 @@ h2, p, a{
 .Twenty-two{
     position: relative; 
     height: auto;
-    background: url("./img/white-2.png") $nrf center;
+    background: url("./img/white-3.jpg") $nrf center;
     background-size: cover;
     
     .flex-container {
@@ -1792,7 +1865,7 @@ h2, p, a{
             position: relative;
             top: 330px;
             color: $white;
-            font-size: 1.5em;
+            font-size: $desc-size;
         }
         
         &:nth-child(even){
@@ -1814,7 +1887,7 @@ h2, p, a{
                 position: relative;
                 top: 50px;
                 color: $red;
-                font-size: 5em;
+                font-size: $main-header-size;
                 opacity: 0;
                 transform: rotate(-10deg);
                 transition: all 0.5s ease-in-out;
@@ -1895,7 +1968,7 @@ h2, p, a{
         position: relative;
         top: 10vh;
         color: $white;
-        font-size: 5em;
+        font-size: $main-header-size;
         opacity: 0;
         transform: rotate(-5deg);
         transition:  all 0.5s ease-in-out;
@@ -2071,38 +2144,3 @@ h2, p, a{
     background-size: cover;
     transition: background-image 0.5s ease-in-out;
 }
-
-.Six-istanbul-background-change{
-    
-    background: url("./img/ankara-1.jpg") $nrf 50% 40%;
-    background-size: cover;
-}
-
-.Six-ankara-background-change{ 
-    
-    background: url("./img/izmir-1.jpg") $nrf 50% 40%;
-    background-size: cover;
-}
-
-.Six-izmir-background-change{
- 
-    background: url("./img/bursa-1.jpg") $nrf 50% 40%;
-    background-size: cover;
-}
-
-.Six-bursa-background-change{
-    background: url("./img/adana-1.jpg") $nrf 50% 40%;
-    background-size: cover;
-}
-
-.Six-adana-background-change{
-    background: url("./img/gaziantep-1.jpg") $nrf 50% 40%;
-    background-size: cover;
-}
-
-.Six-gaziantep-background-change{
-    background: url("./img/konya-1.jpg") $nrf 50% 40%;
-    background-size: cover;
-}
-
-
