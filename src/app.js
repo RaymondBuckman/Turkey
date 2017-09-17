@@ -301,6 +301,15 @@ $(window).scroll(function(){
             'background-position':  '50% ' + (50 + wScroll/35) + '%'
         })
         
+        $('#hos-geldiniz').css({
+            'transform': 'translateX('  + wScroll/10 + 'px) translateY('  + wScroll/4 + 'px)'
+            
+        })
+        
+        $('#welcome').css({
+            'transform': 'translateX('  + wScroll/-10 + 'px) translateY('  + wScroll/4 + 'px)'
+        })
+        
         /*
         if(wScroll > 300){
             $('.One').css({
