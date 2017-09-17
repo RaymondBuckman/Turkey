@@ -10,10 +10,10 @@ var CityRow = React.createClass({
       
       
   	var hours = currentdate.getUTCHours() + parseInt(this.props.UTCOffset); 
-    var hoursForAMPM = currentdate.getUTCHours() + parseInt(this.props.UTCOffset); 
+    //var hoursForAMPM = currentdate.getUTCHours() + parseInt(this.props.UTCOffset); 
       
     // correct for number over 24, and negatives
-    if( hours >= 12 ){ hours -= 12; }
+    if( hours >= 24 ){ hours -= 24; }
     if( hours < 0   ){ hours += 12; }     
 
     // convert hours to string
@@ -35,7 +35,7 @@ var CityRow = React.createClass({
     //switches between am & pm
     var ampm;
       
-    if(hoursForAMPM >= 0 && hoursForAMPM < 12){
+    if(hours >= 0 && hours < 12){
         ampm = "am";
     }else{
         ampm  = "pm";
@@ -76,52 +76,52 @@ export default class Cities extends Component {
             <div className="Six" id="Six"> 
                 <h1 id="sehirler" className="text-center scrollmagic-header">En Büyük Şehirler</h1>
                 <h2 id="cities" className="text-center scrollmagic-header">Largest Cities</h2> 
-                <p id="istanbul-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
-                    <span id="istanbul">İstanbul</span><br/>
-                    Economic & Cultural Center<br/>
-                    Location: Marmara<br/>
-                    Population: 14.8 million<br/>
-                    Current time: <CityRow name="CityRow" UTCOffset="3"/>
-                </p>
+                <ul id="istanbul-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
+                    <li><span id="istanbul">İstanbul</span></li>
+                    <li>Economic & Cultural Center</li>
+                    <li>Location: Marmara</li>
+                    <li>Population: 14.8 million</li>
+                    <li>Current time: <CityRow name="CityRow" UTCOffset="3"/></li>
+                </ul>
             </div>
             <div className="Seven"> 
-                <p id="ankara-description" className="col-lg-6 col-lg-offset-0 text-left scrollmagic-desc">
-                <span id="ankara">Ankara</span><br/>
-                    Capital City<br/>
-                    Location: Central Anatolia<br/>
-                    Population: 5.3 million<br/>
-                    Current time: <CityRow name="CityRow" UTCOffset="3"/>
-                </p>
+                <ul id="ankara-description" className="col-lg-6 col-lg-offset-0 text-left scrollmagic-desc">
+                    <li><span id="ankara">Ankara</span></li>
+                    <li>Capital City</li>
+                    <li>Location: Central Anatolia</li>
+                    <li>Population: 5.3 million</li>
+                    <li>Current time: <CityRow name="CityRow" UTCOffset="3"/></li>
+                </ul>
             </div>
             
             <div className="Eight"> 
-                <p id="izmir-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
-                    <span id="izmir">İzmir</span><br/>
-                    Crusiseline hotspot<br/>
-                    Location: Aegean region<br/>
-                    Population: 2.8 million<br/>
-                    Current time: <CityRow name="CityRow" UTCOffset="3"/>
-                </p>
+                <ul id="izmir-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
+                    <li><span id="izmir">İzmir</span></li>
+                    <li>Crusiseline hotspot</li>
+                    <li>Location: Aegean region</li>
+                    <li>Population: 2.8 million</li>
+                    <li>Current time: <CityRow name="CityRow" UTCOffset="3"/></li>
+                </ul>
             </div>
             
             <div className="Nine">
-                <p id="bursa-description" className="col-lg-6 col-lg-offset-0 text-left scrollmagic-desc">
-                    <span id="bursa">Bursa</span><br/>
-                    ~300 Year Capital of the Ottoman Empire<br/>
-                    Location: Marmara<br/>
-                    Population: 2.3 million<br/>
-                    Current time: <CityRow name="CityRow" UTCOffset="3"/>
-                </p>
+                <ul id="bursa-description" className="col-lg-6 col-lg-offset-0 text-left scrollmagic-desc">
+                    <li><span id="bursa">Bursa</span></li>
+                    <li>~300 Year Capital of the Ottoman Empire</li>
+                    <li>Location: Marmara</li>
+                    <li>Population: 2.3 million</li>
+                    <li>Current time: <CityRow name="CityRow" UTCOffset="3"/></li>
+                </ul>
             </div>
             
             <div className="Ten">
-                <p id="adana-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
-                    <span id="adana">Adana</span><br/>
-                    Mediterranean Capital<br/>
-                    Location: Mediterranean Region<br/>
-                    Population: 1.7 million<br/>
-                    Current time: <CityRow name="CityRow" UTCOffset="3"/>
-                </p>
+                <ul id="adana-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
+                    <li><span id="adana">Adana</span></li>
+                    <li>Mediterranean Capital</li>
+                    <li>Location: Mediterranean Region</li>
+                    <li>Population: 1.7 million</li>
+                    <li>Current time: <CityRow name="CityRow" UTCOffset="3"/></li>
+                </ul>
             </div>
         </div>
         );
