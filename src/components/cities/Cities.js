@@ -10,10 +10,13 @@ var CityRow = React.createClass({
       
       
   	var hours = currentdate.getUTCHours() + parseInt(this.props.UTCOffset); 
-    //var hoursForAMPM = currentdate.getUTCHours() + parseInt(this.props.UTCOffset); 
+    var hoursForAMPM = currentdate.getUTCHours() + parseInt(this.props.UTCOffset); 
       
     // correct for number over 24, and negatives
-    if( hours >= 24 ){ hours -= 24; }
+    if( hours > 12 ){ 
+        if(hours > 24){ hours -=24; }
+        else{ hours -=12; }
+    }
     if( hours < 0   ){ hours += 12; }     
 
     // convert hours to string
@@ -35,7 +38,9 @@ var CityRow = React.createClass({
     //switches between am & pm
     var ampm;
       
-    if(hours >= 0 && hours < 12){
+    if(hoursForAMPM >= 24){ hoursForAMPM -=24; }
+      
+    if(hoursForAMPM >= 0 && hoursForAMPM< 12){
         ampm = "am";
     }else{
         ampm  = "pm";
@@ -79,7 +84,7 @@ export default class Cities extends Component {
                 <ul id="istanbul-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
                     <li><span id="istanbul">İstanbul</span></li>
                     <li>Economic & Cultural Center</li>
-                    <li>Location: Marmara</li>
+                    <li>Location: Marmara Region</li>
                     <li>Population: 14.8 million</li>
                     <li>Current time: <CityRow name="CityRow" UTCOffset="3"/></li>
                 </ul>
@@ -98,7 +103,7 @@ export default class Cities extends Component {
                 <ul id="izmir-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
                     <li><span id="izmir">İzmir</span></li>
                     <li>Crusiseline hotspot</li>
-                    <li>Location: Aegean region</li>
+                    <li>Location: Aegean Region</li>
                     <li>Population: 2.8 million</li>
                     <li>Current time: <CityRow name="CityRow" UTCOffset="3"/></li>
                 </ul>
@@ -108,13 +113,13 @@ export default class Cities extends Component {
                 <ul id="bursa-description" className="col-lg-6 col-lg-offset-0 text-left scrollmagic-desc">
                     <li><span id="bursa">Bursa</span></li>
                     <li>~300 Year Capital of the Ottoman Empire</li>
-                    <li>Location: Marmara</li>
+                    <li>Location: Marmara Region</li>
                     <li>Population: 2.3 million</li>
                     <li>Current time: <CityRow name="CityRow" UTCOffset="3"/></li>
                 </ul>
             </div>
             
-            <div className="Ten">
+            <div className="Ten scrollmagic-div-fadeout">
                 <ul id="adana-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
                     <li><span id="adana">Adana</span></li>
                     <li>Mediterranean Capital</li>
