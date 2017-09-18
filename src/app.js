@@ -93,34 +93,36 @@ $(document).ready(function(){
     })   
     
     /* ----- background change scenes  -----*/
+    $('.scrollmagic-inner-fadeout').each(function(){
+        var chevronScene = new ScrollMagic.Scene({
+            triggerElement: this,
+            triggerHook: 0.55,
+            offset: 700,
+            reverse: true
+        })
+        .setClassToggle(this, 'fadeout')
+        /*
+        .addIndicators({
+            name: 'horizontal fade',
+            colorTrigger: 'yellow',
+            colorStart: '#75C695'
+        })*/
+        .addTo(controller);
+    })   
+    /*
     var threeChangeScene = new ScrollMagic.Scene({
-        triggerElement: '.Three',
-        triggerHook: 0.6,
+        triggerElement: '.Three-inner',
+        triggerHook: 0.65,
         offset: 700,
         reverse: true
     })
-    .setClassToggle('.Three', 'Three-background-change')
+    .setClassToggle('.Three-inner', 'fadeout')
     .addIndicators({
-            name: 'background change scene',
+            name: 'background fadeout scene',
             colorTrigger: 'orange',
             colorStart: 'white'
         })
-    .addTo(controller);
-    
-    var threeChangeFadeoutHeaderScene = new ScrollMagic.Scene({
-        triggerElement: '.Three',
-        triggerHook: 0.6,
-        offset: 700,
-        reverse: true
-    })
-    .setClassToggle('#uzungol', 'fadeout')
-    .addIndicators({
-            name: 'background change scene',
-            colorTrigger: 'orange',
-            colorStart: 'white'
-        })
-    .addTo(controller);
-    
+    .addTo(controller); */  
     
    
     /*----- div fadeout animations -----*/
@@ -154,12 +156,11 @@ $(document).ready(function(){
     })
     .addTo(controller);
     
-    /*
     
     var tenFadeoutScene = new ScrollMagic.Scene({
         triggerElement: '.Ten',
         triggerHook: 0.1,
-        offset: 800,
+        offset: 850,
         reverse: true
     })
     .setClassToggle('.Ten', 'fadeout')
@@ -169,7 +170,7 @@ $(document).ready(function(){
         colorTrigger: 'yellow',
         colorStart: '#75C695'
     })
-    .addTo(controller);*/
+    .addTo(controller);
     
     var thirteenFadeoutScene = new ScrollMagic.Scene({
         triggerElement: '.Thirteen',
@@ -204,7 +205,7 @@ $(document).ready(function(){
     var eighteenFadeoutScene = new ScrollMagic.Scene({
         triggerElement: '.Eighteen',
         triggerHook: 0.1,
-        offset: 700,
+        offset: 1300,
         reverse: true
     })
     .setClassToggle('.Eighteen', 'fadeout')
@@ -298,25 +299,19 @@ $(window).scroll(function(){
     if(largeDesktop.matches){ 
         
         $('.One-inner').css({
-            'background-position':  '50% ' + (50 + wScroll/35) + '%'
+            'background-position':  '50% ' + (50 + wScroll/35) + '%',
+            'filter': 'contrast(' + (100 - wScroll/8) + '%) brightness(' + (100 + wScroll/15) + '%)'
+            
+            
         })
         
         $('#hos-geldiniz').css({
             'transform': 'translateX('  + wScroll/10 + 'px) translateY('  + wScroll/4 + 'px)'
-            
         })
         
         $('#welcome').css({
             'transform': 'translateX('  + wScroll/-10 + 'px) translateY('  + wScroll/4 + 'px)'
         })
-        
-        /*
-        if(wScroll > 300){
-            $('.One').css({
-                'background': 'transparent'
-            })
-        }
-        */
         
         $('.Three-inner').css({
             'background-position':  '50% ' + (50 + wScroll/45) + '%'
@@ -342,17 +337,7 @@ $(window).scroll(function(){
             'opacity': 1 - Math.pow((wScroll/3000),80)
         })
         
-        $('.Twelve-inner').css({
-            'opacity': 1 - Math.pow((wScroll/13600),180)
-        })
         
-        $('.Twelve').css({
-            'opacity': 1 - Math.pow((wScroll/15700),20)
-        })
-        
-        $('.Thirteen-inner').css({
-            'opacity': 1 - Math.pow((wScroll/14800),250)
-        })
         
         $('.Fourteen > .flex-container > .flex-item:nth-child(1)').on('click', function(){
             window.location = "https://www.trivago.com/istanbul-32123/hotel"; 
@@ -386,25 +371,5 @@ $(window).scroll(function(){
             window.location = ("https://www.trivago.com/konya-509022/hotel");
             
         });
-        
-        $('.Fifteen-inner').css({
-            'opacity': 1 - Math.pow((wScroll/16900),400)
-        })
-        
-        $('.Seventeen-inner').css({
-            'opacity': 1 - Math.pow((wScroll/19000),400)
-        })
-        
-        $('.Eighteen-inner').css({
-            'opacity': 1 - Math.pow((wScroll/20400),400)
-        })
-        
-        $('.Eighteen').css({
-            'opacity': 1 - Math.pow((wScroll/21200),400)
-        })
-        
-        $('.Twenty-one').css({
-            'opacity': 1 - Math.pow((wScroll/23700),400)
-        })
     }
 })
