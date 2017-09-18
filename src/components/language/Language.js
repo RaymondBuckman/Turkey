@@ -95,7 +95,7 @@ export default class Language extends Component {
                     </h2>
                 </div>
             </div>
-            <div className="Twenty-one">            
+            <div className="Twenty-one scrollmagic-div-fadeout">            
                 <div className="container">
                     <h1 id="cumleler" className="text-center scrollmagic-header">Temel Cümleler</h1>
                     <h2 id="phrases" className="text-center scrollmagic-header">Basic Phrases</h2> 
