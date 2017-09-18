@@ -27,7 +27,7 @@ $color-hover: color 0.3s ease-in-out;
 //keyframes
 
 
-@keyframes change-background{
+@keyframes flag-background{
 	45%     {opacity: 1;}
     50%     {opacity: 0.85;}
     100%     {opacity: 1;}
@@ -158,9 +158,9 @@ h2, p, a{
         height: 130vh;
         background: url("./img/maidens-tower-1.jpg") $nrf 50% 50%;
         background-size: cover;
-        animation: change-background;
+        animation: flag-background;
         animation-duration: 10s;
-        animation-iteration-count: infinite; 
+        animation-iteration-count: 1; 
         
         .navbar{
             position: relative;
@@ -235,7 +235,7 @@ h2, p, a{
         color: $white;
         text-shadow: 4px 4px 2px rgba(200, 0, 0, 0.5);
         @include secondary-font;
-        font-size: 3em;
+        font-size: $main-subheader-size;
     }
 }
 
@@ -359,58 +359,65 @@ h2, p, a{
 .Three{
     position: relative;
     height: 150vh;
-    background: url("img/uzungol-1.jpg") $nrf 50% 50%;
+    background: url("img/cappadocia-1.jpg") $nrf 50% 50%;
     background-size: cover;
-    transition: background-image 0.5s ease-in-out;
+   
     
-    #cografya{
+    .Three-inner{
         position: relative;
-        top: 10vh;
-        color: $white;
-        font-size: $main-header-size; 
-        opacity: 0;
-        transform: rotate(-10deg);
-        transition: all 0.5s ease-in-out;    
-    }
-    
-    #geography{
-        position: relative;
-        top: 10vh;
-        color: $turquoise;
-        font-size: 2em;
-        opacity: 0;
-        transform: rotate(10deg);
-        transition: all 0.5s ease-in-out;
-    }
-    
-    #cografya.fade-in, #geography.fade-in{
-        @include scrollmagic-header-finish;
-    }
-    
-    #uzungol{
-        position: relative;
-        top: 60vh;
-        color: $white;
-        font-size: 3em;            
-    }
-    
-    #uzungol-desc{
-        position: relative;
-        top: 60vh;
-        color: $turquoise;
-        font-size: $desc-size;            
+        height: 150vh;
+        background: url("img/uzungol-1.jpg") $nrf 50% 50%;
+        background-size: cover;
+        
+        #cografya{
+            position: relative;
+            top: 10vh;
+            color: $white;
+            font-size: $main-header-size; 
+            opacity: 0;
+            transform: rotate(-10deg);
+            transition: all 0.5s ease-in-out;    
+        }
+
+        #geography{
+            position: relative;
+            top: 10vh;
+            color: $turquoise;
+            font-size: $main-subheader-size;
+            opacity: 0;
+            transform: rotate(10deg);
+            transition: all 0.5s ease-in-out;
+        }
+
+        #cografya.fade-in, #geography.fade-in{
+            @include scrollmagic-header-finish;
+        }
+
+        #uzungol{
+            position: relative;
+            top: 60vh;
+            color: $white;
+            font-size: 3em;            
+        }
+
+        #uzungol-desc{
+            position: relative;
+            top: 60vh;
+            color: $turquoise;
+            font-size: $desc-size;            
+        }        
     }
     
     #cappadocia{
         position: relative;
-        top: 95vh;
+        top: -20vh;
         color: $white;
         font-size: 3em;            
     }
     
     #cappadocia-desc{
         position: relative;
-        top: 95vh;
+        top: -20vh;
         color: $turquoise;
         font-size: $desc-size;            
     }
@@ -708,7 +715,7 @@ h2, p, a{
         position: relative;
         top: 10vh;
         color: $turquoise;
-        font-size: 2em;
+        font-size: $main-subheader-size;
         opacity: 0;
         transform: rotate(10deg);
         transition: all 0.5s ease-in-out;    
@@ -1091,7 +1098,7 @@ h2, p, a{
         position: relative;
         top: 10vh;
         color: $turquoise;
-        font-size: 2em;
+        font-size: $main-subheader-size;
         opacity: 0;
         transform: rotate(10deg);
         transition: all 0.5s ease-in-out;    
@@ -1351,7 +1358,7 @@ h2, p, a{
         position: relative;
         top: 10vh;
         color: $turquoise;
-        font-size: 2em;
+        font-size: $main-subheader-size;
         opacity: 0;
         transform: rotate(10deg);
         transition: all 0.5s ease-in-out;    
@@ -1363,14 +1370,14 @@ h2, p, a{
     
     #meze{
         position: relative;
-        top: 55vh;
+        top: 50vh;
         color: $white;
         font-size: $main-subheader-size;         
     }
     
     #meze-desc{
         position: relative;
-        top: 55vh;
+        top: 50vh;
         color: $white;
         font-size: $desc-size;
         padding: 10px;
@@ -1751,7 +1758,7 @@ h2, p, a{
         position: relative;
         top: 10vh;
         color: $red;
-        font-size: 3em;
+        font-size: $main-subheader-size;
         opacity: 0;
         transform: rotate(5deg);
         transition: all 0.5s ease-in-out;    
@@ -1801,7 +1808,7 @@ h2, p, a{
         position: relative;
         top: 10vh;
         color: $turquoise;
-        font-size: 3em;
+        font-size: $main-subheader-size;
         opacity: 0;
         transform: rotate(10deg);
         transition: all 0.5s ease-in-out;    
@@ -1903,7 +1910,7 @@ h2, p, a{
                 position: relative;
                 top: 80px;
                 color: $turquoise;
-                font-size: 3em;
+                font-size: $main-subheader-size;
                 opacity: 0;
                 transform: rotate(10deg);
                 transition: all 0.5s ease-in-out;    
@@ -1984,7 +1991,7 @@ h2, p, a{
         position: relative;
         top: 10vh;
         color: $turquoise;
-        font-size: 3em;
+        font-size: $main-subheader-size;
         opacity: 0;
         transform: rotate(5deg);
         transition: all 0.5s ease-in-out;    
@@ -2124,7 +2131,7 @@ h2, p, a{
     transform: rotate(0deg) rotateX(0deg) translateX(0px) translateY(0px);
 }
 
-.scrollmagic-div-fadeout{
+.scrollmagic-div-fadeout, .scrollmagic-inner-fadeout{
     transition: opacity 0.3s ease-in-out;
 }
 
@@ -2148,5 +2155,5 @@ h2, p, a{
     height: 150vh;
     background: url("img/cappadocia-1.jpg") $nrf 50% 50%;
     background-size: cover;
-    transition: background-image 0.5s ease-in-out;
 }
+
