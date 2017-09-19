@@ -48,7 +48,7 @@ $(document).ready(function(){
     TweenMax.staggerFrom("#top-nav li", 0.7, { ease:  Power0.easeNone, delay: 1, opacity: 0, y:25, rotation: 10}, 0.15); 
     
     var controller = new ScrollMagic.Controller();
-    var divFadeController = new ScrollMagic.Controller();
+    
     
     
     var pinTopNavScene = new ScrollMagic.Scene({
@@ -68,11 +68,12 @@ $(document).ready(function(){
     })
     
     .setTween(bottomNavTween)
+    /*
     .addIndicators({
         name:"bottom-nav",
         colorTrigger: 'green',
         colorStart: '#FFF'
-    })
+    })*/
     .addTo(controller);
     
     /*----- header animations -----*/
@@ -92,36 +93,57 @@ $(document).ready(function(){
         .addTo(controller);
     })   
     
+    $('#ataturk').each(function(){
+        var headerScene = new ScrollMagic.Scene({
+            triggerElement: '.Four-inner',
+            triggerHook: 0.55,
+            offset: 700,
+            reverse: true
+        })
+        .setClassToggle(this, 'fade-in')
+        /*
+        .addIndicators({
+            name: 'fade scene',
+            colorTrigger: 'black',
+            colorStart: '#75C695'
+        })*/
+        .addTo(controller);
+    })   
+    
+    $('#founder').each(function(){
+        var headerScene = new ScrollMagic.Scene({
+            triggerElement: '.Four-inner',
+            triggerHook: 0.55,
+            offset: 700,
+            reverse: true
+        })
+        .setClassToggle(this, 'fade-in')
+        /*
+        .addIndicators({
+            name: 'fade scene',
+            colorTrigger: 'black',
+            colorStart: '#75C695'
+        })*/
+        .addTo(controller);
+    })   
+    
     /* ----- background change scenes  -----*/
-    var threeChangeScene = new ScrollMagic.Scene({
-        triggerElement: '.Three',
-        triggerHook: 0.6,
-        offset: 700,
-        reverse: true
-    })
-    .setClassToggle('.Three', 'Three-background-change')
-    .addIndicators({
-            name: 'background change scene',
-            colorTrigger: 'orange',
-            colorStart: 'white'
+    $('.scrollmagic-inner-fadeout').each(function(){
+        var chevronScene = new ScrollMagic.Scene({
+            triggerElement: this,
+            triggerHook: 0.55,
+            offset: 700,
+            reverse: true
         })
-    .addTo(controller);
-    
-    var threeChangeFadeoutHeaderScene = new ScrollMagic.Scene({
-        triggerElement: '.Three',
-        triggerHook: 0.6,
-        offset: 700,
-        reverse: true
-    })
-    .setClassToggle('#uzungol', 'fadeout')
-    .addIndicators({
-            name: 'background change scene',
-            colorTrigger: 'orange',
-            colorStart: 'white'
-        })
-    .addTo(controller);
-    
-    
+        .setClassToggle(this, 'fadeout')
+        /*
+        .addIndicators({
+            name: 'horizontal fade',
+            colorTrigger: 'yellow',
+            colorStart: '#75C695'
+        })*/
+        .addTo(controller);
+    })   
    
     /*----- div fadeout animations -----*/
     var oneFadeoutScene = new ScrollMagic.Scene({
@@ -131,12 +153,28 @@ $(document).ready(function(){
         reverse: true
     })
     .setClassToggle('.One', 'fadeout')
-        
+    /*
     .addIndicators({
         name: 'div fadeout',
         colorTrigger: 'yellow',
         colorStart: '#75C695'
+    })*/
+    .addTo(controller);
+    
+    var fourinnerFadeoutScene = new ScrollMagic.Scene({
+        triggerElement: '.Four-inner',
+        triggerHook: 0.2,
+        offset: 400,
+        reverse: true
     })
+    .setClassToggle('.Four-inner', 'fadeout')
+        
+    /*
+    .addIndicators({
+        name: 'div fadeout',
+        colorTrigger: 'yellow',
+        colorStart: '#75C695'
+    })*/
     .addTo(controller);
     
     var fourFadeoutScene = new ScrollMagic.Scene({
@@ -147,29 +185,30 @@ $(document).ready(function(){
     })
     .setClassToggle('.Four', 'fadeout')
         
+    /*
     .addIndicators({
         name: 'div fadeout',
         colorTrigger: 'yellow',
         colorStart: '#75C695'
-    })
+    })*/
     .addTo(controller);
     
-    /*
     
     var tenFadeoutScene = new ScrollMagic.Scene({
         triggerElement: '.Ten',
         triggerHook: 0.1,
-        offset: 800,
+        offset: 850,
         reverse: true
     })
     .setClassToggle('.Ten', 'fadeout')
         
+    /*
     .addIndicators({
         name: 'div fadeout',
         colorTrigger: 'yellow',
         colorStart: '#75C695'
-    })
-    .addTo(controller);*/
+    })*/
+    .addTo(controller);
     
     var thirteenFadeoutScene = new ScrollMagic.Scene({
         triggerElement: '.Thirteen',
@@ -179,11 +218,12 @@ $(document).ready(function(){
     })
     .setClassToggle('.Thirteen', 'fadeout')
         
+    /*
     .addIndicators({
         name: 'div fadeout',
         colorTrigger: 'yellow',
         colorStart: '#75C695'
-    })
+    })*/
     .addTo(controller);
     
     var fifteenFadeoutScene = new ScrollMagic.Scene({
@@ -194,26 +234,28 @@ $(document).ready(function(){
     })
     .setClassToggle('.Fifteen', 'fadeout')
         
+    /*
     .addIndicators({
         name: 'div fadeout',
         colorTrigger: 'yellow',
         colorStart: '#75C695'
-    })
+    })*/
     .addTo(controller);
     
     var eighteenFadeoutScene = new ScrollMagic.Scene({
         triggerElement: '.Eighteen',
         triggerHook: 0.1,
-        offset: 700,
+        offset: 1300,
         reverse: true
     })
     .setClassToggle('.Eighteen', 'fadeout')
         
+    /*
     .addIndicators({
         name: 'div fadeout',
         colorTrigger: 'yellow',
         colorStart: '#75C695'
-    })
+    })*/
     .addTo(controller);
     
     
@@ -299,24 +341,19 @@ $(window).scroll(function(){
         
         $('.One-inner').css({
             'background-position':  '50% ' + (50 + wScroll/35) + '%'
+            //This scroll effect causes janking in Firefox
+            /*'filter': 'contrast(' + (100 - wScroll/8) + '%) brightness(' + (100 + wScroll/15) + '%)'*/
+            
+            
         })
         
         $('#hos-geldiniz').css({
             'transform': 'translateX('  + wScroll/10 + 'px) translateY('  + wScroll/4 + 'px)'
-            
         })
         
         $('#welcome').css({
             'transform': 'translateX('  + wScroll/-10 + 'px) translateY('  + wScroll/4 + 'px)'
         })
-        
-        /*
-        if(wScroll > 300){
-            $('.One').css({
-                'background': 'transparent'
-            })
-        }
-        */
         
         $('.Three-inner').css({
             'background-position':  '50% ' + (50 + wScroll/45) + '%'
@@ -326,34 +363,10 @@ $(window).scroll(function(){
             'background-position':  '50% ' + (50 + wScroll/45) + '%'
         })
         
-        $('#ataturk').css({
-            'opacity': Math.pow((wScroll/3000),200)
-        })
-        
-        $('#founder').css({
-            'opacity': Math.pow((wScroll/3000),200)
-        })
-        
         $('.Four').css({
             'background-position':  '50% ' + (50 + -wScroll/90) + '%'
-        })
-        
-        $('.Four-inner-1').css({
-            'opacity': 1 - Math.pow((wScroll/3000),80)
-        })
-        
-        $('.Twelve-inner').css({
-            'opacity': 1 - Math.pow((wScroll/13600),180)
-        })
-        
-        $('.Twelve').css({
-            'opacity': 1 - Math.pow((wScroll/15700),20)
-        })
-        
-        $('.Thirteen-inner').css({
-            'opacity': 1 - Math.pow((wScroll/14800),250)
-        })
-        
+        })       
+                    
         $('.Fourteen > .flex-container > .flex-item:nth-child(1)').on('click', function(){
             window.location = "https://www.trivago.com/istanbul-32123/hotel"; 
         });
@@ -386,25 +399,5 @@ $(window).scroll(function(){
             window.location = ("https://www.trivago.com/konya-509022/hotel");
             
         });
-        
-        $('.Fifteen-inner').css({
-            'opacity': 1 - Math.pow((wScroll/16900),400)
-        })
-        
-        $('.Seventeen-inner').css({
-            'opacity': 1 - Math.pow((wScroll/19000),400)
-        })
-        
-        $('.Eighteen-inner').css({
-            'opacity': 1 - Math.pow((wScroll/20400),400)
-        })
-        
-        $('.Eighteen').css({
-            'opacity': 1 - Math.pow((wScroll/21200),400)
-        })
-        
-        $('.Twenty-one').css({
-            'opacity': 1 - Math.pow((wScroll/23700),400)
-        })
     }
 })

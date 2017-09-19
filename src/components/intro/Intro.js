@@ -32,9 +32,11 @@ export default class Intro extends Component {
                     </li>
                     <li className="flex-item scrollmagic-info-squares"></li>
                     <li className="flex-item scrollmagic-info-squares">
-                        <h2>House of the Virgin Mary</h2>
+                        <h2>Coat of Arms of the Ottoman Empire</h2>
                     </li>
-                    <li className="flex-item scrollmagic-info-squares"></li>
+                    <li className="flex-item scrollmagic-info-squares">
+                        <h2>Öksökö - Emblem of the Seljuk Turks</h2>
+                    </li>
                 </ul>
             </div>
         </div>

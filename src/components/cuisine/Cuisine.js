@@ -5,9 +5,8 @@ export default class Cuisine extends Component {
     render() {
         return(
         <div>
-            <div className="Fifteen scrollmagic-div-fadeout" id="Fifteen">            
-                <div className="Fifteen-inner">            
-                    <div className="container">
+            <div className="Fifteen scrollmagic-div-fadeout" id="Fifteen">     
+                <div className="Fifteen-inner scrollmagic-inner-fadeout">            <div className="container">
                         <h1 id="mutfak" className="text-center scrollmagic-header">Mutfak</h1>
                         <h2 id="cuisine" className="text-center scrollmagic-header">Cuisine</h2>
                         <div className="col-lg-6 col-lg-offset-6 text-right">
@@ -42,7 +41,7 @@ export default class Cuisine extends Component {
                 </ul>
             </div>
             <div className="Seventeen">            
-                <div className="Seventeen-inner">            
+                <div className="Seventeen-inner scrollmagic-inner-fadeout">    
                     <div className="container"> 
                         <div className="col-lg-6 col-lg-offset-6 text-right"> 
                             <h1 id="delight" className="scrollmagic-desc">Turkish Delight</h1>   
@@ -58,8 +57,7 @@ export default class Cuisine extends Component {
                 </div>
             </div>
             <div className="Eighteen scrollmagic-div-fadeout">           
-                <div className="Eighteen-inner">            
-                    <div className="container"> 
+                <div className="Eighteen-inner scrollmagic-inner-fadeout">          <div className="container"> 
                         <div className="col-lg-6 col-lg-offset-6 text-right"> 
                             <h1 id="simit" className="scrollmagic-desc">Simit</h1>   
                             <p id="simit-desc" className="scrollmagic-desc">Simit is a circular bread with sesame seeds & is the Turkish equivalent of a bagel. Its texture, size, & sweetness varies by region.</p>

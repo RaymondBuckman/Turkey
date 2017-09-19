@@ -90,28 +90,30 @@ export default class Geography extends Component {
         
         return(
         <div>
-            <div className="Three" id="Three">            
+            <div className="Three" id="Three">   
+                <div className="Three-inner scrollmagic-inner-fadeout">
                     <div className="container">
                         <h1 id="cografya" className="text-center scrollmagic-header">Coğrafya</h1>
                         <h2 id="geography" className="text-center scrollmagic-header">Geography</h2> 
                         <h1 id="uzungol" className="text-right scrollmagic-desc" >Uzungöl</h1>
                         <h2 id="uzungol-desc" className="text-right scrollmagic-desc">Black Sea Region</h2>
                     </div>
-                    <div className="container">
-                        <h1 id="cappadocia" className="text-left scrollmagic-desc">Cappadocia</h1>
-                        <h2 id="cappadocia-desc" className="text-left scrollmagic-desc">Central Anatolian Region</h2>
-                    </div>
+                </div>
+                <div className="container">
+                    <h1 id="cappadocia" className="text-left scrollmagic-desc">Cappadocia</h1>
+                    <h2 id="cappadocia-desc" className="text-left scrollmagic-desc">Central Anatolian Region</h2>
+                </div>
             </div>
             <div className="Four scrollmagic-div-fadeout">
-                <div className="Four-inner-1">
+                <div className="Four-inner scrollmagic-inner-fadeout">
                     <div className="container">
                             <h1 id="merkezi" className="text-center scrollmagic-header">Dünyanın merkezi</h1>
                             <h2 id="center" className="text-center scrollmagic-header">The Center of the World</h2>
                             <p id="ranging" className="col-xs-12 text-center scrollmagic-desc">Ranging from the Southeastern Balkans to the mountainous southern Caucasus in the east, Turkey sits at the junction of Europe & Asia. Turkey is both geographically & historically the center of the world. You'll find its fog-covered economic & historical center Istanbul in the Northwest, Antalya & its California-like surroundings in the Southwest, the mountainous Black Sea Region in the NorthEast with scenery resembling Lord of the Rings, &  the Kurdish region bordering Iran to the Southeast. In the center rests the capital Ankara along with the incredible & other-worldly Cappadocia region to the South.</p>  
                     </div>        
                 </div>
-                <h1 id="ataturk" className="text-right scrollmagic-header">Mustafa Kemal Atatürk</h1>
-                <h2 id="founder" className="text-right scrollmagic-header">Founder of the Republic of Turkey</h2> 
+                <h1 id="ataturk" className="text-right">Mustafa Kemal Atatürk</h1>
+                <h2 id="founder" className="text-right">Founder of the Republic of Turkey</h2> 
             </div>
             <div className="Five">
                 <ul className="flex-container">
