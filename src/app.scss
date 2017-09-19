@@ -89,6 +89,35 @@ $color-hover: color 0.3s ease-in-out;
     transform: rotate(0deg);
 }
 
+//Responsive breakpoints
+@mixin for-small-phone-portrait {
+    @media (max-width: 399px){ @content; }
+}
+
+@mixin for-large-phone-portrait {
+    @media (min-width: 400px) and (max-width: 599px) { @content; }
+}
+
+@mixin for-small-tablet-portrait {
+    @media (min-width: 600px) and (max-width: 899px) and (orientation: portrait){ @content; }
+}
+
+@mixin for-phone-landscape {
+    @media (min-width: 600px) and (max-width: 899px) and (orientation: landscape){ @content; }
+}
+
+@mixin for-large-tablet-portrait {
+    @media (min-width: 900px) and (max-width: 1199px) and (orientation: portrait){ @content; }
+}
+
+@mixin for-tablet-landscape {
+    @media (min-width: 900px) and (max-width: 1199px) and (orientation: landscape){ @content; }
+}
+
+@mixin for-small-desktop-or-large-tablet-landscape {
+    @media (min-width: 1200px) and (max-width: 1399px){ @content; }
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -270,16 +299,13 @@ h2, p, a{
         padding: 5px;
         height: 330px;
         margin: 10px 0px;
-  
         line-height: 30px;
         font-family: $main-font, Arial, Helvetica, serif;
-        //font-size: 3em;
         text-align: center;
         @include border-radius;
         
         &:nth-child(1){
             width: 500px;
-            //background: $white;
             border-radius: 80px;
             transition: all 0.3s ease-in-out;
             
@@ -323,14 +349,18 @@ h2, p, a{
         
         &:nth-child(3){
             width: 700px;
-            background: url("img/virgin-mary-house-1.jpg") $nrs 50% 50%;
+            background: url("img/ottoman-1.jpg") $nrs 50% 50%;
             background-size: cover;
+            padding: 0px 80px;
             
             h2{
                 position: relative;
-                top: 240px;
+                top: 260px;
                 color: $white;
-                font-size: 2.5em;
+                font-size: $desc-size;
+                background: rgba(0,0,0,0.6);
+                padding: 10px 0px;
+                border-radius: 10px;
             }
         }
         
@@ -338,19 +368,16 @@ h2, p, a{
             width: 500px;
             background: url("img/seljuk-eagle-1.png") $nrs 50% 50%;
             background-size: contain;
-            
-            h1{
-                position: relative;
-                top: 240px;
-                color: $red;
-                font-size: 2.5em;
-            }
+            padding: 0px 50px;
             
             h2{
                 position: relative;
-                top: 250px;
-                color: $red;
+                top: 260px;
+                color: $white;
                 font-size: $desc-size;
+                background: rgba(208,0,0,0.6);
+                padding: 10px 0px;
+                border-radius: 10px;
             }
         }
     }
@@ -429,7 +456,7 @@ h2, p, a{
     background: url("./img/ataturk-1.jpg") $nrf 50% 50%;
     background-size: cover;
     
-    .Four-inner-1{
+    .Four-inner{
         position: relative;
         height: 110vh;
         background: url("./img/map-3.png") $nrs 50% 50%;
@@ -473,7 +500,11 @@ h2, p, a{
         top: -20vh;
         color: $white;
         font-size: 4em;
-        margin: 0px 10vw;        
+        margin: 0px 10vw; 
+        opacity: 0;
+        transform: rotate(-5deg);
+        transition: all 0.3s ease-in-out;
+        
     }
     
     #founder{
@@ -482,6 +513,13 @@ h2, p, a{
         color: $turquoise;
         font-size: 2em;
         margin: 0px 10vw;
+        opacity: 0;
+        transform: rotate(5deg);
+        transition: all 0.3s ease-in-out;
+    }
+    
+    #ataturk.fade-in, #founder.fade-in{
+        @include scrollmagic-header-finish;
     }
 }
 
@@ -2050,6 +2088,8 @@ h2, p, a{
         }
 }
 
+//css for lightbox adjustments
+
 .image___2FLq2, .inner___1rfRQ {
     background: rgba(0,0,0,0)
     //background-size: cover;
@@ -2109,6 +2149,7 @@ h2, p, a{
     @include secondary-font;
 }
 
+//scrollmagic animations
 .scrollmagic-chevron{
     opacity: 0;
     transform: rotateY(45deg) translateY(15px);
@@ -2150,10 +2191,148 @@ h2, p, a{
     transform: rotateY(0deg) translateY(0px);
 }
 
-.Three-background-change{
-    position: relative;
-    height: 150vh;
-    background: url("img/cappadocia-1.jpg") $nrf 50% 50%;
-    background-size: cover;
+
+/*----- Reactive Screen Breakpoints -----*/
+@include for-small-phone-portrait{
+    .One-inner{
+        #hos-geldiniz{
+            top: 60vh;
+            font-size: $main-subheader-size;
+        }
+        
+        #welcome{
+            top: 60vh;
+            font-size: $secondary-subheader-size;
+        }
+    }
+    
+    .Two{
+        .flex-item{
+            padding: 5px;
+            margin: 10px 0px;
+            line-height: 23px;
+            font-family: $main-font, Arial, Helvetica, serif;
+
+            &:nth-child(1){
+                height: 330px;
+                width: 500px;
+                border-radius: 80px;
+                transition: all 0.3s ease-in-out;
+
+                #bayragi{
+                    top: 30px;
+                    font-size: 2.5em;
+                    font-weight: 700;
+                    color: $red;
+                    opacity: 0;
+                    transform: rotate(-5deg);
+                    transition: all 0.5s ease-in-out;
+                }
+
+                #flag{
+                    position: relative;
+                    top: 20px;
+                    font-size: $desc-size;
+                    color: $turquoise;
+                    opacity: 0;
+                    transform: rotate(5deg);
+                    transition: all 0.5s ease-in-out;                
+                }
+
+                #bayragi.fade-in, #flag.fade-in{
+                    @include scrollmagic-header-finish;
+                }
+
+                p{
+                    position: relative;
+                    top: 35px;
+                    color: $red;
+                    font-size: 0.9em;
+                }
+            }
+
+            &:nth-child(2){
+                height: 230px;
+                width: 700px;
+            }
+
+            &:nth-child(3){
+                height: 230px;
+                width: 700px;
+                padding: 0px 30px;
+
+                h2{
+                    position: relative;
+                    top: 140px;
+                    font-size: 1em;
+                    line-height: 25px;
+                    padding: 10px 0px;
+                }
+            }
+
+            &:nth-child(4){
+                height: 230px;
+                width: 500px;
+                padding: 0px 30px;
+
+                h2{
+                    position: relative;
+                    top: 140px;
+                    font-size: 1em;
+                    line-height: 25px;
+                    padding: 10px 0px;
+                }
+            }
+        }
+    }
+    
+    .Three{
+        height: 150vh;
+        background: url("img/cappadocia-1.jpg") $nrf 50% 50%;
+        background-size: cover;
+
+
+        .Three-inner{
+            position: relative;
+            height: 150vh;
+            background: url("img/uzungol-1.jpg") $nrf 50% 50%;
+            background-size: cover;
+
+            #cografya{
+                font-size: $main-subheader-size; 
+            }
+
+            #geography{
+                font-size: $secondary-subheader-size;
+            }
+
+            #uzungol{
+                top: 60vh;
+                color: $white;
+                font-size: $secondary-subheader-size;            
+            }
+
+            #uzungol-desc{
+                position: relative;
+                top: 60vh;
+                color: $turquoise;
+                font-size: $desc-size;            
+            }        
+        }
+
+        #cappadocia{
+            position: relative;
+            top: -20vh;
+            color: $white;
+            font-size: $secondary-subheader-size;          
+        }
+
+        #cappadocia-desc{
+            position: relative;
+            top: -20vh;
+            color: $turquoise;
+            font-size: $desc-size;            
+        }
+    }
 }
 
