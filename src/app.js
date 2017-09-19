@@ -48,7 +48,7 @@ $(document).ready(function(){
     TweenMax.staggerFrom("#top-nav li", 0.7, { ease:  Power0.easeNone, delay: 1, opacity: 0, y:25, rotation: 10}, 0.15); 
     
     var controller = new ScrollMagic.Controller();
-    var divFadeController = new ScrollMagic.Controller();
+    
     
     
     var pinTopNavScene = new ScrollMagic.Scene({
@@ -68,11 +68,12 @@ $(document).ready(function(){
     })
     
     .setTween(bottomNavTween)
+    /*
     .addIndicators({
         name:"bottom-nav",
         colorTrigger: 'green',
         colorStart: '#FFF'
-    })
+    })*/
     .addTo(controller);
     
     /*----- header animations -----*/
@@ -81,6 +82,40 @@ $(document).ready(function(){
             triggerElement: this,
             triggerHook: 0.8,
             reverse: false
+        })
+        .setClassToggle(this, 'fade-in')
+        /*
+        .addIndicators({
+            name: 'fade scene',
+            colorTrigger: 'black',
+            colorStart: '#75C695'
+        })*/
+        .addTo(controller);
+    })   
+    
+    $('#ataturk').each(function(){
+        var headerScene = new ScrollMagic.Scene({
+            triggerElement: '.Four-inner',
+            triggerHook: 0.55,
+            offset: 700,
+            reverse: true
+        })
+        .setClassToggle(this, 'fade-in')
+        /*
+        .addIndicators({
+            name: 'fade scene',
+            colorTrigger: 'black',
+            colorStart: '#75C695'
+        })*/
+        .addTo(controller);
+    })   
+    
+    $('#founder').each(function(){
+        var headerScene = new ScrollMagic.Scene({
+            triggerElement: '.Four-inner',
+            triggerHook: 0.55,
+            offset: 700,
+            reverse: true
         })
         .setClassToggle(this, 'fade-in')
         /*
@@ -109,21 +144,6 @@ $(document).ready(function(){
         })*/
         .addTo(controller);
     })   
-    /*
-    var threeChangeScene = new ScrollMagic.Scene({
-        triggerElement: '.Three-inner',
-        triggerHook: 0.65,
-        offset: 700,
-        reverse: true
-    })
-    .setClassToggle('.Three-inner', 'fadeout')
-    .addIndicators({
-            name: 'background fadeout scene',
-            colorTrigger: 'orange',
-            colorStart: 'white'
-        })
-    .addTo(controller); */  
-    
    
     /*----- div fadeout animations -----*/
     var oneFadeoutScene = new ScrollMagic.Scene({
@@ -133,12 +153,28 @@ $(document).ready(function(){
         reverse: true
     })
     .setClassToggle('.One', 'fadeout')
-        
+    /*
     .addIndicators({
         name: 'div fadeout',
         colorTrigger: 'yellow',
         colorStart: '#75C695'
+    })*/
+    .addTo(controller);
+    
+    var fourinnerFadeoutScene = new ScrollMagic.Scene({
+        triggerElement: '.Four-inner',
+        triggerHook: 0.2,
+        offset: 400,
+        reverse: true
     })
+    .setClassToggle('.Four-inner', 'fadeout')
+        
+    /*
+    .addIndicators({
+        name: 'div fadeout',
+        colorTrigger: 'yellow',
+        colorStart: '#75C695'
+    })*/
     .addTo(controller);
     
     var fourFadeoutScene = new ScrollMagic.Scene({
@@ -149,11 +185,12 @@ $(document).ready(function(){
     })
     .setClassToggle('.Four', 'fadeout')
         
+    /*
     .addIndicators({
         name: 'div fadeout',
         colorTrigger: 'yellow',
         colorStart: '#75C695'
-    })
+    })*/
     .addTo(controller);
     
     
@@ -165,11 +202,12 @@ $(document).ready(function(){
     })
     .setClassToggle('.Ten', 'fadeout')
         
+    /*
     .addIndicators({
         name: 'div fadeout',
         colorTrigger: 'yellow',
         colorStart: '#75C695'
-    })
+    })*/
     .addTo(controller);
     
     var thirteenFadeoutScene = new ScrollMagic.Scene({
@@ -180,11 +218,12 @@ $(document).ready(function(){
     })
     .setClassToggle('.Thirteen', 'fadeout')
         
+    /*
     .addIndicators({
         name: 'div fadeout',
         colorTrigger: 'yellow',
         colorStart: '#75C695'
-    })
+    })*/
     .addTo(controller);
     
     var fifteenFadeoutScene = new ScrollMagic.Scene({
@@ -195,11 +234,12 @@ $(document).ready(function(){
     })
     .setClassToggle('.Fifteen', 'fadeout')
         
+    /*
     .addIndicators({
         name: 'div fadeout',
         colorTrigger: 'yellow',
         colorStart: '#75C695'
-    })
+    })*/
     .addTo(controller);
     
     var eighteenFadeoutScene = new ScrollMagic.Scene({
@@ -210,11 +250,12 @@ $(document).ready(function(){
     })
     .setClassToggle('.Eighteen', 'fadeout')
         
+    /*
     .addIndicators({
         name: 'div fadeout',
         colorTrigger: 'yellow',
         colorStart: '#75C695'
-    })
+    })*/
     .addTo(controller);
     
     
@@ -299,8 +340,9 @@ $(window).scroll(function(){
     if(largeDesktop.matches){ 
         
         $('.One-inner').css({
-            'background-position':  '50% ' + (50 + wScroll/35) + '%',
-            'filter': 'contrast(' + (100 - wScroll/8) + '%) brightness(' + (100 + wScroll/15) + '%)'
+            'background-position':  '50% ' + (50 + wScroll/35) + '%'
+            //This scroll effect causes janking in Firefox
+            /*'filter': 'contrast(' + (100 - wScroll/8) + '%) brightness(' + (100 + wScroll/15) + '%)'*/
             
             
         })
@@ -321,24 +363,10 @@ $(window).scroll(function(){
             'background-position':  '50% ' + (50 + wScroll/45) + '%'
         })
         
-        $('#ataturk').css({
-            'opacity': Math.pow((wScroll/3000),200)
-        })
-        
-        $('#founder').css({
-            'opacity': Math.pow((wScroll/3000),200)
-        })
-        
         $('.Four').css({
             'background-position':  '50% ' + (50 + -wScroll/90) + '%'
-        })
-        
-        $('.Four-inner-1').css({
-            'opacity': 1 - Math.pow((wScroll/3000),80)
-        })
-        
-        
-        
+        })       
+                    
         $('.Fourteen > .flex-container > .flex-item:nth-child(1)').on('click', function(){
             window.location = "https://www.trivago.com/istanbul-32123/hotel"; 
         });
