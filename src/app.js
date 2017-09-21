@@ -96,7 +96,7 @@ $(document).ready(function(){
     $('#ataturk').each(function(){
         var headerScene = new ScrollMagic.Scene({
             triggerElement: '.Four-inner',
-            triggerHook: 0.55,
+            triggerHook: 0.70,
             offset: 700,
             reverse: true
         })
@@ -113,7 +113,7 @@ $(document).ready(function(){
     $('#founder').each(function(){
         var headerScene = new ScrollMagic.Scene({
             triggerElement: '.Four-inner',
-            triggerHook: 0.55,
+            triggerHook: 0.70,
             offset: 700,
             reverse: true
         })
@@ -163,8 +163,8 @@ $(document).ready(function(){
     
     var fourinnerFadeoutScene = new ScrollMagic.Scene({
         triggerElement: '.Four-inner',
-        triggerHook: 0.2,
-        offset: 400,
+        triggerHook: 0.70,
+        offset: 700,
         reverse: true
     })
     .setClassToggle('.Four-inner', 'fadeout')
@@ -333,7 +333,6 @@ $(document).ready(function(){
 
 $(window).scroll(function(){    
     var wScroll = $(this).scrollTop();
-    console.log(wScroll);
     var largeDesktop = window.matchMedia( "(min-width: 0px)" );
      
     

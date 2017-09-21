@@ -27,7 +27,7 @@ export default class Cuisine extends Component {
                     <li className="flex-item scrollmagic-info-squares">
                         <h1 id="yemegi" className="scrollmagic-header">Türk yemeği</h1>
                         <h2 id="food" className="scrollmagic-header">Turkish food</h2>
-                        <p>They say the history of a country can be seen in its food, & Turkish food is certainly no exception. The Greeks, Persians, Arabs, & other groups have all left their mark to form what is one of the most unique yet familiar cuisines in the world. A meal in Turkey can consist of anything from kebabs with massive swaths of meat to stuffed vegetables (Dolma). Popular beverages are Turkish tea & rakı, a clear alcoholic drink from in the Balkans. Turkish delight & baklava are Turkey's most famous desserts. Dig in!</p>
+                        <p>They say the history of a country can be seen in its food, & Turkish food is certainly no exception. The Greeks, Persians, Arabs, & other groups have all left their mark to form what is one of the most unique yet familiar cuisines in the world. A meal in Turkey can consist of anything from kebabs with massive swaths of meat to stuffed vegetables. Popular beverages are Turkish tea & rakı, a clear alcoholic drink from in the Balkans. Turkish delight & baklava are Turkey's most famous desserts. Dig in!</p>
                     </li>
                     <li className="flex-item scrollmagic-info-squares">
                         <h2 className="scrollmagic-desc">Baklava</h2>
