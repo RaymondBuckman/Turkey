@@ -23,7 +23,7 @@ import pamukkale1 from '../../img/pamukkale-2.jpg';
 import pamukkale2 from '../../img/pamukkale-3.jpg';
 import sumela1 from '../../img/sumela-monastery-2.jpg';
 import sumela2 from '../../img/sumela-monastery-3.jpg';
-import anitkabir1 from '../../img/anitkabir-1.jpg';
+import anitkabir1 from '../../img/anitkabir-3.jpg';
 import anitkabir2 from '../../img/anitkabir-2.jpg';
 import blue1 from '../../img/blue-mosque-1.jpg';
 import blue2 from '../../img/blue-mosque-2.jpg';
@@ -49,10 +49,32 @@ import maiden1 from '../../img/maidens-tower-2.jpg';
 import maiden2 from '../../img/maidens-tower-1.jpg';
 import aspendos1 from '../../img/aspendos-1.jpg';
 import aspendosl2 from '../../img/aspendos-2.jpg';
+import damlatas1 from '../../img/damlatas-1.jpg';
+import damlatas2 from '../../img/damlatas-2.jpg';
+import zilkale1 from '../../img/zilkale-1.jpg';
+import zilkale2 from '../../img/zilkale-2.jpg';
+import kaunos1 from '../../img/kaunos-1.jpg';
+import kaunos2 from '../../img/kaunos-2.jpg';
+import istiklal1 from '../../img/istiklal-1.jpg';
+import istiklal2 from '../../img/istiklal-2.jpg';
+import nicolas1 from '../../img/st-nicolas-church-2.jpg';
+import nicolas2 from '../../img/st-nicolas-church-1.jpg';
+import ani1 from '../../img/ani-ruins-3.jpg';
+import ani2 from '../../img/ani-ruins-2.jpg';
+import amasya1 from '../../img/amasya-1.jpg';
+import amasya2 from '../../img/amasya-2.jpg';
+import ishak1 from '../../img/ishak-1.png';
+import ishak2 from '../../img/ishak-2.jpg';
+import beylerbeyi1 from '../../img/beylerbeyi-1.jpg';
+import beylerbeyi2 from '../../img/beylerbeyi-2.jpg';
+import selimiye1 from '../../img/selimiye-1.jpg';
+import selimiye2 from '../../img/selimiye-3.jpg';
+import sevenlakes1 from '../../img/seven-lakes-1.jpg';
+import sevenlakes2 from '../../img/seven-lakes-2.jpg';
+import saklikent1 from '../../img/saklikent-1.jpg';
+import saklikent2 from '../../img/saklikent-2.jpg';
 
 
-
- 
 const images = [
     grand1,
     grand2,
@@ -101,7 +123,31 @@ const images = [
     maiden1,
     maiden2,
     aspendos1,
-    aspendosl2,    
+    aspendosl2,
+    damlatas1,
+    damlatas2,
+    zilkale1,
+    zilkale2,
+    kaunos1,
+    kaunos2,
+    istiklal1,
+    istiklal2,
+    nicolas1,
+    nicolas2,
+    ani1,
+    ani2,
+    amasya1,
+    amasya2,
+    ishak1,
+    ishak2,
+    beylerbeyi1,
+    beylerbeyi2,
+    selimiye1,
+    selimiye2,
+    sevenlakes1,
+    sevenlakes2,
+    saklikent1,
+    saklikent2,
 ];
 
 const titles = [
@@ -153,6 +199,30 @@ const titles = [
     (<h1 className="carousel-title"> Maiden's Tower </h1>),
     (<h1 className="carousel-title"> Aspendos </h1>),
     (<h1 className="carousel-title"> Aspendos </h1>),
+    (<h1 className="carousel-title"> Damlataş Caves </h1>),
+    (<h1 className="carousel-title"> Damlataş Caves </h1>),
+    (<h1 className="carousel-title"> Zilkale </h1>),
+    (<h1 className="carousel-title"> Zilkale </h1>),
+    (<h1 className="carousel-title"> Kaunos </h1>),
+    (<h1 className="carousel-title"> Kaunos </h1>),
+    (<h1 className="carousel-title"> İstiklal Avenue </h1>),
+    (<h1 className="carousel-title"> İstiklal Avenue </h1>),
+    (<h1 className="carousel-title"> St. Nicolas Church </h1>),
+    (<h1 className="carousel-title"> St. Nicolas Church </h1>),
+    (<h1 className="carousel-title"> Ani Ruins </h1>),
+    (<h1 className="carousel-title"> Ani Ruins </h1>),
+    (<h1 className="carousel-title"> Amasya </h1>),
+    (<h1 className="carousel-title"> Amasya </h1>),
+    (<h1 className="carousel-title"> Ishak Pasha Palace </h1>),
+    (<h1 className="carousel-title"> Ishak Pasha Palace </h1>),
+    (<h1 className="carousel-title"> Beylerbeyi Palace</h1>),
+    (<h1 className="carousel-title"> Beylerbeyi Palace</h1>),
+    (<h1 className="carousel-title"> Selimiye Mosque</h1>),
+    (<h1 className="carousel-title"> Selimiye Mosque</h1>),
+    (<h1 className="carousel-title"> Yedigöller National Park </h1>),
+    (<h1 className="carousel-title"> Yedigöller National Park </h1>),
+    (<h1 className="carousel-title"> Saklıkent Gorge</h1>),
+    (<h1 className="carousel-title"> Saklıkent Gorge</h1>),
 ];
       
 const captions = [
@@ -251,6 +321,54 @@ const captions = [
     "Aspendos or Aspendus was an ancient Greco-Roman city in Antalya province of Turkey. The site is located 4.3 mi northeast of central Serik.",
      
     "Aspendos is known for having the best-preserved theatre of antiquity. With a diameter of 315 ft, the theatre provided seating for 12,000. The theatre was built in 155 by the Greek architect Zenon, a native of the city. It was periodically repaired by the Seljuqs, who used it as a caravanserai, and in the 13th century the stage building was converted into a palace by the Seljuqs of Rum.",   
+     
+    "Damlataş Cave, or 'Damlataş Mağarası' in Turkish, is a cave in Alanya district of Antalya Province, in southern Turkey. The cave was discovered accidentally during mining operations at a quarry used for the construction of Alanya Harbor in 1948. After preliminary research by two geologists, it was opened to the public.",
+     
+    "The cave is popularly known as an 'asthma-cure cave' due to the widespread belief in its capability of curing respiratory complaints and asthma. In fact, most of the early visitors were people, who suffered from asthma. In 2010, the municipality of Alanya reported that the cave was visited within seven months by 114,000 tourists of which 2,100 suffered from asthma. In 2014, the number of visitors suffering from asthma reached 4,000.",
+     
+    "Zilkale is a medieval castle located in the Fırtına Valley (literally 'Stormy Valley' in Turkish), and is one of the most important historical structures in Çamlıhemşin district of Rize Province in the Black Sea Region of Turkey.",
+     
+    "The castle is built at an altitude of 3,710 ft, and sits at the edge of a cliff overlooking the Fırtına Creek ('Fırtına Deresi' in Turkish) approximately 1,250 ft below running at an elevation of 2,460 ft southeast of it. The castle consists of outer walls, middle walls and inner castle. There are garrison quarters, and a possible chapel and head tower. It is believed that the castle was built in the 14th-15th century.",
+     
+    "Kaunos was a city of ancient Caria and in Anatolia, a few km west of the modern town of Dalyan, Muğla Province, Turkey. Kaunos was an important sea port, the history of which is supposed to date back till the 10th century BC.",
+     
+    "The oldest find at the Kaunos archeological site is the neck of a Protogeometric amphora dating back to the 9th century BC, or even earlier. A statue found at the western gate of the city walls, pieces of imported Attic ceramics and the S-SE oriented city walls show habitation in the 6th century BC. However, none of the architectural finds at Kaunos itself dates back to earlier than the 4th century BC.",
+     
+    "İstiklal Avenue (Turkish: İstiklâl Caddesi) is one of the most famous avenues in Istanbul, Turkey, visited by nearly 3 million people in a single day over the course of weekends. Located in the historic Beyoğlu (Pera) district, it is an elegant pedestrian street, 1.4 kilometers long, which houses boutiques, music stores, bookstores, art galleries, cinemas, theatres, libraries, cafés, pubs, night clubs with live music, historical patisseries, chocolateries and restaurants.",
+     
+    "The avenue, surrounded by late Ottoman era buildings (mostly from the 19th and early 20th centuries) that were designed with the Neo-Classical, Neo-Gothic, Renaissance Revival, Beaux-Arts, Art Nouveau and First Turkish National Architecture styles; as well as a few Art Deco style buildings from the early years of the Turkish Republic, and a number of more recent examples of modern architecture; starts from the medieval Genoese neighbourhood around Galata Tower and ultimately leads up to Taksim Square.",
+     
+    "St. Nicholas Church is an ancient Byzantine Church located in modern-day town of Demre, Antalya Province, Turkey. Its usage is dated between 5th-12th centuries. It is notable for being the burial place of St. Nicholas of Myra, a 4th-century Eastern Orthodox bishop of the ancient city of Myra, an important religious figure for Eastern Orthodox Christians and the historical inspiration for Santa Claus. The Church is on UNESCO's tentative list to become a World Heritage Site.",
+     
+    "The church was built in AD 520 on the foundations of an older Christian church where Saint Nicholas served as a bishop. Over time the church was flooded, filled with silt, and buried. In 1862 it was restored by Russian Tzar Nicholas I, who added a tower and made other changes to its Byzantine architecture. The church is regarded as the 3rd most important Byzantine structure in Anatolia. It is noted for its remarkable wall frescos, and its architectural and religious significance. The northeast annex arcade contains the only example of St Nicholas's life cycle as well.",
+     
+    "Ani (Armenian: Անի; Greek: Ἄνιον, Ánion;[5] Latin: Abnicum;[6][7] Georgian: ანი, Ani, or ანისი, Anisi;[8] Turkish: Ani)[9] is a ruined medieval Armenian city now situated in Turkey's province of Kars, next to the closed border with Armenia.",
+     
+    "Between 961 and 1045, it was the capital of the Bagratid Armenian kingdom that covered much of present-day Armenia and eastern Turkey. Called the 'City of 1001 Churches',[7][10] Ani stood on various trade routes and its many religious buildings, palaces, and fortifications were amongst the most technically and artistically advanced structures in the world.[11][12] At its height, the population of Ani probably was on the order of 100,000.",
+     
+    "The city of Amasya stands in the mountains above the Black Sea coast, set apart from the rest of Anatolia in a narrow valley along the banks of the Yeşilırmak River. Although near the Black Sea, this area is high above the coast and has an inland climate, well-suited to growing apples, for which Amasya province, one of the provinces in north-central Anatolia Turkey, is famed.",
+     
+    "During the early Ottoman rule, it was customary for young Ottoman princes to be sent to Amasya to govern and gain experience. Amasya was also the birthplace of the Ottoman sultans Murad I and Selim I. It is thus of great importance in terms of Ottoman history. Traditional Ottoman houses near the Yeşilirmak and the other main historical buildings have been restored; these traditional Yalıboyu houses are now used as cafes, restaurants, pubs and hotels. Behind the Ottoman wooden houses one can see the Rock Tombs of the Pontic kings.",
+     
+    "Ishak Pasha Palace (Turkish: İshak Paşa Sarayı) is a semi-ruined palace and administrative complex located in the Doğubeyazıt district of Ağrı province of eastern Turkey.",
+     
+    "The Ishak Pasha palace is an Ottoman-period palace whose construction was started in 1685 by Colak Abdi Pasha, the bey of Beyazit province, continued by his son İshak Pasha and completed by his grandson Mehmet Pasha. According to the inscription on its door, the Harem Section of the palace was completed by his grandson Ishak (Isaac) Pasha in 1784.[1]",
+     
+    "The Beylerbeyi Palace (Turkish: Beylerbeyi Sarayı), Beylerbeyi meaning 'Lord of Lords', is located in the Beylerbeyi neighbourhood of Üsküdar district in Istanbul, Turkey at the Asian side of the Bosphorus. An Imperial Ottoman summer residence built in the 1860s, it is now situated immediately north of the 1973 Bosphorus Bridge.",
+     
+    "Beylerbeyi Palace was commissioned by Sultan Abdülaziz (1830–1876) and built between 1861 and 1865 as a summer residence and a place to entertain visiting heads of state. Empress Eugénie of France visited Beylerbeyi on her way to the opening of the Suez Canal in 1869 and had her face slapped by the sultan's mother, Pertevniyal Sultan, for daring to enter the palace on the arm of Abdülaziz. (Despite her initial reception, Empress Eugénie of France was so delighted by the elegance of the palace that she had a copy of the window in the guest room made for her bedroom in Tuileries Palace, in Paris.) Other regal visitors to the palace included the Duke and Duchess of Windsor.",
+     
+    "The Selimiye Mosque (Turkish: Selimiye Camii) is an Ottoman imperial mosque, which is located in the city of Edirne, Turkey. The mosque was commissioned by Sultan Selim II, and was built by architect Mimar Sinan between 1569 and 1575.[3] It was considered by Sinan to be his masterpiece and is one of the highest achievements of Islamic architecture.",
+     
+    "The interior of the mosque received great recognitions from its clean, spare lines in the structure itself. With the monumental exteriors proclaiming the wealth and power of the Ottoman Empire, the plain symmetrical interiors reminded the sultans should always provide a humble and faithful heart in order to connect and communicate with God. To enter, it was to forget the power, determination, wealth and technical mastery of the Ottoman Empire. Lights were seeped through multitude of tiny windows, and the interchanging of the weak light and dark was interpreted as the insignificance of humanity. The Selimiye did not only amaze the public with the extravagant symmetrical exterior, it had also astonished the people with the plain symmetrical interior for it had summarized all Ottoman architectural thinking in one simple pure form.",
+     
+    "Seven Lakes National Park (Turkish: Yedigöller) is located in the northern part of Bolu Province in Turkey. The park is categorized under IUCN II and was established in 1965. The park is best known for the seven lakes formed by landslides and for its profusion of plant life.",
+     
+    "Established in 1965, it encompasses an area of 4,010 acres. There are seven lakes in the park which were formed due to landslides. The seven lakes are Buyukgol, Deringol, Seringol, Nazligol, Sazligol, Incegol and Kucukgol. Several streams flow through the park some of which have handcrafted bridges across them and a small water fall.[1][6]",
+     
+    "Saklıkent National Park (Turkish: Saklıkent Milli Parkı), established on June 6, 1996, is a national park in southwestern Turkey. The national park is a canyon, and is located in Muğla Province, 31 mi far from Fethiye. Thé Canyon is 65km from Kaş in the Antalya province.",
+     
+    "The canyon is 980 ft deep and 11 mi long, being one of the deepest in the world. It was formed through abrasion of the rocks by flowing waters over thousands of years. As the level of water rises during winter months, visitors can enter the canyon all year around only the deeper parts in the summer. 2.5 mi of the canyon are walkable after April, when most of the snow in the Taurus Mountains has melted and passed through on its way to the Mediterranean Sea. Saklıkent means 'hidden city' in Turkish.",
 ];
  
 export default class Sights extends Component {
@@ -371,6 +489,54 @@ export default class Sights extends Component {
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:46, isOpen: true })}>
                         <h2>Aspendos</h2>
+                    </li>
+                    <li className="flex-item scrollmagic-chevron" 
+                    onClick={() => this.setState({photoIndex:48, isOpen: true })}>
+                        <h2>Damlataş Caves</h2>
+                    </li>
+                    <li className="flex-item scrollmagic-chevron" 
+                    onClick={() => this.setState({photoIndex:50, isOpen: true })}>
+                        <h2>Zilkale</h2>
+                    </li>
+                    <li className="flex-item scrollmagic-chevron" 
+                    onClick={() => this.setState({photoIndex:52, isOpen: true })}>
+                        <h2>Kaunos</h2>
+                    </li>
+                    <li className="flex-item scrollmagic-chevron" 
+                    onClick={() => this.setState({photoIndex:54, isOpen: true })}>
+                        <h2>İstiklal Avenue</h2>
+                    </li>
+                    <li className="flex-item scrollmagic-chevron" 
+                    onClick={() => this.setState({photoIndex:56, isOpen: true })}>
+                        <h2>St. Nicolas Church</h2>
+                    </li>
+                    <li className="flex-item scrollmagic-chevron" 
+                    onClick={() => this.setState({photoIndex:58, isOpen: true })}>
+                        <h2>Ani Ruins</h2>
+                    </li>
+                    <li className="flex-item scrollmagic-chevron" 
+                    onClick={() => this.setState({photoIndex:60, isOpen: true })}>
+                        <h2>Amasya</h2>
+                    </li>
+                    <li className="flex-item scrollmagic-chevron" 
+                    onClick={() => this.setState({photoIndex:62, isOpen: true })}>
+                        <h2>Ishak Pasha Palace</h2>
+                    </li>
+                    <li className="flex-item scrollmagic-chevron" 
+                    onClick={() => this.setState({photoIndex:64, isOpen: true })}>
+                        <h2>Beylerbeyi Palace</h2>
+                    </li>
+                    <li className="flex-item scrollmagic-chevron" 
+                    onClick={() => this.setState({photoIndex:66, isOpen: true })}>
+                        <h2>Selimiye Mosque</h2>
+                    </li>
+                    <li className="flex-item scrollmagic-chevron" 
+                    onClick={() => this.setState({photoIndex:68, isOpen: true })}>
+                        <h2>Seven Lakes National Park</h2>
+                    </li>
+                    <li className="flex-item scrollmagic-chevron" 
+                    onClick={() => this.setState({photoIndex:70, isOpen: true })}>
+                        <h2>Saklıkent National Park</h2>
                     </li>
                 </ul>
  
