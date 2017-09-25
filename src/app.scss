@@ -24,9 +24,19 @@ $desc-size: 1.5em;
 $arrow-rotate-out: all 2.0s cubic-bezier(.37,1.01,.8,.99);
 $color-hover: color 0.3s ease-in-out;
 
+//div heights
+//Helps maintain image proportions for scroll effect
+$six-height: 100vw * 0.5624029000517866;
+$seven-height: 100vw * .5625;
+$eight-height: 100vw * .6666667;
+$nine-height: 100vw * 0.5632124352331606;
+$thirteen-height: 100vw * .7495;
+$fifteen-height: 100vw *.75;
+$seventeen-inner-height: 100vw * .75;
+$eighteen-height: 100vw * .5624;
+$twenty-height: 100vw * .625;
+
 //keyframes
-
-
 @keyframes flag-background{
 	45%     {opacity: 1;}
     50%     {opacity: 0.85;}
@@ -342,9 +352,8 @@ h2, p, a{
         
         &:nth-child(2){
             width: 700px;
-            background: url("img/turkey-flag-1.jpg") $nrs 50% 50%;
+            background: url("img/turkey-flag-mini.jpg") $nrs 50% 50%;
             background-size: cover;
-            
         }
         
         &:nth-child(3){
@@ -736,7 +745,7 @@ h2, p, a{
     position: relative; 
     height: 120vh;
     background: url("./img/istanbul-2.jpg") $nrf 50% 40%;
-    background-size: cover;
+    background-size: 100vw $six-height; //parallax-friendly replacement for "cover"
     transition: background-image 0.5s ease-in-out;
     
     #sehirler{
@@ -786,8 +795,8 @@ h2, p, a{
 .Seven{
     position: relative; 
     height: 120vh;
-    background: url("./img/ankara-1.jpg") $nrf 50% 40%;
-    background-size: cover;
+    background: url("./img/ankara-1.jpg") $nrf 50% 0%;
+    background-size: 100vw $seven-height; //parallax-friendly replacement for "cover"
     transition: background-image 0.5s ease-in-out;
     
     #ankara{
@@ -810,11 +819,12 @@ h2, p, a{
     }
 }
 
+
 .Eight{
     position: relative; 
     height: 120vh;
-    background: url("./img/izmir-1.JPG") $nrf 50% 40%;
-    background-size: cover;
+    background: url("./img/izmir-3.JPG") $nrf 50% 100%;
+    background-size: 100vw $eight-height; //parallax-friendly replacement for "cover"
     transition: background-image 0.5s ease-in-out;
     #izmir{
         @include secondary-font;
@@ -840,7 +850,7 @@ h2, p, a{
     position: relative; 
     height: 120vh;
     background: url("./img/bursa-1.jpg") $nrf 50% 40%;
-    background-size: cover;
+    background-size: 100vw $nine-height; //parallax-friendly replacement for "cover"
     transition: background-image 0.5s ease-in-out;
     #bursa{
         @include secondary-font;
@@ -913,7 +923,7 @@ h2, p, a{
 
     .flex-item{
         padding: 5px;
-        height: 400px;
+        height: 350px;
         width: 350px;
         margin: 10px 0px;
   
@@ -927,9 +937,10 @@ h2, p, a{
             
         h2{
             position: relative;
-            top: 330px;
+            top: 290px;
             color: $white;
             font-size: $desc-size;
+            //@include more-legible-paragraph;
         }
         
         &:nth-child(even){
@@ -1051,7 +1062,7 @@ h2, p, a{
         }
         
         &:nth-child(17){
-            background: url("img/virgin-mary-house-2.jpg") $nrs 50% 50%;
+            background: url("img/virgin-mary-house-mini.jpg") $nrs 50% 50%;
             background-size: cover;
             
             h2{
@@ -1097,6 +1108,74 @@ h2, p, a{
         &:nth-child(25){
             background: url("img/aspendos-mini.jpg") $nrs 50% 50%;
             background-size: cover;
+        }
+        
+        &:nth-child(26){
+            background: url("img/damlatas-mini.jpg") $nrs 0% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(27){
+            background: url("img/zilkale-mini.jpg") $nrs 30% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(28){
+            background: url("img/kaunos-mini.jpg") $nrs 90% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(29){
+            background: url("img/istiklal-mini.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(30){
+            background: url("img/st-nicolas-church-mini.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(31){
+            background: url("img/ani-ruins-mini.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(32){
+            background: url("img/amasya-mini.jpg") $nrs 95% 0%;
+            background-size: cover;
+        }
+        
+        &:nth-child(33){
+            background: url("img/ishak-mini.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(34){
+            background: url("img/beylerbeyi-mini.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(35){
+            background: url("img/selimiye-mini.jpg") $nrs 0% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(36){
+            background: url("img/seven-lakes-mini.jpg") $nrs 65% 0%;
+            background-size: cover;
+            
+            h2{
+                left: 30px;
+            }
+        }
+        
+        &:nth-child(37){
+            background: url("img/saklikent-mini.jpg") $nrs 50% 50%;
+            background-size: cover;
+            
+            h2{
+                left: -10px;
+            }
         }
         
         &:nth-child(n+2):hover{
@@ -1180,7 +1259,7 @@ h2, p, a{
     position: relative;
     height: 170vh;
     background: url("img/hotel-5.jpg") $nrf 50% 50%;
-    background-size: cover;
+    background-size: 100vw $thirteen-height;
     
     .Thirteen-inner{
         position: relative;
@@ -1247,7 +1326,7 @@ h2, p, a{
 
     .flex-item{
         padding: 5px;
-        height: 400px;
+        height: 350px;
         width: 350px;
         margin: 10px 0px;
   
@@ -1262,7 +1341,7 @@ h2, p, a{
         
         h2{
             position: relative;
-            top: 350px;
+            top: 290px;
             font-size: 1.8em;
             text-align: center;
             color: $white;
@@ -1366,13 +1445,13 @@ h2, p, a{
     position: relative;
     height: 180vh;
     background: url("img/cuisine-2.jpg") $nrf 50% 50%;
-    background-size: cover;
+    background-size: 100vw $fifteen-height;
     
     .Fifteen-inner{
         position: relative;
         height: 170vh;
         background: url("img/cuisine-1.jpg") $nrf 50% 50%;
-        background-size: cover;
+        background-size: 100vw ;
     }
     
     #mutfak{
@@ -1566,7 +1645,7 @@ h2, p, a{
         position: relative;
         height: 170vh;
         background: url("img/cuisine-6.jpg") $nrf 50% 50%;
-        background-size: cover;
+        background-size: 100vw $seventeen-inner-height;
     }
     
     #delight{
@@ -1602,11 +1681,12 @@ h2, p, a{
     }
 }
 
+
 .Eighteen{
     position: relative;
     height: 180vh;
     background: url("img/cuisine-9.jpg") $nrf 50% 50%;
-    background-size: cover;
+    background-size: 100vw $eighteen-height;
     
     .Eighteen-inner{
         position: relative;
@@ -1773,7 +1853,7 @@ h2, p, a{
     position: relative;
     height: 110vh;
     background: url("img/ataturk-2.jpg") $nrf 50% 50%;
-    background-size: cover;
+    background-size: 100vw $twenty-height;
     
     #alfabe{
         position: relative;
@@ -1892,7 +1972,7 @@ h2, p, a{
 
     .flex-item{
         padding: 5px;
-        height: 400px;
+        height: 350px;
         width: 350px;
         margin: 10px 0px;
   
@@ -1907,7 +1987,7 @@ h2, p, a{
             
         h2{
             position: relative;
-            top: 330px;
+            top: 290px;
             color: $white;
             font-size: $desc-size;
         }
@@ -1973,7 +2053,7 @@ h2, p, a{
         }
         
         &:nth-child(6){
-            background: url("img/turkish-8.jpg") $nrs 60% 50%;
+            background: url("img/turkish-8-mini.jpg") $nrs 60% 50%;
             background-size: cover;
         }
         
@@ -2555,7 +2635,7 @@ h2, p, a{
     }
 
     .Eight{
-        background: url("./img/izmir-1.JPG") $nrs 50% 40%;
+        background: url("./img/izmir-3.JPG") $nrs 50% 40%;
         background-size: cover;
         
         #izmir{
@@ -3480,7 +3560,7 @@ h2, p, a{
     }
 
     .Eight{
-        background: url("./img/izmir-1.JPG") $nrs 50% 40%;
+        background: url("./img/izmir-3.JPG") $nrs 50% 40%;
         background-size: cover;
         
         #izmir{
