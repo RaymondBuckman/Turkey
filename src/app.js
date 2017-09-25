@@ -37,6 +37,13 @@ ReactDOM.render(
 
 /*----- h1/h2 rotations -----*/
 $(document).ready(function(){
+    $('div.moveAble-container').mousemove(function(e){
+            var y = e.pageY;
+            var x = e.pageX;                    
+            $('div.moveAble').css({'top': y}); 
+            $('div.moveAble').css({'left': x});
+
+      });
 
     var hosGeldiniz = $('#hos-geldiniz');
     var welcome = $('#welcome');
@@ -127,7 +134,7 @@ $(document).ready(function(){
         .addTo(controller);
     })   
     
-    /* ----- background change scenes  -----*/
+    /* ----- background fadeout scenes  -----*/
     $('.scrollmagic-inner-fadeout').each(function(){
         var chevronScene = new ScrollMagic.Scene({
             triggerElement: this,
@@ -297,7 +304,7 @@ $(document).ready(function(){
     $('.scrollmagic-desc').each(function(){
         var descScene = new ScrollMagic.Scene({
             triggerElement: this,
-            triggerHook: 0.85,
+            triggerHook: 0.86,
             reverse: false
         })
         .setClassToggle(this, 'horizontal-fade')
@@ -326,6 +333,315 @@ $(document).ready(function(){
         })*/
         .addTo(controller);
     }) 
+    
+    /* ----Background Scroll animations -----*/
+    
+    var oneInnerParallaxTween = TweenMax.to(".One-inner", 1, {
+      backgroundPositionY: "-=5%",
+      autoRound:false, 
+      ease:Power1.ease0ut
+    });
+
+	var oneInnerParallaxScene = new ScrollMagic.Scene({
+        triggerElement: ".One-inner", 
+        triggerHook: 0,
+        duration: "100%"
+    })
+    .setTween(oneInnerParallaxTween)
+    //.addIndicators()
+    .addTo(controller);
+    
+    var threeInnerParallaxTween = TweenMax.to(".Three-inner", 1, {
+      backgroundPositionY: "-=5%",
+      autoRound:false, 
+      ease:Power1.ease0ut
+    });
+
+	var threeInnerParallaxScene = new ScrollMagic.Scene({
+        triggerElement: ".Three-inner", 
+        triggerHook: 1,
+        duration: "150%"
+    })
+    .setTween(threeInnerParallaxTween)
+    //.addIndicators()
+    .addTo(controller);
+    
+    var threeParallaxTween = TweenMax.to(".Three", 1, {
+      backgroundPositionY: "-=5%",
+      autoRound:false, 
+      ease:Power1.ease0ut
+    });
+
+	var threeParallaxScene = new ScrollMagic.Scene({
+        triggerElement: ".Three", 
+        triggerHook: 0.2,
+        offset: 500,
+        duration: "100%"
+    })
+    .setTween(threeParallaxTween)
+    //.addIndicators()
+    .addTo(controller);
+    
+    var sixParallaxTween = TweenMax.from(".Six", 1, {
+      backgroundSize: "+=100px +=56.2403px", 
+      autoRound:false, 
+      ease:Power1.ease0ut
+    });
+	
+	var sixParallaxscene = new ScrollMagic.Scene({
+        triggerElement: ".Six", 
+        triggerHook: 1,
+        duration: "200%"
+    })
+    .setTween(sixParallaxTween)
+    //.addIndicators()
+    .addTo(controller);
+    
+    var sevenParallaxTween = TweenMax.to(".Seven", 1, {
+      backgroundPositionY: "+=30%",
+      autoRound:false, 
+      ease:Power1.ease0ut
+    });
+
+	var sevenParallaxScene = new ScrollMagic.Scene({
+        triggerElement: ".Seven", 
+        triggerHook: 1,
+        duration: "250%"
+    })
+    .setTween(sevenParallaxTween)
+    //.addIndicators()
+    .addTo(controller);
+    
+    var eightParallaxTween = TweenMax.to(".Eight", 1, {
+        backgroundPositionY: "-=10%",
+        backgroundSize: "+=100px +=66.666667px",
+        autoRound:false, 
+        ease:Power1.ease0ut
+    });
+
+	var eightParallaxScene = new ScrollMagic.Scene({
+        triggerElement: ".Eight", 
+        triggerHook: 1,
+        duration: "250%"
+    })
+    .setTween(eightParallaxTween)
+    //.addIndicators()
+    .addTo(controller);
+    
+    var nineParallaxTween = TweenMax.from(".Nine", 1, {
+        backgroundSize: "+=100px +=56.32124352331606px",
+        autoRound:false, 
+        ease:Power1.ease0ut
+    });
+
+	var nineParallaxScene = new ScrollMagic.Scene({
+        triggerElement: ".Nine", 
+        triggerHook: 1,
+        duration: "250%"
+    })
+    .setTween(nineParallaxTween)
+    //.addIndicators()
+    .addTo(controller);
+    
+    var tenParallaxTween = TweenMax.from(".Ten", 1, {
+      backgroundPositionY: "+=30%",
+      autoRound:false, 
+      ease:Power1.ease0ut
+    });
+
+	var tenParallaxScene = new ScrollMagic.Scene({
+        triggerElement: ".Ten", 
+        triggerHook: 1,
+        duration: "250%"
+    })
+    .setTween(tenParallaxTween)
+    //.addIndicators()
+    .addTo(controller);
+    
+    var twelveInnerParallaxTween = TweenMax.to(".Twelve-inner", 1, {
+      backgroundPositionY: "+=15%",
+      autoRound:false, 
+      ease:Power1.ease0ut
+    });
+
+	var twelveInnerParallaxScene = new ScrollMagic.Scene({
+        triggerElement: ".Twelve-inner", 
+        triggerHook: 1,
+        duration: "200%"
+    })
+    .setTween(twelveInnerParallaxTween)
+    //.addIndicators()
+    .addTo(controller);
+    
+    var twelveParallaxTween = TweenMax.to(".Twelve", 1, {
+      backgroundPositionX: "-=15%",
+      autoRound:false, 
+      ease:Power1.ease0ut
+    });
+
+	var twelveParallaxScene = new ScrollMagic.Scene({
+        triggerElement: ".Twelve", 
+        triggerHook: 0.2,
+        offset: 500,
+        duration: "200%"
+    })
+    .setTween(twelveParallaxTween)
+    //.addIndicators()
+    .addTo(controller);
+    
+     var thirteenInnerParallaxTween = TweenMax.to(".Thirteen-inner", 1, {
+      backgroundPositionY: "-=15%",
+      autoRound:false, 
+      ease:Power1.ease0ut
+    });
+
+	var thirteenInnerParallaxScene = new ScrollMagic.Scene({
+        triggerElement: ".Thirteen-inner", 
+        triggerHook: 1,
+        duration: "200%"
+    })
+    .setTween(thirteenInnerParallaxTween)
+    //.addIndicators()
+    .addTo(controller);
+    
+    var thirteenParallaxTween = TweenMax.from(".Thirteen", 1, {
+      backgroundSize: "+=100px +=74.95px",
+      autoRound:false, 
+      ease:Power1.ease0ut
+    });
+
+	var thirteenParallaxScene = new ScrollMagic.Scene({
+        triggerElement: ".Thirteen", 
+        triggerHook: 0.2,
+        offset: 500,
+        duration: "200%"
+    })
+    .setTween(thirteenParallaxTween)
+    //.addIndicators()
+    .addTo(controller);
+    
+    var fifteenInnerParallaxTween = TweenMax.to(".Fifteen-inner", 1, {
+      backgroundPositionY: "-=15%",
+      autoRound:false, 
+      ease:Power1.ease0ut
+    });
+
+	var fifteenInnerParallaxScene = new ScrollMagic.Scene({
+        triggerElement: ".Fifteen-inner", 
+        triggerHook: 1,
+        duration: "200%"
+    })
+    .setTween(fifteenInnerParallaxTween)
+    //.addIndicators()
+    .addTo(controller);
+    
+    var fifteenParallaxTween = TweenMax.from(".Fifteen", 1, {
+      backgroundSize: "+=80px +=60px",
+      autoRound:false, 
+      ease:Power1.ease0ut
+    });
+
+	var fifteenParallaxScene = new ScrollMagic.Scene({
+        triggerElement: ".Fifteen", 
+        triggerHook: 0.2,
+        offset: 500,
+        duration: "200%"
+    })
+    .setTween(fifteenParallaxTween)
+    //.addIndicators()
+    .addTo(controller);
+    
+    var seventeenInnerParallaxTween = TweenMax.to(".Seventeen-inner", 1, {
+      backgroundSize: "+=80px +=60px",
+      autoRound:false, 
+      ease:Power1.ease0ut
+    });
+
+	var seventeenInnerParallaxScene = new ScrollMagic.Scene({
+        triggerElement: ".Seventeen-inner", 
+        triggerHook: 1,
+        duration: "200%"
+    })
+    .setTween(seventeenInnerParallaxTween)
+    //.addIndicators()
+    .addTo(controller);
+    
+    var seventeenParallaxTween = TweenMax.from(".Seventeen", 1, {
+      backgroundPositionY: "+=10%",
+      autoRound:false, 
+      ease:Power1.ease0ut
+    });
+
+	var seventeenParallaxScene = new ScrollMagic.Scene({
+        triggerElement: ".Seventeen", 
+        triggerHook: 0.2,
+        offset: 500,
+        duration: "200%"
+    })
+    .setTween(seventeenParallaxTween)
+    //.addIndicators()
+    .addTo(controller);
+    
+    var eighteenInnerParallaxTween = TweenMax.to(".Eighteen-inner", 1, {
+      backgroundPositionY: "+=15%",
+      autoRound:false, 
+      ease:Power1.ease0ut
+    });
+
+	var eighteenInnerParallaxScene = new ScrollMagic.Scene({
+        triggerElement: ".Eighteen-inner", 
+        triggerHook: 1,
+        duration: "200%"
+    })
+    .setTween(eighteenInnerParallaxTween)
+    //.addIndicators()
+    .addTo(controller);
+    
+    var eighteenParallaxTween = TweenMax.to(".Eighteen", 1, {
+      backgroundSize: "+=80px +=60px",
+      autoRound:false, 
+      ease:Power1.ease0ut
+    });
+
+	var eighteenParallaxScene = new ScrollMagic.Scene({
+        triggerElement: ".Eighteen", 
+        triggerHook: 0.2,
+        offset: 500,
+        duration: "200%"
+    })
+    .setTween(eighteenParallaxTween)
+    //.addIndicators()
+    .addTo(controller);
+    
+    var twentyParallaxTween = TweenMax.from(".Twenty", 1, {
+      backgroundSize: "+=200px +=125px",
+      autoRound:false, 
+      ease:Power1.ease0ut
+    });
+
+	var twentyParallaxScene = new ScrollMagic.Scene({
+        triggerElement: ".Twenty", 
+        triggerHook: 1,
+        duration: "150%"
+    })
+    .setTween(twentyParallaxTween)
+    //.addIndicators()
+    .addTo(controller);
+    
+    var twentyThreeParallaxTween = TweenMax.from(".Twenty-three", 1, {
+      backgroundPositionY: "+=10%",
+      autoRound:false, 
+      ease:Power1.ease0ut
+    });
+
+	var twentyThreeParallaxScene = new ScrollMagic.Scene({
+        triggerElement: ".Twenty-three", 
+        triggerHook: 1,
+        duration: "250%"
+    })
+    .setTween(twentyThreeParallaxTween)
+    //.addIndicators()
+    .addTo(controller);
 /*======================= End ScrollMagic Animations =======================*/
 });
 
@@ -338,14 +654,6 @@ $(window).scroll(function(){
     
     if(largeDesktop.matches){ 
         
-        $('.One-inner').css({
-            'background-position':  '50% ' + (50 + wScroll/35) + '%'
-            //This scroll effect causes janking in Firefox
-            /*'filter': 'contrast(' + (100 - wScroll/8) + '%) brightness(' + (100 + wScroll/15) + '%)'*/
-            
-            
-        })
-        
         $('#hos-geldiniz').css({
             'transform': 'translateX('  + wScroll/10 + 'px) translateY('  + wScroll/4 + 'px)'
         })
@@ -353,18 +661,7 @@ $(window).scroll(function(){
         $('#welcome').css({
             'transform': 'translateX('  + wScroll/-10 + 'px) translateY('  + wScroll/4 + 'px)'
         })
-        
-        $('.Three-inner').css({
-            'background-position':  '50% ' + (50 + wScroll/45) + '%'
-        })
-        
-        $('.Three').css({
-            'background-position':  '50% ' + (50 + wScroll/45) + '%'
-        })
-        
-        $('.Four').css({
-            'background-position':  '50% ' + (50 + -wScroll/90) + '%'
-        })       
+              
                     
         $('.Fourteen > .flex-container > .flex-item:nth-child(1)').on('click', function(){
             window.location = "https://www.trivago.com/istanbul-32123/hotel"; 

@@ -53,11 +53,11 @@ const titles = [
 ];
      
 const captions = [
-     "The famous Bosphorus strait.",
-     "Marmara island, located in the middle of the Marmara sea.",
-     "The oceanfront area of İzmir.",
-     "Çeşme marina. The Greek island of Chios is less than a stone's throw away.",
-     "The Mediterranean region of Turkey is famous for its seemingly endless beaches.",
+     "This is the famous Bosphorus strait, the waterway dividing Europe from Asia. The massive city of İstanbul sits along both sides. The bosphorus connects the Sea of Marmara with the Black Sea, giving Georgia, Russia, Ukraine, Romania, & Bulgaria access to the Mediterranean. Rumelihisarı (pictured), or Boğazkesen Castle, is a historical fortress that sits on the European side of İstanbul.",
+     "Above is Marmara island, which is located in the middle of the Sea of Marmara. The Marmara lies between the Bosphorus and the narrow Dardanelles straight, which leads to the Aegean Sea.",
+     "The oceanfront area of İzmir, the third largest city in Turkey. A popular cruise destination, İzmir has a typical Mediterranean climate with dry, warm summers and cool, rainy winters.",
+     "The main marian in Çeşme. This city, which is around an hour away from Izmir by car, is less than a stone's throw away from the Greek island of Chios. This is not unsual, as many Greek islands in the Aegean sea are closer to Turkey than Athens.",
+     "The Mediterranean region of Turkey is famous for its seemingly endless beaches. This beach lies just outside Antalya in the Southwest of Turkey.",
      "Göynük Canyon, near Antalya, Turkey",
      "The unique landscape within the Cappadocia region in central Turkey.",
      "Ürgüp, Turkey.",

@@ -24,9 +24,19 @@ $desc-size: 1.5em;
 $arrow-rotate-out: all 2.0s cubic-bezier(.37,1.01,.8,.99);
 $color-hover: color 0.3s ease-in-out;
 
+//div heights
+//Helps maintain image proportions for scroll effect
+$six-height: 100vw * 0.5624029000517866;
+$seven-height: 100vw * .5625;
+$eight-height: 100vw * .6666667;
+$nine-height: 100vw * 0.5632124352331606;
+$thirteen-height: 100vw * .7495;
+$fifteen-height: 100vw *.75;
+$seventeen-inner-height: 100vw * .75;
+$eighteen-height: 100vw * .5624;
+$twenty-height: 100vw * .625;
+
 //keyframes
-
-
 @keyframes flag-background{
 	45%     {opacity: 1;}
     50%     {opacity: 0.85;}
@@ -342,9 +352,8 @@ h2, p, a{
         
         &:nth-child(2){
             width: 700px;
-            background: url("img/turkey-flag-1.jpg") $nrs 50% 50%;
+            background: url("img/turkey-flag-mini.jpg") $nrs 50% 50%;
             background-size: cover;
-            
         }
         
         &:nth-child(3){
@@ -736,7 +745,7 @@ h2, p, a{
     position: relative; 
     height: 120vh;
     background: url("./img/istanbul-2.jpg") $nrf 50% 40%;
-    background-size: cover;
+    background-size: 100vw $six-height; //parallax-friendly replacement for "cover"
     transition: background-image 0.5s ease-in-out;
     
     #sehirler{
@@ -786,8 +795,8 @@ h2, p, a{
 .Seven{
     position: relative; 
     height: 120vh;
-    background: url("./img/ankara-1.jpg") $nrf 50% 40%;
-    background-size: cover;
+    background: url("./img/ankara-1.jpg") $nrf 50% 0%;
+    background-size: 100vw $seven-height; //parallax-friendly replacement for "cover"
     transition: background-image 0.5s ease-in-out;
     
     #ankara{
@@ -810,11 +819,12 @@ h2, p, a{
     }
 }
 
+
 .Eight{
     position: relative; 
     height: 120vh;
-    background: url("./img/izmir-1.JPG") $nrf 50% 40%;
-    background-size: cover;
+    background: url("./img/izmir-3.JPG") $nrf 50% 100%;
+    background-size: 100vw $eight-height; //parallax-friendly replacement for "cover"
     transition: background-image 0.5s ease-in-out;
     #izmir{
         @include secondary-font;
@@ -840,7 +850,7 @@ h2, p, a{
     position: relative; 
     height: 120vh;
     background: url("./img/bursa-1.jpg") $nrf 50% 40%;
-    background-size: cover;
+    background-size: 100vw $nine-height; //parallax-friendly replacement for "cover"
     transition: background-image 0.5s ease-in-out;
     #bursa{
         @include secondary-font;
@@ -913,7 +923,7 @@ h2, p, a{
 
     .flex-item{
         padding: 5px;
-        height: 400px;
+        height: 350px;
         width: 350px;
         margin: 10px 0px;
   
@@ -927,9 +937,10 @@ h2, p, a{
             
         h2{
             position: relative;
-            top: 330px;
+            top: 290px;
             color: $white;
             font-size: $desc-size;
+            //@include more-legible-paragraph;
         }
         
         &:nth-child(even){
@@ -1051,7 +1062,7 @@ h2, p, a{
         }
         
         &:nth-child(17){
-            background: url("img/virgin-mary-house-2.jpg") $nrs 50% 50%;
+            background: url("img/virgin-mary-house-mini.jpg") $nrs 50% 50%;
             background-size: cover;
             
             h2{
@@ -1097,6 +1108,74 @@ h2, p, a{
         &:nth-child(25){
             background: url("img/aspendos-mini.jpg") $nrs 50% 50%;
             background-size: cover;
+        }
+        
+        &:nth-child(26){
+            background: url("img/damlatas-mini.jpg") $nrs 0% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(27){
+            background: url("img/zilkale-mini.jpg") $nrs 30% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(28){
+            background: url("img/kaunos-mini.jpg") $nrs 90% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(29){
+            background: url("img/istiklal-mini.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(30){
+            background: url("img/st-nicolas-church-mini.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(31){
+            background: url("img/ani-ruins-mini.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(32){
+            background: url("img/amasya-mini.jpg") $nrs 95% 0%;
+            background-size: cover;
+        }
+        
+        &:nth-child(33){
+            background: url("img/ishak-mini.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(34){
+            background: url("img/beylerbeyi-mini.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(35){
+            background: url("img/selimiye-mini.jpg") $nrs 0% 50%;
+            background-size: cover;
+        }
+        
+        &:nth-child(36){
+            background: url("img/seven-lakes-mini.jpg") $nrs 65% 0%;
+            background-size: cover;
+            
+            h2{
+                left: 30px;
+            }
+        }
+        
+        &:nth-child(37){
+            background: url("img/saklikent-mini.jpg") $nrs 50% 50%;
+            background-size: cover;
+            
+            h2{
+                left: -10px;
+            }
         }
         
         &:nth-child(n+2):hover{
@@ -1180,7 +1259,7 @@ h2, p, a{
     position: relative;
     height: 170vh;
     background: url("img/hotel-5.jpg") $nrf 50% 50%;
-    background-size: cover;
+    background-size: 100vw $thirteen-height;
     
     .Thirteen-inner{
         position: relative;
@@ -1247,7 +1326,7 @@ h2, p, a{
 
     .flex-item{
         padding: 5px;
-        height: 400px;
+        height: 350px;
         width: 350px;
         margin: 10px 0px;
   
@@ -1262,7 +1341,7 @@ h2, p, a{
         
         h2{
             position: relative;
-            top: 350px;
+            top: 290px;
             font-size: 1.8em;
             text-align: center;
             color: $white;
@@ -1366,13 +1445,13 @@ h2, p, a{
     position: relative;
     height: 180vh;
     background: url("img/cuisine-2.jpg") $nrf 50% 50%;
-    background-size: cover;
+    background-size: 100vw $fifteen-height;
     
     .Fifteen-inner{
         position: relative;
         height: 170vh;
         background: url("img/cuisine-1.jpg") $nrf 50% 50%;
-        background-size: cover;
+        background-size: 100vw ;
     }
     
     #mutfak{
@@ -1566,7 +1645,7 @@ h2, p, a{
         position: relative;
         height: 170vh;
         background: url("img/cuisine-6.jpg") $nrf 50% 50%;
-        background-size: cover;
+        background-size: 100vw $seventeen-inner-height;
     }
     
     #delight{
@@ -1602,11 +1681,12 @@ h2, p, a{
     }
 }
 
+
 .Eighteen{
     position: relative;
     height: 180vh;
     background: url("img/cuisine-9.jpg") $nrf 50% 50%;
-    background-size: cover;
+    background-size: 100vw $eighteen-height;
     
     .Eighteen-inner{
         position: relative;
@@ -1773,7 +1853,7 @@ h2, p, a{
     position: relative;
     height: 110vh;
     background: url("img/ataturk-2.jpg") $nrf 50% 50%;
-    background-size: cover;
+    background-size: 100vw $twenty-height;
     
     #alfabe{
         position: relative;
@@ -1892,7 +1972,7 @@ h2, p, a{
 
     .flex-item{
         padding: 5px;
-        height: 400px;
+        height: 350px;
         width: 350px;
         margin: 10px 0px;
   
@@ -1907,7 +1987,7 @@ h2, p, a{
             
         h2{
             position: relative;
-            top: 330px;
+            top: 290px;
             color: $white;
             font-size: $desc-size;
         }
@@ -1973,7 +2053,7 @@ h2, p, a{
         }
         
         &:nth-child(6){
-            background: url("img/turkish-8.jpg") $nrs 60% 50%;
+            background: url("img/turkish-8-mini.jpg") $nrs 60% 50%;
             background-size: cover;
         }
         
@@ -2227,30 +2307,15 @@ h2, p, a{
                     top: 30px;
                     font-size: 2.5em;
                     font-weight: 700;
-                    color: $red;
-                    opacity: 0;
-                    transform: rotate(-5deg);
-                    transition: all 0.5s ease-in-out;
                 }
 
                 #flag{
-                    position: relative;
                     top: 20px;
-                    font-size: $desc-size;
-                    color: $turquoise;
-                    opacity: 0;
-                    transform: rotate(5deg);
-                    transition: all 0.5s ease-in-out;                
-                }
-
-                #bayragi.fade-in, #flag.fade-in{
-                    @include scrollmagic-header-finish;
+                    font-size: $desc-size;               
                 }
 
                 p{
-                    position: relative;
                     top: 35px;
-                    color: $red;
                     font-size: 0.9em;
                 }
             }
@@ -2280,7 +2345,6 @@ h2, p, a{
                 padding: 0px 30px;
 
                 h2{
-                    position: relative;
                     top: 140px;
                     font-size: 1em;
                     line-height: 25px;
@@ -2297,7 +2361,6 @@ h2, p, a{
 
 
         .Three-inner{
-            position: relative;
             height: 150vh;
             background: url("img/uzungol-1.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -2313,41 +2376,32 @@ h2, p, a{
 
             #uzungol{
                 top: 60vh;
-                color: $white;
                 font-size: $secondary-subheader-size;            
             }
 
             #uzungol-desc{
-                position: relative;
                 top: 60vh;
-                color: $turquoise;
                 font-size: $desc-size;            
             }        
         }
 
         #cappadocia{
-            position: relative;
             top: -20vh;
-            color: $white;
             font-size: $secondary-subheader-size;          
         }
 
         #cappadocia-desc{
-            position: relative;
             top: -20vh;
-            color: $turquoise;
             font-size: $desc-size;            
         }
     }
     
     .Four{
-        position: relative;
         height: 110vh;
         background: url("./img/ataturk-1.jpg") $nrs 70% 0% !important;
         background-size: 1000px !important;
         
         .Four-inner{
-            position: relative;
             height: 110vh;
             background: url("./img/map-3.png") $nrs 50% 50%;
             background-size: cover;
@@ -2355,53 +2409,31 @@ h2, p, a{
         }
 
         #merkezi{
-            position: relative;
             top: 32vh;
-            color: $white;
             font-size: $main-subheader-size;
-            opacity: 0;
-            transform: rotate(-10deg);
-            transition: all 0.5s ease-in-out;
         }
 
         #center{
             position: relative;
-            top: 32vh;
-            color: $turquoise;
             font-size: $secondary-subheader-size;
-            opacity: 0;
-            transform: rotate(10deg);
-            transition: all 0.5s ease-in-out;
         }
         
         #ranging{
-            position: relative;
             top: 35vh;
             font-size: 1em;
-            color: $white;
         }
 
         #ataturk{
-            position: relative;
             top: -20vh;
-            color: $white;
             font-size: $secondary-subheader-size;
             margin: 0px 10vw; 
-            opacity: 0;
-            transform: rotate(-5deg);
-            transition: all 0.3s ease-in-out;
 
         }
 
         #founder{
-            position: relative;
             top: -20vh;
-            color: $turquoise;
             font-size: 1em;
             margin: 0px 10vw;
-            opacity: 0;
-            transform: rotate(5deg);
-            transition: all 0.3s ease-in-out;
         }
     }
 
@@ -2451,24 +2483,14 @@ h2, p, a{
                 text-align: center; 
 
                 #bolgeleri{
-                    position: relative;
                     top: 0vh;
-                    color: $red;
                     font-size: $main-subheader-size;
                     line-height: 50px;
-                    opacity: 0;
-                    transform: rotate(-10deg);
-                    transition: all 0.5s ease-in-out;
                 }
 
                 #regions{
-                    position: relative;
                     top: 2vh;
-                    color: $turquoise;
                     font-size: $secondary-subheader-size;
-                    opacity: 0;
-                    transform: rotate(10deg);
-                    transition: all 0.5s ease-in-out;
                 }
             }
 
@@ -2613,7 +2635,7 @@ h2, p, a{
     }
 
     .Eight{
-        background: url("./img/izmir-1.JPG") $nrs 50% 40%;
+        background: url("./img/izmir-3.JPG") $nrs 50% 40%;
         background-size: cover;
         
         #izmir{
@@ -2707,6 +2729,7 @@ h2, p, a{
         #oteleler{
             top: 10vh;
             font-size: $main-subheader-size;  
+            color: $red;
         }
 
         #hotels{
@@ -2800,10 +2823,7 @@ h2, p, a{
         #mutfak{
             top: 10vh;
             color: $white;
-            font-size: $main-subheader-size;  
-            opacity: 0;
-            transform: rotate(-10deg);
-            transition: all 0.5s ease-in-out; 
+            font-size: $main-subheader-size;   
         }
 
         #cuisine{
@@ -3171,3 +3191,927 @@ h2, p, a{
     }
 }
 
+@include for-large-phone-portrait{
+    .One{
+        background: url("./img/turkey-flag-1.jpg") $nrs 50% 50%;
+        background-size: cover;
+        
+        .One-inner{
+            background: url("./img/maidens-tower-1.jpg") $nrs 50% 50%;
+            background-size: cover;
+            
+            #hos-geldiniz{
+                top: 60vh;
+                font-size: $main-subheader-size;
+            }
+
+            #welcome{
+                top: 60vh;
+                font-size: $secondary-subheader-size;
+            }
+        }        
+    }
+    
+    .Two{
+        background: url("./img/white-3.jpg") $nrs center;
+        background-size: cover;
+        
+        .flex-item{
+            padding: 5px;
+            margin: 10px 0px;
+            line-height: 23px;
+            font-family: $main-font, Arial, Helvetica, serif;
+
+            &:nth-child(1){
+                height: 330px;
+                width: 500px;
+                border-radius: 80px;
+                transition: all 0.3s ease-in-out;
+
+                #bayragi{
+                    top: 30px;
+                    font-size: 2.5em;
+                    font-weight: 700;
+                }
+
+                #flag{
+                    top: 20px;
+                    font-size: $desc-size;               
+                }
+
+                p{
+                    top: 35px;
+                    font-size: 0.9em;
+                }
+            }
+
+            &:nth-child(2){
+                height: 230px;
+                width: 700px;
+            }
+
+            &:nth-child(3){
+                height: 230px;
+                width: 700px;
+                padding: 0px 30px;
+
+                h2{
+                    position: relative;
+                    top: 140px;
+                    font-size: 1em;
+                    line-height: 25px;
+                    padding: 10px 0px;
+                }
+            }
+
+            &:nth-child(4){
+                height: 230px;
+                width: 500px;
+                padding: 0px 30px;
+
+                h2{
+                    top: 140px;
+                    font-size: 1em;
+                    line-height: 25px;
+                    padding: 10px 0px;
+                }
+            }
+        }
+    }
+    
+    .Three{
+        height: 150vh;
+        background: url("img/cappadocia-1.jpg") $nrs 50% 50%;
+        background-size: cover;
+
+
+        .Three-inner{
+            height: 150vh;
+            background: url("img/uzungol-1.jpg") $nrs 50% 50%;
+            background-size: cover;
+
+            #cografya{
+                color: $red;
+                font-size: $main-subheader-size; 
+            }
+
+            #geography{
+                font-size: $secondary-subheader-size;
+            }
+
+            #uzungol{
+                top: 60vh;
+                font-size: $secondary-subheader-size;            
+            }
+
+            #uzungol-desc{
+                top: 60vh;
+                font-size: $desc-size;            
+            }        
+        }
+
+        #cappadocia{
+            top: -20vh;
+            font-size: $secondary-subheader-size;          
+        }
+
+        #cappadocia-desc{
+            top: -20vh;
+            font-size: $desc-size;            
+        }
+    }
+    
+    .Four{
+        height: 110vh;
+        background: url("./img/ataturk-1.jpg") $nrs 70% 0% !important;
+        background-size: 1000px !important;
+        
+        .Four-inner{
+            height: 110vh;
+            background: url("./img/map-3.png") $nrs 50% 50%;
+            background-size: cover;
+
+        }
+
+        #merkezi{
+            top: 32vh;
+            font-size: $main-subheader-size;
+        }
+
+        #center{
+            position: relative;
+            font-size: $secondary-subheader-size;
+        }
+        
+        #ranging{
+            top: 35vh;
+            font-size: 1em;
+        }
+
+        #ataturk{
+            top: -20vh;
+            font-size: $secondary-subheader-size;
+            margin: 0px 10vw; 
+
+        }
+
+        #founder{
+            top: -20vh;
+            font-size: 1em;
+            margin: 0px 10vw;
+        }
+    }
+
+
+    .Five{    
+        background: $white;
+        
+        .flex-item{
+            padding: 5px;
+            height: 250px;
+            width: 300px;
+            margin: 10px 0px;
+
+            line-height: 30px;
+            font-family: $main-font, Arial, Helvetica, serif;
+            //font-size: 0.9em;
+            border-top: transparent 4px solid;
+            border-bottom: transparent 4px solid;
+            text-align: center;
+            transition: all 0.3s ease-in;
+
+            h1{
+                position: relative;
+                top: 120px;
+                color: $white;
+                font-size: $desc-size;
+            }
+
+            h2{
+                position: relative;
+                top: 120px;
+                color: $turquoise;
+                font-size: 1em;
+            }
+
+            .map{
+                position: relative;
+                 top: 20px;
+                 height: 50px;
+                 length: 100px;
+                 //opacity: 0.8;
+            }
+
+            &:nth-child(1){
+                height: 200px;
+                width: 100%;
+                text-align: center; 
+
+                #bolgeleri{
+                    top: 0vh;
+                    font-size: $main-subheader-size;
+                    line-height: 50px;
+                }
+
+                #regions{
+                    top: 2vh;
+                    font-size: $secondary-subheader-size;
+                }
+            }
+
+            &:nth-child(2){
+                background: url("img/marmara-1.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                .map{
+                    background: url("img/marmara-region-1.png") $nrs 50% 50%;
+                    background-size: contain;
+                }
+            }
+
+            &:nth-child(3){
+                background: url("img/aegean-1.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                .map{
+                    background: url("img/aegean-region-1.png") $nrs 50% 50%;
+                    background-size: contain;
+                }
+            }
+
+            &:nth-child(4){
+                background: url("img/mediterranean-mini.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                .map{
+                    background: url("img/mediterranean-region-1.png") $nrs 50% 50%;
+                    background-size: contain;
+                }
+            }
+
+            &:nth-child(5){
+                background: url("img/cappadocia-2.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                .map{
+                    background: url("img/central-anatolia-region-1.png") $nrs 50% 50%;
+                    background-size: contain;
+                }
+            }
+
+            &:nth-child(6){
+                background: url("img/black-sea-mini.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                .map{
+                    background: url("img/black-sea-region-1.png") $nrs 50% 50%;
+                    background-size: contain;
+                }
+            }
+
+            &:nth-child(7){
+                background: url("img/eastern-mini.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                .map{
+                    background: url("img/eastern-anatolia-region-1.png") $nrs 50% 50%;
+                    background-size: contain;
+                }
+            }
+
+            &:nth-child(8){
+                background: url("img/southeastern-5.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                .map{
+                    background: url("img/southeastern-anatolia-region-1.png") $nrs 50% 50%;
+                    background-size: contain;
+                }
+
+                h1, h2{
+                    left: 20px;
+                }
+            }
+
+            &:nth-child(9){
+                background: url("img/batman-logo-1.jpg") $nrs 60% 90%;
+                background-s: cover;
+
+                .map{
+                    background: url("img/eastern-anatolia-region-1.png") $nrs 50% 50%;
+                    background-size: contain;
+                }
+
+                h1, h2{
+                    top: 10px;
+                } 
+                
+                p{ 
+                    position: relative;
+                    top: 20px;
+                    left: 70px;
+                    width: 180px;
+                    color: $white;
+                    font-size: .8em;
+
+                }
+            }
+        }
+    }
+    
+    .Six{
+        background: url("./img/istanbul-2.jpg") $nrs 50% 40%;
+        background-size: cover;
+
+        #sehirler{
+            top: 10vh;
+            font-size: $main-subheader-size;  
+        }
+
+        #cities{
+            top: 10vh;
+            font-size: $secondary-subheader-size;
+        }
+
+        #istanbul{
+            font-size: $secondary-subheader-size;
+        }
+
+        #istanbul-description{
+            top: 45vh;
+            font-size: 1.3em;
+            padding: 0px 10vw;
+        }   
+    }
+
+    .Seven{
+        background: url("./img/ankara-1.jpg") $nrs 50% 40%;
+        background-size: cover;
+
+        #ankara{
+            font-size: $secondary-subheader-size;
+        }
+
+        #ankara-description{
+            top: 45vh;
+            font-size: 1.3em;
+            padding: 0px 10vw;
+        }
+    }
+
+    .Eight{
+        background: url("./img/izmir-3.JPG") $nrs 50% 40%;
+        background-size: cover;
+        
+        #izmir{
+            font-size: $secondary-subheader-size;
+        }
+
+        #izmir-description{
+            top: 45vh;
+            font-size: 1.3em;
+            padding: 0px 10vw;
+        }
+    }
+
+    .Nine{
+        background: url("./img/bursa-1.jpg") $nrs 50% 40%;
+        background-size: cover;
+        
+        
+        #bursa{
+            font-size: $secondary-subheader-size;
+        }
+
+        #bursa-description{
+            top: 45vh;
+            font-size: 1.3em;
+            padding: 0px 10vw;
+        }
+    }
+
+    .Ten{
+        background: url("./img/adana-1.jpg") $nrs 50% 40%;
+        background-size: cover;
+
+        #adana{
+            font-size: $secondary-subheader-size;
+        }
+
+        #adana-description{
+            top: 45vh;
+            font-size: 1.3em;
+            padding: 0px 10vw;
+        }
+    }
+    
+    .Eleven{
+        background: $white;
+
+        .flex-item{
+            padding: 5px;
+            height: 250px;
+            width: 300px;
+            margin: 10px 0px;
+
+            line-height: 30px;
+            
+            h2{
+                top: 190px;
+                font-size: 1.4em !important;
+                font-size: $desc-size;
+            }
+
+            &:nth-child(1){
+                height: 100px;
+                width: 100%;
+
+
+                #manzaralar{
+                    top: 0px;
+                    font-size: $main-subheader-size;
+                }
+
+                #sights{
+                    top: 10px;
+                    font-size: $secondary-subheader-size;    
+                }
+            }
+        }
+    }
+    
+    .Twelve{
+        height: 170vh;
+        background: url("img/hotel-3.jpg") $nrs 50% 50%;
+        background-size: cover;
+
+        .Twelve-inner{
+            height: 170vh;
+            background: url("img/hotel-1.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+
+        #oteleler{
+            top: 10vh;
+            font-size: $main-subheader-size;  
+            font-size: $red;
+        }
+
+        #hotels{
+            top: 10vh;
+            font-size: $secondary-subheader-size;   
+        }
+
+        #raffles1{
+            top: 65vh;
+            font-size: $secondary-subheader-size;
+        }
+
+        #raffles1-desc{
+            top: 65vh;
+            font-size: $desc-size;            
+        }
+
+        #raffles2{
+            top: -25vh;
+            font-size: $secondary-subheader-size;           
+        }
+
+        #raffles2-desc{
+            top: -25vh;
+            font-size: $desc-size;            
+        }
+    }
+
+    .Thirteen{
+        height: 170vh;
+        background: url("img/hotel-5.jpg") $nrs 50% 50%;
+        background-size: cover;
+
+        .Thirteen-inner{
+            height: 170vh;
+            background: url("img/hotel-4.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+
+        #kayakapi1{
+            top: 85vh;
+            font-size: $secondary-subheader-size;             
+        }
+
+        #kayakapi1-desc{
+            top: 85vh;
+            font-size: $desc-size;            
+        }
+
+        #kayakapi2{
+            top: -25vh;
+            font-size: $secondary-subheader-size;             
+        }
+
+        #kayakapi2-desc{
+            top: -25vh;
+            font-size: $desc-size;            
+        }
+    }
+    
+    .Fourteen {
+        background: $white;
+
+        .flex-item{
+            padding: 5px;
+            height: 250px;
+            width: 300px;
+            margin: 10px 0px;
+
+            h2{
+                top: 190px;
+                font-size: $desc-size;
+            }
+
+            a{
+                color: transparent;
+                text-decoration: none !important;
+            }
+        }
+    }
+
+    .Fifteen{
+        background: url("img/cuisine-2.jpg") $nrs 50% 50%;
+        background-size: cover;
+
+        .Fifteen-inner{
+            background: url("img/cuisine-1.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+
+        #mutfak{
+            top: 10vh;
+            color: $white;
+            font-size: $main-subheader-size;   
+        }
+
+        #cuisine{
+            top: 9vh;
+            font-size: $secondary-subheader-size;   
+        }
+
+        #meze{
+            top: 50vh;
+            font-size: $secondary-subheader-size;         
+        }
+
+        #meze-desc{
+            top: 50vh;
+            font-size: 1em;
+        }   
+
+        #doner{
+            top: -40vh;
+            font-size: $secondary-subheader-size;            
+        }
+
+        #doner-desc{
+            top: -40vh;
+            font-size: 1em;
+        }
+    }
+
+    .Sixteen {
+        background: url("./img/white-3.jpg") $nrs center;
+        background-size: cover;
+        z-index: 19;
+        
+        .flex-container {
+            position: relative;
+            top: 0vh;
+            width: 100vw;
+            padding: 30px;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+
+        .flex-item{
+            padding: 5px;
+            width: 500px;
+            margin: 10px 0px;
+
+            line-height: 23px;
+            text-align: center;
+            @include border-radius;
+
+            &:nth-child(1){
+                height: 330px;
+                width: 500px;
+
+                #yemegi{
+                    top: 50px !important;
+                    font-size: $secondary-subheader-size;
+                    font-weight: 700;
+                }
+
+                #food{
+                    position: relative;
+                    top: 15px;
+                    font-size: 1.4em;    
+                }
+
+                p{
+                    position: relative;
+                    top: 25px;
+                    color: $red;
+                    font-size: 0.9em;
+                }
+            }
+
+            &:nth-child(2){
+                height: 230px;
+                width: 700px;
+
+                h2{
+                    top: 170px;
+                    color: $white;
+                    font-size: 2.5em;
+                }
+
+            }
+
+            &:nth-child(3){
+                height: 230px;
+                width: 700px;
+
+                h2{
+                    top: 170px;
+                }
+            }
+
+            &:nth-child(4){
+                height: 230px;
+                width: 500px;
+
+                h2{
+                    top: 170px;
+                }
+            }
+        }
+    }
+    
+    .Seventeen{
+        height: 170vh;
+        background: url("img/cuisine-7.jpg") $nrs 50% 50%;
+        background-size: cover;
+
+        .Seventeen-inner{
+            height: 170vh;
+            background: url("img/cuisine-6.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+
+        #delight{
+            top: 55vh;
+            font-size: $secondary-subheader-size;            
+        }
+
+        #delight-desc{
+            top: 55vh;
+            font-size: 1em;
+        }
+
+        #dolma{
+            top: -40vh;
+            font-size: $secondary-subheader-size;            
+        }
+
+        #dolma-desc{
+            top: -40vh;
+            font-size: 1em;
+        }
+    }
+
+    .Eighteen{
+        height: 180vh;
+        background: url("img/cuisine-9.jpg") $nrs 50% 50%;
+        background-size: cover;
+
+        .Eighteen-inner{
+            height: 180vh;
+            background: url("img/cuisine-8.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+
+        #simit{
+            top: 55vh;
+            font-size: $secondary-subheader-size;            
+        }
+
+        #simit-desc{
+            top: 55vh;
+            font-size: 1em;
+        }
+
+        #kokorec{
+            top: -40vh;
+            font-size: $secondary-subheader-size;            
+        }
+
+        #kokorec-desc{
+            top: -40vh;
+            font-size: 1em;
+        }
+    }
+    
+    .Nineteen {
+        position: relative;
+        top: 0vh;
+        height: auto;
+        background: url("./img/white-3.jpg") $nrs center;
+        background-size: cover;
+        font-size: large;
+        z-index: 19;
+
+        .flex-container {
+            position: relative;
+            top: 0vh;
+            width: 100vw;
+            padding: 30px;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+
+        .flex-item{
+            padding: 5px;
+            margin: 10px 0px;
+
+            line-height: 23px;
+            font-family: $main-font, Arial, Helvetica, serif;
+            //font-size: 3em;
+            text-align: center;
+            @include border-radius;
+
+            &:nth-child(1){
+                height: 430px;
+                width: 700px;
+                border-radius: 80px;
+                transition: all 0.3s ease-in-out;
+
+                #dili{
+                    top: 50px !important;
+                    font-size: $secondary-subheader-size;
+                    font-weight: 700;
+                }
+
+                #language{
+                    position: relative;
+                    top: 15px;
+                    font-size: 1.4em;    
+                }
+
+                p{
+                    position: relative;
+                    top: 25px;
+                    color: $red;
+                    font-size: 0.9em;
+                }
+            }
+
+            &:nth-child(2){
+                height: 230px;
+                width: 500px;
+            }
+
+            &:nth-child(3){
+                height: 230px;
+                width: 500px;
+                background: url("img/turkish-2.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                h2{
+                    position: relative;
+                    top: 170px;
+                    background-color: rgba(0,0,0,0.5);
+                    padding: 5px 0px;
+                    font-size: 1.3em;
+                    border-radius: 10px;
+                }
+            }
+
+            &:nth-child(4){
+                height: 230px;
+                width: 700px;
+                background: url("img/turkish-4.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                h2{
+                    top: 240px;
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+
+    .Twenty{
+        background: url("img/ataturk-2.jpg") $nrs 50% 50%;
+        background-size: cover;
+
+        #alfabe{
+            top: 10vh;
+            font-size: $main-subheader-size;
+        }
+
+        #alphabet{
+            top: 10vh;
+            font-size: $secondary-subheader-size;   
+        }
+
+        h2:nth-child(3){
+            top: 30vh; 
+            font-size: 1em;
+        }
+    }
+
+    .Twenty-one{
+        background: url("img/red-1.jpg") $nrs 50% 50%;
+        background-size: cover;
+
+        #cumleler{
+            top: 10vh;
+            font-size: $main-subheader-size;
+        }
+
+        #phrases{
+            top: 10vh;
+            font-size: $secondary-subheader-size;   
+        }
+
+        li{
+            top: 20vh;
+            font-size: 1em;
+            @include secondary-font;
+            list-style: none;
+        }
+
+        #pronunciation{
+            color: hotpink;
+        }
+
+        #translation{
+            color: $turquoise;
+        }
+    }
+    
+    .Twenty-two{
+        background: $white;
+
+        .flex-item{
+            padding: 5px;
+            height: 250px;
+            width: 300px;
+            margin: 10px 0px;
+
+            h2{
+                top: 190px;
+                font-size: $desc-size;
+            }
+
+            &:nth-child(1){
+                height: 100px;
+                width: 100%;
+                filter: grayscale(0%);
+
+                #konular{
+                    top: 10px;
+                    font-size: $main-subheader-size;
+                }
+
+                #topics{
+                    top: 20px;
+                    font-size: $secondary-subheader-size;    
+                }
+            }
+        }
+    }
+
+    .Twenty-three{
+        background: url("./img/istanbul-3.jpg") $nrs center;
+        background-size: cover;
+
+        #yolculuk{
+            top: 10vh;
+            font-size: $main-subheader-size;
+        }
+
+        #voyage{
+            top: 10vh;
+            font-size: $secondary-subheader-size;  
+        }
+    }
+    
+    .toolbarItemChild___2U_MP > h1{
+        font-size: 1.3em;
+        text-align: right;
+        color: $white;
+        @include main-font;
+    }
+}
