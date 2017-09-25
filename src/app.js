@@ -37,14 +37,6 @@ ReactDOM.render(
 
 /*----- h1/h2 rotations -----*/
 $(document).ready(function(){
-    $('div.moveAble-container').mousemove(function(e){
-            var y = e.pageY;
-            var x = e.pageX;                    
-            $('div.moveAble').css({'top': y}); 
-            $('div.moveAble').css({'left': x});
-
-      });
-
     var hosGeldiniz = $('#hos-geldiniz');
     var welcome = $('#welcome');
     
@@ -54,9 +46,8 @@ $(document).ready(function(){
     
     TweenMax.staggerFrom("#top-nav li", 0.7, { ease:  Power0.easeNone, delay: 1, opacity: 0, y:25, rotation: 10}, 0.15); 
     
-    var controller = new ScrollMagic.Controller();
-    
-    
+    //Scrollmagic controller
+    var controller = new ScrollMagic.Controller();    
     
     var pinTopNavScene = new ScrollMagic.Scene({
         triggerElement: '#top-nav',
@@ -622,7 +613,7 @@ $(document).ready(function(){
 	var twentyParallaxScene = new ScrollMagic.Scene({
         triggerElement: ".Twenty", 
         triggerHook: 1,
-        duration: "150%"
+        duration: "200%"
     })
     .setTween(twentyParallaxTween)
     //.addIndicators()
@@ -642,6 +633,36 @@ $(document).ready(function(){
     .setTween(twentyThreeParallaxTween)
     //.addIndicators()
     .addTo(controller);
+    
+    var geldinizTween = TweenMax.to("#hos-geldiniz", 1, {
+        x: "+=100px",
+        //y: "+100px",
+        ease:Power1.ease0ut
+    });
+
+	var geldinizScene = new ScrollMagic.Scene({
+        triggerElement: "#hos-geldiniz", 
+        triggerHook: .7,
+        duration: "100%"
+    })
+    .setTween(geldinizTween)
+    //.addIndicators()
+    .addTo(controller);
+    
+    var welcomeTween = TweenMax.to("#welcome", 1, {
+        x: "-=150px",
+        //y: "+100px",
+        ease:Power1.ease0ut
+    });
+
+	var welcomeScene = new ScrollMagic.Scene({
+        triggerElement: "#welcome", 
+        triggerHook: .7,
+        duration: "100%"
+    })
+    .setTween(welcomeTween)
+    //.addIndicators()
+    .addTo(controller);
 /*======================= End ScrollMagic Animations =======================*/
 });
 
@@ -652,17 +673,8 @@ $(window).scroll(function(){
     var largeDesktop = window.matchMedia( "(min-width: 0px)" );
      
     
-    if(largeDesktop.matches){ 
+    if(largeDesktop.matches){         
         
-        $('#hos-geldiniz').css({
-            'transform': 'translateX('  + wScroll/10 + 'px) translateY('  + wScroll/4 + 'px)'
-        })
-        
-        $('#welcome').css({
-            'transform': 'translateX('  + wScroll/-10 + 'px) translateY('  + wScroll/4 + 'px)'
-        })
-              
-                    
         $('.Fourteen > .flex-container > .flex-item:nth-child(1)').on('click', function(){
             window.location = "https://www.trivago.com/istanbul-32123/hotel"; 
         });
