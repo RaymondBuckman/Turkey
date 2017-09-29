@@ -4118,12 +4118,14 @@ h2, p, a{
 
 @include for-small-tablet-portrait{
     .One{
+        height: 100vh;
         background: url("./img/turkey-flag-1.jpg") $nrs 50% 50%;
         background-size: cover;
         
         .One-inner{
-            background: url("./img/maidens-tower-1.jpg") $nrs 50% 50%;
-            background-size: cover;
+            height: 100vh;
+            background: url("./img/maidens-tower-1.jpg") $nrs 50% 70% !important;
+            background-size: 2000px !important;
             
             #hos-geldiniz{
                 top: 70vh;
@@ -4148,24 +4150,28 @@ h2, p, a{
             font-family: $main-font, Arial, Helvetica, serif;
 
             &:nth-child(1){
-                height: 230px;
+                
+                height: 250px;
                 width: 700px;
+                /*
+                height: 330px;
+                width: 500px;*/
                 border-radius: 80px;
                 transition: all 0.3s ease-in-out;
 
                 #bayragi{
-                    top: 30px;
+                    top: 35px;
                     font-size: $main-subheader-size;
                     font-weight: 700;
                 }
 
                 #flag{
-                    top: 20px;
+                    top: 30px;
                     font-size: $secondary-subheader-size;             
                 }
 
                 p{
-                    top: 35px;
+                    top: 40px;
                     font-size: 1em;
                 }
             }
@@ -4217,39 +4223,39 @@ h2, p, a{
 
             #cografya{
                 color: $red;
-                font-size: $main-subheader-size; 
+                font-size: $main-header-size; 
             }
 
             #geography{
-                font-size: $secondary-subheader-size;
+                font-size: $main-subheader-size;
             }
 
             #uzungol{
                 top: 60vh;
-                font-size: $secondary-subheader-size;            
+                font-size: $main-subheader-size;            
             }
 
             #uzungol-desc{
                 top: 60vh;
-                font-size: $desc-size;            
+                font-size: $secondary-subheader-size;            
             }        
         }
 
         #cappadocia{
             top: -20vh;
-            font-size: $secondary-subheader-size;          
+            font-size: $main-subheader-size;          
         }
 
         #cappadocia-desc{
             top: -20vh;
-            font-size: $desc-size;            
+            font-size: $secondary-subheader-size;            
         }
     }
     
     .Four{
         height: 110vh;
         background: url("./img/ataturk-1.jpg") $nrs 70% 0% !important;
-        background-size: 1000px !important;
+        background-size: 2000px !important;
         
         .Four-inner{
             height: 110vh;
@@ -4260,33 +4266,32 @@ h2, p, a{
 
         #merkezi{
             top: 32vh;
-            font-size: $main-subheader-size;
+            font-size: $main-header-size;
         }
 
         #center{
             position: relative;
-            font-size: $secondary-subheader-size;
+            font-size: $main-subheader-size;
         }
         
         #ranging{
             top: 35vh;
-            font-size: 1em;
+            font-size: $desc-size;
         }
 
         #ataturk{
             top: -20vh;
-            font-size: $secondary-subheader-size;
+            font-size: $main-subheader-size;
             margin: 0px 10vw; 
 
         }
 
         #founder{
             top: -20vh;
-            font-size: 1em;
+            font-size: $desc-size;
             margin: 0px 10vw;
         }
     }
-
 
     .Five{    
         background: $white;
@@ -4294,12 +4299,11 @@ h2, p, a{
         .flex-item{
             padding: 5px;
             height: 250px;
-            width: 300px;
+            width: 330px;
             margin: 10px 0px;
 
             line-height: 30px;
             font-family: $main-font, Arial, Helvetica, serif;
-            //font-size: 0.9em;
             border-top: transparent 4px solid;
             border-bottom: transparent 4px solid;
             text-align: center;
@@ -4333,14 +4337,14 @@ h2, p, a{
                 text-align: center; 
 
                 #bolgeleri{
-                    top: 0vh;
-                    font-size: $main-subheader-size;
+                    top: 2vh;
+                    font-size: $main-header-size;
                     line-height: 50px;
                 }
 
                 #regions{
-                    top: 2vh;
-                    font-size: $secondary-subheader-size;
+                    top: 5vh;
+                    font-size: $main-subheader-size;
                 }
             }
 
@@ -4434,10 +4438,11 @@ h2, p, a{
                 p{ 
                     position: relative;
                     top: 20px;
-                    left: 70px;
+                    left: 80px;
                     width: 180px;
                     color: $white;
                     font-size: .8em;
+                    line-height: 20px;
 
                 }
             }
@@ -4450,21 +4455,21 @@ h2, p, a{
 
         #sehirler{
             top: 10vh;
-            font-size: $main-subheader-size;  
+            font-size: $main-header-size;  
         }
 
         #cities{
             top: 10vh;
-            font-size: $secondary-subheader-size;
+            font-size: $main-subheader-size;
         }
 
         #istanbul{
-            font-size: $secondary-subheader-size;
+            font-size: $main-subheader-size;
         }
 
         #istanbul-description{
             top: 45vh;
-            font-size: 1.3em;
+            font-size: $desc-size;
             padding: 0px 10vw;
         }   
     }
@@ -4474,12 +4479,12 @@ h2, p, a{
         background-size: cover;
 
         #ankara{
-            font-size: $secondary-subheader-size;
+            font-size: $main-subheader-size;
         }
 
         #ankara-description{
             top: 45vh;
-            font-size: 1.3em;
+            font-size: $desc-size;
             padding: 0px 10vw;
         }
     }
@@ -4489,12 +4494,14 @@ h2, p, a{
         background-size: cover;
         
         #izmir{
-            font-size: $secondary-subheader-size;
+            color: $turquoise;
+            font-size: $main-subheader-size;
         }
 
         #izmir-description{
             top: 45vh;
-            font-size: 1.3em;
+            color: $red;
+            font-size: $desc-size;
             padding: 0px 10vw;
         }
     }
@@ -4505,12 +4512,12 @@ h2, p, a{
         
         
         #bursa{
-            font-size: $secondary-subheader-size;
+            font-size: $main-subheader-size;
         }
 
         #bursa-description{
             top: 45vh;
-            font-size: 1.3em;
+            font-size: $desc-size;
             padding: 0px 10vw;
         }
     }
@@ -4520,12 +4527,12 @@ h2, p, a{
         background-size: cover;
 
         #adana{
-            font-size: $secondary-subheader-size;
+            font-size: $main-subheader-size;
         }
 
         #adana-description{
             top: 45vh;
-            font-size: 1.3em;
+            font-size: $desc-size;
             padding: 0px 10vw;
         }
     }
@@ -4536,7 +4543,7 @@ h2, p, a{
         .flex-item{
             padding: 5px;
             height: 250px;
-            width: 300px;
+            width: 330px;
             margin: 10px 0px;
 
             line-height: 30px;
@@ -4554,12 +4561,12 @@ h2, p, a{
 
                 #manzaralar{
                     top: 0px;
-                    font-size: $main-subheader-size;
+                    font-size: $main-header-size;
                 }
 
                 #sights{
-                    top: 10px;
-                    font-size: $secondary-subheader-size;    
+                    top: 25px;
+                    font-size: $main-subheader-size !important;    
                 }
             }
         }
@@ -4578,33 +4585,33 @@ h2, p, a{
 
         #oteleler{
             top: 10vh;
-            font-size: $main-subheader-size;  
+            font-size: $main-header-size;  
             font-size: $red;
         }
 
         #hotels{
             top: 10vh;
-            font-size: $secondary-subheader-size;   
+            font-size: $main-subheader-size;   
         }
 
         #raffles1{
             top: 65vh;
-            font-size: $secondary-subheader-size;
+            font-size: $main-subheader-size;
         }
 
         #raffles1-desc{
             top: 65vh;
-            font-size: $desc-size;            
+            font-size: $secondary-subheader-size;            
         }
 
         #raffles2{
             top: -25vh;
-            font-size: $secondary-subheader-size;           
+            font-size: $main-subheader-size;           
         }
 
         #raffles2-desc{
             top: -25vh;
-            font-size: $desc-size;            
+            font-size: $secondary-subheader-size;                 
         }
     }
 
@@ -4621,22 +4628,22 @@ h2, p, a{
 
         #kayakapi1{
             top: 85vh;
-            font-size: $secondary-subheader-size;             
+            font-size: $main-subheader-size;             
         }
 
         #kayakapi1-desc{
             top: 85vh;
-            font-size: $desc-size;            
+            font-size: $secondary-subheader-size;            
         }
 
         #kayakapi2{
             top: -25vh;
-            font-size: $secondary-subheader-size;             
+            font-size: $main-subheader-size;             
         }
 
         #kayakapi2-desc{
             top: -25vh;
-            font-size: $desc-size;            
+            font-size: $secondary-subheader-size;            
         }
     }
     
@@ -4646,7 +4653,7 @@ h2, p, a{
         .flex-item{
             padding: 5px;
             height: 250px;
-            width: 300px;
+            width: 330px;
             margin: 10px 0px;
 
             h2{
