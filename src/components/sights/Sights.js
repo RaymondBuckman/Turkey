@@ -362,7 +362,7 @@ const captions = [
      
     "The interior of the mosque received great recognitions from its clean, spare lines in the structure itself. With the monumental exteriors proclaiming the wealth and power of the Ottoman Empire, the plain symmetrical interiors reminded the sultans should always provide a humble and faithful heart in order to connect and communicate with God. To enter, it was to forget the power, determination, wealth and technical mastery of the Ottoman Empire. Lights were seeped through multitude of tiny windows, and the interchanging of the weak light and dark was interpreted as the insignificance of humanity. The Selimiye did not only amaze the public with the extravagant symmetrical exterior, it had also astonished the people with the plain symmetrical interior for it had summarized all Ottoman architectural thinking in one simple pure form.",
      
-    "Seven Lakes National Park (Turkish: Yedigöller) is located in the northern part of Bolu Province in Turkey. The park is categorized under IUCN II and was established in 1965. The park is best known for the seven lakes formed by landslides and for its profusion of plant life.",
+    "Seven Lakes National Park (Turkish: Yedigöller Milli Parkı) is located in the northern part of Bolu Province in Turkey. The park is categorized under IUCN II and was established in 1965. The park is best known for the seven lakes formed by landslides and for its profusion of plant life.",
      
     "Established in 1965, it encompasses an area of 4,010 acres. There are seven lakes in the park which were formed due to landslides. The seven lakes are Buyukgol, Deringol, Seringol, Nazligol, Sazligol, Incegol and Kucukgol. Several streams flow through the park some of which have handcrafted bridges across them and a small water fall.[1][6]",
      
@@ -532,7 +532,7 @@ export default class Sights extends Component {
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:68, isOpen: true })}>
-                        <h2>Seven Lakes National Park</h2>
+                        <h2>Yedigöller National Park</h2>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:70, isOpen: true })}>
