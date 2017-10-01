@@ -15,7 +15,7 @@ export default class Footer extends Component {
                                 <li><a href="http://www.historyworld.net/wrldhis/PlainTextHistories.asp?historyid=ac94" target="_blank">History</a></li>
                                 <li><a href="http://www.turkishlanguage.co.uk/" target="_blank">Detailed Language Info</a></li>
                                 <li><a href="http://www.turkishculture.org/" target="_blank">Culture</a></li>
-                                <li><a href="#top-of-page">Jump to Top</a></li>
+                                <li><a href="https://www.themuse.com/advice/6-tips-for-traveling-to-turkey" target="_blank">Travel Tips</a></li>
                             </ul>
                         </div>
                 </nav>
