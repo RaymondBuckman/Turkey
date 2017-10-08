@@ -177,6 +177,12 @@ h2, p, a{
     @include secondary-font;
 }
 
+button, a {
+    &:focus{
+        outline: 2.5px solid $turquoise;
+    }
+}
+
 .App{
     height: 100%;
     background: url("img/white-3.jpg") $nrf center;
@@ -595,26 +601,33 @@ h2, p, a{
         text-align: center;
         transition: all 0.3s ease-in;
         
-        h1{
-            position: relative;
-            top: 210px;
-            color: $white;
-            font-size: 2.2em;
-        }
-            
-        h2{
-            position: relative;
-            top: 220px;
-            color: $turquoise;
-            font-size: $desc-size;
-        }
-        
         .map{
             position: relative;
              top: 20px;
              height: 100px;
              length: 300px;
              //opacity: 0.8;
+        }
+        
+        button{
+            position: relative;
+            background: transparent;
+            border: 0px;
+            top: 200px;
+        }
+        
+        h1{
+            position: relative;
+            top: 0px;
+            color: $white;
+            font-size: 2.2em;
+        }
+            
+        h2{
+            position: relative;
+            //top: 10px;
+            color: $turquoise;
+            font-size: $desc-size;
         }
         
         &:nth-child(1){
@@ -731,15 +744,10 @@ h2, p, a{
                 background-size: contain;
             }
             
-            h1{
+            button{
                 top: 180px;
             }
-            
-            h2{
-                top: 190px;
-            }
-        
-            
+                        
             p{ 
                 position: relative;
                 top: 200px;
@@ -966,10 +974,18 @@ h2, p, a{
         border-bottom: transparent 4px solid;
         text-align: center;
         transition: all 0.3s ease-in;
-            
+        
+        button{
+            position: relative;
+            background: rgba(0,0,0,0.5);
+            border: 0px;
+            border-radius: 5px;
+            top: 240px;
+        }
+        
         h2{
             position: relative;
-            top: 240px;
+            top: 0px;
             color: $white;
             font-size: $desc-size;
             //@include more-legible-paragraph;
@@ -1196,7 +1212,7 @@ h2, p, a{
             background: url("img/seven-lakes-mini.jpg") $nrs 65% 0%;
             background-size: cover;
             
-            h2{
+            button{
                 left: 30px;
             }
         }
@@ -1205,7 +1221,7 @@ h2, p, a{
             background: url("img/saklikent-mini.jpg") $nrs 50% 50%;
             background-size: cover;
             
-            h2{
+            button{
                 left: -10px;
             }
         }
@@ -1357,16 +1373,16 @@ h2, p, a{
     }
 
     .flex-item{
-        padding: 5px;
+        //padding: 5px;
         height: 300px;
         width: 350px;
-        margin: 10px 0px;
+        margin: 10px 0px 10px 0px;
   
         line-height: 30px;
         font-family: $main-font, Arial, Helvetica, serif;
-        //font-size: 3em;
+        /*font-size: 3em;
         border-top: transparent 4px solid;
-        border-bottom: transparent 4px solid;
+        border-bottom: transparent 4px solid;*/
         text-align: center;
         filter: grayscale(50%);
         transition: all 0.3s ease-in;
@@ -1380,93 +1396,118 @@ h2, p, a{
         }
         
         a{
+            border: 0px;
+            height: 100%;
+            width: 100%;
             color: transparent;
             text-decoration: none !important;
-        }
-        
-        
-        &:nth-child(even), a:nth-child(even){
-            -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%) !important;
-            clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%) !important;
+            border-top: transparent 4px solid;
+            border-bottom: transparent 4px solid;
+            display: block; 
+            filter: grayscale(50%);
+            transition: all 0.3s ease-in;
             
-            h2{
-                left: 20px;
+            a:focus{
+                outline: 15px dotted $turquoise;
             }
         }
         
-        &:nth-child(odd), a:nth-child(odd){
-            -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+        
+        &:nth-child(even) a{
+            -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%) !important;
+            clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%) !important;
         }
         
-        &:nth-child(1){
-            background: url("img/hotel-istanbul.jpg") $nrs center;
-            background-size: cover;
+        &:nth-child(odd) a{
+            -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
             
             h2{
                 left: -25px;
             }
         }
         
+        &:nth-child(1){
+            a{
+                height: 300px;
+                width: 350px;
+                background: url("img/hotel-istanbul.jpg") $nrs center;
+                background-size: cover;   
+            }   
+        }
+        
         &:nth-child(2){
-            background: url("img/hotel-izmir.jpg") $nrs 50% 50%;
-            background-size: cover;
+            a{
+                height: 300px;
+                width: 350px;
+                background: url("img/hotel-izmir.jpg") $nrs center;
+                background-size: cover;   
+            }   
             
         }
         
         &:nth-child(3){
-            background: url("img/hotel-antalya.jpg") $nrs 50% 50%;
-            background-size: cover;
-            
-            h2{
-                left: -25px;
-            }
+            a{
+                height: 300px;
+                width: 350px;
+                background: url("img/hotel-antalya.jpg") $nrs center;
+                background-size: cover;   
+            }  
         }
         
         &:nth-child(4){
-            background: url("img/hotel-ankara.jpg") $nrs 50% 50%;
-            background-size: cover;
+            a{
+                height: 300px;
+                width: 350px;
+                background: url("img/hotel-ankara.jpg") $nrs center;
+                background-size: cover;   
+            }  
         }
         
         &:nth-child(5){
-            background: url("img/hotel-cappadocia.jpg") $nrs center;
-            background-size: cover;
-            
-            h2{
-                left: -30px;
+            a{
+                height: 300px;
+                width: 350px;
+                background: url("img/hotel-cappadocia.jpg") $nrs center;
+                background-size: cover;   
             }
         }
         
         &:nth-child(6){
-            background: url("img/hotel-trabzon.jpg") $nrs 50% 50%;
-            background-size: cover;
+            a{
+                height: 300px;
+                width: 350px;
+                background: url("img/hotel-trabzon.jpg") $nrs center;
+                background-size: cover;   
+            }
         }
         
         &:nth-child(7){
-            background: url("img/hotel-bursa.jpg") $nrs 50% 50%;
-            background-size: cover;
-            
-            h2{
-                left: -25px;
+            a{
+                height: 300px;
+                width: 350px;
+                background: url("img/hotel-bursa.jpg") $nrs center;
+                background-size: cover;   
             }
         }
         
         &:nth-child(8){
-            background: url("img/hotel-konya.jpg") $nrs 50% 50%;
-            background-size: cover;
+            a{
+                height: 300px;
+                width: 350px;
+                background: url("img/hotel-konya.jpg") $nrs center;
+                background-size: cover;   
+            }
         }
         
         
         
-        &:nth-child(n):hover{
+        &:nth-child(n) a:hover{
             cursor: pointer;
             filter: grayscale(0%);
             transform: scale(1.03);
             border-top: $turquoise 4px solid;
             border-bottom: $turquoise 4px solid;
-        }
-        
-        a:hover{
             text-decoration: none;
             color: none;
         }
@@ -2019,9 +2060,16 @@ h2, p, a{
             
         h2{
             position: relative;
-            top: 240px;
             color: $white;
             font-size: $desc-size;
+        }
+        
+        button{
+            position: relative;
+            background: rgba(0,0,0,0.5);
+            border-radius: 5px;
+            border: 0px;
+            top: 240px;
         }
         
         &:nth-child(even){
@@ -2487,26 +2535,24 @@ h2, p, a{
             text-align: center;
             transition: all 0.3s ease-in;
 
-            h1{
-                position: relative;
+            .map{
+                top: 20px;
+                height: 50px;
+                length: 100px;
+                //opacity: 0.8;
+            }
+            
+            button{
                 top: 120px;
+            }
+            h1{
                 color: $white;
                 font-size: $desc-size;
             }
 
             h2{
-                position: relative;
-                top: 120px;
                 color: $turquoise;
                 font-size: 1em;
-            }
-
-            .map{
-                position: relative;
-                 top: 20px;
-                 height: 50px;
-                 length: 100px;
-                 //opacity: 0.8;
             }
 
             &:nth-child(1){
@@ -2609,17 +2655,17 @@ h2, p, a{
                     background-size: contain;
                 }
 
-                h1, h2{
-                    top: 10px;
+                button{
+                    top: 20px;
                 } 
                 
                 p{ 
-                    position: relative;
                     top: 20px;
                     left: 70px;
                     width: 180px;
                     color: $white;
                     font-size: .8em;
+                    line-height: 20px;
 
                 }
             }
@@ -2723,8 +2769,11 @@ h2, p, a{
 
             line-height: 30px;
             
-            h2{
+            button{
                 top: 190px;
+            }
+            
+            h2{
                 font-size: 1.4em !important;
                 font-size: $desc-size;
             }
@@ -2829,14 +2878,18 @@ h2, p, a{
             padding: 5px;
             height: 250px;
             width: 300px;
-            margin: 10px 0px;
+            margin: 30px 0px;
 
             h2{
-                top: 190px;
+                top: 240px;
+                left: 0px !important;
+                top: 220px;
                 font-size: $desc-size;
             }
 
             a{
+                height: 100%;
+                width: 300px !important;
                 color: transparent;
                 text-decoration: none !important;
             }
@@ -3176,9 +3229,12 @@ h2, p, a{
             height: 250px;
             width: 300px;
             margin: 10px 0px;
+            
+            button{
+                top: 190px;
+            }
 
             h2{
-                top: 190px;
                 font-size: $desc-size;
             }
 
@@ -3411,21 +3467,7 @@ h2, p, a{
             border-bottom: transparent 4px solid;
             text-align: center;
             transition: all 0.3s ease-in;
-
-            h1{
-                position: relative;
-                top: 120px;
-                color: $white;
-                font-size: $desc-size;
-            }
-
-            h2{
-                position: relative;
-                top: 120px;
-                color: $turquoise;
-                font-size: 1em;
-            }
-
+            
             .map{
                 position: relative;
                  top: 20px;
@@ -3433,6 +3475,22 @@ h2, p, a{
                  length: 100px;
                  //opacity: 0.8;
             }
+
+            button{
+                top: 120px;
+            }
+            
+            h1{
+                color: $white;
+                font-size: $desc-size;
+            }
+
+            h2{
+
+                color: $turquoise;
+                font-size: 1em;
+            }
+            
 
             &:nth-child(1){
                 height: 200px;
@@ -3534,7 +3592,7 @@ h2, p, a{
                     background-size: contain;
                 }
 
-                h1, h2{
+                button{
                     top: 10px;
                 } 
                 
@@ -3545,6 +3603,7 @@ h2, p, a{
                     width: 180px;
                     color: $white;
                     font-size: .8em;
+                    line-height: 20px;
 
                 }
             }
@@ -3648,8 +3707,11 @@ h2, p, a{
 
             line-height: 30px;
             
-            h2{
+            button{
                 top: 190px;
+            }
+            
+            h2{
                 font-size: 1.4em !important;
                 font-size: $desc-size;
             }
@@ -3754,14 +3816,17 @@ h2, p, a{
             padding: 5px;
             height: 250px;
             width: 300px;
-            margin: 10px 0px;
+            margin: 30px 0px;
 
             h2{
-                top: 190px;
+                top: 240px;
+                left: 0px !important;
                 font-size: $desc-size;
             }
 
             a{
+                height: 250px;
+                width: 300px !important;
                 color: transparent;
                 text-decoration: none !important;
             }
@@ -4102,8 +4167,11 @@ h2, p, a{
             width: 300px;
             margin: 10px 0px;
 
-            h2{
+            button{
                 top: 190px;
+            }
+            
+            h2{
                 font-size: $desc-size;
             }
 
@@ -4324,6 +4392,1883 @@ h2, p, a{
             padding: 5px;
             height: 250px;
             width: 330px;
+            margin: 10px 0px;
+
+            line-height: 30px;
+            font-family: $main-font, Arial, Helvetica, serif;
+            border-top: transparent 4px solid;
+            border-bottom: transparent 4px solid;
+            text-align: center;
+            transition: all 0.3s ease-in;
+            
+            .map{
+                top: 20px;
+                height: 50px;
+                length: 100px;
+                //opacity: 0.8;
+            }
+
+
+            button{
+                top: 120px;
+            }
+            
+            h1{
+                color: $white;
+                font-size: $desc-size;
+            }
+
+            h2{
+                color: $turquoise;
+                font-size: 1em;
+            }
+            
+            &:nth-child(1){
+                height: 200px;
+                width: 100%;
+                text-align: center; 
+
+                #bolgeleri{
+                    top: 2vh;
+                    font-size: $main-header-size;
+                    line-height: 50px;
+                }
+
+                #regions{
+                    top: 5vh;
+                    font-size: $main-subheader-size;
+                }
+            }
+
+            &:nth-child(2){
+                background: url("img/marmara-1.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                .map{
+                    background: url("img/marmara-region-1.png") $nrs 50% 50%;
+                    background-size: contain;
+                }
+            }
+
+            &:nth-child(3){
+                background: url("img/aegean-1.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                .map{
+                    background: url("img/aegean-region-1.png") $nrs 50% 50%;
+                    background-size: contain;
+                }
+            }
+
+            &:nth-child(4){
+                background: url("img/mediterranean-mini.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                .map{
+                    background: url("img/mediterranean-region-1.png") $nrs 50% 50%;
+                    background-size: contain;
+                }
+            }
+
+            &:nth-child(5){
+                background: url("img/cappadocia-2.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                .map{
+                    background: url("img/central-anatolia-region-1.png") $nrs 50% 50%;
+                    background-size: contain;
+                }
+            }
+
+            &:nth-child(6){
+                background: url("img/black-sea-mini.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                .map{
+                    background: url("img/black-sea-region-1.png") $nrs 50% 50%;
+                    background-size: contain;
+                }
+            }
+
+            &:nth-child(7){
+                background: url("img/eastern-mini.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                .map{
+                    background: url("img/eastern-anatolia-region-1.png") $nrs 50% 50%;
+                    background-size: contain;
+                }
+            }
+
+            &:nth-child(8){
+                background: url("img/southeastern-5.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                .map{
+                    background: url("img/southeastern-anatolia-region-1.png") $nrs 50% 50%;
+                    background-size: contain;
+                }
+
+                h1, h2{
+                    left: 20px;
+                }
+            }
+
+            &:nth-child(9){
+                background: url("img/batman-logo-1.jpg") $nrs 60% 90%;
+                background-s: cover;
+
+                .map{
+                    background: url("img/eastern-anatolia-region-1.png") $nrs 50% 50%;
+                    background-size: contain;
+                }
+
+                button{
+                    top: 20px;
+                } 
+                
+                p{ 
+                    position: relative;
+                    top: 20px;
+                    left: 80px;
+                    width: 180px;
+                    color: $white;
+                    font-size: .8em;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+    
+    .Six{
+        height:100vh;
+        background: url("./img/istanbul-2.jpg") $nrs 50% 40%;
+        background-size: cover;
+
+        #sehirler{
+            top: 10vh;
+            font-size: $main-header-size;  
+        }
+
+        #cities{
+            top: 10vh;
+            font-size: $main-subheader-size;
+        }
+
+        #istanbul{
+            font-size: $main-subheader-size;
+        }
+
+        #istanbul-description{
+            top: 45vh;
+            font-size: $desc-size;
+            padding: 0px 10vw;
+        }   
+    }
+
+    .Seven{
+        height:100vh;
+        background: url("./img/ankara-1.jpg") $nrs 50% 40%;
+        background-size: cover;
+
+        #ankara{
+            font-size: $main-subheader-size;
+        }
+
+        #ankara-description{
+            top: 45vh;
+            font-size: $desc-size;
+            padding: 0px 10vw;
+        }
+    }
+
+    .Eight{
+        height:100vh;
+        background: url("./img/izmir-3.JPG") $nrs 50% 40%;
+        background-size: cover;
+        
+        #izmir{
+            color: $turquoise;
+            font-size: $main-subheader-size;
+        }
+
+        #izmir-description{
+            top: 45vh;
+            color: $red;
+            font-size: $desc-size;
+            padding: 0px 10vw;
+        }
+    }
+
+    .Nine{
+        height:100vh;
+        background: url("./img/bursa-1.jpg") $nrs 50% 40%;
+        background-size: cover;
+        
+        
+        #bursa{
+            font-size: $main-subheader-size;
+        }
+
+        #bursa-description{
+            top: 45vh;
+            font-size: $desc-size;
+            padding: 0px 10vw;
+        }
+    }
+
+    .Ten{
+        height:100vh;
+        background: url("./img/adana-1.jpg") $nrs 50% 40%;
+        background-size: cover;
+
+        #adana{
+            font-size: $main-subheader-size;
+        }
+
+        #adana-description{
+            top: 45vh;
+            font-size: $desc-size;
+            padding: 0px 10vw;
+        }
+    }
+    
+    .Eleven{
+        background: $white;
+
+        .flex-item{
+            padding: 5px;
+            height: 250px;
+            width: 330px;
+            margin: 10px 0px;
+
+            line-height: 30px;
+            
+            button{
+                top: 190px;
+            }
+            
+            h2{
+                font-size: 1.4em !important;
+                font-size: $desc-size;
+            }
+
+            &:nth-child(1){
+                height: 100px;
+                width: 100%;
+
+
+                #manzaralar{
+                    top: 0px;
+                    font-size: $main-header-size;
+                }
+
+                #sights{
+                    top: 25px;
+                    font-size: $main-subheader-size !important;    
+                }
+            }
+        }
+    }
+    
+    .Twelve{
+        height: 150vh;
+        background: url("img/hotel-3.jpg") $nrs 50% 50%;
+        background-size: cover;
+
+        .Twelve-inner{
+            height: 150vh;
+            background: url("img/hotel-1.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+
+        #oteleler{
+            top: 10vh;
+            color: $red;
+            font-size: $main-header-size;             
+        }
+
+        #hotels{
+            top: 10vh;
+            font-size: $main-subheader-size;   
+        }
+
+        #raffles1{
+            top: 65vh;
+            font-size: $main-subheader-size;
+        }
+
+        #raffles1-desc{
+            top: 65vh;
+            font-size: $secondary-subheader-size;            
+        }
+
+        #raffles2{
+            top: -25vh;
+            font-size: $main-subheader-size;           
+        }
+
+        #raffles2-desc{
+            top: -25vh;
+            font-size: $secondary-subheader-size;                 
+        }
+    }
+
+    .Thirteen{
+        height: 150vh;
+        background: url("img/hotel-5.jpg") $nrs 50% 50%;
+        background-size: cover;
+
+        .Thirteen-inner{
+            height: 150vh;
+            background: url("img/hotel-4.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+
+        #kayakapi1{
+            top: 85vh;
+            font-size: $main-subheader-size;             
+        }
+
+        #kayakapi1-desc{
+            top: 85vh;
+            font-size: $secondary-subheader-size;            
+        }
+
+        #kayakapi2{
+            top: -25vh;
+            font-size: $main-subheader-size;             
+        }
+
+        #kayakapi2-desc{
+            top: -25vh;
+            font-size: $secondary-subheader-size;            
+        }
+    }
+    
+    .Fourteen {
+        background: $white;
+
+        .flex-item{
+            padding: 5px;
+            height: 250px;
+            width: 330px;
+            margin: 30px 0px;
+
+            h2{
+                top: 240px;
+                left: 0px !important;
+                font-size: $desc-size;
+            }
+
+            a{
+                width: 330px !important;
+                color: transparent;
+                text-decoration: none !important;
+            }
+        }
+    }
+
+    .Fifteen{
+        background: url("img/cuisine-2.jpg") $nrs 50% 50%;
+        background-size: cover;
+
+        .Fifteen-inner{
+            background: url("img/cuisine-1.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+
+        #cuisine{
+            top: 9vh;
+        }
+
+        #meze{
+            top: 40vh;
+            font-size: $main-subheader-size;         
+        }
+
+        #meze-desc{
+            top: 40vh;
+            font-size: $desc-size;
+        }   
+
+        #doner{
+            top: -40vh;
+            font-size: $main-subheader-size;            
+        }
+
+        #doner-desc{
+            top: -40vh;
+            font-size: $desc-size;
+        }
+    }
+
+    .Sixteen {
+        background: url("./img/white-3.jpg") $nrs center;
+        background-size: cover;
+        z-index: 19;
+        
+        .flex-container {
+            position: relative;
+            top: 0vh;
+            width: 100vw;
+            padding: 30px;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+
+        .flex-item{
+            padding: 5px;
+            width: 500px;
+            margin: 10px 0px;
+
+            line-height: 23px;
+            text-align: center;
+            @include border-radius;
+
+            &:nth-child(1){
+                height: 330px;
+                width: 700px;
+
+                #yemegi{
+                    top: 50px !important;
+                    font-size: $main-subheader-size;
+                    font-weight: 700;
+                }
+
+                #food{
+                    position: relative;
+                    top: 25px;
+                    font-size: $secondary-subheader-size;    
+                }
+
+                p{
+                    position: relative;
+                    top: 40px;
+                    color: $red;
+                    font-size: 1em;
+                }
+            }
+
+            &:nth-child(2){
+                height: 230px;
+                width: 700px;
+
+                h2{
+                    top: 170px;
+                    color: $white;
+                    font-size: 2.5em;
+                }
+
+            }
+
+            &:nth-child(3){
+                height: 230px;
+                width: 700px;
+
+                h2{
+                    top: 170px;
+                }
+            }
+
+            &:nth-child(4){
+                height: 230px;
+                width: 700px;
+
+                h2{
+                    top: 170px;
+                }
+            }
+        }
+    }
+    
+    .Seventeen{
+        height: 150vh;
+        background: url("img/cuisine-7.jpg") $nrs 50% 50%;
+        background-size: cover;
+
+        .Seventeen-inner{
+            height: 150vh;
+            background: url("img/cuisine-6.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+
+        #delight{
+            top: 55vh;
+            font-size: $main-subheader-size;            
+        }
+
+        #delight-desc{
+            top: 55vh;
+            font-size: $desc-size;
+        }
+
+        #dolma{
+            top: -40vh;
+            font-size: $main-subheader-size;            
+        }
+
+        #dolma-desc{
+            top: -40vh;
+            font-size: $desc-size;
+        }
+    }
+
+    .Eighteen{
+        height: 150vh;
+        background: url("img/cuisine-9.jpg") $nrs 50% 50%;
+        background-size: cover;
+
+        .Eighteen-inner{
+            height: 150vh;
+            background: url("img/cuisine-8.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+
+        #simit{
+            top: 45vh;
+            font-size: $main-subheader-size;            
+        }
+
+        #simit-desc{
+            top: 45vh;
+            font-size: $desc-size;
+        }
+
+        #kokorec{
+            top: -40vh;
+            font-size: $main-subheader-size;            
+        }
+
+        #kokorec-desc{
+            top: -40vh;
+            font-size: $desc-size;
+        }
+    }
+    
+    .Nineteen {
+        position: relative;
+        top: 0vh;
+        height: auto;
+        background: url("./img/white-3.jpg") $nrs center;
+        background-size: cover;
+        font-size: large;
+        z-index: 19;
+
+        .flex-container {
+            position: relative;
+            top: 0vh;
+            width: 100vw;
+            padding: 30px;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+
+        .flex-item{
+            padding: 5px;
+            margin: 10px 0px;
+
+            line-height: 23px;
+            font-family: $main-font, Arial, Helvetica, serif;
+            //font-size: 3em;
+            text-align: center;
+            @include border-radius;
+
+            &:nth-child(1){
+                height: 330px;
+                width: 700px;
+                border-radius: 80px;
+                transition: all 0.3s ease-in-out;
+
+                #dili{
+                    top: 50px !important;
+                    font-size: $main-subheader-size;
+                    font-weight: 700;
+                }
+
+                #language{
+                    position: relative;
+                    top: 25px;
+                    font-size: $secondary-subheader-size;   
+                }
+
+                p{
+                    position: relative;
+                    top: 50px;
+                    color: $red;
+                    font-size: 1em;
+                }
+            }
+
+            &:nth-child(2){
+                height: 230px;
+                width: 700px;
+            }
+
+            &:nth-child(3){
+                height: 230px;
+                width: 700px;
+                background: url("img/turkish-2.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                h2{
+                    position: relative;
+                    top: 170px;
+                    background-color: rgba(0,0,0,0.5);
+                    padding: 5px 0px;
+                    font-size: 1.3em;
+                    border-radius: 10px;
+                }
+            }
+
+            &:nth-child(4){
+                height: 230px;
+                width: 700px;
+                background: url("img/turkish-4.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                h2{
+                    top: 240px;
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+
+    .Twenty{
+        height: 105vh;
+        background: url("img/ataturk-2.jpg") $nrs 55% 50%;
+        background-size: cover;
+
+        #alfabe{
+            top: 10vh;
+            font-size: $main-header-size;
+        }
+
+        #alphabet{
+            top: 10vh;
+            font-size: $main-subheader-size;   
+        }
+
+        h2:nth-child(3){
+            top: 30vh; 
+            font-size: $desc-size;
+        }
+    }
+
+    .Twenty-one{
+        height: 105vh;
+        background: url("img/red-1.jpg") $nrs 50% 50%;
+        background-size: cover;
+
+        #cumleler{
+            top: 10vh;
+            font-size: $main-header-size;
+        }
+
+        #phrases{
+            top: 10vh;
+            font-size: $main-subheader-size;
+        }
+
+        li{
+            top: 20vh;
+            font-size: $desc-size;
+            @include secondary-font;
+            list-style: none;
+        }
+
+        #pronunciation{
+            color: hotpink;
+        }
+
+        #translation{
+            color: $turquoise;
+        }
+    }
+    
+    .Twenty-two{
+        background: $white;
+
+        .flex-item{
+            padding: 5px;
+            height: 250px;
+            width: 300px;
+            margin: 10px 0px;
+
+            button{
+                top: 190px;
+            }
+            
+            h2{
+                font-size: $desc-size;
+            }
+
+            &:nth-child(1){
+                height: 150px;
+                width: 100%;
+                filter: grayscale(0%);
+
+                #konular{
+                    top: 10px;
+                    font-size: $main-header-size;
+                }
+
+                #topics{
+                    top: 50px;
+                    font-size: $main-subheader-size;    
+                }
+            }
+        }
+    }
+
+    .Twenty-three{
+        background: url("./img/istanbul-3.jpg") $nrs center;
+        background-size: cover;
+
+        #yolculuk{
+            top: 10vh;
+            font-size: $main-header-size;
+        }
+
+        #voyage{
+            top: 10vh;
+            font-size: $main-subheader-size;
+        }
+    }
+    
+    .toolbarItemChild___2U_MP > h1{
+        font-size: $secondary-subheader-size;
+        text-align: right;
+        color: $white;
+        @include main-font;
+    }
+}
+
+@include for-phone-landscape{
+    .One{
+        height: 100vh;
+        background: url("./img/turkey-flag-1.jpg") $nrs 50% 50%;
+        background-size: cover;
+        
+        .One-inner{
+            height: 100vh;
+            background: url("./img/maidens-tower-1.jpg") $nrs 50% 70% !important;
+            background-size: cover !important;
+            
+            #hos-geldiniz{
+                top: 70vh;
+                font-size: $main-subheader-size;
+            }
+
+            #welcome{
+                top: 70vh;
+                font-size: $secondary-subheader-size;
+            }
+        }        
+    }
+    
+    .Two{
+        background: url("./img/white-3.jpg") $nrs center;
+        background-size: cover;
+        
+        .flex-item{
+            padding: 5px;
+            margin: 10px 0px;
+            line-height: 18px;
+            font-family: $main-font, Arial, Helvetica, serif;
+
+            &:nth-child(1){
+                
+                height: 250px;
+                width: 43vw;
+                /*
+                height: 330px;
+                width: 500px;*/
+                border-radius: 80px;
+                transition: all 0.3s ease-in-out;
+
+                #bayragi{
+                    top: 35px;
+                    font-size: $secondary-subheader-size;
+                    font-weight: 700;
+                }
+
+                #flag{
+                    top: 15px;
+                    font-size: $desc-size;             
+                }
+
+                p{
+                    top: 30px;
+                    font-size: 0.7em;
+                }
+            }
+
+            &:nth-child(2){
+                height: 230px;
+                width: 43vw;
+            }
+
+            &:nth-child(3){
+                height: 230px;
+                width: 43vw;
+                padding: 0px 50px;
+
+                h2{
+                    position: relative;
+                    top: 140px;
+                    font-size: 1em;
+                    line-height: 25px;
+                    padding: 10px 0px;
+                }
+            }
+
+            &:nth-child(4){
+                height: 230px;
+                width: 43vw;
+                padding: 0px 50px;
+
+                h2{
+                    top: 140px;
+                    font-size: 1em;
+                    line-height: 25px;
+                    padding: 10px 0px;
+                }
+            }
+        }
+    }
+    
+    .Three{
+        height: 150vh;
+        background: url("img/cappadocia-1.jpg") $nrs 50% 50%;
+        background-size: cover;
+
+
+        .Three-inner{
+            height: 150vh;
+            background: url("img/uzungol-1.jpg") $nrs 50% 50%;
+            background-size: cover;
+
+            #cografya{
+                color: $red;
+                font-size: $main-subheader-size;
+            }
+            
+            #geography{
+                color: $turquoise;
+                font-size: $secondary-subheader-size;
+            }
+            
+            #uzungol{
+                top: 60vh;
+                font-size: $secondary-subheader-size;
+            }
+
+            #uzungol-desc{
+                top: 60vh;
+                font-size: $desc-size;            
+            }        
+        }
+
+        #cappadocia{
+            top: -20vh;  
+            font-size: $secondary-subheader-size;
+        }
+
+        #cappadocia-desc{
+            top: -20vh;
+            font-size: $desc-size;            
+        }
+    }
+    
+    .Four{
+        height: 110vh;
+        background: url("./img/ataturk-1.jpg") $nrs 70% 0% !important;
+        background-size: 2000px !important;
+        
+        .Four-inner{
+            height: 110vh;
+            background: url("./img/map-3.png") $nrs 50% 50%;
+            background-size: cover;
+
+        }
+
+        #merkezi{
+            top: 32vh;
+            font-size: $main-subheader-size;
+        }
+
+        #center{
+            position: relative;
+            font-size: $secondary-subheader-size;
+        }
+        
+        #ranging{
+            top: 35vh;
+            font-size: 1em;
+        }
+
+        #ataturk{
+            top: -20vh;
+            margin: 0px 10vw; 
+
+        }
+
+        #founder{
+            top: -20vh;
+            
+            margin: 0px 10vw;
+        }
+    }
+
+    .Five{    
+        background: $white;
+        
+        .flex-item{
+            padding: 5px;
+            height: 250px;
+            width: 43vw;
+            margin: 10px 0px;
+
+            line-height: 30px;
+            font-family: $main-font, Arial, Helvetica, serif;
+            border-top: transparent 4px solid;
+            border-bottom: transparent 4px solid;
+            text-align: center;
+            transition: all 0.3s ease-in;
+            
+            .map{
+                top: 20px;
+                height: 50px;
+                length: 100px;
+                //opacity: 0.8;
+            }
+
+            button{
+                top: 120px;
+            }
+            
+            h1{
+                color: $white;
+                font-size: 1.2em;
+            }
+
+            h2{
+                color: $turquoise;
+                font-size: 1em;
+            }
+
+            &:nth-child(1){
+                height: 100px;
+                width: 100%;
+                text-align: center; 
+
+                #bolgeleri{
+                    top: 0.5vh;
+                    font-size: $main-subheader-size;
+                    line-height: 50px;
+                }
+
+                #regions{
+                    top: 1vh;
+                    font-size: $secondary-subheader-size;
+                }
+            }
+
+            &:nth-child(2){
+                background: url("img/marmara-1.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                .map{
+                    background: url("img/marmara-region-1.png") $nrs 50% 50%;
+                    background-size: contain;
+                }
+            }
+
+            &:nth-child(3){
+                background: url("img/aegean-1.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                .map{
+                    background: url("img/aegean-region-1.png") $nrs 50% 50%;
+                    background-size: contain;
+                }
+            }
+
+            &:nth-child(4){
+                background: url("img/mediterranean-mini.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                .map{
+                    background: url("img/mediterranean-region-1.png") $nrs 50% 50%;
+                    background-size: contain;
+                }
+            }
+
+            &:nth-child(5){
+                background: url("img/cappadocia-2.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                .map{
+                    background: url("img/central-anatolia-region-1.png") $nrs 50% 50%;
+                    background-size: contain;
+                }
+            }
+
+            &:nth-child(6){
+                background: url("img/black-sea-mini.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                .map{
+                    background: url("img/black-sea-region-1.png") $nrs 50% 50%;
+                    background-size: contain;
+                }
+            }
+
+            &:nth-child(7){
+                background: url("img/eastern-mini.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                .map{
+                    background: url("img/eastern-anatolia-region-1.png") $nrs 50% 50%;
+                    background-size: contain;
+                }
+            }
+
+            &:nth-child(8){
+                background: url("img/southeastern-5.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                .map{
+                    background: url("img/southeastern-anatolia-region-1.png") $nrs 50% 50%;
+                    background-size: contain;
+                }
+
+                h1, h2{
+                    left: 0px;
+                }
+            }
+
+            &:nth-child(9){
+                background: url("img/batman-logo-1.jpg") $nrs 60% 90%;
+                background-s: cover;
+
+                .map{
+                    background: url("img/eastern-anatolia-region-1.png") $nrs 50% 50%;
+                    background-size: contain;
+                }
+
+                button{
+                    top: 20px;
+                } 
+                
+                p{ 
+                    position: relative;
+                    top: 20px;
+                    left: 65px;
+                    width: 180px;
+                    color: $white;
+                    font-size: .8em;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+    
+    .Six{
+        height:100vh;
+        background: url("./img/istanbul-2.jpg") $nrs 50% 40%;
+        background-size: cover;
+
+        #sehirler{
+            top: 10vh;
+            font-size: $main-subheader-size;  
+        }
+
+        #cities{
+            top: 10vh;
+            font-size: $secondary-subheader-size;
+        }
+
+        #istanbul{
+            font-size: $desc-size;
+        }
+
+        #istanbul-description{
+            top: 25vh;
+            font-size: 1em;
+            padding: 0px 10vw;
+        }   
+    }
+
+    .Seven{
+        height:100vh;
+        background: url("./img/ankara-1.jpg") $nrs 50% 40%;
+        background-size: cover;
+
+        #ankara{
+            font-size: $main-subheader-size;
+        }
+
+        #ankara-description{
+            top: 45vh;
+            font-size: 1em;
+            padding: 0px 10vw;
+        }
+    }
+
+    .Eight{
+        height:100vh;
+        background: url("./img/izmir-3.JPG") $nrs 50% 40%;
+        background-size: cover;
+        
+        #izmir{
+            color: $white;
+            font-size: $main-subheader-size;
+        }
+
+        #izmir-description{
+            top: 45vh;
+            color: $red;
+            font-size: 1em;
+            padding: 0px 10vw;
+        }
+    }
+
+    .Nine{
+        height:100vh;
+        background: url("./img/bursa-1.jpg") $nrs 50% 40%;
+        background-size: cover;
+        
+        
+        #bursa{
+            font-size: $main-subheader-size;
+        }
+
+        #bursa-description{
+            top: 45vh;
+            font-size: 1em;
+            padding: 0px 10vw;
+        }
+    }
+
+    .Ten{
+        height:100vh;
+        background: url("./img/adana-1.jpg") $nrs 50% 40%;
+        background-size: cover;
+
+        #adana{
+            font-size: $main-subheader-size;
+        }
+
+        #adana-description{
+            top: 45vh;
+            font-size: 1em;
+            padding: 0px 10vw;
+        }
+    }
+    
+    .Eleven{
+        background: $white;
+
+        .flex-item{
+            padding: 5px;
+            height: 250px;
+            width: 43vw;
+            margin: 10px 0px;
+
+            line-height: 30px;
+            
+            button{
+                top: 190px;
+            }
+            
+            h2{
+                font-size: 1.3em !important;
+                font-size: $desc-size;
+            }
+
+            &:nth-child(1){
+                height: 100px;
+                width: 100%;
+
+
+                #manzaralar{
+                    top: 0px;
+                    font-size: $main-subheader-size;
+                }
+
+                #sights{
+                    top: 10px;
+                    font-size: $secondary-subheader-size !important;    
+                }
+            }
+        }
+    }
+    
+    .Twelve{
+        height: 150vh;
+        background: url("img/hotel-3.jpg") $nrs 50% 50%;
+        background-size: cover;
+
+        .Twelve-inner{
+            height: 150vh;
+            background: url("img/hotel-1.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+
+        #oteleler{
+            top: 10vh;
+            color: $red;
+            font-size: $main-subheader-size;             
+        }
+
+        #hotels{
+            top: 8vh;
+            font-size: $secondary-subheader-size;   
+        }
+
+        #raffles1{
+            top: 55vh;
+            font-size: $secondary-subheader-size;
+        }
+
+        #raffles1-desc{
+            top: 55vh;
+            font-size: $desc-size;            
+        }
+
+        #raffles2{
+            top: -25vh;
+            font-size: $secondary-subheader-size;           
+        }
+
+        #raffles2-desc{
+            top: -25vh;
+            font-size: $desc-size;                 
+        }
+    }
+
+    .Thirteen{
+        height: 150vh;
+        background: url("img/hotel-5.jpg") $nrs 50% 50%;
+        background-size: cover;
+
+        .Thirteen-inner{
+            height: 150vh;
+            background: url("img/hotel-4.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+
+        #kayakapi1{
+            top: 55vh;
+            font-size: $secondary-subheader-size;             
+        }
+
+        #kayakapi1-desc{
+            top: 55vh;
+            font-size: $desc-size;            
+        }
+
+        #kayakapi2{
+            top: -25vh;
+            font-size: $secondary-subheader-size;             
+        }
+
+        #kayakapi2-desc{
+            top: -25vh;
+            font-size: $desc-size;            
+        }
+    }
+    
+    .Fourteen {
+        background: $white;
+
+        .flex-item{
+            padding: 5px;
+            height: 200px;
+            width: 43vw;
+            margin: 30px 0px;
+
+            h2{
+                top: 150px;
+                left: 0px !important;
+                font-size: $desc-size;
+            }
+
+            a{
+                height: 200px !important;
+                width: 43vw !important;
+                color: transparent;
+                text-decoration: none !important;
+            }
+        }
+    }
+
+    .Fifteen{
+        background: url("img/cuisine-2.jpg") $nrs 50% 50%;
+        background-size: cover;
+
+        .Fifteen-inner{
+            background: url("img/cuisine-1.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+        
+        #mutfak{
+            top: 9vh;
+            font-size: $main-subheader-size;
+        }
+
+        #cuisine{
+            top: 7vh;
+            font-size: $secondary-subheader-size;
+        }
+
+        #meze{
+            top: 40vh;
+            font-size: $secondary-subheader-size;         
+        }
+
+        #meze-desc{
+            top: 40vh;
+            font-size: 1em;
+        }   
+
+        #doner{
+            top: -40vh;
+            font-size: $secondary-subheader-size;            
+        }
+
+        #doner-desc{
+            top: -40vh;
+            font-size: 1em;
+        }
+    }
+
+    .Sixteen {
+        background: url("./img/white-3.jpg") $nrs center;
+        background-size: cover;
+        z-index: 19;
+        
+        .flex-container {
+            position: relative;
+            top: -10vh;
+            width: 100vw;
+            padding: 30px;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+
+        .flex-item{
+            padding: 5px;
+            width: 500px;
+            margin: 10px 0px;
+
+            line-height: 18px;
+            text-align: center;
+            @include border-radius;
+
+            &:nth-child(1){
+                height: 230px;
+                width: 43vw;
+
+                #yemegi{
+                    top: 50px !important;
+                    font-size: $secondary-subheader-size;
+                    font-weight: 700;
+                }
+
+                #food{
+                    position: relative;
+                    top: 20px;
+                    font-size: $desc-size;    
+                }
+
+                p{
+                    position: relative;
+                    top: 30px;
+                    color: $red;
+                    font-size: 0.7em;
+                }
+            }
+
+            &:nth-child(2){
+                height: 230px;
+                width: 43vw;
+
+                h2{
+                    top: 170px;
+                    color: $white;
+                    font-size: 2.5em;
+                }
+
+            }
+
+            &:nth-child(3){
+                height: 230px;
+                width: 43vw;
+
+                h2{
+                    top: 170px;
+                }
+            }
+
+            &:nth-child(4){
+                height: 230px;
+                width: 43vw;
+
+                h2{
+                    top: 170px;
+                }
+            }
+        }
+    }
+    
+    .Seventeen{
+        height: 150vh;
+        background: url("img/cuisine-7.jpg") $nrs 50% 50%;
+        background-size: cover;
+
+        .Seventeen-inner{
+            height: 150vh;
+            background: url("img/cuisine-6.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+
+        #delight{
+            top: 55vh;
+            font-size: $secondary-subheader-size;            
+        }
+
+        #delight-desc{
+            top: 55vh;
+            font-size: 1em;
+        }
+
+        #dolma{
+            top: -40vh;
+            font-size: $secondary-subheader-size;            
+        }
+
+        #dolma-desc{
+            top: -40vh;
+            font-size: 1em;
+        }
+    }
+
+    .Eighteen{
+        height: 150vh;
+        background: url("img/cuisine-9.jpg") $nrs 50% 50%;
+        background-size: cover;
+
+        .Eighteen-inner{
+            height: 150vh;
+            background: url("img/cuisine-8.jpg") $nrs 50% 50%;
+            background-size: cover;
+        }
+
+        #simit{
+            top: 25vh;
+            font-size: $secondary-subheader-size;            
+        }
+
+        #simit-desc{
+            top: 25vh;
+            font-size: 1em;
+        }
+
+        #kokorec{
+            top: -40vh;
+            font-size: $secondary-subheader-size;            
+        }
+
+        #kokorec-desc{
+            top: -40vh;
+            font-size: 1em;
+        }
+    }
+    
+    .Nineteen {
+        position: relative;
+        top: 0vh;
+        height: auto;
+        background: url("./img/white-3.jpg") $nrs center;
+        background-size: cover;
+        font-size: large;
+        z-index: 19;
+
+        .flex-container {
+            position: relative;
+            top: -15vh;
+            width: 100vw;
+            padding: 30px;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+
+        .flex-item{
+            padding: 5px;
+            margin: 10px 0px;
+
+            line-height: 18px;
+            font-family: $main-font, Arial, Helvetica, serif;
+            //font-size: 3em;
+            text-align: center;
+            @include border-radius;
+
+            &:nth-child(1){
+                height: 230px;
+                width: 43vw;
+                border-radius: 80px;
+                transition: all 0.3s ease-in-out;
+
+                #dili{
+                    top: 50px !important;
+                    font-size: $secondary-subheader-size;
+                    font-weight: 700;
+                }
+
+                #language{
+                    position: relative;
+                    top: 15px;
+                    font-size: $desc-size;   
+                }
+
+                p{
+                    position: relative;
+                    top: 25px;
+                    color: $red;
+                    font-size: 0.6em;
+                }
+            }
+
+            &:nth-child(2){
+                height: 230px;
+                width: 43vw;
+            }
+
+            &:nth-child(3){
+                height: 230px;
+                width: 43vw;
+                background: url("img/turkish-2.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                h2{
+                    position: relative;
+                    top: 170px;
+                    background-color: rgba(0,0,0,0.5);
+                    padding: 5px 0px;
+                    font-size: 1.3em;
+                    border-radius: 10px;
+                }
+            }
+
+            &:nth-child(4){
+                height: 230px;
+                width: 43vw;
+                background: url("img/turkish-4.jpg") $nrs 50% 50%;
+                background-size: cover;
+
+                h2{
+                    top: 240px;
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+
+    .Twenty{
+        height: 105vh;
+        background: url("img/ataturk-2.jpg") $nrs 55% 50%;
+        background-size: cover;
+
+        #alfabe{
+            top: 10vh;
+            font-size: $main-subheader-size;
+        }
+
+        #alphabet{
+            top: 10vh;
+            font-size: $secondary-subheader-size;   
+        }
+
+        h2:nth-child(3){
+            top: 30vh; 
+            font-size: 1em;
+        }
+    }
+
+    .Twenty-one{
+        height: 140vh;
+        background: url("img/red-1.jpg") $nrs 50% 50%;
+        background-size: cover;
+
+        #cumleler{
+            top: 10vh;
+            font-size: $main-subheader-size;
+        }
+
+        #phrases{
+            top: 8vh;
+            font-size: $secondary-subheader-size;
+        }
+
+        li{
+            top: 10vh;
+            font-size: 1em;
+            @include secondary-font;
+            list-style: none;
+        }
+
+        #pronunciation{
+            color: hotpink;
+        }
+
+        #translation{
+            color: $turquoise;
+        }
+    }
+    
+    .Twenty-two{
+        background: $white;
+
+        .flex-item{
+            padding: 5px;
+            height: 250px;
+            width: 43vw;
+            margin: 10px 0px;
+
+            button{
+                top: 190px;
+            }
+            
+            h2{
+                font-size: $desc-size;
+            }
+
+            &:nth-child(1){
+                height: 100px;
+                width: 100%;
+                filter: grayscale(0%);
+
+                #konular{
+                    top: 10px;
+                    font-size: $main-subheader-size;
+                }
+
+                #topics{
+                    top: 20px;
+                    font-size: $secondary-subheader-size;    
+                }
+            }
+        }
+    }
+
+    .Twenty-three{
+        background: url("./img/istanbul-3.jpg") $nrs center;
+        background-size: cover;
+
+        #yolculuk{
+            top: 10vh;
+            font-size: $main-subheader-size;
+        }
+
+        #voyage{
+            top: 10vh;
+            font-size: $secondary-subheader-size;
+        }
+    }
+    
+    .toolbarItemChild___2U_MP > h1{
+        font-size: $secondary-subheader-size;
+        text-align: right;
+        color: $white;
+        @include main-font;
+    }
+}
+
+@include for-large-tablet-portrait{
+    .One{
+        height: 100vh;
+        background: url("./img/turkey-flag-1.jpg") $nrs 50% 50%;
+        background-size: cover;
+        
+        .One-inner{
+            height: 100vh;
+            background: url("./img/maidens-tower-1.jpg") $nrs 50% 70% !important;
+            background-size: 2500px !important;
+            
+            #hos-geldiniz{
+                top: 80vh;
+                font-size: $main-header-size;
+            }
+
+            #welcome{
+                top: 80vh;
+                font-size: $main-subheader-size;
+            }
+        }        
+    }
+    
+    .Two{
+        background: url("./img/white-3.jpg") $nrs center;
+        background-size: cover;
+        
+        .flex-item{
+            padding: 5px;
+            margin: 10px 0px;
+            line-height: 30px;
+            font-family: $main-font, Arial, Helvetica, serif;
+
+            &:nth-child(1){
+                
+                height: 300px;
+                width: 86vw;
+                /*
+                height: 330px;
+                width: 500px;*/
+                border-radius: 80px;
+                transition: all 0.3s ease-in-out;
+
+                #bayragi{
+                    top: 35px;
+                    font-size: $main-subheader-size;
+                    font-weight: 700;
+                }
+
+                #flag{
+                    top: 30px;
+                    font-size: $secondary-subheader-size;             
+                }
+
+                p{
+                    top: 40px;
+                    font-size: $desc-size;
+                }
+            }
+
+            &:nth-child(2){
+                height: 230px;
+                width: 86vw;
+            }
+
+            &:nth-child(3){
+                height: 230px;
+                width: 86vw;
+                padding: 0px 150px;
+
+                h2{
+                    position: relative;
+                    top: 140px;
+                    font-size: $desc-size;
+                    line-height: 25px;
+                    padding: 10px 0px;
+                }
+            }
+
+            &:nth-child(4){
+                height: 230px;
+                width: 86vw;
+                padding: 0px 150px;
+
+                h2{
+                    top: 140px;
+                    font-size: $desc-size;
+                    line-height: 25px;
+                    padding: 10px 0px;
+                }
+            }
+        }
+    }
+    
+    .Three{
+        height: 150vh;
+        background: url("img/cappadocia-1.jpg") $nrs 50% 50%;
+        background-size: cover;
+
+
+        .Three-inner{
+            height: 150vh;
+            background: url("img/uzungol-1.jpg") $nrs 50% 50%;
+            background-size: cover;
+
+            #cografya{
+                color: $red;
+            }
+            
+            #uzungol{
+                top: 60vh;          
+            }
+
+            #uzungol-desc{
+                top: 60vh;
+                font-size: $secondary-subheader-size;            
+            }        
+        }
+
+        #cappadocia{
+            top: -20vh;          
+        }
+
+        #cappadocia-desc{
+            top: -20vh;
+            font-size: $secondary-subheader-size;            
+        }
+    }
+    
+    .Four{
+        height: 110vh;
+        background: url("./img/ataturk-1.jpg") $nrs 70% 0% !important;
+        background-size: 2000px !important;
+        
+        .Four-inner{
+            height: 110vh;
+            background: url("./img/map-3.png") $nrs 50% 50%;
+            background-size: cover;
+
+        }
+
+        #merkezi{
+            top: 32vh;
+            font-size: $main-header-size;
+        }
+
+        #center{
+            position: relative;
+            font-size: $main-subheader-size;
+        }
+        
+        #ranging{
+            top: 35vh;
+            font-size: $desc-size;
+            line-height: 35px;
+        }
+
+        #ataturk{
+            top: -20vh;
+            margin: 0px 10vw; 
+
+        }
+
+        #founder{
+            top: -20vh;
+            
+            margin: 0px 10vw;
+        }
+    }
+
+    .Five{    
+        background: $white;
+        
+        .flex-item{
+            padding: 5px;
+            height: 250px;
+            width: 43vw;
             margin: 10px 0px;
 
             line-height: 30px;
@@ -5060,943 +7005,6 @@ h2, p, a{
         #voyage{
             top: 10vh;
             font-size: $main-subheader-size;
-        }
-    }
-    
-    .toolbarItemChild___2U_MP > h1{
-        font-size: $secondary-subheader-size;
-        text-align: right;
-        color: $white;
-        @include main-font;
-    }
-}
-
-@include for-phone-landscape{
-    .One{
-        height: 100vh;
-        background: url("./img/turkey-flag-1.jpg") $nrs 50% 50%;
-        background-size: cover;
-        
-        .One-inner{
-            height: 100vh;
-            background: url("./img/maidens-tower-1.jpg") $nrs 50% 70% !important;
-            background-size: cover !important;
-            
-            #hos-geldiniz{
-                top: 70vh;
-                font-size: $main-subheader-size;
-            }
-
-            #welcome{
-                top: 70vh;
-                font-size: $secondary-subheader-size;
-            }
-        }        
-    }
-    
-    .Two{
-        background: url("./img/white-3.jpg") $nrs center;
-        background-size: cover;
-        
-        .flex-item{
-            padding: 5px;
-            margin: 10px 0px;
-            line-height: 18px;
-            font-family: $main-font, Arial, Helvetica, serif;
-
-            &:nth-child(1){
-                
-                height: 250px;
-                width: 320px;
-                /*
-                height: 330px;
-                width: 500px;*/
-                border-radius: 80px;
-                transition: all 0.3s ease-in-out;
-
-                #bayragi{
-                    top: 35px;
-                    font-size: $secondary-subheader-size;
-                    font-weight: 700;
-                }
-
-                #flag{
-                    top: 15px;
-                    font-size: $desc-size;             
-                }
-
-                p{
-                    top: 30px;
-                    font-size: 0.7em;
-                }
-            }
-
-            &:nth-child(2){
-                height: 230px;
-                width: 320px;
-            }
-
-            &:nth-child(3){
-                height: 230px;
-                width: 320px;
-                padding: 0px 50px;
-
-                h2{
-                    position: relative;
-                    top: 140px;
-                    font-size: 1em;
-                    line-height: 25px;
-                    padding: 10px 0px;
-                }
-            }
-
-            &:nth-child(4){
-                height: 230px;
-                width: 320px;
-                padding: 0px 50px;
-
-                h2{
-                    top: 140px;
-                    font-size: 1em;
-                    line-height: 25px;
-                    padding: 10px 0px;
-                }
-            }
-        }
-    }
-    
-    .Three{
-        height: 150vh;
-        background: url("img/cappadocia-1.jpg") $nrs 50% 50%;
-        background-size: cover;
-
-
-        .Three-inner{
-            height: 150vh;
-            background: url("img/uzungol-1.jpg") $nrs 50% 50%;
-            background-size: cover;
-
-            #cografya{
-                color: $red;
-                font-size: $main-subheader-size;
-            }
-            
-            #geography{
-                color: $turquoise;
-                font-size: $secondary-subheader-size;
-            }
-            
-            #uzungol{
-                top: 60vh;
-                font-size: $secondary-subheader-size;
-            }
-
-            #uzungol-desc{
-                top: 60vh;
-                font-size: $desc-size;            
-            }        
-        }
-
-        #cappadocia{
-            top: -20vh;  
-            font-size: $secondary-subheader-size;
-        }
-
-        #cappadocia-desc{
-            top: -20vh;
-            font-size: $desc-size;            
-        }
-    }
-    
-    .Four{
-        height: 110vh;
-        background: url("./img/ataturk-1.jpg") $nrs 70% 0% !important;
-        background-size: 2000px !important;
-        
-        .Four-inner{
-            height: 110vh;
-            background: url("./img/map-3.png") $nrs 50% 50%;
-            background-size: cover;
-
-        }
-
-        #merkezi{
-            top: 32vh;
-            font-size: $main-subheader-size;
-        }
-
-        #center{
-            position: relative;
-            font-size: $secondary-subheader-size;
-        }
-        
-        #ranging{
-            top: 35vh;
-            font-size: 1em;
-        }
-
-        #ataturk{
-            top: -20vh;
-            margin: 0px 10vw; 
-
-        }
-
-        #founder{
-            top: -20vh;
-            
-            margin: 0px 10vw;
-        }
-    }
-
-    .Five{    
-        background: $white;
-        
-        .flex-item{
-            padding: 5px;
-            height: 250px;
-            width: 330px;
-            margin: 10px 0px;
-
-            line-height: 30px;
-            font-family: $main-font, Arial, Helvetica, serif;
-            border-top: transparent 4px solid;
-            border-bottom: transparent 4px solid;
-            text-align: center;
-            transition: all 0.3s ease-in;
-
-            h1{
-                position: relative;
-                top: 120px;
-                color: $white;
-                font-size: 1.2em;
-            }
-
-            h2{
-                position: relative;
-                top: 120px;
-                color: $turquoise;
-                font-size: 1em;
-            }
-
-            .map{
-                position: relative;
-                 top: 20px;
-                 height: 50px;
-                 length: 100px;
-                 //opacity: 0.8;
-            }
-
-            &:nth-child(1){
-                height: 100px;
-                width: 100%;
-                text-align: center; 
-
-                #bolgeleri{
-                    top: 0.5vh;
-                    font-size: $main-subheader-size;
-                    line-height: 50px;
-                }
-
-                #regions{
-                    top: 1vh;
-                    font-size: $secondary-subheader-size;
-                }
-            }
-
-            &:nth-child(2){
-                background: url("img/marmara-1.jpg") $nrs 50% 50%;
-                background-size: cover;
-
-                .map{
-                    background: url("img/marmara-region-1.png") $nrs 50% 50%;
-                    background-size: contain;
-                }
-            }
-
-            &:nth-child(3){
-                background: url("img/aegean-1.jpg") $nrs 50% 50%;
-                background-size: cover;
-
-                .map{
-                    background: url("img/aegean-region-1.png") $nrs 50% 50%;
-                    background-size: contain;
-                }
-            }
-
-            &:nth-child(4){
-                background: url("img/mediterranean-mini.jpg") $nrs 50% 50%;
-                background-size: cover;
-
-                .map{
-                    background: url("img/mediterranean-region-1.png") $nrs 50% 50%;
-                    background-size: contain;
-                }
-            }
-
-            &:nth-child(5){
-                background: url("img/cappadocia-2.jpg") $nrs 50% 50%;
-                background-size: cover;
-
-                .map{
-                    background: url("img/central-anatolia-region-1.png") $nrs 50% 50%;
-                    background-size: contain;
-                }
-            }
-
-            &:nth-child(6){
-                background: url("img/black-sea-mini.jpg") $nrs 50% 50%;
-                background-size: cover;
-
-                .map{
-                    background: url("img/black-sea-region-1.png") $nrs 50% 50%;
-                    background-size: contain;
-                }
-            }
-
-            &:nth-child(7){
-                background: url("img/eastern-mini.jpg") $nrs 50% 50%;
-                background-size: cover;
-
-                .map{
-                    background: url("img/eastern-anatolia-region-1.png") $nrs 50% 50%;
-                    background-size: contain;
-                }
-            }
-
-            &:nth-child(8){
-                background: url("img/southeastern-5.jpg") $nrs 50% 50%;
-                background-size: cover;
-
-                .map{
-                    background: url("img/southeastern-anatolia-region-1.png") $nrs 50% 50%;
-                    background-size: contain;
-                }
-
-                h1, h2{
-                    left: 0px;
-                }
-            }
-
-            &:nth-child(9){
-                background: url("img/batman-logo-1.jpg") $nrs 60% 90%;
-                background-s: cover;
-
-                .map{
-                    background: url("img/eastern-anatolia-region-1.png") $nrs 50% 50%;
-                    background-size: contain;
-                }
-
-                h1, h2{
-                    top: 10px;
-                } 
-                
-                p{ 
-                    position: relative;
-                    top: 20px;
-                    left: 80px;
-                    width: 180px;
-                    color: $white;
-                    font-size: .8em;
-                    line-height: 20px;
-                }
-            }
-        }
-    }
-    
-    .Six{
-        height:100vh;
-        background: url("./img/istanbul-2.jpg") $nrs 50% 40%;
-        background-size: cover;
-
-        #sehirler{
-            top: 10vh;
-            font-size: $main-subheader-size;  
-        }
-
-        #cities{
-            top: 10vh;
-            font-size: $secondary-subheader-size;
-        }
-
-        #istanbul{
-            font-size: $desc-size;
-        }
-
-        #istanbul-description{
-            top: 25vh;
-            font-size: 1em;
-            padding: 0px 10vw;
-        }   
-    }
-
-    .Seven{
-        height:100vh;
-        background: url("./img/ankara-1.jpg") $nrs 50% 40%;
-        background-size: cover;
-
-        #ankara{
-            font-size: $main-subheader-size;
-        }
-
-        #ankara-description{
-            top: 45vh;
-            font-size: 1em;
-            padding: 0px 10vw;
-        }
-    }
-
-    .Eight{
-        height:100vh;
-        background: url("./img/izmir-3.JPG") $nrs 50% 40%;
-        background-size: cover;
-        
-        #izmir{
-            color: $white;
-            font-size: $main-subheader-size;
-        }
-
-        #izmir-description{
-            top: 45vh;
-            color: $red;
-            font-size: 1em;
-            padding: 0px 10vw;
-        }
-    }
-
-    .Nine{
-        height:100vh;
-        background: url("./img/bursa-1.jpg") $nrs 50% 40%;
-        background-size: cover;
-        
-        
-        #bursa{
-            font-size: $main-subheader-size;
-        }
-
-        #bursa-description{
-            top: 45vh;
-            font-size: 1em;
-            padding: 0px 10vw;
-        }
-    }
-
-    .Ten{
-        height:100vh;
-        background: url("./img/adana-1.jpg") $nrs 50% 40%;
-        background-size: cover;
-
-        #adana{
-            font-size: $main-subheader-size;
-        }
-
-        #adana-description{
-            top: 45vh;
-            font-size: 1em;
-            padding: 0px 10vw;
-        }
-    }
-    
-    .Eleven{
-        background: $white;
-
-        .flex-item{
-            padding: 5px;
-            height: 250px;
-            width: 330px;
-            margin: 10px 0px;
-
-            line-height: 30px;
-            
-            h2{
-                top: 190px;
-                font-size: 1.4em !important;
-                font-size: $desc-size;
-            }
-
-            &:nth-child(1){
-                height: 100px;
-                width: 100%;
-
-
-                #manzaralar{
-                    top: 0px;
-                    font-size: $main-subheader-size;
-                }
-
-                #sights{
-                    top: 10px;
-                    font-size: $secondary-subheader-size !important;    
-                }
-            }
-        }
-    }
-    
-    .Twelve{
-        height: 150vh;
-        background: url("img/hotel-3.jpg") $nrs 50% 50%;
-        background-size: cover;
-
-        .Twelve-inner{
-            height: 150vh;
-            background: url("img/hotel-1.jpg") $nrs 50% 50%;
-            background-size: cover;
-        }
-
-        #oteleler{
-            top: 10vh;
-            color: $red;
-            font-size: $main-subheader-size;             
-        }
-
-        #hotels{
-            top: 8vh;
-            font-size: $secondary-subheader-size;   
-        }
-
-        #raffles1{
-            top: 55vh;
-            font-size: $secondary-subheader-size;
-        }
-
-        #raffles1-desc{
-            top: 55vh;
-            font-size: $desc-size;            
-        }
-
-        #raffles2{
-            top: -25vh;
-            font-size: $secondary-subheader-size;           
-        }
-
-        #raffles2-desc{
-            top: -25vh;
-            font-size: $desc-size;                 
-        }
-    }
-
-    .Thirteen{
-        height: 150vh;
-        background: url("img/hotel-5.jpg") $nrs 50% 50%;
-        background-size: cover;
-
-        .Thirteen-inner{
-            height: 150vh;
-            background: url("img/hotel-4.jpg") $nrs 50% 50%;
-            background-size: cover;
-        }
-
-        #kayakapi1{
-            top: 55vh;
-            font-size: $secondary-subheader-size;             
-        }
-
-        #kayakapi1-desc{
-            top: 55vh;
-            font-size: $desc-size;            
-        }
-
-        #kayakapi2{
-            top: -25vh;
-            font-size: $secondary-subheader-size;             
-        }
-
-        #kayakapi2-desc{
-            top: -25vh;
-            font-size: $desc-size;            
-        }
-    }
-    
-    .Fourteen {
-        background: $white;
-
-        .flex-item{
-            padding: 5px;
-            height: 250px;
-            width: 330px;
-            margin: 10px 0px;
-
-            h2{
-                top: 190px;
-                font-size: $desc-size;
-            }
-
-            a{
-                color: transparent;
-                text-decoration: none !important;
-            }
-        }
-    }
-
-    .Fifteen{
-        background: url("img/cuisine-2.jpg") $nrs 50% 50%;
-        background-size: cover;
-
-        .Fifteen-inner{
-            background: url("img/cuisine-1.jpg") $nrs 50% 50%;
-            background-size: cover;
-        }
-        
-        #mutfak{
-            top: 9vh;
-            font-size: $main-subheader-size;
-        }
-
-        #cuisine{
-            top: 7vh;
-            font-size: $secondary-subheader-size;
-        }
-
-        #meze{
-            top: 40vh;
-            font-size: $secondary-subheader-size;         
-        }
-
-        #meze-desc{
-            top: 40vh;
-            font-size: 1em;
-        }   
-
-        #doner{
-            top: -40vh;
-            font-size: $secondary-subheader-size;            
-        }
-
-        #doner-desc{
-            top: -40vh;
-            font-size: 1em;
-        }
-    }
-
-    .Sixteen {
-        background: url("./img/white-3.jpg") $nrs center;
-        background-size: cover;
-        z-index: 19;
-        
-        .flex-container {
-            position: relative;
-            top: -10vh;
-            width: 100vw;
-            padding: 30px;
-            margin: 0;
-            list-style: none;
-            overflow: hidden;
-        }
-
-        .flex-item{
-            padding: 5px;
-            width: 500px;
-            margin: 10px 0px;
-
-            line-height: 18px;
-            text-align: center;
-            @include border-radius;
-
-            &:nth-child(1){
-                height: 230px;
-                width: 320px;
-
-                #yemegi{
-                    top: 50px !important;
-                    font-size: $secondary-subheader-size;
-                    font-weight: 700;
-                }
-
-                #food{
-                    position: relative;
-                    top: 20px;
-                    font-size: $desc-size;    
-                }
-
-                p{
-                    position: relative;
-                    top: 30px;
-                    color: $red;
-                    font-size: 0.7em;
-                }
-            }
-
-            &:nth-child(2){
-                height: 230px;
-                width: 320px;
-
-                h2{
-                    top: 170px;
-                    color: $white;
-                    font-size: 2.5em;
-                }
-
-            }
-
-            &:nth-child(3){
-                height: 230px;
-                width: 320px;
-
-                h2{
-                    top: 170px;
-                }
-            }
-
-            &:nth-child(4){
-                height: 230px;
-                width: 320px;
-
-                h2{
-                    top: 170px;
-                }
-            }
-        }
-    }
-    
-    .Seventeen{
-        height: 150vh;
-        background: url("img/cuisine-7.jpg") $nrs 50% 50%;
-        background-size: cover;
-
-        .Seventeen-inner{
-            height: 150vh;
-            background: url("img/cuisine-6.jpg") $nrs 50% 50%;
-            background-size: cover;
-        }
-
-        #delight{
-            top: 55vh;
-            font-size: $secondary-subheader-size;            
-        }
-
-        #delight-desc{
-            top: 55vh;
-            font-size: 1em;
-        }
-
-        #dolma{
-            top: -40vh;
-            font-size: $secondary-subheader-size;            
-        }
-
-        #dolma-desc{
-            top: -40vh;
-            font-size: 1em;
-        }
-    }
-
-    .Eighteen{
-        height: 150vh;
-        background: url("img/cuisine-9.jpg") $nrs 50% 50%;
-        background-size: cover;
-
-        .Eighteen-inner{
-            height: 150vh;
-            background: url("img/cuisine-8.jpg") $nrs 50% 50%;
-            background-size: cover;
-        }
-
-        #simit{
-            top: 25vh;
-            font-size: $secondary-subheader-size;            
-        }
-
-        #simit-desc{
-            top: 25vh;
-            font-size: 1em;
-        }
-
-        #kokorec{
-            top: -40vh;
-            font-size: $secondary-subheader-size;            
-        }
-
-        #kokorec-desc{
-            top: -40vh;
-            font-size: 1em;
-        }
-    }
-    
-    .Nineteen {
-        position: relative;
-        top: 0vh;
-        height: auto;
-        background: url("./img/white-3.jpg") $nrs center;
-        background-size: cover;
-        font-size: large;
-        z-index: 19;
-
-        .flex-container {
-            position: relative;
-            top: -15vh;
-            width: 100vw;
-            padding: 30px;
-            margin: 0;
-            list-style: none;
-            overflow: hidden;
-        }
-
-        .flex-item{
-            padding: 5px;
-            margin: 10px 0px;
-
-            line-height: 18px;
-            font-family: $main-font, Arial, Helvetica, serif;
-            //font-size: 3em;
-            text-align: center;
-            @include border-radius;
-
-            &:nth-child(1){
-                height: 230px;
-                width: 320px;
-                border-radius: 80px;
-                transition: all 0.3s ease-in-out;
-
-                #dili{
-                    top: 50px !important;
-                    font-size: $secondary-subheader-size;
-                    font-weight: 700;
-                }
-
-                #language{
-                    position: relative;
-                    top: 15px;
-                    font-size: $desc-size;   
-                }
-
-                p{
-                    position: relative;
-                    top: 25px;
-                    color: $red;
-                    font-size: 0.6em;
-                }
-            }
-
-            &:nth-child(2){
-                height: 230px;
-                width: 320px;
-            }
-
-            &:nth-child(3){
-                height: 230px;
-                width: 320px;
-                background: url("img/turkish-2.jpg") $nrs 50% 50%;
-                background-size: cover;
-
-                h2{
-                    position: relative;
-                    top: 170px;
-                    background-color: rgba(0,0,0,0.5);
-                    padding: 5px 0px;
-                    font-size: 1.3em;
-                    border-radius: 10px;
-                }
-            }
-
-            &:nth-child(4){
-                height: 230px;
-                width: 320px;
-                background: url("img/turkish-4.jpg") $nrs 50% 50%;
-                background-size: cover;
-
-                h2{
-                    top: 240px;
-                    font-size: 2em;
-                }
-            }
-        }
-    }
-
-    .Twenty{
-        height: 105vh;
-        background: url("img/ataturk-2.jpg") $nrs 55% 50%;
-        background-size: cover;
-
-        #alfabe{
-            top: 10vh;
-            font-size: $main-subheader-size;
-        }
-
-        #alphabet{
-            top: 10vh;
-            font-size: $secondary-subheader-size;   
-        }
-
-        h2:nth-child(3){
-            top: 30vh; 
-            font-size: 1em;
-        }
-    }
-
-    .Twenty-one{
-        height: 120vh;
-        background: url("img/red-1.jpg") $nrs 50% 50%;
-        background-size: cover;
-
-        #cumleler{
-            top: 10vh;
-            font-size: $main-subheader-size;
-        }
-
-        #phrases{
-            top: 8vh;
-            font-size: $secondary-subheader-size;
-        }
-
-        li{
-            top: 10vh;
-            font-size: 1em;
-            @include secondary-font;
-            list-style: none;
-        }
-
-        #pronunciation{
-            color: hotpink;
-        }
-
-        #translation{
-            color: $turquoise;
-        }
-    }
-    
-    .Twenty-two{
-        background: $white;
-
-        .flex-item{
-            padding: 5px;
-            height: 250px;
-            width: 300px;
-            margin: 10px 0px;
-
-            h2{
-                top: 190px;
-                font-size: $desc-size;
-            }
-
-            &:nth-child(1){
-                height: 100px;
-                width: 100%;
-                filter: grayscale(0%);
-
-                #konular{
-                    top: 10px;
-                    font-size: $main-subheader-size;
-                }
-
-                #topics{
-                    top: 20px;
-                    font-size: $secondary-subheader-size;    
-                }
-            }
-        }
-    }
-
-    .Twenty-three{
-        background: url("./img/istanbul-3.jpg") $nrs center;
-        background-size: cover;
-
-        #yolculuk{
-            top: 10vh;
-            font-size: $main-subheader-size;
-        }
-
-        #voyage{
-            top: 10vh;
-            font-size: $secondary-subheader-size;
         }
     }
     
