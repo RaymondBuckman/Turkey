@@ -71,34 +71,35 @@ export default class Language extends Component {
             <div className="Nineteen" id="Nineteen">
                 <ul className="flex-container">
                     <li className="flex-item scrollmagic-info-squares">
-                        <h1 id="dili" className="scrollmagic-header">Türk Dili</h1>
-                        <h2 id="language" className="scrollmagic-header">The Turkish Language</h2>
+                        <h1 id="dili" className="scrollmagic-header" role="heading">Türk Dili</h1>
+                        <h2 id="language" className="scrollmagic-header" role="heading">The Turkish Language</h2>
                         <p>By now you've probably noticed some foreign words with odd looking characters. This is the Turkish language. Linguistically, Turkish is unrelated to English, Spanish, or any romance or germanic language. It has an SOV sentence structure (subjuct -> object -> verb), & is highly agglutinative, meaning that numerous suffixes are added on to words to expand their meaning. The longest word in Turkish has 70 letters with more than 10 suffixes! Don't worry though...words like this aren't used in daily speech & being fluent isn't required for tourists as English is fairly widely spoken in the tourist areas. Still, knowing a little Turkish goes a long way!</p>
                     </li>
-                    <li className="flex-item scrollmagic-info-squares"></li>
-                    <li className="flex-item scrollmagic-info-squares">
+                    <li alt="Book in turkish" className="flex-item scrollmagic-info-squares"></li>
+                    <li alt="fishing sign in turkish" className="flex-item scrollmagic-info-squares">
                         <h2>"Fishing is forbidden in this area"</h2>
                     </li>
-                    <li className="flex-item scrollmagic-info-squares"></li>
+                    <li alt="Airport signs in turkish" className="flex-item scrollmagic-info-squares"></li>
                 </ul>
             </div>
             <div className="Twenty">            
                 <div className="container">
-                    <h1 id="alfabe" className="text-left scrollmagic-header">Alfabe</h1>
-                    <h2 id="alphabet" className="text-left scrollmagic-header">Alphabet</h2> 
+                    <h1 id="alfabe" className="text-left scrollmagic-header" role="heading">Alfabe</h1>
+                    <h2 id="alphabet" className="text-left scrollmagic-header" role="heading">Alphabet</h2> 
                     <h2 className="col-lg-8 col-lg-offset-4 text-right scrollmagic-desc">
                         A	B	C	Ç	D	E	F	G	Ğ	H	I	İ	J	K	L	M	N	O	Ö	P	R	S	Ş	T	U	Ü	V	Y	Z
                         <br/><br/>
                         The Turkish alphabet consists of 29 letters. There are 8 vowels (a, e, ı, i, o, ö, u, ü) & the rest are consonants. It was written using an Arabic script until Mustafa Kemal Atatürk (pictured) changed it to a Latin-based alphabet in 1929 as part of his reforms to modernize Turkey after the fall of the Ottoman Empire. Most of the letters will be familiar to English speakers, except for 6: ç, ş, ğ, ı , ö, & ü. Some letters are also pronouced differently. 
                         <br/><br/>
-                        <a href="https://www.youtube.com/watch?v=TOZ0CwkRtxI" target="_blank">More info</a>
+                        <a href="https://www.youtube.com/watch?v=TOZ0CwkRtxI" target="_blank" role="link"
+                        aria-label="watch a video with more info about the turkish alphabet">More info</a>
                     </h2>
                 </div>
             </div>
             <div className="Twenty-one scrollmagic-div-fadeout">            
                 <div className="container">
-                    <h1 id="cumleler" className="text-center scrollmagic-header">Temel Cümleler</h1>
-                    <h2 id="phrases" className="text-center scrollmagic-header">Basic Phrases</h2> 
+                    <h1 id="cumleler" className="text-center scrollmagic-header" role="heading">Temel Cümleler</h1>
+                    <h2 id="phrases" className="text-center scrollmagic-header" role="heading">Basic Phrases</h2> 
                     
                     <ul className="col-lg-12 col-lg-offset-0 text-left">
                         <li className="scrollmagic-vocab">Merhaba <span id="pronunciation">(mayor-ha-bah)</span>  - <span id="translation">Hello</span></li>
@@ -139,37 +140,45 @@ export default class Language extends Component {
                         <h1 id="konular" className="scrollmagic-header">Diğer Konular</h1>
                         <h2 id="topics" className="scrollmagic-header">Other Topics</h2>
                     </li>
-                    <li className="flex-item scrollmagic-chevron" 
-                    onClick={() => this.setState({photoIndex:0, isOpen: true,  })}>
-                        <h2>Pronounciation</h2>
+                    <li className="flex-item scrollmagic-chevron" onClick={() => this.setState({photoIndex:0, isOpen: true})}>
+                        <button type="button" alt="opens gallery for Pronunciation">
+                            <h2>Pronunciation</h2>
+                        </button>
                     </li>
-                    <li className="flex-item scrollmagic-chevron" 
-                    onClick={() => this.setState({photoIndex:1, isOpen: true })}>
-                        <h2>Vowel Harmony</h2>
+                    <li className="flex-item scrollmagic-chevron" onClick={() => this.setState({photoIndex:1, isOpen: true })}>   
+                        <button type="button" alt="opens gallery for Vowel Harmony">
+                            <h2>Vowel Harmony</h2>
+                        </button>
                     </li>
-                    <li className="flex-item  scrollmagic-chevron" 
-                    onClick={() => this.setState({photoIndex:2, isOpen: true })}>
-                        <h2>Pronouns</h2>
+                    <li className="flex-item scrollmagic-chevron" onClick={() => this.setState({photoIndex:2, isOpen: true })}>   
+                        <button type="button" alt="opens gallery for Pronouns">
+                            <h2>Pronouns</h2>
+                        </button>
                     </li>
-                    <li className="flex-item  scrollmagic-chevron" 
-                    onClick={() => this.setState({photoIndex:3, isOpen: true })}>
-                        <h2>Adjectives</h2>
+                    <li className="flex-item scrollmagic-chevron" onClick={() => this.setState({photoIndex:2, isOpen: true })}>   
+                        <button type="button" alt="opens gallery for Adjectives">
+                            <h2>Adjectives</h2>
+                        </button>
                     </li>
-                    <li className="flex-item scrollmagic-chevron" 
-                    onClick={() => this.setState({photoIndex:4, isOpen: true })}>
-                        <h2>Accusative</h2>
+                    <li className="flex-item scrollmagic-chevron" onClick={() => this.setState({photoIndex:4, isOpen: true })}>   
+                        <button type="button" alt="opens gallery for Accusative">
+                            <h2>Accusative</h2>
+                        </button>
                     </li>
-                    <li className="flex-item scrollmagic-chevron" 
-                    onClick={() => this.setState({photoIndex:5, isOpen: true })}>
-                        <h2>Possessive</h2>
+                    <li className="flex-item scrollmagic-chevron" onClick={() => this.setState({photoIndex:5, isOpen: true })}>   
+                        <button type="button" alt="opens gallery for Possessive">
+                            <h2>Possessive</h2>
+                        </button>
                     </li>
-                    <li className="flex-item scrollmagic-chevron" 
-                    onClick={() => this.setState({photoIndex:6, isOpen: true })}>
-                        <h2>Questions</h2>
+                    <li className="flex-item scrollmagic-chevron" onClick={() => this.setState({photoIndex:6, isOpen: true })}>   
+                        <button type="button" alt="opens gallery for Questions">
+                            <h2>Questions</h2>
+                        </button>
                     </li>
-                    <li className="flex-item scrollmagic-chevron" 
-                    onClick={() => this.setState({photoIndex:7, isOpen: true })}>
-                        <h2>Numbers</h2>
+                    <li className="flex-item scrollmagic-chevron" onClick={() => this.setState({photoIndex:7, isOpen: true })}>   
+                        <button type="button" alt="opens gallery for Numbers">
+                            <h2>Numbers</h2>
+                        </button>
                     </li>
                 </ul>
  
