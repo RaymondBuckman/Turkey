@@ -411,7 +411,7 @@ export default class Sights extends Component {
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:4, isOpen: true })}>
                         <button type="button" role="button" 
-                        alt="opens gallery for Cappadocia">>
+                        alt="opens gallery for Cappadocia">
                             <h2>Cappadocia</h2>
                         </button>
                     </li>
