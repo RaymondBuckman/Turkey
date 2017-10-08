@@ -6,9 +6,10 @@ export default class Hotels extends Component {
         return(
         <div>
             <div className="Twelve" id="Twelve">            
-                <div className="Twelve-inner scrollmagic-inner-fadeout">           <div className="container">
-                        <h1 id="oteleler" className="text-center scrollmagic-header">Oteleler</h1>
-                        <h2 id="hotels" className="text-center scrollmagic-header">Hotels</h2> 
+                <div className="Twelve-inner scrollmagic-inner-fadeout">           
+                    <div className="container">
+                        <h1 id="oteleler" className="text-center scrollmagic-header" role="heading">Oteleler</h1>
+                        <h2 id="hotels" className="text-center scrollmagic-header" role="heading">Hotels</h2> 
                         <h1 id="raffles1" className="text-right scrollmagic-desc">Raffles Hotel, İstanbul</h1>
                         <h2 id="raffles1-desc" className="text-right scrollmagic-desc">Lobby</h2>
                     </div>
@@ -34,28 +35,52 @@ export default class Hotels extends Component {
             <div className="Fourteen">
                 <ul className="flex-container">
                     <li className="flex-item scrollmagic-chevron">
-                        <h2>İstanbul Hotels</h2>
+                        <a href="https://www.trivago.com/istanbul-32123/hotel" target="_blank" 
+                        aria-label="view more Istanbul hotels on trivago.com" role="link">
+                            <h2>İstanbul Hotels</h2>
+                        </a>                                
                     </li>
                     <li className="flex-item scrollmagic-chevron">
-                        <h2>İzmir Hotels</h2>
+                        <a href="https://www.trivago.com/izmir-32103/hotel" target="_blank"
+                        aria-label="view more Izmir hotels on trivago.com" role="link">
+                            <h2>İzmir Hotels</h2>
+                        </a>
                     </li>
                     <li className="flex-item scrollmagic-chevron">
-                        <h2>Antalya Hotels</h2>
+                        <a href="https://www.trivago.com/izmir-32103/hotel" target="_blank"
+                        aria-label="view more Antalya hotels on trivago.com" role="link">
+                            <h2>Antalya Hotels</h2>
+                        </a>
                     </li>
                     <li className="flex-item scrollmagic-chevron">
-                        <h2>Ankara Hotels</h2>
+                        <a href="https://www.trivago.com/izmir-32103/hotel" target="_blank"
+                        aria-label="view more Ankara hotels on trivago.com" role="link">
+                            <h2>Ankara Hotels</h2>
+                        </a>
                     </li>
                     <li className="flex-item scrollmagic-chevron">
-                        <h2>Cappadocia Hotels</h2>
+                        <a href="https://www.trivago.com/izmir-32103/hotel" target="_blank"
+                        aria-label="view more Cappadocia hotels on trivago.com" role="link">
+                            <h2>Cappadocia Hotels</h2>
+                        </a>
                     </li>
                     <li className="flex-item scrollmagic-chevron">
-                        <h2>Trabzon Hotels</h2>
+                        <a href="https://www.trivago.com/izmir-32103/hotel" target="_blank"
+                        aria-label="view more Trabzon Hotels on trivago.com" role="link">
+                            <h2>Trabzon Hotels</h2>
+                        </a>
                     </li>
                     <li className="flex-item scrollmagic-chevron">
-                        <h2>Bursa Hotels</h2>
+                        <a href="https://www.trivago.com/izmir-32103/hotel" target="_blank"
+                        aria-label="view more Bursa Hotels on trivago.com" role="link">
+                            <h2>Bursa Hotels</h2>
+                        </a>
                     </li>
                     <li className="flex-item scrollmagic-chevron">
-                        <h2>Konya Hotels</h2>
+                        <a href="https://www.trivago.com/izmir-32103/hotel" target="_blank"
+                        aria-label="view more Konya Hotels on trivago.com" role="link">
+                            <h2>Konya Hotels</h2>
+                        </a>
                     </li>
                 </ul>           
             </div>

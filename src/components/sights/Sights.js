@@ -391,152 +391,260 @@ export default class Sights extends Component {
             <div className="Eleven" id="Eleven">
                  <ul className="flex-container">
                     <li className="flex-item" >
-                        <h1 id="manzaralar" className="scrollmagic-header">Manzaralar</h1>
-                        <h2 id="sights" className="scrollmagic-header">Sights</h2>
+                        <h1 id="manzaralar" className="scrollmagic-header" role="heading">Manzaralar</h1>
+                        <h2 id="sights" className="scrollmagic-header" role="heading">Sights</h2>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
-                    onClick={() => this.setState({photoIndex:0, isOpen: true,  })}>
-                        <h2>Grand Bazaar</h2>
+                    onClick={() => this.setState({photoIndex:0, isOpen: true })}>
+                        <button type="button" role="button"
+                        alt="opens gallery for Grand Bazaar">
+                            <h2>Grand Bazaar</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:2, isOpen: true })}>
-                        <h2>Basilica Cistern</h2>
+                        <button type="button" role="button" 
+                        alt="opens gallery for Basilica Cistern">
+                            <h2>Basilica Cistern</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:4, isOpen: true })}>
-                        <h2>Cappadocia</h2>
+                        <button type="button" role="button" 
+                        alt="opens gallery for Cappadocia">>
+                            <h2>Cappadocia</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:6, isOpen: true })}>
-                        <h2>Hagia Sophia</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Hagia Sophia">
+                            <h2>Hagia Sophia</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:8, isOpen: true })}>
-                        <h2>Library of Celsus</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Library of Celsus">
+                            <h2>Library of Celsus</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:10, isOpen: true })}>
-                        <h2>Chora Church</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Chora Church">
+                            <h2>Chora Church</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:12, isOpen: true })}>
-                        <h2>Dolmabahçe</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Dolmabahce">
+                            <h2>Dolmabahçe</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:14, isOpen: true })}>
-                        <h2>Miniatürk</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Miniaturk">
+                            <h2>Miniatürk</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:16, isOpen: true })}>
-                        <h2>Nemrut</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Nemrut">
+                            <h2>Nemrut</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:18, isOpen: true })}>
-                        <h2>Pamukkale</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Pamukkale">
+                            <h2>Pamukkale</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:20, isOpen: true })}>
-                        <h2>Sumela Monastery</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Sumela Monastery">
+                            <h2>Sumela Monastery</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:22, isOpen: true })}>
-                        <h2>Anıtkabir</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Anitkabir">
+                            <h2>Anıtkabir</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:24, isOpen: true })}>
-                        <h2>Blue Mosque</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Blue Mosque">
+                            <h2>Blue Mosque</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:26, isOpen: true })}>
-                        <h2>Temple of Artemis</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Temple of Artemis">
+                            <h2>Temple of Artemis</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:28, isOpen: true })}>
-                        <h2>Bodrum Castle</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Bodrum Castle">
+                            <h2>Bodrum Castle</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:30, isOpen: true })}>
-                        <h2>House of the Virgin Mary</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for House of the Virgin Mary">
+                            <h2>House of the Virgin Mary</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:32, isOpen: true })}>
-                        <h2>Düden Waterfalls</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Duden Waterfalls">
+                            <h2>Düden Waterfalls</h2>
+                        </button> 
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:34, isOpen: true })}>
-                        <h2>Gülhane Park</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Gulhane Park">
+                            <h2>Gülhane Park</h2>
+                         </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:36, isOpen: true })}>
-                        <h2>Topkapı Palace</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Tokapi Palace">
+                            <h2>Topkapı Palace</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:38, isOpen: true })}>
-                        <h2>Uzungöl</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Uzungol">
+                            <h2>Uzungöl</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:40, isOpen: true })}>
-                        <h2>Mevlana Museum</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Mevlana Museum">
+                            <h2>Mevlana Museum</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:42, isOpen: true })}>
-                        <h2>Taksim Square</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Taksim Square">
+                            <h2>Taksim Square</h2>
+                        </button> 
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:44, isOpen: true })}>
-                        <h2>Maiden's Tower</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Maiden's Tower">
+                            <h2>Maiden's Tower</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:46, isOpen: true })}>
-                        <h2>Aspendos</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Aspendos">
+                            <h2>Aspendos</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:48, isOpen: true })}>
-                        <h2>Damlataş Caves</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Dalatas Caves">
+                            <h2>Damlataş Caves</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:50, isOpen: true })}>
-                        <h2>Zilkale</h2>
+                       <button type="button" role="button"
+                        alt="opens gallery for Zilkale"> 
+                            <h2>Zilkale</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:52, isOpen: true })}>
-                        <h2>Kaunos</h2>
+                       <button type="button" role="button"
+                        alt="opens gallery for Kaunos">
+                            <h2>Kaunos</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:54, isOpen: true })}>
-                        <h2>İstiklal Avenue</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Istiklal Avenue">
+                            <h2>İstiklal Avenue</h2>
+                        </button> 
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:56, isOpen: true })}>
-                        <h2>St. Nicolas Church</h2>
+                       <button type="button" role="button"
+                        alt="opens gallery for St. Nicolas Church"> 
+                            <h2>St. Nicolas Church</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:58, isOpen: true })}>
-                        <h2>Ani Ruins</h2>
+                        <button type="button" role="button" 
+                        alt="opens gallery for Ani Ruins">
+                            <h2>Ani Ruins</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:60, isOpen: true })}>
-                        <h2>Amasya</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Amasya">
+                            <h2>Amasya</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:62, isOpen: true })}>
-                        <h2>Ishak Pasha Palace</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Ishak Pasha Palace">
+                            <h2>Ishak Pasha Palace</h2>
+                        </button> 
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:64, isOpen: true })}>
-                        <h2>Beylerbeyi Palace</h2>
+                        <button type="button" role="button"
+                        alt="opens gallery for Beylerbeyi Palace">
+                            <h2>Beylerbeyi Palace</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:66, isOpen: true })}>
-                        <h2>Selimiye Mosque</h2>
+                        <button type="button" role="button" 
+                        alt="opens gallery for Selimiye Mosque">
+                            <h2>Selimiye Mosque</h2>
+                        </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:68, isOpen: true })}>
-                        <h2>Yedigöller National Park</h2>
+                        <button type="button" role="button" 
+                        alt="opens gallery for Yedigoller National Park">
+                            <h2>Yedigöller National Park</h2>
+                        </button> 
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:70, isOpen: true })}>
-                        <h2>Saklıkent National Park</h2>
+                        <button type="button" role="button" 
+                        alt="opens gallery for Saklikent National Park">
+                            <h2>Saklıkent National Park</h2>
+                        </button>
                     </li>
                 </ul>
  

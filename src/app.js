@@ -4,6 +4,9 @@ import scrollTo from '../node_modules/gsap/ScrollToPlugin';
 import ScrollMagic from 'scrollmagic';
 import 'imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js';
 import 'imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js';
+import {findDOMNode} from 'react-dom';
+import ReactTooltip from 'react-tooltip';
+import crescentstar from './img/crescent-star.png';
 
 
 
@@ -21,6 +24,7 @@ import Footer from './components/footer/Footer';
 
 ReactDOM.render(
     <div className="App">
+        <a href="#top-of-page" alt="jump to the top of the page"><img id="crescent-star" src={crescentstar} height="40px" data-tip data-for="crescent-star-tooltip"></img></a>
         <Intro />
         <Geography />
         <Cities />
@@ -29,6 +33,9 @@ ReactDOM.render(
         <Cuisine />
         <Language />
         <Footer />
+        <ReactTooltip id="crescent-star-tooltip" place="right" type="light" effect="solid" delayShow={100}>
+                <span className="tooltip-span"><span id="sayfanin">Sayfanın üstü</span><br/>Top of page</span>
+        </ReactTooltip>
     </div>,
     document.getElementById('root')
 );
@@ -40,9 +47,10 @@ $(document).ready(function(){
     var hosGeldiniz = $('#hos-geldiniz');
     var welcome = $('#welcome');
     
-    TweenLite.from(hosGeldiniz, 0.7, {delay: 0.5, y: -30, opacity: 0, rotation: -10});
+    //Animation is laggy on page load
+    {/*TweenLite.from(hosGeldiniz, 0.7, {delay: 0.5, y: -30, opacity: 0, rotation: -10});
     
-    TweenLite.from(welcome, 0.7, {delay: 0.5, y: 30, opacity: 0, rotation: 10});
+    TweenLite.from(welcome, 0.7, {delay: 0.5, y: 30, opacity: 0, rotation: 10}); */}
     
     TweenMax.staggerFrom("#top-nav li", 0.7, { ease:  Power0.easeNone, delay: 1, opacity: 0, y:25, rotation: 10}, 0.15); 
     
@@ -126,22 +134,42 @@ $(document).ready(function(){
     })   
     
     /* ----- background fadeout scenes  -----*/
-    $('.scrollmagic-inner-fadeout').each(function(){
-        var chevronScene = new ScrollMagic.Scene({
-            triggerElement: this,
-            triggerHook: 0.55,
-            offset: 700,
-            reverse: true
+    
+    if($(window).height() > 500){
+        $('.scrollmagic-inner-fadeout').each(function(){
+            var chevronScene = new ScrollMagic.Scene({
+                triggerElement: this,
+                triggerHook: 0.55,
+                offset: 700,
+                reverse: true
+            })
+            .setClassToggle(this, 'fadeout')
+            /*
+            .addIndicators({
+                name: 'horizontal fade',
+                colorTrigger: 'yellow',
+                colorStart: '#75C695'
+            })*/
+            .addTo(controller);
+        })   
+    }else{
+        $('.scrollmagic-inner-fadeout').each(function(){
+            var chevronScene = new ScrollMagic.Scene({
+                triggerElement: this,
+                triggerHook: 0.35,
+                offset: 300,
+                reverse: true
+            })
+            .setClassToggle(this, 'fadeout')
+            
+            .addIndicators({
+                name: 'horizontal fade',
+                colorTrigger: 'yellow',
+                colorStart: '#75C695'
+            })
+            .addTo(controller);
         })
-        .setClassToggle(this, 'fadeout')
-        /*
-        .addIndicators({
-            name: 'horizontal fade',
-            colorTrigger: 'yellow',
-            colorStart: '#75C695'
-        })*/
-        .addTo(controller);
-    })   
+    }
    
     /*----- div fadeout animations -----*/
     var oneFadeoutScene = new ScrollMagic.Scene({
@@ -666,41 +694,8 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
     }
-/*======================= End ScrollMagic Animations =======================*/
+/*======================= End ScrollMagic Animations =======================*/  
+    /*----- Chevron links for .Fourteen-----*/        
     
-    /*----- Chevron links for .Fourteen-----*/
-
-    $('.Fourteen > .flex-container > .flex-item:nth-child(1)').on('click', function(){
-            window.location = "https://www.trivago.com/istanbul-32123/hotel"; 
-        });
-        
-    $('.Fourteen > .flex-container > .flex-item:nth-child(2)').on('click', function(){
-            window.location = "https://www.trivago.com/izmir-32103/hotel"; 
-        });
-        
-    $('.Fourteen > .flex-container > .flex-item:nth-child(3)').on('click', function(){
-            window.location = "https://www.trivago.com/antalya-32134/hotel"; 
-        });
-        
-    $('.Fourteen > .flex-container > .flex-item:nth-child(4)').on('click', function(){
-            window.location = "https://www.trivago.com/ankara-32205/hotel"; 
-        });
-        
-    $('.Fourteen .flex-item:nth-child(5)').on('click', function(){
-            window.location = "https://www.trivago.com/nevsehir-509044/hotel"; 
-        });
-        
-    $('.Fourteen .flex-item:nth-child(6)').on('click', function(){
-            window.location = "https://www.trivago.com/trabzon-32190/hotel/novotel-trabzon-950093"; 
-        });
-        
-    $('.Fourteen .flex-item:nth-child(7)').on('click', function(){
-            window.location = "https://www.trivago.com/bursa-509192/hotel";
-        });
-        
-    $('.Fourteen .flex-item:nth-child(8)').on('click', function(){
-            window.location = ("https://www.trivago.com/konya-509022/hotel");
-            
-    });
 });
 

@@ -79,8 +79,8 @@ export default class Cities extends Component {
         return(
         <div>
             <div className="Six" id="Six"> 
-                <h1 id="sehirler" className="text-center scrollmagic-header">En Büyük Şehirler</h1>
-                <h2 id="cities" className="text-center scrollmagic-header">Largest Cities</h2> 
+                <h1 id="sehirler" className="text-center scrollmagic-header" role="heading">En Büyük Şehirler</h1>
+                <h2 id="cities" className="text-center scrollmagic-header" role="heading">Largest Cities</h2> 
                 <ul id="istanbul-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
                     <li><span id="istanbul">İstanbul</span></li>
                     <li>Economic & Cultural Center</li>
