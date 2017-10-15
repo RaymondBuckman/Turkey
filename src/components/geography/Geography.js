@@ -9,8 +9,8 @@ import mediterranean1 from '../../img/mediterranean-1.jpg';
 import mediterranean2 from '../../img/mediterranean-3.jpg';
 import central1 from '../../img/central-1.jpg';
 import central2 from '../../img/central-3.jpg';
-import blacksea1 from '../../img/black-sea-2.jpg';
-import blacksea2 from '../../img/black-sea-4.jpg';
+import blacksea1 from '../../img/black-sea-3.jpg';
+import blacksea2 from '../../img/black-sea-1.jpg';
 import eastern1 from '../../img/eastern-2.jpg';
 import eastern2 from '../../img/eastern-1.jpg';
 import southeastern1 from '../../img/southeastern-5.jpg';
@@ -60,11 +60,11 @@ const captions = [
      "The Mediterranean region of Turkey is famous for its seemingly endless beaches. This beach lies just outside Antalya in the Southwest of Turkey.",
      "Göynük Canyon, near Antalya, Turkey",
      "The unique landscape within the Cappadocia region in central Turkey.",
-     "Ürgüp, Turkey.",
-     "The lush & green landscape around the Black Sea.",
-     "Artvin (pictured) is a city in northeastern Turkey about 19 miles inland from the Black Sea. It is located on a hill overlooking the Çoruh River near the Deriner Dam.",
-     "Lake Van",
-     "Ağrı Dağı (aka Mount Ararat). It's rumored that the remains of Noah's Ark are somewhere within the vicinity.",
+     "Ürgüp is a town and district of Nevşehir Province in the Central Anatolia region of Turkey. It is located in the historical region of Cappadocia, and near the cave Churches of Göreme. According to 2010 census, the population of the district is 34,372 of which 18,631 live in the town of Ürgüp. The district covers an area of 217 sq mi and the town lies at an average elevation of 3,422 ft. Cappadocia is one of Turkey’s largest wine-producing regions, with Urgup as its capital. Uphill from Hotel Surban, the renowned Turasan Winery supplies 60% of Cappadocia’s wines and offers free tours and tastings in its rock-carved wine cellar.",
+     "The Black Sea region's population is 8,439,213 based on the 2010 census. 4,137,166 people live in cities and 4,301,747 people in villages. This makes it the only one of the seven regions of Turkey in which more people live in rural rather than urban areas.",
+     "Artvin (pictured) is an attractive area of steep valleys carved by the Çoruh River system, surrounded by high mountains of Kaçkar, Karçal and Yalnızçam (up to 12795 ft) and forest with much national parkland including the Karagöl-Sahara, which contains the Şavşat and Borçka lakes. The weather in Artvin is very wet and mild at the coast, and as a result is heavily forested. This greenery runs from the top all the way down to the Black Sea coast. The rain turns to snow at higher altitudes, and the peaks are very cold in winter. The forests are home to brown bears and wolves.",
+     "Lake Van ('Van Gölü' in Turkish), the largest lake in Turkey, lies in the far east of that country in the provinces of Van and Bitlis. It is a saline soda lake, receiving water from numerous small streams that descend from the surrounding mountains. Lake Van is one of the world's largest endorheic lakes (having no outlet) - a volcanic eruption blocked the original outlet from the basin in ancient times. Although Lake Van has an altitude of 5,380 ft in a region with harsh winters, its high salinity prevents most of it from freezing, and even the shallow northern section freezes only rarely.",
+     "Mount Ararat ('Ağrı Dağı' in Turkish) is a snow-capped and dormant compound volcano in the extreme east of Turkey. It consists of two major volcanic cones: Greater Ararat, the highest peak in Turkey and the Armenian plateau with an elevation 16,854 ft; and Little Ararat, with an elevation of 12,782 ft. Despite the scholarly consensus that the 'mountains of Ararat' of the Book of Genesis do not refer to specifically Mt. Ararat, it has been widely accepted in Christianity as the resting place of Noah's Ark. It is the principal national symbol of Armenia and has been considered a sacred mountain by Armenians.",
      "Batman, Turkey. Yes....you read that correctly!",
      "Balıklıgöl, a religious site in Şanlıurfa, Turkey",    
 ];
@@ -94,7 +94,7 @@ export default class Geography extends Component {
                 <div className="Three-inner scrollmagic-inner-fadeout">
                     <div className="container">
                         <h1 id="cografya" className="text-center scrollmagic-header" role="heading">Coğrafya</h1>
-                        <h2 id="geography" className="text-center scrollmagic-header" role="heading">Geography</h2> 
+                        <h2 id="geography" className="text-center scrollmagic-header" role="heading" tabIndex="0">Geography</h2> 
                         <h1 id="uzungol" className="text-right scrollmagic-desc" >Uzungöl</h1>
                         <h2 id="uzungol-desc" className="text-right scrollmagic-desc">Black Sea Region</h2>
                     </div>
@@ -108,7 +108,7 @@ export default class Geography extends Component {
                 <div className="Four-inner scrollmagic-inner-fadeout">
                     <div className="container">
                             <h1 id="merkezi" className="text-center scrollmagic-header" role="heading">Dünyanın merkezi</h1>
-                            <h2 id="center" className="text-center scrollmagic-header" role="heading">The Center of the World</h2>
+                            <h2 id="center" className="text-center scrollmagic-header" role="heading" tabIndex="0">The Center of the World</h2>
                             <p id="ranging" className="col-xs-12 text-center scrollmagic-desc">Ranging from the Southeastern Balkans to the mountainous southern Caucasus in the east, Turkey sits at the junction of Europe & Asia. Turkey is both geographically & historically the center of the world. You'll find its fog-covered economic & historical center Istanbul in the Northwest, Antalya & its California-like surroundings in the Southwest, the mountainous Black Sea Region in the NorthEast with scenery resembling Lord of the Rings, &  the Kurdish region bordering Iran to the Southeast. In the center rests the capital Ankara along with the incredible & other-worldly Cappadocia region to the South.</p>  
                     </div>        
                 </div>

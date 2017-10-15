@@ -7,7 +7,7 @@ export default class Footer extends Component {
             <div className="Twenty-three">
                 <div className="container">
                     <h1 id="yolculuk" className="text-left scrollmagic-header">İyi Yolculuk!</h1>
-                    <h2 id="voyage" className="text-left scrollmagic-header">Bon voyage!</h2>
+                    <h2 id="voyage" className="text-left scrollmagic-header" tabIndex="0">Bon voyage!</h2>
                 </div>
                 <nav id="bottom-nav" className="navbar navbar-default visible-lg" data-spy="affix">
                         <div className="container">

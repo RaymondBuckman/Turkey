@@ -72,7 +72,7 @@ export default class Language extends Component {
                 <ul className="flex-container">
                     <li className="flex-item scrollmagic-info-squares">
                         <h1 id="dili" className="scrollmagic-header" role="heading">Türk Dili</h1>
-                        <h2 id="language" className="scrollmagic-header" role="heading">The Turkish Language</h2>
+                        <h2 id="language" className="scrollmagic-header" role="heading" tabIndex="0">The Turkish Language</h2>
                         <p>By now you've probably noticed some foreign words with odd looking characters. This is the Turkish language. Linguistically, Turkish is unrelated to English, Spanish, or any romance or germanic language. It has an SOV sentence structure (subjuct -> object -> verb), & is highly agglutinative, meaning that numerous suffixes are added on to words to expand their meaning. The longest word in Turkish has 70 letters with more than 10 suffixes! Don't worry though...words like this aren't used in daily speech & being fluent isn't required for tourists as English is fairly widely spoken in the tourist areas. Still, knowing a little Turkish goes a long way!</p>
                     </li>
                     <li alt="Book in turkish" className="flex-item scrollmagic-info-squares"></li>
@@ -85,7 +85,7 @@ export default class Language extends Component {
             <div className="Twenty">            
                 <div className="container">
                     <h1 id="alfabe" className="text-left scrollmagic-header" role="heading">Alfabe</h1>
-                    <h2 id="alphabet" className="text-left scrollmagic-header" role="heading">Alphabet</h2> 
+                    <h2 id="alphabet" className="text-left scrollmagic-header" role="heading" tabIndex="0">Alphabet</h2> 
                     <h2 className="col-lg-8 col-lg-offset-4 text-right scrollmagic-desc">
                         A	B	C	Ç	D	E	F	G	Ğ	H	I	İ	J	K	L	M	N	O	Ö	P	R	S	Ş	T	U	Ü	V	Y	Z
                         <br/><br/>
@@ -99,7 +99,7 @@ export default class Language extends Component {
             <div className="Twenty-one scrollmagic-div-fadeout">            
                 <div className="container">
                     <h1 id="cumleler" className="text-center scrollmagic-header" role="heading">Temel Cümleler</h1>
-                    <h2 id="phrases" className="text-center scrollmagic-header" role="heading">Basic Phrases</h2> 
+                    <h2 id="phrases" className="text-center scrollmagic-header" role="heading" tabIndex="0">Basic Phrases</h2> 
                     
                     <ul className="col-lg-12 col-lg-offset-0 text-left">
                         <li className="scrollmagic-vocab">Merhaba <span id="pronunciation">(mayor-ha-bah)</span>  - <span id="translation">Hello</span></li>
@@ -138,7 +138,7 @@ export default class Language extends Component {
                  <ul className="flex-container">
                     <li className="flex-item" >
                         <h1 id="konular" className="scrollmagic-header">Diğer Konular</h1>
-                        <h2 id="topics" className="scrollmagic-header">Other Topics</h2>
+                        <h2 id="topics" className="scrollmagic-header" tabIndex="0">Other Topics</h2>
                     </li>
                     <li className="flex-item scrollmagic-chevron" onClick={() => this.setState({photoIndex:0, isOpen: true})}>
                         <button type="button" alt="opens gallery for Pronunciation">
