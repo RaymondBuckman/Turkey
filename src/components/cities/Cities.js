@@ -57,8 +57,10 @@ var CityRow = React.createClass({
   componentWillMount: function(){
   	this.setTime();
   },
-    
+
+
   componentDidMount: function(){
+     {/*Determines how frequently the current time is retrieved*/}
   	 window.setInterval(function () {
       this.setTime();
     }.bind(this), 1000);
@@ -80,7 +82,7 @@ export default class Cities extends Component {
         <div>
             <div className="Six" id="Six"> 
                 <h1 id="sehirler" className="text-center scrollmagic-header" role="heading">En Büyük Şehirler</h1>
-                <h2 id="cities" className="text-center scrollmagic-header" role="heading">Largest Cities</h2> 
+                <h2 id="cities" className="text-center scrollmagic-header" role="heading" tabIndex="0">Largest Cities</h2> 
                 <ul id="istanbul-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
                     <li><span id="istanbul">İstanbul</span></li>
                     <li>Economic & Cultural Center</li>
