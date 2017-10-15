@@ -177,9 +177,10 @@ h2, p, a{
     @include secondary-font;
 }
 
-button, a {
+button, a, h2 {
     &:focus{
         outline: 2.5px solid $turquoise;
+        border-radius: 5px;
     }
 }
 
@@ -426,7 +427,7 @@ button, a {
 .Three{
     position: relative;
     height: 150vh;
-    background: url("img/cappadocia-1.jpg") $nrf 50% 50%;
+    background: url("img/cappadocia-5.jpg") $nrf 0% 10%;
     background-size: cover;
    
     
@@ -611,9 +612,10 @@ button, a {
         
         button{
             position: relative;
-            background: transparent;
+            background: rgba(0,0,0,0.5);
             border: 0px;
-            top: 200px;
+            border-radius: 5px;
+            top: 200px;  
         }
         
         h1{
@@ -730,7 +732,7 @@ button, a {
                 background-size: contain;
             }
             
-            h1, h2{
+            button{
                 left: 20px;
             }
         }
@@ -980,8 +982,7 @@ button, a {
             background: rgba(0,0,0,0.5);
             border: 0px;
             border-radius: 5px;
-            top: 240px;
-            
+            top: 240px;  
         }
         
         h2{
@@ -1114,7 +1115,7 @@ button, a {
             background: url("img/virgin-mary-house-mini.jpg") $nrs 50% 50%;
             background-size: cover;
             
-            h2{
+            button{
                 left: -20px;
             }
         }
