@@ -724,7 +724,7 @@ button, a, h2 {
         }
         
         &:nth-child(8){
-            background: url("img/southeastern-5.jpg") $nrs 50% 50%;
+            background: url("img/southeastern-mini.jpg") $nrs 50% 50%;
             background-size: cover;
             
             .map{
@@ -822,7 +822,7 @@ button, a, h2 {
     
     #istanbul-description{
         position: relative;
-        top: 45vh;
+        top: 40vh;
         color: $white;
         font-size: 1.8em;
         padding: 0px 10vw;
@@ -849,7 +849,7 @@ button, a, h2 {
     
     #ankara-description{
         position: relative;
-        top: 50vh;
+        top: 45vh;
         color: $white;
         font-size: 1.8em;
         padding: 0px 10vw;
@@ -876,7 +876,7 @@ button, a, h2 {
     
     #izmir-description{
         position: relative;
-        top: 50vh;
+        top: 45vh;
         color: $white;
         font-size: 1.8em;
         padding: 0px 10vw;
@@ -902,7 +902,7 @@ button, a, h2 {
     
     #bursa-description{
         position: relative;
-        top: 50vh;
+        top: 45vh;
         color: $white;
         font-size: 1.8em;
         padding: 0px 10vw;
@@ -928,7 +928,7 @@ button, a, h2 {
     
     #adana-description{
         position: relative;
-        top: 50vh;
+        top: 45vh;
         color: $white;
         font-size: 1.8em;
         padding: 0px 10vw;
