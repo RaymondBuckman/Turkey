@@ -88,7 +88,9 @@ export default class Cities extends Component {
                     <li>Economic & Cultural Center</li>
                     <li>Location: Marmara Region</li>
                     <li>Population: 14.8 million</li>
-                    <li>Current time: <CityRow name="CityRow" UTCOffset="3"/></li>
+                    <li id="istanbul-weather"></li> 
+                    <li id="istanbul-wind"></li>
+                    <li><CityRow name="CityRow" UTCOffset="3"/></li>
                 </ul>
             </div>
             <div className="Seven"> 
@@ -97,7 +99,9 @@ export default class Cities extends Component {
                     <li>Capital City</li>
                     <li>Location: Central Anatolia</li>
                     <li>Population: 5.3 million</li>
-                    <li>Current time: <CityRow name="CityRow" UTCOffset="3"/></li>
+                    <li id="ankara-weather"></li> 
+                    <li id="ankara-wind"></li>
+                    <li><CityRow name="CityRow" UTCOffset="3"/></li>
                 </ul>
             </div>
             
@@ -107,7 +111,9 @@ export default class Cities extends Component {
                     <li>Crusiseline hotspot</li>
                     <li>Location: Aegean Region</li>
                     <li>Population: 2.8 million</li>
-                    <li>Current time: <CityRow name="CityRow" UTCOffset="3"/></li>
+                    <li id="izmir-weather"></li> 
+                    <li id="izmir-wind"></li>
+                    <li><CityRow name="CityRow" UTCOffset="3"/></li>
                 </ul>
             </div>
             
@@ -117,7 +123,9 @@ export default class Cities extends Component {
                     <li>~300 Year Capital of the Ottoman Empire</li>
                     <li>Location: Marmara Region</li>
                     <li>Population: 2.3 million</li>
-                    <li>Current time: <CityRow name="CityRow" UTCOffset="3"/></li>
+                    <li id="bursa-weather"></li> 
+                    <li id="bursa-wind"></li>
+                    <li><CityRow name="CityRow" UTCOffset="3"/></li>
                 </ul>
             </div>
             
@@ -127,7 +135,9 @@ export default class Cities extends Component {
                     <li>Mediterranean Capital</li>
                     <li>Location: Mediterranean Region</li>
                     <li>Population: 1.7 million</li>
-                    <li>Current time: <CityRow name="CityRow" UTCOffset="3"/></li>
+                    <li id="adana-weather"></li> 
+                    <li id="adana-wind"></li>
+                    <li><CityRow name="CityRow" UTCOffset="3"/></li>
                 </ul>
             </div>
         </div>
