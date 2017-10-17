@@ -177,9 +177,16 @@ h2, p, a{
     @include secondary-font;
 }
 
-button, a, h2 {
+button, a {
     &:focus{
         outline: 2.5px solid $turquoise;
+        border-radius: 5px;
+    }
+}
+
+h2 {
+    &:focus{
+        outline: none;
         border-radius: 5px;
     }
 }
@@ -694,7 +701,7 @@ button, a, h2 {
         }
         
         &:nth-child(5){
-            background: url("img/cappadocia-2.jpg") $nrs 50% 50%;
+            background: url("img/central-mini.jpg") $nrs 50% 50%;
             background-size: cover;
             
             .map{
@@ -724,7 +731,7 @@ button, a, h2 {
         }
         
         &:nth-child(8){
-            background: url("img/southeastern-5.jpg") $nrs 50% 50%;
+            background: url("img/southeastern-mini.jpg") $nrs 50% 50%;
             background-size: cover;
             
             .map{
@@ -822,7 +829,7 @@ button, a, h2 {
     
     #istanbul-description{
         position: relative;
-        top: 45vh;
+        top: 40vh;
         color: $white;
         font-size: 1.8em;
         padding: 0px 10vw;
@@ -849,7 +856,7 @@ button, a, h2 {
     
     #ankara-description{
         position: relative;
-        top: 50vh;
+        top: 45vh;
         color: $white;
         font-size: 1.8em;
         padding: 0px 10vw;
@@ -876,7 +883,7 @@ button, a, h2 {
     
     #izmir-description{
         position: relative;
-        top: 50vh;
+        top: 45vh;
         color: $white;
         font-size: 1.8em;
         padding: 0px 10vw;
@@ -891,7 +898,7 @@ button, a, h2 {
 .Nine{
     position: relative; 
     height: 120vh;
-    background: url("./img/bursa-1.jpg") $nrf 50% 40%;
+    background: url("./img/bursa-1.jpg") $nrf 100% 40%;
     background-size: 100vw $nine-height; //parallax-friendly replacement for "cover"
     transition: background-image 0.5s ease-in-out;
     #bursa{
@@ -902,7 +909,7 @@ button, a, h2 {
     
     #bursa-description{
         position: relative;
-        top: 50vh;
+        top: 45vh;
         color: $white;
         font-size: 1.8em;
         padding: 0px 10vw;
@@ -928,7 +935,7 @@ button, a, h2 {
     
     #adana-description{
         position: relative;
-        top: 50vh;
+        top: 45vh;
         color: $white;
         font-size: 1.8em;
         padding: 0px 10vw;
