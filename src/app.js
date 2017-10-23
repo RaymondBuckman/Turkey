@@ -1,4 +1,5 @@
 const css = require('./app.scss');
+require('./img/favicon.ico');
 import {TweenMax, Power2, TimelineLite} from "gsap";
 import scrollTo from '../node_modules/gsap/ScrollToPlugin';
 import ScrollMagic from 'scrollmagic';
