@@ -32,14 +32,13 @@ module.exports={
                 use: 'babel-loader' //translates JSX to javascript
             },
             {
-                test: /\.(jpe?g|png|ico|gif|svg)$/i, //checks for all image types
-                use: [
-                    //creates a production version of the file path
-                    'file-loader?name=[name].[ext]',
-                    //'file-loader?name=[name].[ext]&outputPath=images/',
-                    'image-webpack-loader'
-                ] 
+                test: /\.jpe?g$|\.ico$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/,
+                loader: 'file-loader?name=[name].[ext]'  // <-- retain original file name
                 
+            },
+            {
+                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                loader: 'file?name=public/fonts/[name].[ext]'
             }
             
       ]  
@@ -54,12 +53,13 @@ module.exports={
     },
     plugins:[
        new HtmlWebpackPlugin({
-           title: 'Turkiye',
+           title: 'Project',
            minify: {
                collapseWhitespace: true
            },
            hash: true, 
            template: './src/index.html',
+           favicon: 'src/images/favicon.ico',
        }),
         new ExtractTextPlugin({
             filename: "app.css",
