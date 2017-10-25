@@ -14,6 +14,7 @@ import crescentstar from './img/crescent-star.png';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Sidebar from './components/sidebar/Sidebar';
 import Intro from './components/intro/Intro';
 import Geography from './components/geography/Geography';
 import Cities from './components/cities/Cities';
@@ -25,7 +26,7 @@ import Footer from './components/footer/Footer';
 
 ReactDOM.render(
     <div className="App">
-        <a href="#top-of-page" alt="jump to the top of the page"><img id="crescent-star" src={crescentstar} height="40px" data-tip data-for="crescent-star-tooltip"></img></a>
+        <Sidebar />
         <Intro />
         <Geography />
         <Cities />
@@ -34,9 +35,6 @@ ReactDOM.render(
         <Cuisine />
         <Language />
         <Footer />
-        <ReactTooltip id="crescent-star-tooltip" place="right" type="light" effect="solid" delayShow={100}>
-                <span className="tooltip-span"><span id="sayfanin">Sayfanın üstü</span><br/>Top of page</span>
-        </ReactTooltip>
     </div>,
     document.getElementById('root')
 );
@@ -64,7 +62,21 @@ $(document).ready(function(){
         duration: '60%'
     })
     .setPin('#top-nav')
-    .addTo(controller);    
+    .addTo(controller);
+    
+    var pinSideNavTween = TweenMax.from("#sidebar", 0.5, {
+        x: "+=100px",
+        autoRound:false, 
+        ease:Power1.ease0ut
+    });
+
+    var pinSideNavScene = new ScrollMagic.Scene({
+        triggerElement: "#hos-geldiniz", 
+        triggerHook: 0.1
+    })
+    .setTween(pinSideNavTween)
+    //.addIndicators()
+    .addTo(controller);
     
     var bottomNavTween = TweenMax.staggerFrom("#bottom-nav li", 0.7, { ease:  Power0.easeNone, delay: 0.3, opacity: 0, y:-25, rotation: 10}, 0.15);
     
