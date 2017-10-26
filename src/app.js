@@ -54,28 +54,33 @@ $(document).ready(function(){
     TweenMax.staggerFrom("#top-nav li", 0.7, { ease:  Power0.easeNone, delay: 1, opacity: 0, y:25, rotation: 10}, 0.15); 
     
     //Scrollmagic controller
-    var controller = new ScrollMagic.Controller();    
+    var controller = new ScrollMagic.Controller();   
+    
+    var pinTopNavTween = TweenMax.to("#top-nav", 0.3, {
+        y: "-=50px",
+        autoRound:false, 
+        ease:Power0.ease0ut
+    });
     
     var pinTopNavScene = new ScrollMagic.Scene({
-        triggerElement: '#top-nav',
-        triggerHook: 0,
-        duration: '60%'
+        triggerElement: '#hos-geldiniz',
+        triggerHook: 0.3
     })
-    .setPin('#top-nav')
+    .setTween(pinTopNavTween)
     .addTo(controller);
-    
+
     var pinSideNavTween = TweenMax.from("#sidebar", 0.5, {
         x: "+=100px",
         autoRound:false, 
-        ease:Power1.ease0ut
+        ease:Power0.ease0ut
     });
 
     var pinSideNavScene = new ScrollMagic.Scene({
         triggerElement: "#hos-geldiniz", 
-        triggerHook: 0.1
+        triggerHook: 0.3,
+        reverse: true
     })
     .setTween(pinSideNavTween)
-    //.addIndicators()
     .addTo(controller);
     
     var bottomNavTween = TweenMax.staggerFrom("#bottom-nav li", 0.7, { ease:  Power0.easeNone, delay: 0.3, opacity: 0, y:-25, rotation: 10}, 0.15);
@@ -85,14 +90,80 @@ $(document).ready(function(){
         triggerHook: .95,
         reverse: false
     })
-    
     .setTween(bottomNavTween)
-    /*
-    .addIndicators({
-        name:"bottom-nav",
-        colorTrigger: 'green',
-        colorStart: '#FFF'
-    })*/
+    .addTo(controller); 
+    
+    var heightOfTwo = $('.Three').offset().top - $('.Two').offset().top;
+    var heightOfFive = $('.Six').offset().top - $('.Five').offset().top;
+    var heightOfEightAndNine = $('.Ten').offset().top - $('.Eight').offset().top;
+    var heightOfEleven = $('.Twelve').offset().top - $('.Eleven').offset().top;
+    var heightOfFourteen = $('.Fifteen').offset().top - $('.Fourteen').offset().top;
+    var heightOfSixteen = $('.Seventeen').offset().top - $('.Sixteen').offset().top;
+    var heightOfNineteen = $('.Twenty').offset().top - $('.Nineteen').offset().top;
+    var heightOfTwentyTwo = $('.Twenty-three').offset().top - $('.Twenty-two').offset().top;
+    
+    var changeIconColorScene1 = new ScrollMagic.Scene({
+        triggerElement: '.Two',
+        triggerHook: 0.42,
+        duration: heightOfTwo
+    })
+    .setClassToggle('#sidebar li *', 'black-icons')
+    .addTo(controller);
+    
+    var changeIconColorScene2 = new ScrollMagic.Scene({
+        triggerElement: '.Five',
+        triggerHook: 0.42,
+        duration: heightOfFive
+    })
+    .setClassToggle('#sidebar li *', 'black-icons')
+    .addTo(controller);
+    
+    var changeIconColorScene3 = new ScrollMagic.Scene({
+        triggerElement: '.Eight',
+        triggerHook: 0.42,
+        duration: heightOfEightAndNine
+    })
+    .setClassToggle('#sidebar li *', 'black-icons')
+    .addTo(controller);
+    
+    var changeIconColorScene4 = new ScrollMagic.Scene({
+        triggerElement: '.Eleven',
+        triggerHook: 0.42,
+        duration: heightOfEleven
+    })
+    .setClassToggle('#sidebar li *', 'black-icons')
+    .addTo(controller);
+    
+    var changeIconColorScene5 = new ScrollMagic.Scene({
+        triggerElement: '.Fourteen',
+        triggerHook: 0.42,
+        duration: heightOfFourteen
+    })
+    .setClassToggle('#sidebar li *', 'black-icons')
+    .addTo(controller);
+    
+    var changeIconColorScene6 = new ScrollMagic.Scene({
+        triggerElement: '.Sixteen',
+        triggerHook: 0.42,
+        duration: heightOfSixteen
+    })
+    .setClassToggle('#sidebar li *', 'black-icons')
+    .addTo(controller);
+    
+    var changeIconColorScene7 = new ScrollMagic.Scene({
+        triggerElement: '.Nineteen',
+        triggerHook: 0.42,
+        duration: heightOfNineteen
+    })
+    .setClassToggle('#sidebar li *', 'black-icons')
+    .addTo(controller);
+    
+     var changeIconColorScene7 = new ScrollMagic.Scene({
+        triggerElement: '.Twenty-two',
+        triggerHook: 0.42,
+        duration: heightOfTwentyTwo
+    })
+    .setClassToggle('#sidebar li *', 'black-icons')
     .addTo(controller);
     
     /*----- header animations -----*/
@@ -186,9 +257,8 @@ $(document).ready(function(){
    
     /*----- div fadeout animations -----*/
     var oneFadeoutScene = new ScrollMagic.Scene({
-        triggerElement: '.One',
+        triggerElement: '.Two',
         triggerHook: 0.1,
-        offset: 850,
         reverse: true
     })
     .setClassToggle('.One', 'fadeout')
@@ -201,9 +271,8 @@ $(document).ready(function(){
     .addTo(controller);
     
     var fourinnerFadeoutScene = new ScrollMagic.Scene({
-        triggerElement: '.Four-inner',
-        triggerHook: 0.70,
-        offset: 700,
+        triggerElement: '.Five',
+        triggerHook: 0.1,
         reverse: true
     })
     .setClassToggle('.Four-inner', 'fadeout')
@@ -217,9 +286,8 @@ $(document).ready(function(){
     .addTo(controller);
     
     var fourFadeoutScene = new ScrollMagic.Scene({
-        triggerElement: '.Four',
+        triggerElement: '.Five',
         triggerHook: 0.1,
-        offset: 700,
         reverse: true
     })
     .setClassToggle('.Four', 'fadeout')
@@ -234,9 +302,8 @@ $(document).ready(function(){
     
     
     var tenFadeoutScene = new ScrollMagic.Scene({
-        triggerElement: '.Ten',
+        triggerElement: '.Eleven',
         triggerHook: 0.1,
-        offset: 850,
         reverse: true
     })
     .setClassToggle('.Ten', 'fadeout')
@@ -250,9 +317,8 @@ $(document).ready(function(){
     .addTo(controller);
     
     var thirteenFadeoutScene = new ScrollMagic.Scene({
-        triggerElement: '.Thirteen',
+        triggerElement: '.Fourteen',
         triggerHook: 0.1,
-        offset: 1200,
         reverse: true
     })
     .setClassToggle('.Thirteen', 'fadeout')
@@ -266,9 +332,8 @@ $(document).ready(function(){
     .addTo(controller);
     
     var fifteenFadeoutScene = new ScrollMagic.Scene({
-        triggerElement: '.Fifteen',
+        triggerElement: '.Sixteen',
         triggerHook: 0.1,
-        offset: 1300,
         reverse: true
     })
     .setClassToggle('.Fifteen', 'fadeout')
@@ -282,9 +347,8 @@ $(document).ready(function(){
     .addTo(controller);
     
     var eighteenFadeoutScene = new ScrollMagic.Scene({
-        triggerElement: '.Eighteen',
+        triggerElement: '.Nineteen',
         triggerHook: 0.1,
-        offset: 1300,
         reverse: true
     })
     .setClassToggle('.Eighteen', 'fadeout')

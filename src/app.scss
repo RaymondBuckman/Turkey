@@ -198,47 +198,52 @@ h2 {
     overflow-x: hidden;
 }
 
-.tooltip-span{
-    color: $red;
-    @include secondary-font;
-    font-size: 1em;
-}
-
-#sayfanin{
-    color: $turquoise;
-    @include main-font;
-    font-size: 1.2em;
-}
-
 #sidebar{
     position: fixed;
     top: 0;
     right: 0;
-    //background-color: rgba(0,0,0,0.7);
-    padding: 10px;
-    margin-top: 40px;
-    line-height: 50px;
+    //background-color: rgba(0,0,0,0.5);
+    //border-left: solid 1px $white;
+    padding: 5px 15px 5px 0px;
+    margin-top: 10px;
+    line-height: 7vh;
     list-style-type: none;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     z-index: 99;
     
     li{
-        &:nth-child(n+2){
-            filter: invert(100%);
-        }
-        
         a{
-            
-            opacity: 0.7;
+            &:active, &:focus{
+                outline: none !important;
+            }
+        }
+        a > *{
+            filter: invert(100%);
+            opacity: 0.5;
             transition: all 0.3s ease-in;
             
             &:hover{
                 opacity: 1;
-                transform: scale(1.1);
+                transform: scale(1.4) translateX(-5px);
             }
+            
         }
     }
+}
+
+.tooltip-span{
+    color: $red;
+    @include secondary-font;
+    font-size: 1.2em;
+}
+
+.tooltip-arrow{
+    color: $turquoise;
+}
+
+.black-icons{
+    filter: invert(0%) !important;
 }
 
 .One{
@@ -258,7 +263,7 @@ h2 {
         animation-iteration-count: 1; 
         
         .navbar{
-            position: relative;
+            position: fixed;
             //top: -25px;
             height: 40px;
             width: 100vw;
@@ -316,7 +321,7 @@ h2 {
         
     #hos-geldiniz{
         position: relative;
-        top: 5vh; //used to be 65vh
+        top: 70vh; //used to be 65vh
         color: $white;
         @include main-font;
         font-size: $main-header-size;
@@ -326,7 +331,7 @@ h2 {
     
     #welcome{
         position: relative;
-        top: 5vh; //used to be 65vh
+        top: 70vh; //used to be 65vh
         color: $white;
         text-shadow: 4px 4px 2px rgba(200, 0, 0, 0.5);
         @include secondary-font;
