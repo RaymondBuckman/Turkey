@@ -16,6 +16,7 @@ export default class Footer extends Component {
                                 <li><a href="http://www.turkishlanguage.co.uk/" target="_blank" role="link">Detailed Language Info</a></li>
                                 <li><a href="http://www.turkishculture.org/" target="_blank" role="link">Culture</a></li>
                                 <li><a href="https://www.themuse.com/advice/6-tips-for-traveling-to-turkey" target="_blank" role="link">Travel Tips</a></li>
+                                <li><a href="https://icons8.com" target="_blank">Icon pack by Icons8</a></li>
                             </ul>
                         </div>
                 </nav>
