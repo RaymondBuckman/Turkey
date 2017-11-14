@@ -80,7 +80,7 @@ export default class Cities extends Component {
     render() {
         return(
         <div>
-            <div className="Six" id="Six"> 
+            <div className="Cities-1" id="Cities-1"> 
                 <h1 id="sehirler" className="text-center scrollmagic-header" role="heading">En Büyük Şehirler</h1>
                 <h2 id="cities" className="text-center scrollmagic-header" role="heading" tabIndex="0">Largest Cities</h2> 
                 <ul id="istanbul-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
@@ -93,7 +93,7 @@ export default class Cities extends Component {
                     <li><CityRow name="CityRow" UTCOffset="3"/></li>
                 </ul>
             </div>
-            <div className="Seven"> 
+            <div className="Cities-2"> 
                 <ul id="ankara-description" className="col-lg-6 col-lg-offset-0 text-left scrollmagic-desc">
                     <li><span id="ankara">Ankara</span></li>
                     <li>Capital City</li>
@@ -105,7 +105,7 @@ export default class Cities extends Component {
                 </ul>
             </div>
             
-            <div className="Eight"> 
+            <div className="Cities-3"> 
                 <ul id="izmir-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
                     <li><span id="izmir">İzmir</span></li>
                     <li>Crusiseline hotspot</li>
@@ -117,7 +117,7 @@ export default class Cities extends Component {
                 </ul>
             </div>
             
-            <div className="Nine">
+            <div className="Cities-4">
                 <ul id="bursa-description" className="col-lg-6 col-lg-offset-0 text-left scrollmagic-desc">
                     <li><span id="bursa">Bursa</span></li>
                     <li>~300 Year Capital of the Ottoman Empire</li>
@@ -129,7 +129,7 @@ export default class Cities extends Component {
                 </ul>
             </div>
             
-            <div className="Ten scrollmagic-div-fadeout">
+            <div className="Cities-5 scrollmagic-div-fadeout">
                 <ul id="adana-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
                     <li><span id="adana">Adana</span></li>
                     <li>Mediterranean Capital</li>
