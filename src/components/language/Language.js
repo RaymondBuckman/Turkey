@@ -68,7 +68,7 @@ export default class Language extends Component {
         
         return(
         <div>
-            <div className="Nineteen" id="Nineteen">
+            <div className="Language-1" id="Language-1">
                 <ul className="flex-container">
                     <li className="flex-item scrollmagic-info-squares">
                         <h1 id="dili" className="scrollmagic-header" role="heading">Türk Dili</h1>
@@ -82,7 +82,7 @@ export default class Language extends Component {
                     <li alt="Airport signs in turkish" className="flex-item scrollmagic-info-squares"></li>
                 </ul>
             </div>
-            <div className="Twenty">            
+            <div className="Language-2">            
                 <div className="container">
                     <h1 id="alfabe" className="text-left scrollmagic-header" role="heading">Alfabe</h1>
                     <h2 id="alphabet" className="text-left scrollmagic-header" role="heading" tabIndex="0">Alphabet</h2> 
@@ -96,7 +96,7 @@ export default class Language extends Component {
                     </h2>
                 </div>
             </div>
-            <div className="Twenty-one scrollmagic-div-fadeout">            
+            <div className="Language-3 scrollmagic-div-fadeout">            
                 <div className="container">
                     <h1 id="cumleler" className="text-center scrollmagic-header" role="heading">Temel Cümleler</h1>
                     <h2 id="phrases" className="text-center scrollmagic-header" role="heading" tabIndex="0">Basic Phrases</h2> 
@@ -134,7 +134,7 @@ export default class Language extends Component {
                     </ul>
                 </div>
             </div>
-            <div className="Twenty-two">
+            <div className="Language-4">
                  <ul className="flex-container">
                     <li className="flex-item" >
                         <h1 id="konular" className="scrollmagic-header">Diğer Konular</h1>
