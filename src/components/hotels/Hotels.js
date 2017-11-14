@@ -5,8 +5,8 @@ export default class Hotels extends Component {
     render() {
         return(
         <div>
-            <div className="Twelve" id="Twelve">            
-                <div className="Twelve-inner scrollmagic-inner-fadeout">           
+            <div className="Hotels-1" id="Hotels-1">            
+                <div className="Hotels-1-inner scrollmagic-inner-fadeout">           
                     <div className="container">
                         <h1 id="oteleler" className="text-center scrollmagic-header" role="heading">Oteleler</h1>
                         <h2 id="hotels" className="text-center scrollmagic-header" role="heading" tabIndex="0">Hotels</h2> 
@@ -20,8 +20,8 @@ export default class Hotels extends Component {
                 </div>
             </div>
             
-            <div className="Thirteen scrollmagic-div-fadeout">           
-                <div className="Thirteen-inner scrollmagic-inner-fadeout">         
+            <div className="Hotels-2 scrollmagic-div-fadeout">           
+                <div className="Hotels-2-inner scrollmagic-inner-fadeout">         
                     <div className="container">
                         <h1 id="kayakapi1" className="text-right scrollmagic-desc">Kayakapi Hotel, Ürgüp</h1>
                         <h2 id="kayakapi1-desc" className="text-right scrollmagic-desc">Accomadations</h2>
@@ -33,7 +33,7 @@ export default class Hotels extends Component {
                 </div>
             </div>
             
-            <div className="Fourteen">
+            <div className="Hotels-3">
                 <ul className="flex-container">
                     <li className="flex-item scrollmagic-chevron">
                         <a href="https://www.trivago.com/istanbul-32123/hotel" target="_blank" 

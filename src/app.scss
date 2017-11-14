@@ -30,11 +30,11 @@ $six-width: 100vh / 0.5624029000517866;
 $seven-height: 100vw * .5625;
 $eight-height: 100vw * .6666667;
 $nine-height: 100vw * 0.5632124352331606;
-$thirteen-height: 100vw * .7495;
-$fifteen-height: 100vw *.75;
-$seventeen-inner-height: 100vw * .75;
-$eighteen-height: 100vw * .5624;
-$twenty-height: 100vw * .625;
+$hotels-2-height: 100vw * .7495;
+$cuisine-1-height: 100vw *.75;
+$cuisine-3-inner-height: 100vw * .75;
+$cuisine-4-height: 100vw * .5624;
+$language-2-height: 100vw * .625;
 
 //keyframes
 @keyframes flag-background{
@@ -219,8 +219,8 @@ h2 {
             }
         }
         a > *{
-            filter: invert(100%);
-            opacity: 0.5;
+            filter: drop-shadow(2px 2px 1px #000);
+            opacity: 0.6;
             transition: all 0.3s ease-in;
             
             &:hover{
@@ -230,6 +230,10 @@ h2 {
             
         }
     }
+}
+
+.white-icons{
+    filter: invert(100%) !important;
 }
 
 .tooltip-span{
@@ -242,18 +246,14 @@ h2 {
     color: $turquoise;
 }
 
-.black-icons{
-    filter: invert(0%) !important;
-}
-
-.One{
+.Intro-1{
     position: relative;
     height: 110vh;
     background: url("./img/turkey-flag-1.jpg") $nrf 50% 50%;
     background-size: cover;
     z-index: 4;
     
-    .One-inner{
+    .Intro-1-inner{
         position: relative;
         height: 130vh;
         background: url("./img/maidens-tower-1.jpg") $nrf 50% 50%;
@@ -339,7 +339,7 @@ h2 {
     }
 }
 
-.Two {
+.Intro-2 {
     position: relative;
     top: 0vh;
     height: auto;
@@ -453,14 +453,14 @@ h2 {
     }
 }
 
-.Three{
+.Geography-1{
     position: relative;
     height: 150vh;
     background: url("img/cappadocia-5.jpg") $nrf 0% 10%;
     background-size: cover;
    
     
-    .Three-inner{
+    .Geography-1-inner{
         position: relative;
         height: 150vh;
         background: url("img/uzungol-1.jpg") $nrf 50% 50%;
@@ -520,13 +520,13 @@ h2 {
     }
 }
 
-.Four{
+.Geography-2{
     position: relative;
     height: 110vh;
     background: url("./img/ataturk-1.jpg") $nrf 50% 50%;
     background-size: cover;
     
-    .Four-inner{
+    .Geography-2-inner{
         position: relative;
         height: 110vh;
         background: url("./img/map-3.png") $nrs 50% 50%;
@@ -594,7 +594,7 @@ h2 {
 }
 
 
-.Five{
+.Geography-3{
     position: relative; 
     height: auto;
     background: url("img/white-3.jpg") $nrf 50% 50%;
@@ -812,7 +812,7 @@ h2 {
     }
 }
 
-.Six{
+.Cities-1{
     position: relative; 
     height: 120vh;
     background: url("./img/istanbul-2.jpg") $nrf 50% 40%;
@@ -863,7 +863,7 @@ h2 {
     }   
 }
 
-.Seven{
+.Cities-2{
     position: relative; 
     height: 120vh;
     background: url("./img/ankara-1.jpg") $nrf 50% 0%;
@@ -891,7 +891,7 @@ h2 {
 }
 
 
-.Eight{
+.Cities-3{
     position: relative; 
     height: 120vh;
     background: url("./img/izmir-1.jpg") $nrf 50% 100%;
@@ -917,7 +917,7 @@ h2 {
     }
 }
 
-.Nine{
+.Cities-4{
     position: relative; 
     height: 120vh;
     background: url("./img/bursa-1.jpg") $nrf 100% 40%;
@@ -943,7 +943,7 @@ h2 {
     }
 }
 
-.Ten{
+.Cities-5{
     position: relative; 
     height: 120vh;
     background: url("./img/adana-1.jpg") $nrf 50% 40%;
@@ -969,7 +969,7 @@ h2 {
     }
 }    
 
-.Eleven{
+.Sights-1{
     position: relative; 
     height: auto;
     background: url("./img/white-3.jpg") $nrf center;
@@ -1267,13 +1267,13 @@ h2 {
     }
 }
 
-.Twelve{
+.Hotels-1{
     position: relative;
     height: 170vh;
     background: url("img/hotel-3.jpg") $nrf 50% 50%;
     background-size: cover;
     
-    .Twelve-inner{
+    .Hotels-1-inner{
         position: relative;
         height: 170vh;
         background: url("img/hotel-1.jpg") $nrf 50% 50%;
@@ -1334,13 +1334,13 @@ h2 {
     }
 }
 
-.Thirteen{
+.Hotels-2{
     position: relative;
     height: 170vh;
     background: url("img/hotel-5.jpg") $nrf 50% 50%;
-    background-size: 100vw $thirteen-height;
+    background-size: 100vw $hotels-2-height;
     
-    .Thirteen-inner{
+    .Hotels-2-inner{
         position: relative;
         height: 170vh;
         background: url("img/hotel-4.jpg") $nrf 50% 50%;
@@ -1376,7 +1376,7 @@ h2 {
     }
 }
 
-.Fourteen {
+.Hotels-3 {
     position: relative;
     top: 0vh;
     height: auto;
@@ -1545,13 +1545,13 @@ h2 {
     }
 }
 
-.Fifteen{
+.Cuisine-1{
     position: relative;
     height: 180vh;
     background: url("img/cuisine-2.jpg") $nrf 50% 50%;
-    background-size: 100vw $fifteen-height;
+    background-size: 100vw $cuisine-1-height;
     
-    .Fifteen-inner{
+    .Cuisine-1-inner{
         position: relative;
         height: 170vh;
         background: url("img/cuisine-1.jpg") $nrf 50% 50%;
@@ -1615,11 +1615,11 @@ h2 {
     }
 }
 
-#Fifteen > div.container{
+#Cuisine-1 > div.container{
     height: 0vh;
 }
 
-.Sixteen {
+.Cuisine-2 {
     position: relative;
     top: 0vh;
     height: auto;
@@ -1739,17 +1739,17 @@ h2 {
     }
 }
 
-.Seventeen{
+.Cuisine-3{
     position: relative;
     height: 170vh;
     background: url("img/cuisine-7.jpg") $nrf 50% 50%;
     background-size: cover;
     
-    .Seventeen-inner{
+    .Cuisine-3-inner{
         position: relative;
         height: 170vh;
         background: url("img/cuisine-6.jpg") $nrf 50% 50%;
-        background-size: 100vw $seventeen-inner-height;
+        background-size: 100vw $cuisine-3-inner-height;
     }
     
     #delight{
@@ -1786,13 +1786,13 @@ h2 {
 }
 
 
-.Eighteen{
+.Cuisine-4{
     position: relative;
     height: 180vh;
     background: url("img/cuisine-9.jpg") $nrf 50% 50%;
-    background-size: 100vw $eighteen-height;
+    background-size: 100vw $cuisine-4-height;
     
-    .Eighteen-inner{
+    .Cuisine-4-inner{
         position: relative;
         height: 180vh;
         background: url("img/cuisine-8.jpg") $nrf 50% 50%;
@@ -1832,7 +1832,7 @@ h2 {
     }
 }
 
-.Nineteen {
+.Language-1 {
     position: relative;
     top: 0vh;
     height: auto;
@@ -1953,11 +1953,11 @@ h2 {
     }
 }
 
-.Twenty{
+.Language-2{
     position: relative;
     height: 110vh;
     background: url("img/ataturk-2.jpg") $nrf 50% 50%;
-    background-size: 100vw $twenty-height;
+    background-size: 100vw $language-2-height;
     
     #alfabe{
         position: relative;
@@ -2003,7 +2003,7 @@ h2 {
     }
 }
 
-.Twenty-one{
+.Language-3{
     position: relative;
     height: 115vh;
     background: url("img/red-1.jpg") $nrf 50% 50%;
@@ -2051,7 +2051,7 @@ h2 {
     }
 }
 
-.Twenty-two{
+.Language-4{
     position: relative; 
     height: auto;
     background: url("./img/white-3.jpg") $nrf center;
@@ -2193,7 +2193,7 @@ h2 {
     }
 }
 
-.Twenty-three{
+.Footer-1{
     position: relative;
     height: 100vh;
     background: url("./img/istanbul-3.jpg") $nrf center;
@@ -2378,11 +2378,11 @@ h2 {
 
 /*----- Reactive Screen Breakpoints -----*/
 @include for-small-phone-portrait{
-    .One{
+    .Intro-1{
         background: url("./img/turkey-flag-1.jpg") $nrs 50% 50%;
         background-size: cover;
         
-        .One-inner{
+        .Intro-1-inner{
             background: url("./img/maidens-tower-1.jpg") $nrs 50% 50%;
             background-size: cover;
             
@@ -2398,7 +2398,7 @@ h2 {
         }        
     }
     
-    .Two{
+    .Intro-2{
         background: url("./img/white-3.jpg") $nrs center;
         background-size: cover;
         
@@ -2465,13 +2465,13 @@ h2 {
         }
     }
     
-    .Three{
+    .Geography-1{
         height: 150vh;
         background: url("img/cappadocia-1.jpg") $nrs 50% 50%;
         background-size: cover;
 
 
-        .Three-inner{
+        .Geography-1-inner{
             height: 150vh;
             background: url("img/uzungol-1.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -2507,12 +2507,12 @@ h2 {
         }
     }
     
-    .Four{
+    .Geography-2{
         height: 110vh;
         background: url("./img/ataturk-1.jpg") $nrs 70% 0% !important;
         background-size: 1000px !important;
         
-        .Four-inner{
+        .Geography-2-inner{
             height: 110vh;
             background: url("./img/map-3.png") $nrs 50% 50%;
             background-size: cover;
@@ -2549,7 +2549,7 @@ h2 {
     }
 
 
-    .Five{    
+    .Geography-3{    
         background: $white;
         
         .flex-item{
@@ -2703,7 +2703,7 @@ h2 {
         }
     }
     
-    .Six{
+    .Cities-1{
         background: url("./img/istanbul-2.jpg") $nrs 50% 40%;
         background-size: cover;
 
@@ -2728,7 +2728,7 @@ h2 {
         }   
     }
 
-    .Seven{
+    .Cities-2{
         background: url("./img/ankara-1.jpg") $nrs 50% 40%;
         background-size: cover;
 
@@ -2743,7 +2743,7 @@ h2 {
         }
     }
 
-    .Eight{
+    .Cities-3{
         background: url("./img/izmir-1.jpg") $nrs 50% 40%;
         background-size: cover;
         
@@ -2758,7 +2758,7 @@ h2 {
         }
     }
 
-    .Nine{
+    .Cities-4{
         background: url("./img/bursa-1.jpg") $nrs 50% 40%;
         background-size: cover;
         
@@ -2774,7 +2774,7 @@ h2 {
         }
     }
 
-    .Ten{
+    .Cities-5{
         background: url("./img/adana-1.jpg") $nrs 50% 40%;
         background-size: cover;
 
@@ -2789,7 +2789,7 @@ h2 {
         }
     }
     
-    .Eleven{
+    .Sights-1{
         background: $white;
 
         .flex-item{
@@ -2827,12 +2827,12 @@ h2 {
         }
     }
     
-    .Twelve{
+    .Hotels-1{
         height: 170vh;
         background: url("img/hotel-3.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Twelve-inner{
+        .Hotels-1-inner{
             height: 170vh;
             background: url("img/hotel-1.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -2870,12 +2870,12 @@ h2 {
         }
     }
 
-    .Thirteen{
+    .Hotels-2{
         height: 170vh;
         background: url("img/hotel-5.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Thirteen-inner{
+        .Hotels-2-inner{
             height: 170vh;
             background: url("img/hotel-4.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -2902,7 +2902,7 @@ h2 {
         }
     }
     
-    .Fourteen {
+    .Hotels-3 {
         background: $white;
 
         .flex-item{
@@ -2927,11 +2927,11 @@ h2 {
         }
     }
 
-    .Fifteen{
+    .Cuisine-1{
         background: url("img/cuisine-2.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Fifteen-inner{
+        .Cuisine-1-inner{
             background: url("img/cuisine-1.jpg") $nrs 50% 50%;
             background-size: cover;
         }
@@ -2968,7 +2968,7 @@ h2 {
         }
     }
 
-    .Sixteen {
+    .Cuisine-2 {
         background: url("./img/white-3.jpg") $nrs center;
         background-size: cover;
         z-index: 19;
@@ -3048,12 +3048,12 @@ h2 {
         }
     }
     
-    .Seventeen{
+    .Cuisine-3{
         height: 170vh;
         background: url("img/cuisine-7.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Seventeen-inner{
+        .Cuisine-3-inner{
             height: 170vh;
             background: url("img/cuisine-6.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -3080,12 +3080,12 @@ h2 {
         }
     }
 
-    .Eighteen{
+    .Cuisine-4{
         height: 180vh;
         background: url("img/cuisine-9.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Eighteen-inner{
+        .Cuisine-4-inner{
             height: 180vh;
             background: url("img/cuisine-8.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -3112,7 +3112,7 @@ h2 {
         }
     }
     
-    .Nineteen {
+    .Language-1 {
         position: relative;
         top: 0vh;
         height: auto;
@@ -3202,7 +3202,7 @@ h2 {
         }
     }
 
-    .Twenty{
+    .Language-2{
         background: url("img/ataturk-2.jpg") $nrs 50% 50%;
         background-size: cover;
 
@@ -3222,7 +3222,7 @@ h2 {
         }
     }
 
-    .Twenty-one{
+    .Language-3{
         background: url("img/red-1.jpg") $nrs 50% 50%;
         background-size: cover;
 
@@ -3252,7 +3252,7 @@ h2 {
         }
     }
     
-    .Twenty-two{
+    .Language-4{
         background: $white;
 
         .flex-item{
@@ -3287,7 +3287,7 @@ h2 {
         }
     }
 
-    .Twenty-three{
+    .Footer-1{
         background: url("./img/istanbul-3.jpg") $nrs center;
         background-size: cover;
 
@@ -3311,11 +3311,11 @@ h2 {
 }
 
 @include for-large-phone-portrait{
-    .One{
+    .Intro-1{
         background: url("./img/turkey-flag-1.jpg") $nrs 50% 50%;
         background-size: cover;
         
-        .One-inner{
+        .Intro-1-inner{
             background: url("./img/maidens-tower-1.jpg") $nrs 50% 50%;
             background-size: cover;
             
@@ -3331,7 +3331,7 @@ h2 {
         }        
     }
     
-    .Two{
+    .Intro-2{
         background: url("./img/white-3.jpg") $nrs center;
         background-size: cover;
         
@@ -3398,13 +3398,13 @@ h2 {
         }
     }
     
-    .Three{
+    .Geography-1{
         height: 150vh;
         background: url("img/cappadocia-1.jpg") $nrs 50% 50%;
         background-size: cover;
 
 
-        .Three-inner{
+        .Geography-1-inner{
             height: 150vh;
             background: url("img/uzungol-1.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -3440,12 +3440,12 @@ h2 {
         }
     }
     
-    .Four{
+    .Geography-2{
         height: 110vh;
         background: url("./img/ataturk-1.jpg") $nrs 70% 0% !important;
         background-size: 1000px !important;
         
-        .Four-inner{
+        .Geography-2-inner{
             height: 110vh;
             background: url("./img/map-3.png") $nrs 50% 50%;
             background-size: cover;
@@ -3482,7 +3482,7 @@ h2 {
     }
 
 
-    .Five{    
+    .Geography-3{    
         background: $white;
         
         .flex-item{
@@ -3641,7 +3641,7 @@ h2 {
         }
     }
     
-    .Six{
+    .Cities-1{
         background: url("./img/istanbul-2.jpg") $nrs 50% 40%;
         background-size: cover;
 
@@ -3666,7 +3666,7 @@ h2 {
         }   
     }
 
-    .Seven{
+    .Cities-2{
         background: url("./img/ankara-1.jpg") $nrs 50% 40%;
         background-size: cover;
 
@@ -3681,7 +3681,7 @@ h2 {
         }
     }
 
-    .Eight{
+    .Cities-3{
         background: url("./img/izmir-1.jpg") $nrs 50% 40%;
         background-size: cover;
         
@@ -3696,7 +3696,7 @@ h2 {
         }
     }
 
-    .Nine{
+    .Cities-4{
         background: url("./img/bursa-1.jpg") $nrs 50% 40%;
         background-size: cover;
         
@@ -3712,7 +3712,7 @@ h2 {
         }
     }
 
-    .Ten{
+    .Cities-5{
         background: url("./img/adana-1.jpg") $nrs 50% 40%;
         background-size: cover;
 
@@ -3727,7 +3727,7 @@ h2 {
         }
     }
     
-    .Eleven{
+    .Sights-1{
         background: $white;
 
         .flex-item{
@@ -3765,12 +3765,12 @@ h2 {
         }
     }
     
-    .Twelve{
+    .Hotels-1{
         height: 170vh;
         background: url("img/hotel-3.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Twelve-inner{
+        .Hotels-1-inner{
             height: 170vh;
             background: url("img/hotel-1.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -3808,12 +3808,12 @@ h2 {
         }
     }
 
-    .Thirteen{
+    .Hotels-2{
         height: 170vh;
         background: url("img/hotel-5.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Thirteen-inner{
+        .Hotels-2-inner{
             height: 170vh;
             background: url("img/hotel-4.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -3840,7 +3840,7 @@ h2 {
         }
     }
     
-    .Fourteen {
+    .Hotels-3{
         background: $white;
 
         .flex-item{
@@ -3864,11 +3864,11 @@ h2 {
         }
     }
 
-    .Fifteen{
+    .Cuisine-1{
         background: url("img/cuisine-2.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Fifteen-inner{
+        .Cuisine-1-inner{
             background: url("img/cuisine-1.jpg") $nrs 50% 50%;
             background-size: cover;
         }
@@ -3905,7 +3905,7 @@ h2 {
         }
     }
 
-    .Sixteen {
+    .Cuisine-2 {
         background: url("./img/white-3.jpg") $nrs center;
         background-size: cover;
         z-index: 19;
@@ -3985,12 +3985,12 @@ h2 {
         }
     }
     
-    .Seventeen{
+    .Cuisine-3{
         height: 170vh;
         background: url("img/cuisine-7.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Seventeen-inner{
+        .Cuisine-3-inner{
             height: 170vh;
             background: url("img/cuisine-6.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -4017,12 +4017,12 @@ h2 {
         }
     }
 
-    .Eighteen{
+    .Cuisine-4{
         height: 180vh;
         background: url("img/cuisine-9.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Eighteen-inner{
+        .Cuisine-4-inner{
             height: 180vh;
             background: url("img/cuisine-8.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -4049,7 +4049,7 @@ h2 {
         }
     }
     
-    .Nineteen {
+    .Language-1 {
         position: relative;
         top: 0vh;
         height: auto;
@@ -4139,7 +4139,7 @@ h2 {
         }
     }
 
-    .Twenty{
+    .Language-2{
         background: url("img/ataturk-2.jpg") $nrs 50% 50%;
         background-size: cover;
 
@@ -4159,7 +4159,7 @@ h2 {
         }
     }
 
-    .Twenty-one{
+    .Language-3{
         background: url("img/red-1.jpg") $nrs 50% 50%;
         background-size: cover;
 
@@ -4189,7 +4189,7 @@ h2 {
         }
     }
     
-    .Twenty-two{
+    .Language-4{
         background: $white;
 
         .flex-item{
@@ -4224,7 +4224,7 @@ h2 {
         }
     }
 
-    .Twenty-three{
+    .Footer-1{
         background: url("./img/istanbul-3.jpg") $nrs center;
         background-size: cover;
 
@@ -4248,12 +4248,12 @@ h2 {
 }
 
 @include for-small-tablet-portrait{
-    .One{
+    .Intro-1{
         height: 100vh;
         background: url("./img/turkey-flag-1.jpg") $nrs 50% 50%;
         background-size: cover;
         
-        .One-inner{
+        .Intro-1-inner{
             height: 100vh;
             background: url("./img/maidens-tower-1.jpg") $nrs 50% 70% !important;
             background-size: 2000px !important;
@@ -4270,7 +4270,7 @@ h2 {
         }        
     }
     
-    .Two{
+    .Intro-2{
         background: url("./img/white-3.jpg") $nrs center;
         background-size: cover;
         
@@ -4341,13 +4341,13 @@ h2 {
         }
     }
     
-    .Three{
+    .Geography-1{
         height: 150vh;
         background: url("img/cappadocia-1.jpg") $nrs 50% 50%;
         background-size: cover;
 
 
-        .Three-inner{
+        .Geography-1-inner{
             height: 150vh;
             background: url("img/uzungol-1.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -4376,12 +4376,12 @@ h2 {
         }
     }
     
-    .Four{
+    .Geography-2{
         height: 110vh;
         background: url("./img/ataturk-1.jpg") $nrs 70% 0% !important;
         background-size: 2000px !important;
         
-        .Four-inner{
+        .Geography-2-inner{
             height: 110vh;
             background: url("./img/map-3.png") $nrs 50% 50%;
             background-size: cover;
@@ -4416,7 +4416,7 @@ h2 {
         }
     }
 
-    .Five{    
+    .Geography-3{    
         background: $white;
         
         .flex-item{
@@ -4571,7 +4571,7 @@ h2 {
         }
     }
     
-    .Six{
+    .Cities-1{
         height:100vh;
         background: url("./img/istanbul-2.jpg") $nrs 50% 40%;
         background-size: cover;
@@ -4597,7 +4597,7 @@ h2 {
         }   
     }
 
-    .Seven{
+    .Cities-2{
         height:100vh;
         background: url("./img/ankara-1.jpg") $nrs 50% 40%;
         background-size: cover;
@@ -4613,7 +4613,7 @@ h2 {
         }
     }
 
-    .Eight{
+    .Cities-3{
         height:100vh;
         background: url("./img/izmir-1.jpg") $nrs 50% 40%;
         background-size: cover;
@@ -4631,7 +4631,7 @@ h2 {
         }
     }
 
-    .Nine{
+    .Cities-4{
         height:100vh;
         background: url("./img/bursa-1.jpg") $nrs 50% 40%;
         background-size: cover;
@@ -4648,7 +4648,7 @@ h2 {
         }
     }
 
-    .Ten{
+    .Cities-5{
         height:100vh;
         background: url("./img/adana-1.jpg") $nrs 50% 40%;
         background-size: cover;
@@ -4664,7 +4664,7 @@ h2 {
         }
     }
     
-    .Eleven{
+    .Sights-1{
         background: $white;
 
         .flex-item{
@@ -4702,12 +4702,12 @@ h2 {
         }
     }
     
-    .Twelve{
+    .Hotels-1{
         height: 150vh;
         background: url("img/hotel-3.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Twelve-inner{
+        .Hotels-1-inner{
             height: 150vh;
             background: url("img/hotel-1.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -4745,12 +4745,12 @@ h2 {
         }
     }
 
-    .Thirteen{
+    .Hotels-2{
         height: 150vh;
         background: url("img/hotel-5.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Thirteen-inner{
+        .Hotels-2-inner{
             height: 150vh;
             background: url("img/hotel-4.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -4777,7 +4777,7 @@ h2 {
         }
     }
     
-    .Fourteen {
+    .Hotels-3 {
         background: $white;
 
         .flex-item{
@@ -4800,11 +4800,11 @@ h2 {
         }
     }
 
-    .Fifteen{
+    .Cuisine-1{
         background: url("img/cuisine-2.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Fifteen-inner{
+        .Cuisine-1-inner{
             background: url("img/cuisine-1.jpg") $nrs 50% 50%;
             background-size: cover;
         }
@@ -4834,7 +4834,7 @@ h2 {
         }
     }
 
-    .Sixteen {
+    .Cuisine-2{
         background: url("./img/white-3.jpg") $nrs center;
         background-size: cover;
         z-index: 19;
@@ -4914,12 +4914,12 @@ h2 {
         }
     }
     
-    .Seventeen{
+    .Cuisine-3{
         height: 150vh;
         background: url("img/cuisine-7.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Seventeen-inner{
+        .Cuisine-3-inner{
             height: 150vh;
             background: url("img/cuisine-6.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -4946,12 +4946,12 @@ h2 {
         }
     }
 
-    .Eighteen{
+    .Cuisine-4{
         height: 150vh;
         background: url("img/cuisine-9.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Eighteen-inner{
+        .Cuisine-4-inner{
             height: 150vh;
             background: url("img/cuisine-8.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -4978,7 +4978,7 @@ h2 {
         }
     }
     
-    .Nineteen {
+    .Language-1{
         position: relative;
         top: 0vh;
         height: auto;
@@ -5068,7 +5068,7 @@ h2 {
         }
     }
 
-    .Twenty{
+    .Language-2{
         height: 105vh;
         background: url("img/ataturk-2.jpg") $nrs 55% 50%;
         background-size: cover;
@@ -5089,7 +5089,7 @@ h2 {
         }
     }
 
-    .Twenty-one{
+    .Language-3{
         height: 105vh;
         background: url("img/red-1.jpg") $nrs 50% 50%;
         background-size: cover;
@@ -5120,7 +5120,7 @@ h2 {
         }
     }
     
-    .Twenty-two{
+    .Language-4{
         background: $white;
 
         .flex-item{
@@ -5155,7 +5155,7 @@ h2 {
         }
     }
 
-    .Twenty-three{
+    .Footer-1{
         background: url("./img/istanbul-3.jpg") $nrs center;
         background-size: cover;
 
@@ -5179,12 +5179,12 @@ h2 {
 }
 
 @include for-phone-landscape{
-    .One{
+    .Intro-1{
         height: 100vh;
         background: url("./img/turkey-flag-1.jpg") $nrs 50% 50%;
         background-size: cover;
         
-        .One-inner{
+        .Intro-1-inner{
             height: 100vh;
             background: url("./img/maidens-tower-1.jpg") $nrs 50% 70% !important;
             background-size: cover !important;
@@ -5201,7 +5201,7 @@ h2 {
         }        
     }
     
-    .Two{
+    .Intro-2{
         background: url("./img/white-3.jpg") $nrs center;
         background-size: cover;
         
@@ -5272,13 +5272,13 @@ h2 {
         }
     }
     
-    .Three{
+    .Geography-1{
         height: 150vh;
         background: url("img/cappadocia-1.jpg") $nrs 50% 50%;
         background-size: cover;
 
 
-        .Three-inner{
+        .Geography-1-inner{
             height: 150vh;
             background: url("img/uzungol-1.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -5315,12 +5315,12 @@ h2 {
         }
     }
     
-    .Four{
+    .Geography-2{
         height: 110vh;
         background: url("./img/ataturk-1.jpg") $nrs 70% 0% !important;
         background-size: 2000px !important;
         
-        .Four-inner{
+        .Geography-2-inner{
             height: 110vh;
             background: url("./img/map-3.png") $nrs 50% 50%;
             background-size: cover;
@@ -5355,7 +5355,7 @@ h2 {
         }
     }
 
-    .Five{    
+    .Geography-3{    
         background: $white;
         
         .flex-item{
@@ -5509,7 +5509,7 @@ h2 {
         }
     }
     
-    .Six{
+    .Cities-1{
         height:100vh;
         background: url("./img/istanbul-2.jpg") $nrs 50% 40%;
         background-size: cover;
@@ -5535,7 +5535,7 @@ h2 {
         }   
     }
 
-    .Seven{
+    .Cities-2{
         height:100vh;
         background: url("./img/ankara-1.jpg") $nrs 50% 40%;
         background-size: cover;
@@ -5551,7 +5551,7 @@ h2 {
         }
     }
 
-    .Eight{
+    .Cities-3{
         height:100vh;
         background: url("./img/izmir-1.jpg") $nrs 50% 40%;
         background-size: cover;
@@ -5569,7 +5569,7 @@ h2 {
         }
     }
 
-    .Nine{
+    .Cities-4{
         height:100vh;
         background: url("./img/bursa-1.jpg") $nrs 50% 40%;
         background-size: cover;
@@ -5586,7 +5586,7 @@ h2 {
         }
     }
 
-    .Ten{
+    .Cities-5{
         height:100vh;
         background: url("./img/adana-1.jpg") $nrs 50% 40%;
         background-size: cover;
@@ -5602,7 +5602,7 @@ h2 {
         }
     }
     
-    .Eleven{
+    .Sights-1{
         background: $white;
 
         .flex-item{
@@ -5640,12 +5640,12 @@ h2 {
         }
     }
     
-    .Twelve{
+    .Hotels-1{
         height: 150vh;
         background: url("img/hotel-3.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Twelve-inner{
+        .Hotels-1-inner{
             height: 150vh;
             background: url("img/hotel-1.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -5683,12 +5683,12 @@ h2 {
         }
     }
 
-    .Thirteen{
+    .Hotels-2{
         height: 150vh;
         background: url("img/hotel-5.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Thirteen-inner{
+        .Hotels-2-inner{
             height: 150vh;
             background: url("img/hotel-4.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -5715,7 +5715,7 @@ h2 {
         }
     }
     
-    .Fourteen {
+    .Hotels-3 {
         background: $white;
 
         .flex-item{
@@ -5739,11 +5739,11 @@ h2 {
         }
     }
 
-    .Fifteen{
+    .Cuisine-1{
         background: url("img/cuisine-2.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Fifteen-inner{
+        .Cuisine-1-inner{
             background: url("img/cuisine-1.jpg") $nrs 50% 50%;
             background-size: cover;
         }
@@ -5779,7 +5779,7 @@ h2 {
         }
     }
 
-    .Sixteen {
+    .Cuisine-2 {
         background: url("./img/white-3.jpg") $nrs center;
         background-size: cover;
         z-index: 19;
@@ -5859,12 +5859,12 @@ h2 {
         }
     }
     
-    .Seventeen{
+    .Cuisine-3{
         height: 150vh;
         background: url("img/cuisine-7.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Seventeen-inner{
+        .Cuisine-3-inner{
             height: 150vh;
             background: url("img/cuisine-6.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -5891,12 +5891,12 @@ h2 {
         }
     }
 
-    .Eighteen{
+    .Cuisine-4{
         height: 150vh;
         background: url("img/cuisine-9.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Eighteen-inner{
+        .Cuisine-4-inner{
             height: 150vh;
             background: url("img/cuisine-8.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -5923,7 +5923,7 @@ h2 {
         }
     }
     
-    .Nineteen {
+    .Language-1 {
         position: relative;
         top: 0vh;
         height: auto;
@@ -6013,7 +6013,7 @@ h2 {
         }
     }
 
-    .Twenty{
+    .Language-2{
         height: 105vh;
         background: url("img/ataturk-2.jpg") $nrs 55% 50%;
         background-size: cover;
@@ -6034,7 +6034,7 @@ h2 {
         }
     }
 
-    .Twenty-one{
+    .Language-3{
         height: 140vh;
         background: url("img/red-1.jpg") $nrs 50% 50%;
         background-size: cover;
@@ -6065,7 +6065,7 @@ h2 {
         }
     }
     
-    .Twenty-two{
+    .Language-4{
         background: $white;
 
         .flex-item{
@@ -6100,7 +6100,7 @@ h2 {
         }
     }
 
-    .Twenty-three{
+    .Footer-1{
         background: url("./img/istanbul-3.jpg") $nrs center;
         background-size: cover;
 
@@ -6124,12 +6124,12 @@ h2 {
 }
 
 @include for-large-tablet-portrait{
-    .One{
+    .Intro-1{
         height: 100vh;
         background: url("./img/turkey-flag-1.jpg") $nrs 50% 50%;
         background-size: cover;
         
-        .One-inner{
+        .Intro-1-inner{
             height: 100vh;
             background: url("./img/maidens-tower-1.jpg") $nrs 50% 70% !important;
             background-size: 2500px !important;
@@ -6146,7 +6146,7 @@ h2 {
         }        
     }
     
-    .Two{
+    .Intro-2{
         background: url("./img/white-3.jpg") $nrs center;
         background-size: cover;
         
@@ -6217,13 +6217,13 @@ h2 {
         }
     }
     
-    .Three{
+    .Geography-1{
         height: 150vh;
         background: url("img/cappadocia-1.jpg") $nrs 50% 50%;
         background-size: cover;
 
 
-        .Three-inner{
+        .Geography-1-inner{
             height: 150vh;
             background: url("img/uzungol-1.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -6252,12 +6252,12 @@ h2 {
         }
     }
     
-    .Four{
+    .Geography-2{
         height: 110vh;
         background: url("./img/ataturk-1.jpg") $nrs 70% 0% !important;
         background-size: 2000px !important;
         
-        .Four-inner{
+        .Geography-2-inner{
             height: 110vh;
             background: url("./img/map-3.png") $nrs 50% 50%;
             background-size: cover;
@@ -6293,7 +6293,7 @@ h2 {
         }
     }
 
-    .Five{    
+    .Geography-3{    
         background: $white;
         
         .flex-item{
@@ -6448,7 +6448,7 @@ h2 {
         }
     }
     
-    .Six{
+    .Cities-1{
         height:100vh;
         background: url("./img/istanbul-2.jpg") $nrs 50% 40%;
         background-size: cover;
@@ -6474,7 +6474,7 @@ h2 {
         }   
     }
 
-    .Seven{
+    .Cities-2{
         height:100vh;
         background: url("./img/ankara-1.jpg") $nrs 50% 40%;
         background-size: cover;
@@ -6490,7 +6490,7 @@ h2 {
         }
     }
 
-    .Eight{
+    .Cities-3{
         height:100vh;
         background: url("./img/izmir-1.jpg") $nrs 50% 40%;
         background-size: cover;
@@ -6508,7 +6508,7 @@ h2 {
         }
     }
 
-    .Nine{
+    .Cities-4{
         height:100vh;
         background: url("./img/bursa-1.jpg") $nrs 50% 40%;
         background-size: cover;
@@ -6525,7 +6525,7 @@ h2 {
         }
     }
 
-    .Ten{
+    .Cities-5{
         height:100vh;
         background: url("./img/adana-1.jpg") $nrs 50% 40%;
         background-size: cover;
@@ -6541,7 +6541,7 @@ h2 {
         }
     }
     
-    .Eleven{
+    .Sights-1{
         background: $white;
 
         .flex-item{
@@ -6576,12 +6576,12 @@ h2 {
         }
     }
     
-    .Twelve{
+    .Hotels-1{
         height: 150vh;
         background: url("img/hotel-3.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Twelve-inner{
+        .Hotels-1-inner{
             height: 150vh;
             background: url("img/hotel-1.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -6619,12 +6619,12 @@ h2 {
         }
     }
 
-    .Thirteen{
+    .Hotels-2{
         height: 150vh;
         background: url("img/hotel-5.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Thirteen-inner{
+        .Hotels-2-inner{
             height: 150vh;
             background: url("img/hotel-4.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -6651,7 +6651,7 @@ h2 {
         }
     }
     
-    .Fourteen {
+    .Hotels-3 {
         background: $white;
 
         .flex-item{
@@ -6672,11 +6672,11 @@ h2 {
         }
     }
 
-    .Fifteen{
+    .Cuisine-1{
         background: url("img/cuisine-2.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Fifteen-inner{
+        .Cuisine-1-inner{
             background: url("img/cuisine-1.jpg") $nrs 50% 50%;
             background-size: cover;
         }
@@ -6706,7 +6706,7 @@ h2 {
         }
     }
 
-    .Sixteen {
+    .Cuisine-2{
         background: url("./img/white-3.jpg") $nrs center;
         background-size: cover;
         z-index: 19;
@@ -6786,12 +6786,12 @@ h2 {
         }
     }
     
-    .Seventeen{
+    .Cuisine-3{
         height: 150vh;
         background: url("img/cuisine-7.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Seventeen-inner{
+        .Cuisine-3-inner{
             height: 150vh;
             background: url("img/cuisine-6.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -6818,12 +6818,12 @@ h2 {
         }
     }
 
-    .Eighteen{
+    .Cuisine-4{
         height: 150vh;
         background: url("img/cuisine-9.jpg") $nrs 50% 50%;
         background-size: cover;
 
-        .Eighteen-inner{
+        .Cuisine-4-inner{
             height: 150vh;
             background: url("img/cuisine-8.jpg") $nrs 50% 50%;
             background-size: cover;
@@ -6850,7 +6850,7 @@ h2 {
         }
     }
     
-    .Nineteen {
+    .Language-1 {
         position: relative;
         top: 0vh;
         height: auto;
@@ -6940,7 +6940,7 @@ h2 {
         }
     }
 
-    .Twenty{
+    .Language-2{
         height: 105vh;
         background: url("img/ataturk-2.jpg") $nrs 55% 50%;
         background-size: cover;
@@ -6961,7 +6961,7 @@ h2 {
         }
     }
 
-    .Twenty-one{
+    .Language-3{
         height: 105vh;
         background: url("img/red-1.jpg") $nrs 50% 50%;
         background-size: cover;
@@ -6992,7 +6992,7 @@ h2 {
         }
     }
     
-    .Twenty-two{
+    .Language-4{
         background: $white;
 
         .flex-item{
@@ -7024,7 +7024,7 @@ h2 {
         }
     }
 
-    .Twenty-three{
+    .Footer-1{
         background: url("./img/istanbul-3.jpg") $nrs center;
         background-size: cover;
 

@@ -388,7 +388,7 @@ export default class Sights extends Component {
         } = this.state;
  
         return (
-            <div className="Eleven" id="Eleven">
+            <div className="Sights-1" id="Sights-1">
                  <ul className="flex-container">
                     <li className="flex-item" >
                         <h1 id="manzaralar" className="scrollmagic-header" role="heading">Manzaralar</h1>

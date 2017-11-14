@@ -90,8 +90,8 @@ export default class Geography extends Component {
         
         return(
         <div>
-            <div className="Three" id="Three">   
-                <div className="Three-inner scrollmagic-inner-fadeout">
+            <div className="Geography-1" id="Geography-1">   
+                <div className="Geography-1-inner scrollmagic-inner-fadeout">
                     <div className="container">
                         <h1 id="cografya" className="text-center scrollmagic-header" role="heading">Coğrafya</h1>
                         <h2 id="geography" className="text-center scrollmagic-header" role="heading" tabIndex="0">Geography</h2> 
@@ -104,8 +104,8 @@ export default class Geography extends Component {
                     <h2 id="cappadocia-desc" className="text-left scrollmagic-desc">Central Anatolian Region</h2>
                 </div>
             </div>
-            <div className="Four scrollmagic-div-fadeout">
-                <div className="Four-inner scrollmagic-inner-fadeout">
+            <div className="Geography-2 scrollmagic-div-fadeout">
+                <div className="Geography-2-inner scrollmagic-inner-fadeout">
                     <div className="container">
                             <h1 id="merkezi" className="text-center scrollmagic-header" role="heading">Dünyanın merkezi</h1>
                             <h2 id="center" className="text-center scrollmagic-header" role="heading" tabIndex="0">The Center of the World</h2>
@@ -115,7 +115,7 @@ export default class Geography extends Component {
                 <h1 id="ataturk" className="text-right">Mustafa Kemal Atatürk</h1>
                 <h2 id="founder" className="text-right">Founder of the Republic of Turkey</h2> 
             </div>
-            <div className="Five">
+            <div className="Geography-3">
                 <ul className="flex-container">
                     <li className="flex-item">
                         <h1 id="bolgeleri" className="scrollmagic-header" role="heading">Türkiye'nın Bölgeleri</h1>
