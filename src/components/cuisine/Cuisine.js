@@ -5,8 +5,8 @@ export default class Cuisine extends Component {
     render() {
         return(
         <div>
-            <div className="Fifteen scrollmagic-div-fadeout" id="Fifteen">     
-                <div className="Fifteen-inner scrollmagic-inner-fadeout">            
+            <div className="Cuisine-1 scrollmagic-div-fadeout" id="Cuisine-1">     
+                <div className="Cuisine-1-inner scrollmagic-inner-fadeout">            
                     <div className="container">
                         <h1 id="mutfak" className="text-center scrollmagic-header" role="heading">Mutfak</h1>
                         <h2 id="cuisine" className="text-center scrollmagic-header" role="heading" tabIndex="0">Cuisine</h2>
@@ -23,7 +23,7 @@ export default class Cuisine extends Component {
                     </div>
                 </div>
             </div>
-            <div className="Sixteen">
+            <div className="Cuisine-2">
                 <ul className="flex-container">
                     <li className="flex-item scrollmagic-info-squares">
                         <h1 id="yemegi" className="scrollmagic-header">Türk yemeği</h1>
@@ -41,8 +41,8 @@ export default class Cuisine extends Component {
                     </li>
                 </ul>
             </div>
-            <div className="Seventeen">            
-                <div className="Seventeen-inner scrollmagic-inner-fadeout">    
+            <div className="Cuisine-3">            
+                <div className="Cuisine-3-inner scrollmagic-inner-fadeout">    
                     <div className="container"> 
                         <div className="col-xs-10 col-xs-offset-2 col-lg-6 col-lg-offset-6 text-right"> 
                             <h1 id="delight" className="scrollmagic-desc">Turkish Delight</h1>   
@@ -57,8 +57,8 @@ export default class Cuisine extends Component {
                     </div>
                 </div>
             </div>
-            <div className="Eighteen scrollmagic-div-fadeout">           
-                <div className="Eighteen-inner scrollmagic-inner-fadeout">          
+            <div className="Cuisine-4 scrollmagic-div-fadeout">           
+                <div className="Cuisine-4-inner scrollmagic-inner-fadeout">          
                     <div className="container"> 
                         <div className="col-xs-10 col-xs-offset-2 col-lg-6 col-lg-offset-6 text-right"> 
                             <h1 id="simit" className="scrollmagic-desc">Simit</h1>   
