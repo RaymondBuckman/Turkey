@@ -47,7 +47,7 @@ const captions = [
      
     "Some useful question words for beginners.",
      
-    "Although the vocabulary is different, the way numbers combine grammatically to form larger numbers is identical to English.",
+    "Although the vocabulary is different, the way single digit numbers combine grammatically to form multiple digit numbers is identical to English.",
 ];
 
 export default class Language extends Component {
