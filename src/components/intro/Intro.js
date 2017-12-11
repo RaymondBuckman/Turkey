@@ -15,7 +15,7 @@ export default class Intro extends Component {
                                 <li><a href="#Sights-1" role="link">Sights</a></li>
                                 <li><a href="#oteleler" role="link">Hotels</a></li>
                                 <li><a href="#mutfak" role="link">Cuisine</a></li>
-                                <li><a href="#Nineteen" role="link">Language</a></li>
+                                <li><a href="#Language-1" role="link">Language</a></li>
                             </ul>
                         </div>
                     </nav>

@@ -366,9 +366,9 @@ const captions = [
      
     "Established in 1965, it encompasses an area of 4,010 acres. There are seven lakes in the park which were formed due to landslides. The seven lakes are Buyukgol, Deringol, Seringol, Nazligol, Sazligol, Incegol and Kucukgol. Several streams flow through the park some of which have handcrafted bridges across them and a small water fall.[1][6]",
      
-    "Saklıkent National Park (Turkish: Saklıkent Milli Parkı), established on June 6, 1996, is a national park in southwestern Turkey. The national park is a canyon, and is located in Muğla Province, 31 mi far from Fethiye. Thé Canyon is 65km from Kaş in the Antalya province.",
+    "Saklıkent National Park (Turkish: Saklıkent Milli Parkı), established on June 6, 1996, is a national park in southwestern Turkey. The national park is a canyon, and is located in Muğla Province, 31 mi far from Fethiye. The Canyon is about 40 miles from the city of Kaş.",
      
-    "The canyon is 980 ft deep and 11 mi long, being one of the deepest in the world. It was formed through abrasion of the rocks by flowing waters over thousands of years. As the level of water rises during winter months, visitors can enter the canyon all year around only the deeper parts in the summer. 2.5 mi of the canyon are walkable after April, when most of the snow in the Taurus Mountains has melted and passed through on its way to the Mediterranean Sea. Saklıkent means 'hidden city' in Turkish.",
+    "At 980 ft deep & 11 miles long, the canyon is one of the deepest on earth. It was formed through abrasion of the rocks by flowing waters over thousands of years. As the level of water rises during winter months, visitors can enter the canyon year during the summer. About 2.5 miles of the canyon are walkable after April, when most of the snow in the Taurus Mountains has melted and passed through on its way to the Mediterranean Sea. Saklıkent means 'hidden city' in Turkish.",
 ];
  
 export default class Sights extends Component {
