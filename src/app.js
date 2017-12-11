@@ -9,9 +9,6 @@ import {findDOMNode} from 'react-dom';
 import ReactTooltip from 'react-tooltip';
 import crescentstar from './img/crescent-star.png';
 
-
-
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Sidebar from './components/sidebar/Sidebar';
@@ -101,72 +98,6 @@ $(document).ready(function(){
     var heightOfCuisine2 = $('.Cuisine-3').offset().top - $('.Cuisine-2').offset().top;
     var heightOfLanguage1 = $('.Language-2').offset().top - $('.Language-1').offset().top;
     var heightOfLanguage4 = $('.Footer-1').offset().top - $('.Language-4').offset().top;
-    {/*
-    var changeIconColorScene1 = new ScrollMagic.Scene({
-        triggerElement: '.Intro-2',
-        triggerHook: 0.42,
-        duration: heightOfIntro2
-    })
-    .setClassToggle('#sidebar li *', 'white-icons')
-    .addTo(controller);
-    
-    var changeIconColorScene2 = new ScrollMagic.Scene({
-        triggerElement: '.Geography-3',
-        triggerHook: 0.42,
-        duration: heightOfGeography3
-    })
-    .setClassToggle('#sidebar li *', 'white-icons')
-    .addTo(controller);
-    
-    var changeIconColorScene3 = new ScrollMagic.Scene({
-        triggerElement: '.Cities-3',
-        triggerHook: 0.42,
-        duration: heightOfCities3AndCities4
-    })
-    .setClassToggle('#sidebar li *', 'white-icons')
-    .addTo(controller);
-    
-    var changeIconColorScene4 = new ScrollMagic.Scene({
-        triggerElement: '.Sights-1',
-        triggerHook: 0.42,
-        duration: heightOfSights1
-    })
-    .setClassToggle('#sidebar li *', 'white-icons')
-    .addTo(controller);
-    
-    var changeIconColorScene5 = new ScrollMagic.Scene({
-        triggerElement: '.Hotels-3',
-        triggerHook: 0.42,
-        duration: heightOfHotels3
-    })
-    .setClassToggle('#sidebar li *', 'white-icons')
-    .addTo(controller);
-    
-    var changeIconColorScene6 = new ScrollMagic.Scene({
-        triggerElement: '.Cuisine-2',
-        triggerHook: 0.42,
-        duration: heightOfCuisine2
-    })
-    .setClassToggle('#sidebar li *', 'white-icons')
-    .addTo(controller);
-    
-    var changeIconColorScene7 = new ScrollMagic.Scene({
-        triggerElement: '.Language-1',
-        triggerHook: 0.42,
-        duration: heightOfLanguage1
-    })
-    .setClassToggle('#sidebar li *', 'white-icons')
-    .addTo(controller);
-    
-     var changeIconColorScene7 = new ScrollMagic.Scene({
-        triggerElement: '.Language-4',
-        triggerHook: 0.42,
-        duration: heightOfTwentyTwo
-    })
-    .setClassToggle('#sidebar li *', 'white-icons')
-    .addTo(controller);
-    
-    */}
     
     /*----- header animations -----*/
     $('.scrollmagic-header').each(function(){
