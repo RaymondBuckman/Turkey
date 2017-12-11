@@ -1,8 +1,6 @@
 /*----  DO npm install babel-runtime@^5.5.3 TO FIX UNMET DEPENDENCY ERROR!!!!!! ----*/      
-    
 
-@import url('https://fonts.googleapis.com/css?family=Lobster');
-@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Dosis|Lobster');
 
 //variables
 $main-font: "Lobster";
@@ -36,7 +34,7 @@ $cuisine-3-inner-height: 100vw * .75;
 $cuisine-4-height: 100vw * .5624;
 $language-2-height: 100vw * .625;
 
-//keyframes
+//animations
 @keyframes flag-background{
 	45%     {opacity: 1;}
     50%     {opacity: 0.85;}
@@ -179,7 +177,7 @@ h2, p, a{
 
 button, a {
     &:focus{
-        outline: 2.5px solid $turquoise;
+        //outline: 2.5px solid $turquoise;
         border-radius: 5px;
     }
 }
