@@ -1,7 +1,5 @@
 /*----  DO npm install babel-runtime@^5.5.3 TO FIX UNMET DEPENDENCY ERROR!!!!!! ----*/      
 
-@import url('https://fonts.googleapis.com/css?family=Dosis|Lobster');
-
 //variables
 $main-font: "Lobster";
 $secondary-font: "Dosis";
@@ -453,69 +451,47 @@ h2 {
 
 .Geography-1{
     position: relative;
-    height: 150vh;
-    background: url("img/cappadocia-5.jpg") $nrf 0% 10%;
+    height: 110vh;
+    background: url("img/uzungol-1.jpg") $nrf 0% 10%;
     background-size: cover;
    
-    
-    .Geography-1-inner{
+    #cografya{
         position: relative;
-        height: 150vh;
-        background: url("img/uzungol-1.jpg") $nrf 50% 50%;
-        background-size: cover;
-        
-        #cografya{
-            position: relative;
-            top: 10vh;
-            color: $white;
-            font-size: $main-header-size; 
-            opacity: 0;
-            transform: rotate(-10deg);
-            transition: all 0.5s ease-in-out;    
-        }
-
-        #geography{
-            position: relative;
-            top: 10vh;
-            color: $turquoise;
-            font-size: $main-subheader-size;
-            opacity: 0;
-            transform: rotate(10deg);
-            transition: all 0.5s ease-in-out;
-        }
-
-        #cografya.fade-in, #geography.fade-in{
-            @include scrollmagic-header-finish;
-        }
-
-        #uzungol{
-            position: relative;
-            top: 60vh;
-            color: $white;
-            font-size: 3em;            
-        }
-
-        #uzungol-desc{
-            position: relative;
-            top: 60vh;
-            color: $turquoise;
-            font-size: $desc-size;            
-        }        
+        top: 10vh;
+        color: $white;
+        font-size: $main-header-size; 
+        opacity: 0;
+        transform: rotate(-10deg);
+        transition: all 0.5s ease-in-out;    
     }
-    
-    #cappadocia{
+
+    #geography{
         position: relative;
-        top: -20vh;
+        top: 10vh;
+        color: $turquoise;
+        font-size: $main-subheader-size;
+        opacity: 0;
+        transform: rotate(10deg);
+        transition: all 0.5s ease-in-out;
+    }
+
+    #cografya.fade-in, #geography.fade-in{
+        @include scrollmagic-header-finish;
+    }
+
+    #uzungol{
+        position: relative;
+        top: 60vh;
         color: $white;
         font-size: 3em;            
     }
-    
-    #cappadocia-desc{
+
+    #uzungol-desc{
         position: relative;
-        top: -20vh;
+        top: 60vh;
         color: $turquoise;
         font-size: $desc-size;            
-    }
+    }       
 }
 
 .Geography-2{
@@ -1267,16 +1243,9 @@ h2 {
 
 .Hotels-1{
     position: relative;
-    height: 170vh;
-    background: url("img/hotel-3.jpg") $nrf 50% 50%;
+    height: 110vh;
+    background: url("img/hotel-1.jpg") $nrf 50% 50%;
     background-size: cover;
-    
-    .Hotels-1-inner{
-        position: relative;
-        height: 170vh;
-        background: url("img/hotel-1.jpg") $nrf 50% 50%;
-        background-size: cover;
-    }
     
     #oteleler{
         position: relative;
@@ -1306,8 +1275,7 @@ h2 {
         position: relative;
         top: 65vh;
         color: $white;
-        font-size: $main-subheader-size;
-                   
+        font-size: $main-subheader-size;          
     }
     
     #raffles1-desc{
@@ -1316,34 +1284,13 @@ h2 {
         color: $turquoise;
         font-size: $secondary-subheader-size;            
     }
-    
-    #raffles2{
-        position: relative;
-        top: -25vh;
-        color: $white;
-        font-size: $main-subheader-size;           
-    }
-    
-    #raffles2-desc{
-        position: relative;
-        top: -25vh;
-        color: $turquoise;
-        font-size: $secondary-subheader-size;            
-    }
 }
 
 .Hotels-2{
     position: relative;
-    height: 170vh;
-    background: url("img/hotel-5.jpg") $nrf 50% 50%;
+    height: 110vh;
+    background: url("img/hotel-4.jpg") $nrf 50% 50%;
     background-size: 100vw $hotels-2-height;
-    
-    .Hotels-2-inner{
-        position: relative;
-        height: 170vh;
-        background: url("img/hotel-4.jpg") $nrf 50% 50%;
-        background-size: cover;
-    }
     
     #kayakapi1{
         position: relative;
@@ -1355,20 +1302,6 @@ h2 {
     #kayakapi1-desc{
         position: relative;
         top: 85vh;
-        color: $turquoise;
-        font-size: $secondary-subheader-size;            
-    }
-    
-    #kayakapi2{
-        position: relative;
-        top: -25vh;
-        color: $white;
-        font-size: $main-subheader-size;             
-    }
-    
-    #kayakapi2-desc{
-        position: relative;
-        top: -25vh;
         color: $turquoise;
         font-size: $secondary-subheader-size;            
     }
