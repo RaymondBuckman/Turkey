@@ -382,21 +382,6 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var geography1InnerParallaxTween = TweenMax.to(".Geography-1-inner", 1, {
-          backgroundPositionY: "-=5%",
-          autoRound:false, 
-          ease:Power1.ease0ut
-        });
-
-        var geography1InnerParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Geography-1-inner", 
-            triggerHook: 1,
-            duration: "150%"
-        })
-        .setTween(geography1InnerParallaxTween)
-        //.addIndicators()
-        .addTo(controller);
-
         var geography1ParallaxTween = TweenMax.to(".Geography-1", 1, {
           backgroundPositionY: "-=5%",
           autoRound:false, 
@@ -405,9 +390,8 @@ $(document).ready(function(){
 
         var geography1ParallaxScene = new ScrollMagic.Scene({
             triggerElement: ".Geography-1", 
-            triggerHook: 0.2,
-            offset: 500,
-            duration: "100%"
+            triggerHook: 1,
+            duration: "200%"
         })
         .setTween(geography1ParallaxTween)
         //.addIndicators()
@@ -489,62 +473,30 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var hotels1InnerParallaxTween = TweenMax.to(".Hotels-1-inner", 1, {
-          backgroundPositionY: "+=15%",
-          autoRound:false, 
-          ease:Power1.ease0ut
-        });
-
-        var hotels1InnerParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Hotels-1-inner", 
-            triggerHook: 1,
-            duration: "200%"
-        })
-        .setTween(hotels1InnerParallaxTween)
-        //.addIndicators()
-        .addTo(controller);
-
         var hotels1ParallaxTween = TweenMax.to(".Hotels-1", 1, {
-          backgroundPositionX: "-=15%",
+          backgroundPositionY: "+=15%",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var hotels1ParallaxScene = new ScrollMagic.Scene({
             triggerElement: ".Hotels-1", 
-            triggerHook: 0.2,
-            offset: 500,
+            triggerHook: 1,
             duration: "200%"
         })
         .setTween(hotels1ParallaxTween)
         //.addIndicators()
         .addTo(controller);
 
-         var hotels2InnerParallaxTween = TweenMax.to(".Hotels-2-inner", 1, {
-          backgroundPositionY: "-=15%",
-          autoRound:false, 
-          ease:Power1.ease0ut
-        });
-
-        var hotels2InnerParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Hotels-2-inner", 
-            triggerHook: 1,
-            duration: "200%"
-        })
-        .setTween(hotels2InnerParallaxTween)
-        //.addIndicators()
-        .addTo(controller);
-
         var hotels2ParallaxTween = TweenMax.from(".Hotels-2", 1, {
-          backgroundSize: "+=100px +=74.95px",
+          backgroundSize: "+=200px +=149.9px",
           autoRound:false, 
-          ease:Power1.ease0ut
+          ease:Power0.ease0ut
         });
 
         var hotels2ParallaxScene = new ScrollMagic.Scene({
             triggerElement: ".Hotels-2", 
-            triggerHook: 0.2,
-            offset: 500,
+            triggerHook: 1,
             duration: "200%"
         })
         .setTween(hotels2ParallaxTween)

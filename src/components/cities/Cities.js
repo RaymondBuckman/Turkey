@@ -96,7 +96,7 @@ export default class Cities extends Component {
             <div className="Cities-2"> 
                 <ul id="ankara-description" className="col-lg-6 col-lg-offset-0 text-left scrollmagic-desc">
                     <li><span id="ankara">Ankara</span></li>
-                    <li>Capital City</li>
+                    <li>The Capital of Turkey</li>
                     <li>Location: Central Anatolia</li>
                     <li>Population: 5.3 million</li>
                     <li id="ankara-weather"></li> 
