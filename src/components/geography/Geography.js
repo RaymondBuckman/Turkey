@@ -88,18 +88,12 @@ export default class Geography extends Component {
         return(
         <div>
             <div className="Geography-1" id="Geography-1">   
-                <div className="Geography-1-inner scrollmagic-inner-fadeout">
                     <div className="container">
                         <h1 id="cografya" className="text-center scrollmagic-header" role="heading">Coğrafya</h1>
                         <h2 id="geography" className="text-center scrollmagic-header" role="heading" tabIndex="0">Geography</h2> 
                         <h1 id="uzungol" className="text-right scrollmagic-desc" >Uzungöl</h1>
                         <h2 id="uzungol-desc" className="text-right scrollmagic-desc">Black Sea Region</h2>
                     </div>
-                </div>
-                <div className="container">
-                    <h1 id="cappadocia" className="text-left scrollmagic-desc">Cappadocia</h1>
-                    <h2 id="cappadocia-desc" className="text-left scrollmagic-desc">Central Anatolian Region</h2>
-                </div>
             </div>
             <div className="Geography-2 scrollmagic-div-fadeout">
                 <div className="Geography-2-inner scrollmagic-inner-fadeout">
