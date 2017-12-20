@@ -15,8 +15,8 @@ export default class Hotels extends Component {
             </div>            
             <div className="Hotels-2 scrollmagic-div-fadeout">                 
                 <div className="container">
-                    <h1 id="kayakapi1" className="text-right scrollmagic-desc">Kayakapi Hotel, Ürgüp</h1>
-                    <h2 id="kayakapi1-desc" className="text-right scrollmagic-desc">Accomadations</h2>
+                    <h1 id="kayakapi1" className="text-left scrollmagic-desc">Kayakapi Hotel, Ürgüp</h1>
+                    <h2 id="kayakapi1-desc" className="text-left scrollmagic-desc">Accomadations</h2>
                 </div>
             </div>
             

@@ -88,25 +88,27 @@ export default class Geography extends Component {
         return(
         <div>
             <div className="Geography-1" id="Geography-1">   
-                    <div className="container">
-                        <h1 id="cografya" className="text-center scrollmagic-header" role="heading">Coğrafya</h1>
-                        <h2 id="geography" className="text-center scrollmagic-header" role="heading" tabIndex="0">Geography</h2> 
-                        <h1 id="uzungol" className="text-right scrollmagic-desc" >Uzungöl</h1>
-                        <h2 id="uzungol-desc" className="text-right scrollmagic-desc">Black Sea Region</h2>
-                    </div>
-            </div>
-            <div className="Geography-2 scrollmagic-div-fadeout">
-                <div className="Geography-2-inner scrollmagic-inner-fadeout">
-                    <div className="container">
-                            <h1 id="merkezi" className="text-center scrollmagic-header" role="heading">Dünyanın merkezi</h1>
-                            <h2 id="center" className="text-center scrollmagic-header" role="heading" tabIndex="0">The Center of the World</h2>
-                            <p id="ranging" className="col-xs-12 text-center scrollmagic-desc">Ranging from the Southeastern Balkans to the mountainous southern Caucasus in the east, Turkey sits at the junction of Europe & Asia. Turkey is both geographically & historically the center of the world. You'll find its fog-covered economic & historical center Istanbul in the Northwest, Antalya & its California-like surroundings in the Southwest, the mountainous Black Sea Region in the NorthEast with scenery resembling Lord of the Rings, &  the Kurdish region bordering Iran to the Southeast. In the center rests the capital Ankara along with the incredible & other-worldly Cappadocia region to the South.</p>  
-                    </div>        
+                <div className="container">
+                    <h1 id="cografya" className="text-center scrollmagic-header" role="heading">Coğrafya</h1>
+                    <h2 id="geography" className="text-center scrollmagic-header" role="heading" tabIndex="0">Geography</h2> 
+                    <h1 id="uzungol" className="text-right scrollmagic-desc" >Uzungöl</h1>
+                    <h2 id="uzungol-desc" className="text-right scrollmagic-desc">Black Sea Region</h2>
                 </div>
-                <h1 id="ataturk" className="text-right">Mustafa Kemal Atatürk</h1>
-                <h2 id="founder" className="text-right">Founder of the Republic of Turkey</h2> 
             </div>
-            <div className="Geography-3">
+            <div className="Geography-2">   
+                <div className="container">
+                    <h1 id="kapadokya" className="text-left scrollmagic-desc" >Kapadokya</h1>
+                    <h2 id="kapadokya-desc" className="text-left scrollmagic-desc">Central Anatolia Region</h2>
+                </div>
+            </div>
+            <div className="Geography-3 scrollmagic-div-fadeout">
+                <div className="container">
+                    <h1 id="merkezi" className="text-center scrollmagic-header" role="heading">Dünyanın merkezi</h1>
+                    <h2 id="center" className="text-center scrollmagic-header" role="heading" tabIndex="0">The Center of the World</h2>
+                    <p id="ranging" className="col-xs-12 text-center scrollmagic-desc">Ranging from the Southeastern Balkans to the mountainous southern Caucasus in the east, Turkey sits at the junction of Europe & Asia. Turkey is both geographically & historically the center of the world. You'll find its fog-covered economic & historical center Istanbul in the Northwest, Antalya & its California-like surroundings in the Southwest, the mountainous Black Sea Region in the NorthEast with scenery resembling Lord of the Rings, &  the Kurdish region bordering Iran to the Southeast. In the center rests the capital Ankara along with the incredible & other-worldly Cappadocia region to the South.</p>  
+                </div>        
+            </div>
+            <div className="Geography-4">
                 <ul className="flex-container">
                     <li className="flex-item">
                         <h1 id="bolgeleri" className="scrollmagic-header" role="heading">Türkiye'nın Bölgeleri</h1>

@@ -116,40 +116,6 @@ $(document).ready(function(){
         .addTo(controller);
     })   
     
-    $('#ataturk').each(function(){
-        var headerScene = new ScrollMagic.Scene({
-            triggerElement: '.Geography-2-inner',
-            triggerHook: 0.70,
-            offset: 700,
-            reverse: true
-        })
-        .setClassToggle(this, 'fade-in')
-        /*
-        .addIndicators({
-            name: 'fade scene',
-            colorTrigger: 'black',
-            colorStart: '#75C695'
-        })*/
-        .addTo(controller);
-    })   
-    
-    $('#founder').each(function(){
-        var headerScene = new ScrollMagic.Scene({
-            triggerElement: '.Geography-2-inner',
-            triggerHook: 0.70,
-            offset: 700,
-            reverse: true
-        })
-        .setClassToggle(this, 'fade-in')
-        /*
-        .addIndicators({
-            name: 'fade scene',
-            colorTrigger: 'black',
-            colorStart: '#75C695'
-        })*/
-        .addTo(controller);
-    })   
-    
     /* ----- background fadeout scenes  -----*/
     
     if($(window).height() > 500){
@@ -203,37 +169,6 @@ $(document).ready(function(){
     })*/
     .addTo(controller);
     
-    var geography2innerFadeoutScene = new ScrollMagic.Scene({
-        triggerElement: '.Geography-3',
-        triggerHook: 0.1,
-        reverse: true
-    })
-    .setClassToggle('.Geography-2-inner', 'fadeout')
-        
-    /*
-    .addIndicators({
-        name: 'div fadeout',
-        colorTrigger: 'yellow',
-        colorStart: '#75C695'
-    })*/
-    .addTo(controller);
-    
-    var geography2FadeoutScene = new ScrollMagic.Scene({
-        triggerElement: '.Geography-3',
-        triggerHook: 0.1,
-        reverse: true
-    })
-    .setClassToggle('.Geography-2', 'fadeout')
-        
-    /*
-    .addIndicators({
-        name: 'div fadeout',
-        colorTrigger: 'yellow',
-        colorStart: '#75C695'
-    })*/
-    .addTo(controller);
-    
-    
     var cities5FadeoutScene = new ScrollMagic.Scene({
         triggerElement: '.Sights-1',
         triggerHook: 0.1,
@@ -264,12 +199,12 @@ $(document).ready(function(){
     })*/
     .addTo(controller);
     
-    var cuisine1FadeoutScene = new ScrollMagic.Scene({
-        triggerElement: '.Cuisine-2',
+    var cuisine2FadeoutScene = new ScrollMagic.Scene({
+        triggerElement: '.Cuisine-3',
         triggerHook: 0.1,
         reverse: true
     })
-    .setClassToggle('.Cuisine-1', 'fadeout')
+    .setClassToggle('.Cuisine-2', 'fadeout')
         
     /*
     .addIndicators({
@@ -367,18 +302,18 @@ $(document).ready(function(){
     var largeDesktop = window.matchMedia( "(min-width: 1400px)" );
     
     if(largeDesktop.matches){
-        var intro1InnerParallaxTween = TweenMax.to(".Intro-1-inner", 1, {
-          backgroundPositionY: "-=5%",
+        var intro1ParallaxTween = TweenMax.to(".Intro-1", 1, {
+          backgroundPositionY: "-=15%",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
-        var intro1InnerParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Intro-1-inner", 
+        var intro1ParallaxScene = new ScrollMagic.Scene({
+            triggerElement: ".Intro-1", 
             triggerHook: 0,
-            duration: "100%"
+            duration: "200%"
         })
-        .setTween(intro1InnerParallaxTween)
+        .setTween(intro1ParallaxTween)
         //.addIndicators()
         .addTo(controller);
 
@@ -394,6 +329,21 @@ $(document).ready(function(){
             duration: "200%"
         })
         .setTween(geography1ParallaxTween)
+        //.addIndicators()
+        .addTo(controller);
+        
+        var geography2ParallaxTween = TweenMax.from(".Geography-2", 1, {
+          backgroundSize: "+=200px +=133.34px",
+          autoRound:false, 
+          ease:Power1.ease0ut
+        });
+
+        var geography2ParallaxScene = new ScrollMagic.Scene({
+            triggerElement: ".Geography-2", 
+            triggerHook: 1,
+            duration: "200%"
+        })
+        .setTween(geography2ParallaxTween)
         //.addIndicators()
         .addTo(controller);
 
@@ -503,96 +453,93 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var cuisine1InnerParallaxTween = TweenMax.to(".Cuisine-1-inner", 1, {
+        var cuisine1ParallaxTween = TweenMax.to(".Cuisine-1", 1, {
           backgroundPositionY: "-=15%",
-          autoRound:false, 
-          ease:Power1.ease0ut
-        });
-
-        var cuisine1InnerParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cuisine-1-inner", 
-            triggerHook: 1,
-            duration: "200%"
-        })
-        .setTween(cuisine1InnerParallaxTween)
-        //.addIndicators()
-        .addTo(controller);
-
-        var cuisine1ParallaxTween = TweenMax.from(".Cuisine-1", 1, {
-          backgroundSize: "+=80px +=60px",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var cuisine1ParallaxScene = new ScrollMagic.Scene({
             triggerElement: ".Cuisine-1", 
-            triggerHook: 0.2,
-            offset: 500,
+            triggerHook: 1,
             duration: "200%"
         })
         .setTween(cuisine1ParallaxTween)
         //.addIndicators()
         .addTo(controller);
 
-        var cuisine3InnerParallaxTween = TweenMax.to(".Cuisine-3-inner", 1, {
+        var cuisine2ParallaxTween = TweenMax.from(".Cuisine-2", 1, {
           backgroundSize: "+=80px +=60px",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
-        var cuisine3InnerParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cuisine-3-inner", 
+        var cuisine2ParallaxScene = new ScrollMagic.Scene({
+            triggerElement: ".Cuisine-2", 
             triggerHook: 1,
             duration: "200%"
         })
-        .setTween(cuisine3InnerParallaxTween)
+        .setTween(cuisine2ParallaxTween)
         //.addIndicators()
         .addTo(controller);
 
-        var cuisine3ParallaxTween = TweenMax.from(".Cuisine-3", 1, {
-          backgroundPositionY: "+=10%",
-          autoRound:false, 
-          ease:Power1.ease0ut
+        var cuisine4ParallaxTween = TweenMax.to(".Cuisine-4", 1, {
+            backgroundSize: "+=80px +=60px",
+            autoRound:false, 
+            ease:Power1.ease0ut
         });
 
-        var cuisine3ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cuisine-3", 
-            triggerHook: 0.2,
-            offset: 500,
+        var cuisine4ParallaxScene = new ScrollMagic.Scene({
+            triggerElement: ".Cuisine-4", 
+            triggerHook: 1,
             duration: "200%"
         })
-        .setTween(cuisine3ParallaxTween)
+        .setTween(cuisine4ParallaxTween)
         //.addIndicators()
         .addTo(controller);
 
-        var cuisine4InnerParallaxTween = TweenMax.to(".Cuisine-4-inner", 1, {
+        var cuisine5ParallaxTween = TweenMax.from(".Cuisine-5", 1, {
+            backgroundPositionY: "+=10%",
+            autoRound:false, 
+            ease:Power1.ease0ut
+        });
+
+        var cuisine5ParallaxScene = new ScrollMagic.Scene({
+            triggerElement: ".Cuisine-5", 
+            triggerHook: 1,
+            duration: "200%"
+        })
+        .setTween(cuisine5ParallaxTween)
+        //.addIndicators()
+        .addTo(controller);
+
+        var cuisine6ParallaxTween = TweenMax.to(".Cuisine-6", 1, {
           backgroundPositionY: "+=15%",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
-        var cuisine4InnerParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cuisine-4-inner", 
+        var cuisine6ParallaxScene = new ScrollMagic.Scene({
+            triggerElement: ".Cuisine-6", 
             triggerHook: 1,
             duration: "200%"
         })
-        .setTween(cuisine4InnerParallaxTween)
+        .setTween(cuisine6ParallaxTween)
         //.addIndicators()
         .addTo(controller);
-
-        var cuisine4ParallaxTween = TweenMax.to(".Cuisine-4", 1, {
-          backgroundSize: "+=80px +=60px",
+        
+        var cuisine7ParallaxTween = TweenMax.to(".Cuisine-7", 1, {
+          backgroundSize: "+=100px +=56.24px",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
-        var cuisine4ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cuisine-4", 
-            triggerHook: 0.2,
-            offset: 500,
+        var cuisine7ParallaxScene = new ScrollMagic.Scene({
+            triggerElement: ".Cuisine-7", 
+            triggerHook: 1,
             duration: "200%"
         })
-        .setTween(cuisine4ParallaxTween)
+        .setTween(cuisine7ParallaxTween)
         //.addIndicators()
         .addTo(controller);
 
