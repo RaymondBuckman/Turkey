@@ -6,22 +6,20 @@ export default class Intro extends Component {
         return(
         <div>
             <div id="top-of-page" className="Intro-1 scrollmagic-div-fadeout">
-                <div className="Intro-1-inner">
-                    <nav id="top-nav" className="navbar navbar-default visible-lg" role="navigation">
-                        <div className="container">
-                            <ul className="nav navbar-nav navbar-right">
-                                <li><a href="#Geography-1" role="link">Geography</a></li>
-                                <li><a href="#sehirler" role="link">Cities</a></li>
-                                <li><a href="#Sights-1" role="link">Sights</a></li>
-                                <li><a href="#oteleler" role="link">Hotels</a></li>
-                                <li><a href="#mutfak" role="link">Cuisine</a></li>
-                                <li><a href="#Language-1" role="link">Language</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                    <h1 id="hos-geldiniz" className="text-center" role="heading">T&#252;rkiye'ye hoş geldiniz!</h1>
-                    <h2 id="welcome" className="text-center" role="heading" tabIndex="0">Welcome to Turkey!</h2>
-                </div>
+                <nav id="top-nav" className="navbar navbar-default visible-lg" role="navigation">
+                    <div className="container">
+                        <ul className="nav navbar-nav navbar-right">
+                            <li><a href="#Geography-1" role="link">Geography</a></li>
+                            <li><a href="#sehirler" role="link">Cities</a></li>
+                            <li><a href="#Sights-1" role="link">Sights</a></li>
+                            <li><a href="#oteleler" role="link">Hotels</a></li>
+                            <li><a href="#mutfak" role="link">Cuisine</a></li>
+                            <li><a href="#Language-1" role="link">Language</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <h1 id="hos-geldiniz" className="text-center" role="heading">T&#252;rkiye'ye hoş geldiniz!</h1>
+                <h2 id="welcome" className="text-center" role="heading" tabIndex="0">Welcome to Turkey!</h2>
             </div>
             <div className="Intro-2" id="arrow-dest">
                 <ul className="flex-container">
