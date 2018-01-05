@@ -333,7 +333,7 @@ $(document).ready(function(){
         .addTo(controller);
         
         var geography2ParallaxTween = TweenMax.from(".Geography-2", 1, {
-          backgroundSize: "+=200px +=133.34px",
+          backgroundSize: "+=100px +=66.67px",
           autoRound:false, 
           ease:Power1.ease0ut
         });
