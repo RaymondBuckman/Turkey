@@ -90,10 +90,10 @@ $(document).ready(function(){
     .setTween(bottomNavTween)
     .addTo(controller); 
     
-    var heightOfIntro2 = $('.Geography-1').offset().top - $('.Intro-2').offset().top;
-    var heightOfGeography3 = $('.Cities-1').offset().top - $('.Geography-3').offset().top;
+    var heightOfIntro2 = $('.geography-1-div').offset().top - $('.intro-2-div').offset().top;
+    var heightOfGeography3 = $('.Cities-1').offset().top - $('.geography-3-div').offset().top;
     var heightOfCities3AndCities4 = $('.Cities-5').offset().top - $('.Cities-3').offset().top;
-    var heightOfSights1 = $('.Hotels-1').offset().top - $('.Sights-1').offset().top;
+    var heightOfSights1 = $('.Hotels-1').offset().top - $('.sights-1-div').offset().top;
     var heightOfHotels3 = $('.Cuisine-1').offset().top - $('.Hotels-3').offset().top;
     var heightOfCuisine2 = $('.Cuisine-3').offset().top - $('.Cuisine-2').offset().top;
     var heightOfLanguage1 = $('.Language-2').offset().top - $('.Language-1').offset().top;
@@ -156,11 +156,11 @@ $(document).ready(function(){
    
     /*----- div fadeout animations -----*/
     var intro1FadeoutScene = new ScrollMagic.Scene({
-        triggerElement: '.Intro-2',
+        triggerElement: '.intro-2-div',
         triggerHook: 0.1,
         reverse: true
     })
-    .setClassToggle('.Intro-1', 'fadeout')
+    .setClassToggle('.intro-1-div', 'fadeout')
     /*
     .addIndicators({
         name: 'div fadeout',
@@ -170,7 +170,7 @@ $(document).ready(function(){
     .addTo(controller);
     
     var cities5FadeoutScene = new ScrollMagic.Scene({
-        triggerElement: '.Sights-1',
+        triggerElement: '.sights-1-div',
         triggerHook: 0.1,
         reverse: true
     })
@@ -302,14 +302,14 @@ $(document).ready(function(){
     var largeDesktop = window.matchMedia( "(min-width: 1400px)" );
     
     if(largeDesktop.matches){
-        var intro1ParallaxTween = TweenMax.to(".Intro-1", 1, {
+        var intro1ParallaxTween = TweenMax.to(".intro-1-div", 1, {
           backgroundPositionY: "-=15%",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var intro1ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Intro-1", 
+            triggerElement: ".intro-1-div", 
             triggerHook: 0,
             duration: "200%"
         })
@@ -317,14 +317,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var geography1ParallaxTween = TweenMax.to(".Geography-1", 1, {
+        var geography1ParallaxTween = TweenMax.to(".geography-1-div", 1, {
           backgroundPositionY: "-=5%",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var geography1ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Geography-1", 
+            triggerElement: ".geography-1-div", 
             triggerHook: 1,
             duration: "200%"
         })
@@ -332,14 +332,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
         
-        var geography2ParallaxTween = TweenMax.from(".Geography-2", 1, {
+        var geography2ParallaxTween = TweenMax.from(".geography-2-div", 1, {
           backgroundSize: "+=100px +=66.67px",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var geography2ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Geography-2", 
+            triggerElement: ".geography-2-div", 
             triggerHook: 1,
             duration: "200%"
         })
@@ -613,12 +613,16 @@ $(document).ready(function(){
         var istanbulTemp = result.main.temp;
         var istanbulWeather = result.weather[0].description;
         var istanbulWind = result.wind.speed;
+        var istanbulLongitude = result.coord.lon;
+        var istanbulLatitude = result.coord.lat;
+        
         
         //If get returns "clear sky", replace text with "clear skies"
         if (istanbulWeather == "clear sky"){
             istanbulWeather = typofix;
         }
-
+        
+        $('#istanbul-location').html('Location: ' + istanbulLongitude + '&#186; N, ' + istanbulLatitude +'&#186; E');
         $('#istanbul-weather').html("Weather: " + istanbulTemp + "&#186; F & " + istanbulWeather); 
         $('#istanbul-wind').html("Wind: " + istanbulWind + " mph");
     });
@@ -627,12 +631,15 @@ $(document).ready(function(){
         var ankaraTemp = result.main.temp;
         var ankaraWeather = result.weather[0].description;
         var ankaraWind = result.wind.speed;
+        var ankaraLongitude = result.coord.lon;
+        var ankaraLatitude = result.coord.lat;
         
         //If get returns "clear sky", replace text with "clear skies"
         if (ankaraWeather == "clear sky"){
             ankaraWeather = typofix;
         }
         
+        $('#ankara-location').html('Location: ' + ankaraLongitude + '&#186; N, ' + ankaraLatitude +'&#186; E');
         $('#ankara-weather').html("Weather: " + ankaraTemp + "&#186; F & " + ankaraWeather); 
         $('#ankara-wind').html("Wind: " + ankaraWind + " mph");
     });
@@ -641,12 +648,15 @@ $(document).ready(function(){
         var izmirTemp = result.main.temp;
         var izmirWeather = result.weather[0].description;
         var izmirWind = result.wind.speed;
+        var izmirLongitude = result.coord.lon;
+        var izmirLatitude = result.coord.lat;
         
         //If get returns "clear sky", replace text with "clear skies"
         if (izmirWeather == "clear sky"){
             izmirWeather = typofix;
         }
         
+        $('#izmir-location').html('Location: ' + izmirLongitude + '&#186; N, ' + izmirLatitude +'&#186; E');
         $('#izmir-weather').html("Weather: " + izmirTemp + "&#186; F & " + izmirWeather); 
         $('#izmir-wind').html("Wind: " + izmirWind + " mph");
     });
@@ -655,12 +665,15 @@ $(document).ready(function(){
         var bursaTemp = result.main.temp;
         var bursaWeather = result.weather[0].description;
         var bursaWind = result.wind.speed;
+        var bursaLongitude = result.coord.lon;
+        var bursaLatitude = result.coord.lat;
         
         //If get returns "clear sky", replace text with "clear skies"
         if (bursaWeather == "clear sky"){
             bursaWeather = typofix;
         }
         
+        $('#bursa-location').html('Location: ' + bursaLongitude + '&#186; N, ' + bursaLatitude +'&#186; E');
         $('#bursa-weather').html("Weather: " + bursaTemp + "&#186; F & " + bursaWeather); 
         $('#bursa-wind').html("Wind: " + bursaWind + " mph");
     });
@@ -669,12 +682,15 @@ $(document).ready(function(){
         var adanaTemp = result.main.temp;
         var adanaWeather = result.weather[0].description;
         var adanaWind = result.wind.speed;
+        var adanaLongitude = result.coord.lon;
+        var adanaLatitude = result.coord.lat;
         
         //If get returns "clear sky", replace text with "clear skies"
         if (adanaWeather == "clear sky"){
             adanaWeather = typofix;
         }
         
+        $('#adana-location').html('Location: ' + adanaLongitude + '&#186; N, ' + adanaLatitude +'&#186; E');
         $('#adana-weather').html("Weather: " + adanaTemp + "&#186; F & " + adanaWeather); 
         $('#adana-wind').html("Wind: " + adanaWind + " mph");
     });
