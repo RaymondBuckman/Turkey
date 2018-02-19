@@ -91,13 +91,13 @@ $(document).ready(function(){
     .addTo(controller); 
     
     var heightOfIntro2 = $('.geography-1-div').offset().top - $('.intro-2-div').offset().top;
-    var heightOfGeography3 = $('.Cities-1').offset().top - $('.geography-3-div').offset().top;
-    var heightOfCities3AndCities4 = $('.Cities-5').offset().top - $('.Cities-3').offset().top;
-    var heightOfSights1 = $('.Hotels-1').offset().top - $('.sights-1-div').offset().top;
-    var heightOfHotels3 = $('.Cuisine-1').offset().top - $('.Hotels-3').offset().top;
-    var heightOfCuisine2 = $('.Cuisine-3').offset().top - $('.Cuisine-2').offset().top;
-    var heightOfLanguage1 = $('.Language-2').offset().top - $('.Language-1').offset().top;
-    var heightOfLanguage4 = $('.Footer-1').offset().top - $('.Language-4').offset().top;
+    var heightOfGeography3 = $('.cities-1-div').offset().top - $('.geography-3-div').offset().top;
+    var heightOfCities3AndCities4 = $('.cities-5-div').offset().top - $('.cities-3-div').offset().top;
+    var heightOfSights1 = $('.hotels-1-div').offset().top - $('.sights-1-div').offset().top;
+    var heightOfHotels3 = $('.cuisine-1-div').offset().top - $('.hotels-3-div').offset().top;
+    var heightOfCuisine2 = $('.cuisine-3-div').offset().top - $('.cuisine-2-div').offset().top;
+    var heightOfLanguage1 = $('.language-2-div').offset().top - $('.language-1-div').offset().top;
+    var heightOfLanguage4 = $('.footer-1-div').offset().top - $('.language-4-div').offset().top;
     
     /*----- header animations -----*/
     $('.scrollmagic-header').each(function(){
@@ -174,7 +174,7 @@ $(document).ready(function(){
         triggerHook: 0.1,
         reverse: true
     })
-    .setClassToggle('.Cities-5', 'fadeout')
+    .setClassToggle('.cities-5-div', 'fadeout')
         
     /*
     .addIndicators({
@@ -185,11 +185,11 @@ $(document).ready(function(){
     .addTo(controller);
     
     var hotels2FadeoutScene = new ScrollMagic.Scene({
-        triggerElement: '.Hotels-3',
+        triggerElement: '.hotels-3-div',
         triggerHook: 0.1,
         reverse: true
     })
-    .setClassToggle('.Hotels-2', 'fadeout')
+    .setClassToggle('.hotels-2-div', 'fadeout')
         
     /*
     .addIndicators({
@@ -200,11 +200,11 @@ $(document).ready(function(){
     .addTo(controller);
     
     var cuisine2FadeoutScene = new ScrollMagic.Scene({
-        triggerElement: '.Cuisine-3',
+        triggerElement: '.cuisine-3-div',
         triggerHook: 0.1,
         reverse: true
     })
-    .setClassToggle('.Cuisine-2', 'fadeout')
+    .setClassToggle('.cuisine-2-div', 'fadeout')
         
     /*
     .addIndicators({
@@ -215,11 +215,11 @@ $(document).ready(function(){
     .addTo(controller);
     
     var cuisine4FadeoutScene = new ScrollMagic.Scene({
-        triggerElement: '.Language-1',
+        triggerElement: '.language-1-div',
         triggerHook: 0.1,
         reverse: true
     })
-    .setClassToggle('.Cuisine-4', 'fadeout')
+    .setClassToggle('.cuisine-4-div', 'fadeout')
         
     /*
     .addIndicators({
@@ -282,7 +282,7 @@ $(document).ready(function(){
     }) 
     
     /*----- vocabulary animations -----*/
-    $('.Language-3 ul li').each(function(){
+    $('.language-3-div ul li').each(function(){
         var vocabScene = new ScrollMagic.Scene({
             triggerElement: this,
             triggerHook: 0.95,
@@ -347,14 +347,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var cities1ParallaxTween = TweenMax.from(".Cities-1", 1, {
+        var cities1ParallaxTween = TweenMax.from(".cities-1-div", 1, {
           backgroundSize: "+=100px +=56.2403px", 
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var cities1Parallaxscene = new ScrollMagic.Scene({
-            triggerElement: ".Cities-1", 
+            triggerElement: ".cities-1-div", 
             triggerHook: 1,
             duration: "200%"
         })
@@ -362,14 +362,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var cities2ParallaxTween = TweenMax.to(".Cities-2", 1, {
+        var cities2ParallaxTween = TweenMax.to(".cities-2-div", 1, {
           backgroundPositionY: "+=30%",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var cities2ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cities-2", 
+            triggerElement: ".cities-2-div", 
             triggerHook: 1,
             duration: "250%"
         })
@@ -377,7 +377,7 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var cities3ParallaxTween = TweenMax.to(".Cities-3", 1, {
+        var cities3ParallaxTween = TweenMax.to(".cities-3-div", 1, {
             backgroundPositionY: "-=10%",
             backgroundSize: "+=100px +=66.666667px",
             autoRound:false, 
@@ -385,7 +385,7 @@ $(document).ready(function(){
         });
 
         var cities3ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cities-3", 
+            triggerElement: ".cities-3-div", 
             triggerHook: 1,
             duration: "250%"
         })
@@ -393,14 +393,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var cities4ParallaxTween = TweenMax.from(".Cities-4", 1, {
+        var cities4ParallaxTween = TweenMax.from(".cities-4-div", 1, {
             backgroundSize: "+=100px +=56.32124352331606px",
             autoRound:false, 
             ease:Power1.ease0ut
         });
 
         var cities4ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cities-4", 
+            triggerElement: ".cities-4-div", 
             triggerHook: 1,
             duration: "250%"
         })
@@ -408,14 +408,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var cities5ParallaxTween = TweenMax.from(".Cities-5", 1, {
+        var cities5ParallaxTween = TweenMax.from(".cities-5-div", 1, {
           backgroundPositionY: "+=30%",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var cities5ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cities-5", 
+            triggerElement: ".cities-5-div", 
             triggerHook: 1,
             duration: "250%"
         })
@@ -423,14 +423,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var hotels1ParallaxTween = TweenMax.to(".Hotels-1", 1, {
+        var hotels1ParallaxTween = TweenMax.to(".hotels-1-div", 1, {
           backgroundPositionY: "+=15%",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var hotels1ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Hotels-1", 
+            triggerElement: ".hotels-1-div", 
             triggerHook: 1,
             duration: "200%"
         })
@@ -438,14 +438,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var hotels2ParallaxTween = TweenMax.from(".Hotels-2", 1, {
+        var hotels2ParallaxTween = TweenMax.from(".hotels-2-div", 1, {
           backgroundSize: "+=200px +=149.9px",
           autoRound:false, 
           ease:Power0.ease0ut
         });
 
         var hotels2ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Hotels-2", 
+            triggerElement: ".hotels-2-div", 
             triggerHook: 1,
             duration: "200%"
         })
@@ -453,14 +453,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var cuisine1ParallaxTween = TweenMax.to(".Cuisine-1", 1, {
+        var cuisine1ParallaxTween = TweenMax.to(".cuisine-1-div", 1, {
           backgroundPositionY: "-=15%",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var cuisine1ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cuisine-1", 
+            triggerElement: ".cuisine-1-div", 
             triggerHook: 1,
             duration: "200%"
         })
@@ -468,14 +468,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var cuisine2ParallaxTween = TweenMax.from(".Cuisine-2", 1, {
+        var cuisine2ParallaxTween = TweenMax.from(".cuisine-2-div", 1, {
           backgroundSize: "+=80px +=60px",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var cuisine2ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cuisine-2", 
+            triggerElement: ".cuisine-2-div", 
             triggerHook: 1,
             duration: "200%"
         })
@@ -483,14 +483,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var cuisine4ParallaxTween = TweenMax.to(".Cuisine-4", 1, {
+        var cuisine4ParallaxTween = TweenMax.to(".cuisine-4-div", 1, {
             backgroundSize: "+=80px +=60px",
             autoRound:false, 
             ease:Power1.ease0ut
         });
 
         var cuisine4ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cuisine-4", 
+            triggerElement: ".cuisine-4-div", 
             triggerHook: 1,
             duration: "200%"
         })
@@ -498,14 +498,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var cuisine5ParallaxTween = TweenMax.from(".Cuisine-5", 1, {
+        var cuisine5ParallaxTween = TweenMax.from(".cuisine-5-div", 1, {
             backgroundPositionY: "+=10%",
             autoRound:false, 
             ease:Power1.ease0ut
         });
 
         var cuisine5ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cuisine-5", 
+            triggerElement: ".cuisine-5-div", 
             triggerHook: 1,
             duration: "200%"
         })
@@ -513,14 +513,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var cuisine6ParallaxTween = TweenMax.to(".Cuisine-6", 1, {
+        var cuisine6ParallaxTween = TweenMax.to(".cuisine-6-div", 1, {
           backgroundPositionY: "+=15%",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var cuisine6ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cuisine-6", 
+            triggerElement: ".cuisine-6-div", 
             triggerHook: 1,
             duration: "200%"
         })
@@ -528,14 +528,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
         
-        var cuisine7ParallaxTween = TweenMax.to(".Cuisine-7", 1, {
+        var cuisine7ParallaxTween = TweenMax.to(".cuisine-7-div", 1, {
           backgroundSize: "+=100px +=56.24px",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var cuisine7ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cuisine-7", 
+            triggerElement: ".cuisine-7-div", 
             triggerHook: 1,
             duration: "200%"
         })
@@ -543,14 +543,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var language2ParallaxTween = TweenMax.from(".Language-2", 1, {
+        var language2ParallaxTween = TweenMax.from(".language-2-div", 1, {
           backgroundSize: "+=200px +=125px",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var language2ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Language-2", 
+            triggerElement: ".language-2-div", 
             triggerHook: 1,
             duration: "200%"
         })
@@ -558,14 +558,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var footer1ParallaxTween = TweenMax.from(".Footer-1", 1, {
+        var footer1ParallaxTween = TweenMax.from(".footer-1-div", 1, {
           backgroundPositionY: "+=10%",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var footer1ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Footer-1", 
+            triggerElement: ".footer-1-div", 
             triggerHook: 1,
             duration: "250%"
         })
