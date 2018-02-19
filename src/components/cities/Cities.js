@@ -80,24 +80,24 @@ export default class Cities extends Component {
     render() {
         return(
         <div>
-            <div className="Cities-1" id="Cities-1"> 
+            <div className="cities-1-div" id="cities-1-div"> 
                 <h1 id="sehirler" className="text-center scrollmagic-header" role="heading">En Büyük Şehirler</h1>
                 <h2 id="cities" className="text-center scrollmagic-header" role="heading" tabIndex="0">Largest Cities</h2> 
                 <ul id="istanbul-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
                     <li><span id="istanbul">İstanbul</span></li>
                     <li>Economic & Cultural Center</li>
-                    <li>Location: Marmara Region</li>
+                    <li id="istanbul-location"></li>
                     <li>Population: 14.8 million</li>
                     <li id="istanbul-weather"></li> 
                     <li id="istanbul-wind"></li>
                     <li><CityRow name="CityRow" UTCOffset="3"/></li>
                 </ul>
             </div>
-            <div className="Cities-2"> 
+            <div className="cities-2-div"> 
                 <ul id="ankara-description" className="col-lg-6 col-lg-offset-0 text-left scrollmagic-desc">
                     <li><span id="ankara">Ankara</span></li>
                     <li>The Capital of Turkey</li>
-                    <li>Location: Central Anatolia</li>
+                    <li id="ankara-location"></li>
                     <li>Population: 5.3 million</li>
                     <li id="ankara-weather"></li> 
                     <li id="ankara-wind"></li>
@@ -105,11 +105,11 @@ export default class Cities extends Component {
                 </ul>
             </div>
             
-            <div className="Cities-3"> 
+            <div className="cities-3-div"> 
                 <ul id="izmir-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
                     <li><span id="izmir">İzmir</span></li>
                     <li>Crusiseline hotspot</li>
-                    <li>Location: Aegean Region</li>
+                    <li id="izmir-location"></li>
                     <li>Population: 2.8 million</li>
                     <li id="izmir-weather"></li> 
                     <li id="izmir-wind"></li>
@@ -117,11 +117,11 @@ export default class Cities extends Component {
                 </ul>
             </div>
             
-            <div className="Cities-4">
+            <div className="cities-4-div">
                 <ul id="bursa-description" className="col-lg-6 col-lg-offset-0 text-left scrollmagic-desc">
                     <li><span id="bursa">Bursa</span></li>
                     <li>~300 Year Capital of the Ottoman Empire</li>
-                    <li>Location: Marmara Region</li>
+                    <li id="bursa-location"></li>
                     <li>Population: 2.3 million</li>
                     <li id="bursa-weather"></li> 
                     <li id="bursa-wind"></li>
@@ -129,11 +129,11 @@ export default class Cities extends Component {
                 </ul>
             </div>
             
-            <div className="Cities-5 scrollmagic-div-fadeout">
+            <div className="cities-5-div scrollmagic-div-fadeout">
                 <ul id="adana-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
                     <li><span id="adana">Adana</span></li>
                     <li>Mediterranean Capital</li>
-                    <li>Location: Mediterranean Region</li>
+                    <li id="adana-location"></li>
                     <li>Population: 1.7 million</li>
                     <li id="adana-weather"></li> 
                     <li id="adana-wind"></li>
