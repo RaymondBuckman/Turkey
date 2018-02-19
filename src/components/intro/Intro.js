@@ -5,7 +5,7 @@ export default class Intro extends Component {
     render() {
         return(
         <div>
-            <div id="top-of-page" className="Intro-1 scrollmagic-div-fadeout">
+            <div id="top-of-page" className="intro-1-div scrollmagic-div-fadeout">
                 <nav id="top-nav" className="navbar navbar-default visible-lg" role="navigation">
                     <div className="container">
                         <ul className="nav navbar-nav navbar-right">
@@ -21,7 +21,7 @@ export default class Intro extends Component {
                 <h1 id="hos-geldiniz" className="text-center" role="heading">T&#252;rkiye'ye hoş geldiniz!</h1>
                 <h2 id="welcome" className="text-center" role="heading" tabIndex="0">Welcome to Turkey!</h2>
             </div>
-            <div className="Intro-2" id="arrow-dest">
+            <div className="intro-2-div" id="arrow-dest">
                 <ul className="flex-container">
                     <li className="flex-item scrollmagic-info-squares">
                         <h1 id="bayragi" className="scrollmagic-header">Türk bayrağı</h1>
@@ -30,10 +30,10 @@ export default class Intro extends Component {
                     </li>
                     <li className="flex-item scrollmagic-info-squares" alt="Turkish Flag">
                     </li>
-                    <li className="flex-item scrollmagic-info-squares" alt="">
+                    <li className="flex-item scrollmagic-info-squares" alt="Coat of Arms for the Ottoman Empire">
                         <h2>Coat of Arms of the Ottoman Empire</h2>
                     </li>
-                    <li className="flex-item scrollmagic-info-squares" alt="">
+                    <li className="flex-item scrollmagic-info-squares" alt="Emblem of the Seljuk Turks">
                         <h2>Öksökö - Emblem of the Seljuk Turks</h2>
                     </li>
                 </ul>
