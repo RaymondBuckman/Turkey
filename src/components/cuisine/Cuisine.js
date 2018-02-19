@@ -5,7 +5,7 @@ export default class Cuisine extends Component {
     render() {
         return(
         <div>
-            <div className="Cuisine-1" id="Cuisine-1">             
+            <div className="cuisine-1-div" id="cuisine-1-div">             
                 <div className="container">
                     <h1 id="mutfak" className="text-center scrollmagic-header" role="heading">Mutfak</h1>
                     <h2 id="cuisine" className="text-center scrollmagic-header" role="heading" tabIndex="0">Cuisine</h2>
@@ -15,7 +15,7 @@ export default class Cuisine extends Component {
                     </div>
                 </div>
             </div>
-            <div className="Cuisine-2 scrollmagic-div-fadeout">             
+            <div className="cuisine-2-div scrollmagic-div-fadeout">             
                 <div className="container">
                     <div className="col-xs-10 col-lg-6 text-left">
                         <h1 id="doner" className="scrollmagic-desc">Döner Kebab</h1>
@@ -23,7 +23,7 @@ export default class Cuisine extends Component {
                     </div>
                 </div>
             </div>
-            <div className="Cuisine-3">
+            <div className="cuisine-3-div">
                 <ul className="flex-container">
                     <li className="flex-item scrollmagic-info-squares">
                         <h1 id="yemegi" className="scrollmagic-header">Türk yemeği</h1>
@@ -41,7 +41,7 @@ export default class Cuisine extends Component {
                     </li>
                 </ul>
             </div>
-            <div className="Cuisine-4">            
+            <div className="cuisine-4-div">            
                 <div className="container"> 
                     <div className="col-xs-10 col-xs-offset-2 col-lg-6 col-lg-offset-6 text-right"> 
                         <h1 id="delight" className="scrollmagic-desc">Turkish Delight</h1>  
@@ -49,7 +49,7 @@ export default class Cuisine extends Component {
                     </div>
                 </div>
             </div>
-            <div className="Cuisine-5">            
+            <div className="cuisine-5-div">            
                 <div className="container">
                     <div className="col-xs-10 col-lg-6 text-left">
                         <h1 id="dolma" className="scrollmagic-desc">Dolma</h1>
@@ -57,7 +57,7 @@ export default class Cuisine extends Component {
                     </div>
                 </div>
             </div>
-            <div className="Cuisine-6">                 
+            <div className="cuisine-6-div">                 
                 <div className="container"> 
                     <div className="col-xs-10 col-xs-offset-2 col-lg-6 col-lg-offset-6 text-right"> 
                         <h1 id="simit" className="scrollmagic-desc">Simit</h1>   
@@ -65,7 +65,7 @@ export default class Cuisine extends Component {
                     </div>
                 </div>
             </div>
-            <div className="Cuisine-7">                 
+            <div className="cuisine-7-div">                 
                 <div className="container">
                     <div className="col-xs-10 col-lg-6 text-left">
                         <h1 id="kokorec" className="scrollmagic-desc">Kokoreç</h1>
