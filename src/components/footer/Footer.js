@@ -4,7 +4,7 @@ export default class Footer extends Component {
     render() {
         return(
         <div>
-            <div className="Footer-1">
+            <div className="footer-1-div">
                 <div className="container">
                     <h1 id="yolculuk" className="text-left scrollmagic-header">İyi Yolculuk!</h1>
                     <h2 id="voyage" className="text-left scrollmagic-header" tabIndex="0">Bon voyage!</h2>

@@ -9,6 +9,23 @@ import accusative from '../../img/turkish-8.jpg';
 import possessive from '../../img/possessive-1.jpg';
 import questions from '../../img/questions-1.jpg';
 import numbers from '../../img/numbers-1.jpg';
+import $ from 'jquery';
+
+import merhaba from '../../audio/merhaba.mp3';
+import guleGule from '../../audio/gule-gule.mp3';
+import evet from '../../audio/evet.mp3';
+import hayir from '../../audio/hayir.mp3';
+import nasilsiniz from '../../audio/nasilsiniz.mp3';
+import iyiyim from '../../audio/iyiyim.mp3';
+import tesekkurler from '../../audio/tesekkurler.mp3';
+import birseyDegil from '../../audio/birsey-degil.mp3';
+import lutfen from '../../audio/lutfen.mp3';
+//import pardon from '../../audio/pardon.mp3';
+import afedersiniz from '../../audio/afedersiniz.mp3';
+import buOteleNerede from '../../audio/bu-otele-nerede.mp3';
+import ingilizceBiliyorMusunuz from '../../audio/ingilizce-biliyor-musunuz.mp3';
+import neKadar from '../../audio/ne-kadar.mp3';
+import banaYardimEdebilirMisiniz from '../../audio/bana-yardim-edebilir-misiniz.mp3';
 
 const images = [
     pronounciation,
@@ -56,9 +73,80 @@ export default class Language extends Component {
  
         this.state = {
             photoIndex: 1,
-            isOpen: false,
+            isOpen: false
         };
     }
+    
+    playMerhabaAudio(){
+        var audio = document.getElementById("merhaba-audio");
+        audio.play();
+    }
+    
+    playGuleGuleAudio(){
+        var audio = document.getElementById("gule-gule-audio");
+        audio.play();
+    }
+    
+    playEvetAudio(){
+        var audio = document.getElementById("evet-audio");
+        audio.play();
+    }
+    
+    playHayirAudio(){
+        var audio = document.getElementById("hayir-audio");
+        audio.play();
+    }
+    
+    playNasilsinizAudio(){
+        var audio = document.getElementById("nasilsiniz-audio");
+        audio.play();
+    }
+    
+    playIyiyimAudio(){
+        var audio = document.getElementById("iyiyim-audio");
+        audio.play();
+    }
+    
+    playTesekkurlerAudio(){
+        var audio = document.getElementById("tesekkurler-audio");
+        audio.play();
+    }
+    
+    playBirseyDegilAudio(){
+        var audio = document.getElementById("birsey-degil-audio");
+        audio.play();
+    } 
+    
+    playLutfenAudio(){
+        var audio = document.getElementById("lutfen-audio");
+        audio.play();
+    }
+    
+    playAfedersinizAudio(){
+        var audio = document.getElementById("afedersiniz-audio");
+        audio.play();
+    }    
+    
+    playBuOteleNeredeAudio(){
+        var audio = document.getElementById("bu-otele-nerede-audio");
+        audio.play();
+    }
+    
+    playIngilizceBiliyorMusunuzAudio(){
+        var audio = document.getElementById("ingilizce-biliyor-musunuz-audio");
+        audio.play();
+    }  
+    
+    playNeKadarAudio(){
+        var audio = document.getElementById("ne-kadar-audio");
+        audio.play();
+    }
+    
+    playBanaYardımEdebilirMisinizAudio(){
+        var audio = document.getElementById("bana-yardim-edebilir-misiniz-audio");
+        audio.play();
+    }
+    
     
     render() {
         const {
@@ -68,7 +156,7 @@ export default class Language extends Component {
         
         return(
         <div>
-            <div className="Language-1" id="Language-1">
+            <div className="language-1-div" id="language-1-div">
                 <ul className="flex-container">
                     <li className="flex-item scrollmagic-info-squares">
                         <h1 id="dili" className="scrollmagic-header" role="heading">Türk Dili</h1>
@@ -82,7 +170,7 @@ export default class Language extends Component {
                     <li alt="Airport signs in turkish" className="flex-item scrollmagic-info-squares"></li>
                 </ul>
             </div>
-            <div className="Language-2">            
+            <div className="language-2-div">            
                 <div className="container">
                     <h1 id="alfabe" className="text-left scrollmagic-header" role="heading">Alfabe</h1>
                     <h2 id="alphabet" className="text-left scrollmagic-header" role="heading" tabIndex="0">Alphabet</h2> 
@@ -96,45 +184,43 @@ export default class Language extends Component {
                     </h2>
                 </div>
             </div>
-            <div className="Language-3 scrollmagic-div-fadeout">            
+            <div className="language-3-div scrollmagic-div-fadeout">            
                 <div className="container">
                     <h1 id="cumleler" className="text-center scrollmagic-header" role="heading">Temel Cümleler</h1>
                     <h2 id="phrases" className="text-center scrollmagic-header" role="heading" tabIndex="0">Basic Phrases</h2> 
                     
                     <ul className="col-lg-12 col-lg-offset-0 text-left">
-                        <li className="scrollmagic-vocab">Merhaba <span id="pronunciation">(mayor-ha-bah)</span>  - <span id="translation">Hello</span></li>
+                        <li className="scrollmagic-vocab">Merhaba <img className="audio-symbol" src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playMerhabaAudio}></img> - <span id="translation">Hello</span></li>
                         
-                        <li className="scrollmagic-vocab">Güle güle <span id="pronunciation">(goo-lay-goo-lay)</span> - <span id="translation">Bye</span></li>
+                        <li className="scrollmagic-vocab">Güle güle <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playGuleGuleAudio}></img> - <span id="translation">Bye</span></li>
                         
-                        <li className="scrollmagic-vocab">Evet <span id="pronunciation">(eh-vet)</span> - <span id="translation">Yes</span></li>
+                        <li className="scrollmagic-vocab">Evet <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playEvetAudio}></img> - <span id="translation">Yes</span></li>
                         
-                        <li className="scrollmagic-vocab">Hayır <span id="pronunciation">(hire)</span> - <span id="translation">No</span></li> 
+                        <li className="scrollmagic-vocab">Hayır <img className="audio-symbol" src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playHayirAudio}></img> - <span id="translation">No</span></li> 
     
-                        <li className="scrollmagic-vocab">Nasılsın? <span id="pronunciation">(na-sul-sun)</span> - <span id="translation">How are you?</span></li>
+                        <li className="scrollmagic-vocab">Nasılsınız? <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playNasilsinizAudio}></img> - <span id="translation">How are you? (formal)</span></li>
                         
-                        <li className="scrollmagic-vocab">İyiyim  <span id="pronunciation">(ee-yee-yim)</span> - <span id="translation">I'm fine</span></li>
+                        <li className="scrollmagic-vocab">İyiyim  <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playIyiyimAudio}></img> - <span id="translation">I'm fine</span></li>
                         
-                        <li className="scrollmagic-vocab">Teşekkürler <span id="pronunciation">(te-shek-kur-lair)</span> - <span id="translation">Thanks</span></li>
+                        <li className="scrollmagic-vocab">Teşekkürler <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playTesekkurlerAudio}></img> - <span id="translation">Thanks</span></li>
                         
-                        <li className="scrollmagic-vocab">Birşey değil <span id="pronunciation">(beer-shay-dee-ill)</span> - <span id="translation">You're welcome</span></li>
+                        <li className="scrollmagic-vocab">Birşey değil <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playBirseyDegilAudio}></img> - <span id="translation">You're welcome</span></li>
                         
-                        <li className="scrollmagic-vocab">Lütfen <span id="pronunciation">(loot-fen)</span> - <span id="translation">Please</span></li>
+                        <li className="scrollmagic-vocab">Lütfen <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playLutfenAudio}></img> - <span id="translation">Please</span></li>
                         
-                        <li className="scrollmagic-vocab">Pardon <span id="pronunciation">(par-don)</span> - <span id="translation">Sorry</span></li>
+                        <li className="scrollmagic-vocab">Afedersiniz <img className="audio-symbol" src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playAfedersinizAudio}></img> - <span id="translation">Excuse me (formal)</span></li>
                         
-                        <li className="scrollmagic-vocab">Afedersiniz <span id="pronunciation">(ah-fair-dare-sin-is)</span> - <span id="translation">Excuse me</span></li>
+                        <li className="scrollmagic-vocab">Bu otele nerede? <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playBuOteleNeredeAudio}></img> - <span id="translation">Where is this hotel?</span></li>
                         
-                        <li className="scrollmagic-vocab">Bu otele nerede? <span id="pronunciation">(bu-oh-tell-ay-nair-ray-day)</span> - <span id="translation">Where is this hotel?</span></li>
+                        <li className="scrollmagic-vocab">İngilizce biliyor musunuz? (formal) <img src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" className="audio-symbol" onClick={this.playIngilizceBiliyorMusunuzAudio}></img> - <span id="translation">Do you speak English?</span></li>
                         
-                        <li className="scrollmagic-vocab">İngilizce biliyor musunuz? <span id="pronunciation">(en-gi-leez-jay-bill-ee-yor-moo-soo-nooz)</span> - <span id="translation">Do you speak English?</span></li>
+                        <li className="scrollmagic-vocab">Ne kedar? <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playNeKadarAudio}></img> - <span id="translation">How much does it cost?</span></li>
                         
-                        <li className="scrollmagic-vocab">Ne kedar? <span id="pronunciation">(nay-ka-dar)</span> - <span id="translation">How much does it cost?</span></li>
-                        
-                        <li className="scrollmagic-vocab">Yardım edebilir misiniz? <span id="pronunciation">(yar-dumb-edd-ay-bill-ear-mih-sin-is)</span> - <span id="translation">Can you help me?</span></li>
+                        <li className="scrollmagic-vocab">Bana yardım edebilir misiniz? <img className="audio-symbol" src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playBanaYardımEdebilirMisinizAudio}></img> - <span id="translation">Can you help me?</span></li>
                     </ul>
                 </div>
             </div>
-            <div className="Language-4">
+            <div className="language-4-div">
                  <ul className="flex-container">
                     <li className="flex-item" >
                         <h1 id="konular" className="scrollmagic-header">Diğer Konular</h1>
@@ -181,6 +267,7 @@ export default class Language extends Component {
                         </button>
                     </li>
                 </ul>
+            
  
                 {isOpen &&
                     <Lightbox
@@ -201,6 +288,21 @@ export default class Language extends Component {
                     />
                 }
             </div>
+            <audio id="merhaba-audio" src={merhaba}></audio>
+            <audio id="gule-gule-audio" src={guleGule}></audio> 
+            <audio id="evet-audio" src={evet}></audio>
+            <audio id="hayir-audio" src={hayir}></audio>
+            <audio id="nasilsiniz-audio" src={nasilsiniz}></audio>
+            <audio id="iyiyim-audio" src={iyiyim}></audio>
+            <audio id="tesekkurler-audio" src={tesekkurler}></audio>
+            <audio id="birsey-degil-audio" src={birseyDegil}></audio>
+            <audio id="lutfen-audio" src={lutfen}></audio>
+            <audio id="afedersiniz-audio" src={afedersiniz}></audio>
+            <audio id="bu-otele-nerede-audio" src={buOteleNerede}></audio>
+            <audio id="ingilizce-biliyor-musunuz-audio" src={ingilizceBiliyorMusunuz}></audio>
+            <audio id="ne-kadar-audio" src={neKadar}></audio>
+            <audio id="bana-yardim-edebilir-misiniz-audio" src={banaYardimEdebilirMisiniz}></audio>
+]
         </div>
         );
     }

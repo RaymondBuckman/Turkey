@@ -90,14 +90,14 @@ $(document).ready(function(){
     .setTween(bottomNavTween)
     .addTo(controller); 
     
-    var heightOfIntro2 = $('.Geography-1').offset().top - $('.Intro-2').offset().top;
-    var heightOfGeography3 = $('.Cities-1').offset().top - $('.Geography-3').offset().top;
-    var heightOfCities3AndCities4 = $('.Cities-5').offset().top - $('.Cities-3').offset().top;
-    var heightOfSights1 = $('.Hotels-1').offset().top - $('.Sights-1').offset().top;
-    var heightOfHotels3 = $('.Cuisine-1').offset().top - $('.Hotels-3').offset().top;
-    var heightOfCuisine2 = $('.Cuisine-3').offset().top - $('.Cuisine-2').offset().top;
-    var heightOfLanguage1 = $('.Language-2').offset().top - $('.Language-1').offset().top;
-    var heightOfLanguage4 = $('.Footer-1').offset().top - $('.Language-4').offset().top;
+    var heightOfIntro2 = $('.geography-1-div').offset().top - $('.intro-2-div').offset().top;
+    var heightOfGeography3 = $('.cities-1-div').offset().top - $('.geography-3-div').offset().top;
+    var heightOfCities3AndCities4 = $('.cities-5-div').offset().top - $('.cities-3-div').offset().top;
+    var heightOfSights1 = $('.hotels-1-div').offset().top - $('.sights-1-div').offset().top;
+    var heightOfHotels3 = $('.cuisine-1-div').offset().top - $('.hotels-3-div').offset().top;
+    var heightOfCuisine2 = $('.cuisine-3-div').offset().top - $('.cuisine-2-div').offset().top;
+    var heightOfLanguage1 = $('.language-2-div').offset().top - $('.language-1-div').offset().top;
+    var heightOfLanguage4 = $('.footer-1-div').offset().top - $('.language-4-div').offset().top;
     
     /*----- header animations -----*/
     $('.scrollmagic-header').each(function(){
@@ -156,11 +156,11 @@ $(document).ready(function(){
    
     /*----- div fadeout animations -----*/
     var intro1FadeoutScene = new ScrollMagic.Scene({
-        triggerElement: '.Intro-2',
+        triggerElement: '.intro-2-div',
         triggerHook: 0.1,
         reverse: true
     })
-    .setClassToggle('.Intro-1', 'fadeout')
+    .setClassToggle('.intro-1-div', 'fadeout')
     /*
     .addIndicators({
         name: 'div fadeout',
@@ -170,11 +170,11 @@ $(document).ready(function(){
     .addTo(controller);
     
     var cities5FadeoutScene = new ScrollMagic.Scene({
-        triggerElement: '.Sights-1',
+        triggerElement: '.sights-1-div',
         triggerHook: 0.1,
         reverse: true
     })
-    .setClassToggle('.Cities-5', 'fadeout')
+    .setClassToggle('.cities-5-div', 'fadeout')
         
     /*
     .addIndicators({
@@ -185,11 +185,11 @@ $(document).ready(function(){
     .addTo(controller);
     
     var hotels2FadeoutScene = new ScrollMagic.Scene({
-        triggerElement: '.Hotels-3',
+        triggerElement: '.hotels-3-div',
         triggerHook: 0.1,
         reverse: true
     })
-    .setClassToggle('.Hotels-2', 'fadeout')
+    .setClassToggle('.hotels-2-div', 'fadeout')
         
     /*
     .addIndicators({
@@ -200,11 +200,11 @@ $(document).ready(function(){
     .addTo(controller);
     
     var cuisine2FadeoutScene = new ScrollMagic.Scene({
-        triggerElement: '.Cuisine-3',
+        triggerElement: '.cuisine-3-div',
         triggerHook: 0.1,
         reverse: true
     })
-    .setClassToggle('.Cuisine-2', 'fadeout')
+    .setClassToggle('.cuisine-2-div', 'fadeout')
         
     /*
     .addIndicators({
@@ -215,11 +215,11 @@ $(document).ready(function(){
     .addTo(controller);
     
     var cuisine4FadeoutScene = new ScrollMagic.Scene({
-        triggerElement: '.Language-1',
+        triggerElement: '.language-1-div',
         triggerHook: 0.1,
         reverse: true
     })
-    .setClassToggle('.Cuisine-4', 'fadeout')
+    .setClassToggle('.cuisine-4-div', 'fadeout')
         
     /*
     .addIndicators({
@@ -282,7 +282,7 @@ $(document).ready(function(){
     }) 
     
     /*----- vocabulary animations -----*/
-    $('.Language-3 ul li').each(function(){
+    $('.language-3-div ul li').each(function(){
         var vocabScene = new ScrollMagic.Scene({
             triggerElement: this,
             triggerHook: 0.95,
@@ -302,14 +302,14 @@ $(document).ready(function(){
     var largeDesktop = window.matchMedia( "(min-width: 1400px)" );
     
     if(largeDesktop.matches){
-        var intro1ParallaxTween = TweenMax.to(".Intro-1", 1, {
+        var intro1ParallaxTween = TweenMax.to(".intro-1-div", 1, {
           backgroundPositionY: "-=15%",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var intro1ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Intro-1", 
+            triggerElement: ".intro-1-div", 
             triggerHook: 0,
             duration: "200%"
         })
@@ -317,14 +317,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var geography1ParallaxTween = TweenMax.to(".Geography-1", 1, {
+        var geography1ParallaxTween = TweenMax.to(".geography-1-div", 1, {
           backgroundPositionY: "-=5%",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var geography1ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Geography-1", 
+            triggerElement: ".geography-1-div", 
             triggerHook: 1,
             duration: "200%"
         })
@@ -332,14 +332,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
         
-        var geography2ParallaxTween = TweenMax.from(".Geography-2", 1, {
+        var geography2ParallaxTween = TweenMax.from(".geography-2-div", 1, {
           backgroundSize: "+=100px +=66.67px",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var geography2ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Geography-2", 
+            triggerElement: ".geography-2-div", 
             triggerHook: 1,
             duration: "200%"
         })
@@ -347,14 +347,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var cities1ParallaxTween = TweenMax.from(".Cities-1", 1, {
+        var cities1ParallaxTween = TweenMax.from(".cities-1-div", 1, {
           backgroundSize: "+=100px +=56.2403px", 
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var cities1Parallaxscene = new ScrollMagic.Scene({
-            triggerElement: ".Cities-1", 
+            triggerElement: ".cities-1-div", 
             triggerHook: 1,
             duration: "200%"
         })
@@ -362,14 +362,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var cities2ParallaxTween = TweenMax.to(".Cities-2", 1, {
+        var cities2ParallaxTween = TweenMax.to(".cities-2-div", 1, {
           backgroundPositionY: "+=30%",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var cities2ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cities-2", 
+            triggerElement: ".cities-2-div", 
             triggerHook: 1,
             duration: "250%"
         })
@@ -377,7 +377,7 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var cities3ParallaxTween = TweenMax.to(".Cities-3", 1, {
+        var cities3ParallaxTween = TweenMax.to(".cities-3-div", 1, {
             backgroundPositionY: "-=10%",
             backgroundSize: "+=100px +=66.666667px",
             autoRound:false, 
@@ -385,7 +385,7 @@ $(document).ready(function(){
         });
 
         var cities3ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cities-3", 
+            triggerElement: ".cities-3-div", 
             triggerHook: 1,
             duration: "250%"
         })
@@ -393,14 +393,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var cities4ParallaxTween = TweenMax.from(".Cities-4", 1, {
+        var cities4ParallaxTween = TweenMax.from(".cities-4-div", 1, {
             backgroundSize: "+=100px +=56.32124352331606px",
             autoRound:false, 
             ease:Power1.ease0ut
         });
 
         var cities4ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cities-4", 
+            triggerElement: ".cities-4-div", 
             triggerHook: 1,
             duration: "250%"
         })
@@ -408,14 +408,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var cities5ParallaxTween = TweenMax.from(".Cities-5", 1, {
+        var cities5ParallaxTween = TweenMax.from(".cities-5-div", 1, {
           backgroundPositionY: "+=30%",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var cities5ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cities-5", 
+            triggerElement: ".cities-5-div", 
             triggerHook: 1,
             duration: "250%"
         })
@@ -423,14 +423,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var hotels1ParallaxTween = TweenMax.to(".Hotels-1", 1, {
+        var hotels1ParallaxTween = TweenMax.to(".hotels-1-div", 1, {
           backgroundPositionY: "+=15%",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var hotels1ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Hotels-1", 
+            triggerElement: ".hotels-1-div", 
             triggerHook: 1,
             duration: "200%"
         })
@@ -438,14 +438,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var hotels2ParallaxTween = TweenMax.from(".Hotels-2", 1, {
+        var hotels2ParallaxTween = TweenMax.from(".hotels-2-div", 1, {
           backgroundSize: "+=200px +=149.9px",
           autoRound:false, 
           ease:Power0.ease0ut
         });
 
         var hotels2ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Hotels-2", 
+            triggerElement: ".hotels-2-div", 
             triggerHook: 1,
             duration: "200%"
         })
@@ -453,14 +453,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var cuisine1ParallaxTween = TweenMax.to(".Cuisine-1", 1, {
+        var cuisine1ParallaxTween = TweenMax.to(".cuisine-1-div", 1, {
           backgroundPositionY: "-=15%",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var cuisine1ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cuisine-1", 
+            triggerElement: ".cuisine-1-div", 
             triggerHook: 1,
             duration: "200%"
         })
@@ -468,14 +468,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var cuisine2ParallaxTween = TweenMax.from(".Cuisine-2", 1, {
+        var cuisine2ParallaxTween = TweenMax.from(".cuisine-2-div", 1, {
           backgroundSize: "+=80px +=60px",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var cuisine2ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cuisine-2", 
+            triggerElement: ".cuisine-2-div", 
             triggerHook: 1,
             duration: "200%"
         })
@@ -483,14 +483,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var cuisine4ParallaxTween = TweenMax.to(".Cuisine-4", 1, {
+        var cuisine4ParallaxTween = TweenMax.to(".cuisine-4-div", 1, {
             backgroundSize: "+=80px +=60px",
             autoRound:false, 
             ease:Power1.ease0ut
         });
 
         var cuisine4ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cuisine-4", 
+            triggerElement: ".cuisine-4-div", 
             triggerHook: 1,
             duration: "200%"
         })
@@ -498,14 +498,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var cuisine5ParallaxTween = TweenMax.from(".Cuisine-5", 1, {
+        var cuisine5ParallaxTween = TweenMax.from(".cuisine-5-div", 1, {
             backgroundPositionY: "+=10%",
             autoRound:false, 
             ease:Power1.ease0ut
         });
 
         var cuisine5ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cuisine-5", 
+            triggerElement: ".cuisine-5-div", 
             triggerHook: 1,
             duration: "200%"
         })
@@ -513,14 +513,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var cuisine6ParallaxTween = TweenMax.to(".Cuisine-6", 1, {
+        var cuisine6ParallaxTween = TweenMax.to(".cuisine-6-div", 1, {
           backgroundPositionY: "+=15%",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var cuisine6ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cuisine-6", 
+            triggerElement: ".cuisine-6-div", 
             triggerHook: 1,
             duration: "200%"
         })
@@ -528,14 +528,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
         
-        var cuisine7ParallaxTween = TweenMax.to(".Cuisine-7", 1, {
+        var cuisine7ParallaxTween = TweenMax.to(".cuisine-7-div", 1, {
           backgroundSize: "+=100px +=56.24px",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var cuisine7ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Cuisine-7", 
+            triggerElement: ".cuisine-7-div", 
             triggerHook: 1,
             duration: "200%"
         })
@@ -543,14 +543,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var language2ParallaxTween = TweenMax.from(".Language-2", 1, {
+        var language2ParallaxTween = TweenMax.from(".language-2-div", 1, {
           backgroundSize: "+=200px +=125px",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var language2ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Language-2", 
+            triggerElement: ".language-2-div", 
             triggerHook: 1,
             duration: "200%"
         })
@@ -558,14 +558,14 @@ $(document).ready(function(){
         //.addIndicators()
         .addTo(controller);
 
-        var footer1ParallaxTween = TweenMax.from(".Footer-1", 1, {
+        var footer1ParallaxTween = TweenMax.from(".footer-1-div", 1, {
           backgroundPositionY: "+=10%",
           autoRound:false, 
           ease:Power1.ease0ut
         });
 
         var footer1ParallaxScene = new ScrollMagic.Scene({
-            triggerElement: ".Footer-1", 
+            triggerElement: ".footer-1-div", 
             triggerHook: 1,
             duration: "250%"
         })
@@ -613,12 +613,16 @@ $(document).ready(function(){
         var istanbulTemp = result.main.temp;
         var istanbulWeather = result.weather[0].description;
         var istanbulWind = result.wind.speed;
+        var istanbulLongitude = result.coord.lon;
+        var istanbulLatitude = result.coord.lat;
+        
         
         //If get returns "clear sky", replace text with "clear skies"
         if (istanbulWeather == "clear sky"){
             istanbulWeather = typofix;
         }
-
+        
+        $('#istanbul-location').html('Location: ' + istanbulLongitude + '&#186; N, ' + istanbulLatitude +'&#186; E');
         $('#istanbul-weather').html("Weather: " + istanbulTemp + "&#186; F & " + istanbulWeather); 
         $('#istanbul-wind').html("Wind: " + istanbulWind + " mph");
     });
@@ -627,12 +631,15 @@ $(document).ready(function(){
         var ankaraTemp = result.main.temp;
         var ankaraWeather = result.weather[0].description;
         var ankaraWind = result.wind.speed;
+        var ankaraLongitude = result.coord.lon;
+        var ankaraLatitude = result.coord.lat;
         
         //If get returns "clear sky", replace text with "clear skies"
         if (ankaraWeather == "clear sky"){
             ankaraWeather = typofix;
         }
         
+        $('#ankara-location').html('Location: ' + ankaraLongitude + '&#186; N, ' + ankaraLatitude +'&#186; E');
         $('#ankara-weather').html("Weather: " + ankaraTemp + "&#186; F & " + ankaraWeather); 
         $('#ankara-wind').html("Wind: " + ankaraWind + " mph");
     });
@@ -641,12 +648,15 @@ $(document).ready(function(){
         var izmirTemp = result.main.temp;
         var izmirWeather = result.weather[0].description;
         var izmirWind = result.wind.speed;
+        var izmirLongitude = result.coord.lon;
+        var izmirLatitude = result.coord.lat;
         
         //If get returns "clear sky", replace text with "clear skies"
         if (izmirWeather == "clear sky"){
             izmirWeather = typofix;
         }
         
+        $('#izmir-location').html('Location: ' + izmirLongitude + '&#186; N, ' + izmirLatitude +'&#186; E');
         $('#izmir-weather').html("Weather: " + izmirTemp + "&#186; F & " + izmirWeather); 
         $('#izmir-wind').html("Wind: " + izmirWind + " mph");
     });
@@ -655,12 +665,15 @@ $(document).ready(function(){
         var bursaTemp = result.main.temp;
         var bursaWeather = result.weather[0].description;
         var bursaWind = result.wind.speed;
+        var bursaLongitude = result.coord.lon;
+        var bursaLatitude = result.coord.lat;
         
         //If get returns "clear sky", replace text with "clear skies"
         if (bursaWeather == "clear sky"){
             bursaWeather = typofix;
         }
         
+        $('#bursa-location').html('Location: ' + bursaLongitude + '&#186; N, ' + bursaLatitude +'&#186; E');
         $('#bursa-weather').html("Weather: " + bursaTemp + "&#186; F & " + bursaWeather); 
         $('#bursa-wind').html("Wind: " + bursaWind + " mph");
     });
@@ -669,12 +682,15 @@ $(document).ready(function(){
         var adanaTemp = result.main.temp;
         var adanaWeather = result.weather[0].description;
         var adanaWind = result.wind.speed;
+        var adanaLongitude = result.coord.lon;
+        var adanaLatitude = result.coord.lat;
         
         //If get returns "clear sky", replace text with "clear skies"
         if (adanaWeather == "clear sky"){
             adanaWeather = typofix;
         }
         
+        $('#adana-location').html('Location: ' + adanaLongitude + '&#186; N, ' + adanaLatitude +'&#186; E');
         $('#adana-weather').html("Weather: " + adanaTemp + "&#186; F & " + adanaWeather); 
         $('#adana-wind').html("Wind: " + adanaWind + " mph");
     });
