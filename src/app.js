@@ -99,6 +99,64 @@ $(document).ready(function(){
     var heightOfLanguage1 = $('.language-2-div').offset().top - $('.language-1-div').offset().top;
     var heightOfLanguage4 = $('.footer-1-div').offset().top - $('.language-4-div').offset().top;
     
+    var heightOfGeography = $('.cities-1-div').offset().top - $('.geography-1-div').offset().top;
+    var heightOfCities = $('.sights-1-div').offset().top - $('.cities-1-div').offset().top; 
+    var heightOfSights = $('.hotels-1-div').offset().top - $('.sights-1-div').offset().top;
+    var heightOfHotels = $('.cuisine-1-div').offset().top - $('.hotels-1-div').offset().top;
+    var heightOfCuisine = $('.language-1-div').offset().top - $('.cuisine-1-div').offset().top;
+    var heightOfLanguage = $('.footer-1-div').offset().top - $('.language-1-div').offset().top;
+    
+    //var activeSidebarElementTween = TweenMax.to("")
+    
+    /*----- Sidebar active scroll animations -----*/
+    var geographyScene = new ScrollMagic.Scene({
+            triggerElement: ".geography-1-div",
+            triggerHook: 0.5,
+            duration: heightOfGeography
+    })
+    .setClassToggle('#sidebar > li:nth-child(2) > a > img', 'active-sidebar')
+    .addTo(controller);
+    
+    var ciitesScene = new ScrollMagic.Scene({
+            triggerElement: ".cities-1-div",
+            triggerHook: 0.5,
+            duration: heightOfCities
+    })
+    .setClassToggle('#sidebar > li:nth-child(3) > a > img', 'active-sidebar')
+    .addTo(controller);
+    
+    var sightsScene = new ScrollMagic.Scene({
+            triggerElement: ".sights-1-div",
+            triggerHook: 0.5,
+            duration: heightOfSights
+    })
+    .setClassToggle('#sidebar > li:nth-child(4) > a > img', 'active-sidebar')
+    .addTo(controller);
+    
+    var hotelsScene = new ScrollMagic.Scene({
+            triggerElement: ".hotels-1-div",
+            triggerHook: 0.5,
+            duration: heightOfHotels
+    })
+    .setClassToggle('#sidebar > li:nth-child(5) > a > img', 'active-sidebar')
+    .addTo(controller);
+    
+    var cuisineScene = new ScrollMagic.Scene({
+            triggerElement: ".cuisine-1-div",
+            triggerHook: 0.5,
+            duration: heightOfCuisine
+    })
+    .setClassToggle('#sidebar > li:nth-child(6) > a > img', 'active-sidebar')
+    .addTo(controller);
+    
+    var languageScene = new ScrollMagic.Scene({
+            triggerElement: ".language-1-div",
+            triggerHook: 0.5,
+            duration: heightOfLanguage
+    })
+    .setClassToggle('#sidebar > li:nth-child(7) > a > img', 'active-sidebar')
+    .addTo(controller);
+    
     /*----- header animations -----*/
     $('.scrollmagic-header').each(function(){
         var headerScene = new ScrollMagic.Scene({
@@ -117,7 +175,6 @@ $(document).ready(function(){
     })   
     
     /* ----- background fadeout scenes  -----*/
-    
     if($(window).height() > 500){
         $('.scrollmagic-inner-fadeout').each(function(){
             var chevronScene = new ScrollMagic.Scene({
@@ -247,7 +304,7 @@ $(document).ready(function(){
         .addTo(controller);
     })   
     
-    /*----- information square animations -----*/
+    /*----- information chevron animations -----*/
     $('.scrollmagic-info-squares').each(function(){
         var chevronScene = new ScrollMagic.Scene({
             triggerElement: this,
