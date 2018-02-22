@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 export default class Cuisine extends Component {
     render() {
         return(
