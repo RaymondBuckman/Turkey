@@ -18,8 +18,10 @@ export default class Intro extends Component {
                         </ul>
                     </div>
                 </nav>
-                <h1 id="hos-geldiniz" className="text-center" role="heading">T&#252;rkiye'ye hoş geldiniz!</h1>
-                <h2 id="welcome" className="text-center" role="heading" tabIndex="0">Welcome to Turkey!</h2>
+                <div className="container">
+                    <h1 id="hos-geldiniz" className="text-left" role="heading">T&#252;rkiye'ye hoş geldiniz!</h1>
+                    <h2 id="welcome" className="text-left" role="heading" tabIndex="0">Welcome to Turkey!</h2>
+                </div>
             </div>
             <div className="intro-2-div" id="arrow-dest">
                 <ul className="flex-container">
