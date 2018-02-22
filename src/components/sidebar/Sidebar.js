@@ -16,25 +16,25 @@ export default class Sidebar extends Component {
                 <li><a href="#language-1-div" role="link"><img src="https://png.icons8.com/communication-filled/ios7/75/FFFFFF" width="25" height="25" data-tip data-for="language-tooltip"></img></a></li>
             </ul>
             <ReactTooltip id="crescent-star-tooltip" place="right" type="light" effect="solid" delayShow={100} offset={{left: 15}}>
-                <span className="tooltip-span">Top of Page<span className="tooltip-arrow">&nbsp;&nbsp;&#8594;</span></span>
+                <span className="tooltip-span">Go to top</span>
             </ReactTooltip>
             <ReactTooltip id="geography-tooltip" place="left" type="light" effect="solid" delayShow={100} offset={{left: 15}}>
-                <span className="tooltip-span">Geography<span className="tooltip-arrow">&nbsp;&nbsp;&#8594;</span></span>
+                <span className="tooltip-span">Go to geography</span>
             </ReactTooltip>
             <ReactTooltip id="cities-tooltip" place="left" type="light" effect="solid" delayShow={100} offset={{left: 15}}>
-                <span className="tooltip-span">Cities<span className="tooltip-arrow">&nbsp;&nbsp;&#8594;</span></span>
+                <span className="tooltip-span">Go to cities</span>
             </ReactTooltip>
             <ReactTooltip id="sights-tooltip" place="left" type="light" effect="solid" delayShow={100} offset={{left: 15}}>
-                <span className="tooltip-span">Sights<span className="tooltip-arrow">&nbsp;&nbsp;&#8594;</span></span>
+                <span className="tooltip-span">Go to sights</span>
             </ReactTooltip>
             <ReactTooltip id="hotels-tooltip" place="left" type="light" effect="solid" delayShow={100} offset={{left: 15}}>
-                <span className="tooltip-span">Hotels<span className="tooltip-arrow">&nbsp;&nbsp;&#8594;</span></span>
+                <span className="tooltip-span">Go to hotels</span>
             </ReactTooltip>
             <ReactTooltip id="cuisine-tooltip" place="left" type="light" effect="solid" delayShow={100} offset={{left: 15}}>
-                <span className="tooltip-span">Cuisine<span className="tooltip-arrow">&nbsp;&nbsp;&#8594;</span></span>
+                <span className="tooltip-span">Go to cuisine</span>
             </ReactTooltip>
             <ReactTooltip id="language-tooltip" place="left" type="light" effect="solid" delayShow={100} offset={{left: 15}}>
-                <span className="tooltip-span">Language<span className="tooltip-arrow">&nbsp;&nbsp;&#8594;</span></span>
+                <span className="tooltip-span">Go to language</span>
             </ReactTooltip>
         </div>
         );
