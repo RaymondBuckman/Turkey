@@ -214,18 +214,24 @@ h2 {
             }
         }
         a > *{
-            filter: drop-shadow(2px 2px 1px #000);
-            opacity: 0.7;
+            filter: drop-shadow(2px 2px 1px #000); //invert(100%);
+            opacity: 0.5;
             transition: all 0.3s ease-in;
             
             &:hover{
                 opacity: 1;
                 transform: scale(1.4) translateX(-5px);
             }
-            
         }
     }
 }
+
+.active-sidebar{
+    transform: scale(1.4) translateX(-5px);
+    opacity: 0.9 !important;
+}
+
+
 
 .white-icons{
     filter: invert(100%) !important;
@@ -244,7 +250,7 @@ h2 {
 .intro-1-div{
     position: relative;
     height: 100vh;
-    background: url("./img/maidens-tower-1.jpg") $nrf 50% 50%;
+    background: url("./img/maidens-tower-3.jpg") $nrf 50% 80%;
     background-size: cover; 
             
     .navbar{
@@ -296,19 +302,19 @@ h2 {
     
     #hos-geldiniz{
         position: relative;
-        top: 70vh; //used to be 65vh
+        top: 35vh; //used to be 65vh
         color: $white;
         @include main-font;
         font-size: $main-header-size;
-        text-shadow: 4px 4px 2px rgba(0, 220, 232, 0.5);
+        //text-shadow: 4px 4px 2px rgba(0, 220, 232, 0.5);
         //transition: all 0.3s ease-in-out;
     }
     
     #welcome{
         position: relative;
-        top: 70vh; //used to be 65vh
-        color: $white;
-        text-shadow: 4px 4px 2px rgba(200, 0, 0, 0.5);
+        top: 35vh; //used to be 65vh
+        color: $turquoise;
+        //text-shadow: 4px 4px 2px rgba(200, 0, 0, 0.5);
         @include secondary-font;
         font-size: $main-subheader-size;
     }
@@ -1273,35 +1279,220 @@ h2 {
 }
 
 .hotels-3-div {
-    position: relative;
-    top: 0vh;
-    height: 80vh;
-    background: url("./img/white-3.jpg") $nrf center;
+    position: relative; 
+    height: auto;
+    background: url("img/white-3.jpg") $nrf 50% 50%;
     background-size: cover;
-    font-size: large;
     
-    #bir-otel-bulun{
+    .flex-container {
         position: relative;
-        top: 10vh;
-        color: $red;
-        font-size: $main-header-size; 
-        opacity: 0;
-        transform: rotate(-10deg);
-        transition: all 0.5s ease-in-out;   
+        padding: 30px;
+        margin: 0;
+        list-style: none;
+
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        -webkit-flex-flow: row wrap;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
-    
-    #find-a-hotel{
-        position: relative;
-        top: 10vh;
-        color: $turquoise;
-        font-size: $main-subheader-size;
-        opacity: 0;
-        transform: rotate(10deg);
-        transition: all 0.5s ease-in-out;    
-    }
-    
-    #bir-otel-bulun.fade-in, #find-a-hotel.fade-in{
-        @include scrollmagic-header-finish;
+
+    .flex-item{
+        padding: 5px;
+        height: 400px;
+        width: 600px;
+        margin: 10px 0px;
+  
+        line-height: 30px;
+        font-family: $main-font, Arial, Helvetica, serif;
+        //font-size: 3em;
+        border-top: transparent 4px solid;
+        border-bottom: transparent 4px solid;
+        text-align: center;
+        transition: all 0.3s ease-in;
+        
+        .map{
+            position: relative;
+             top: 20px;
+             height: 100px;
+             length: 300px;
+             //opacity: 0.8;
+        }
+        
+        button{
+            position: relative;
+            background: rgba(0,0,0,0.5);
+            border: 0px;
+            border-radius: 5px;
+            top: 200px;  
+        }
+        
+        h1{
+            position: relative;
+            top: 0px;
+            color: $white;
+            font-size: 2.2em;
+        }
+            
+        h2{
+            position: relative;
+            //top: 10px;
+            color: $turquoise;
+            font-size: $desc-size;
+        }
+        
+        &:nth-child(1){
+            height: 200px;
+            width: 100%;
+            text-align: center; 
+            
+            #bir-otel-bulun{
+                position: relative;
+                top: 40px;
+                color: $red;
+                font-size: $main-header-size;
+                opacity: 0;
+                transform: rotate(-10deg);
+                transition: all 0.5s ease-in-out;
+            }
+
+            #find-a-hotel{
+                position: relative;
+                top: 80px;
+                color: $turquoise;
+                font-size: 3em;
+                opacity: 0;
+                transform: rotate(10deg);
+                transition: all 0.5s ease-in-out;
+            }
+            
+            #bir-otel-bulun.fade-in, #find-a-hotel.fade-in{
+                @include scrollmagic-header-finish;
+            }
+            
+        }
+        
+        &:nth-child(2){
+            background: url("img/marmara-1.jpg") $nrs 50% 50%;
+            background-size: cover;
+            
+            .map{
+                background: url("img/marmara-region-1.png") $nrs 50% 50%;
+                background-size: contain;
+            }
+        }
+        
+        &:nth-child(3){
+            background: url("img/aegean-1.jpg") $nrs 50% 50%;
+            background-size: cover;
+            
+            .map{
+                background: url("img/aegean-region-1.png") $nrs 50% 50%;
+                background-size: contain;
+            }
+        }
+        
+        &:nth-child(4){
+            background: url("img/mediterranean-mini.jpg") $nrs 50% 50%;
+            background-size: cover;
+            
+            .map{
+                background: url("img/mediterranean-region-1.png") $nrs 50% 50%;
+                background-size: contain;
+            }
+        }
+        
+        &:nth-child(5){
+            background: url("img/central-mini.jpg") $nrs 50% 50%;
+            background-size: cover;
+            
+            .map{
+                background: url("img/central-anatolia-region-1.png") $nrs 50% 50%;
+                background-size: contain;
+            }
+        }
+        
+        &:nth-child(6){
+            background: url("img/black-sea-mini.jpg") $nrs 50% 50%;
+            background-size: cover;
+            
+            .map{
+                background: url("img/black-sea-region-1.png") $nrs 50% 50%;
+                background-size: contain;
+            }
+        }
+        
+        &:nth-child(7){
+            background: url("img/eastern-mini.jpg") $nrs 50% 50%;
+            background-size: cover;
+            
+            .map{
+                background: url("img/eastern-anatolia-region-1.png") $nrs 50% 50%;
+                background-size: contain;
+            }
+        }
+        
+        &:nth-child(8){
+            background: url("img/southeastern-mini.jpg") $nrs 50% 50%;
+            background-size: cover;
+            
+            .map{
+                background: url("img/southeastern-anatolia-region-1.png") $nrs 50% 50%;
+                background-size: contain;
+            }
+            
+            button{
+                left: 20px;
+            }
+        }
+        
+        &:nth-child(9){
+            background: url("img/batman-logo-1.jpg") $nrs 60% 90%;
+            background-s: cover;
+            
+            .map{
+                background: url("img/eastern-anatolia-region-1.png") $nrs 50% 50%;
+                background-size: contain;
+            }
+            
+            button{
+                top: 180px;
+            }
+                        
+            p{ 
+                position: relative;
+                top: 200px;
+                left: 150px;
+                width: 300px;
+                color: $white;
+            }
+        }
+        
+  
+        
+        &:nth-child(even){
+            filter: grayscale(50%);
+            -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+            clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+        }
+        
+        &:nth-child(2n+3){
+            filter: grayscale(50%);
+            -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+        }
+        
+        &:nth-child(n+2):hover{
+            cursor: pointer;
+            filter: grayscale(0%);
+            transform: scale(1.03);
+            border-top: $turquoise 4px solid;
+            border-bottom: $turquoise 4px solid;
+        }
     }
 }
 
@@ -2147,16 +2338,16 @@ h2 {
 @include for-phone-portrait{
     .intro-1-div{
         height: 100vh;
-        background: url("./img/maidens-tower-1.jpg") $nrs 50% 100%;
+        background: url("./img/maidens-tower-3.jpg") $nrs 65% 100%;
         background-size: cover;
             
         #hos-geldiniz{
-            top: 60vh;
+            top: 10vh;
             font-size: $main-subheader-size;
         }
 
         #welcome{
-            top: 60vh;
+            top: 10vh;
             font-size: $secondary-subheader-size;
         }
     }
@@ -3025,23 +3216,17 @@ h2 {
 @include for-small-tablet-portrait{
     .intro-1-div{
         height: 100vh;
-        background: url("./img/turkey-flag-1.jpg") $nrs 50% 50%;
+        background: url("./img/maidens-tower-3.jpg") $nrs 65% 50%;
         background-size: cover;
-        
-        .intro-1-div-inner{
-            height: 100vh;
-            background: url("./img/maidens-tower-1.jpg") $nrs 50% 70% !important;
-            background-size: 2000px !important;
             
-            #hos-geldiniz{
-                top: 70vh;
-                font-size: 4.5em;
-            }
+        #hos-geldiniz{
+            top: 20vh;
+            font-size: 4.5em;
+        }
 
-            #welcome{
-                top: 70vh;
-                font-size: $main-subheader-size;
-            }
+        #welcome{
+            top: 20vh;
+            font-size: $main-subheader-size;
         }        
     }
     
@@ -3937,23 +4122,17 @@ h2 {
 @include for-phone-landscape{
     .intro-1-div{
         height: 100vh;
-        background: url("./img/turkey-flag-1.jpg") $nrs 50% 50%;
+        background: url("./img/maidens-tower-3.jpg") $nrs 50% 50%;
         background-size: cover;
-        
-        .intro-1-div-inner{
-            height: 100vh;
-            background: url("./img/maidens-tower-1.jpg") $nrs 50% 70% !important;
-            background-size: cover !important;
-            
-            #hos-geldiniz{
-                top: 70vh;
-                font-size: $main-subheader-size;
-            }
 
-            #welcome{
-                top: 70vh;
-                font-size: $secondary-subheader-size;
-            }
+        #hos-geldiniz{
+            top: 20vh;
+            font-size: $main-subheader-size;
+        }
+
+        #welcome{
+            top: 20vh;
+            font-size: $secondary-subheader-size;
         }        
     }
     
@@ -4863,24 +5042,18 @@ h2 {
 @include for-large-tablet-portrait{
     .intro-1-div{
         height: 100vh;
-        background: url("./img/turkey-flag-1.jpg") $nrs 50% 50%;
+        background: url("./img/maidens-tower-3.jpg") $nrs 60% 50%;
         background-size: cover;
-        
-        .intro-1-div-inner{
-            height: 100vh;
-            background: url("./img/maidens-tower-1.jpg") $nrs 50% 70% !important;
-            background-size: 2500px !important;
-            
-            #hos-geldiniz{
-                top: 80vh;
-                font-size: $main-header-size;
-            }
 
-            #welcome{
-                top: 80vh;
-                font-size: $main-subheader-size;
-            }
-        }        
+        #hos-geldiniz{
+            top: 30vh;
+            font-size: $main-header-size;
+        }
+
+        #welcome{
+            top: 30vh;
+            font-size: $main-subheader-size;
+        }
     }
     
     .intro-2-div{
