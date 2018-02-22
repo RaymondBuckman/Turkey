@@ -15,8 +15,6 @@ import eastern1 from '../../img/eastern-2.jpg';
 import eastern2 from '../../img/eastern-1.jpg';
 import southeastern1 from '../../img/southeastern-5.jpg';
 import southeastern2 from '../../img/southeastern-4.jpg';
-
-
  
 const images = [
     marmara1,
@@ -181,22 +179,22 @@ export default class Geography extends Component {
                 </ul>
             </div>
             {isOpen &&
-                    <Lightbox
-                        mainSrc={images[photoIndex]}
-                        nextSrc={images[(photoIndex + 1) % images.length]}
-                        prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+                <Lightbox
+                    mainSrc={images[photoIndex]}
+                    nextSrc={images[(photoIndex + 1) % images.length]}
+                    prevSrc={images[(photoIndex + images.length - 1) % images.length]}
  
-                        onCloseRequest={() => this.setState({ isOpen: false })}
-                        onMovePrevRequest={() => this.setState({
-                            photoIndex: (photoIndex + images.length - 1) % images.length,
-                        })}
-                        onMoveNextRequest={() => this.setState({
-                            photoIndex: (photoIndex + 1) % images.length,
-                        })}
+                    onCloseRequest={() => this.setState({ isOpen: false })}
+                    onMovePrevRequest={() => this.setState({
+                        photoIndex: (photoIndex + images.length - 1) % images.length,
+                    })}
+                    onMoveNextRequest={() => this.setState({
+                        photoIndex: (photoIndex + 1) % images.length,
+                    })}
                         
-                        imageTitle={titles[this.state.photoIndex]}
-                        imageCaption={captions[this.state.photoIndex]}
-                    />
+                    imageTitle={titles[this.state.photoIndex]}
+                    imageCaption={captions[this.state.photoIndex]}
+                />
             }
         </div>
         );
