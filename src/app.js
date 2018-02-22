@@ -629,7 +629,7 @@ $(document).ready(function(){
         .setTween(footer1ParallaxTween)
         //.addIndicators()
         .addTo(controller);
-
+/*
         var geldinizTween = TweenMax.to("#hos-geldiniz", 1, {
             x: "+=100px",
             //y: "+100px",
@@ -658,7 +658,7 @@ $(document).ready(function(){
         })
         .setTween(welcomeTween)
         //.addIndicators()
-        .addTo(controller);
+        .addTo(controller);*/
     }
     /*======================= End ScrollMagic Animations =======================*/  
     
