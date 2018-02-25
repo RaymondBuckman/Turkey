@@ -440,28 +440,28 @@ export default class Sights extends Component {
                     onClick={() => this.setState({photoIndex:12, isOpen: true })}>
                         <button type="button" role="button"
                         alt="opens gallery for Dolmabahce">
-                            <h2>Dolmabahçe</h2>
+                            <h2 lang="tr">Dolmabahçe</h2>
                         </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:14, isOpen: true })}>
                         <button type="button" role="button"
                         alt="opens gallery for Miniaturk">
-                            <h2>Miniatürk</h2>
+                            <h2 lang="tr">Miniatürk</h2>
                         </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:16, isOpen: true })}>
                         <button type="button" role="button"
                         alt="opens gallery for Nemrut">
-                            <h2>Nemrut</h2>
+                            <h2 lang="tr">Nemrut</h2>
                         </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:18, isOpen: true })}>
                         <button type="button" role="button"
                         alt="opens gallery for Pamukkale">
-                            <h2>Pamukkale</h2>
+                            <h2 lang="tr">Pamukkale</h2>
                         </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
@@ -475,7 +475,7 @@ export default class Sights extends Component {
                     onClick={() => this.setState({photoIndex:22, isOpen: true })}>
                         <button type="button" role="button"
                         alt="opens gallery for Anitkabir">
-                            <h2>Anıtkabir</h2>
+                            <h2 lang="tr">Anıtkabir</h2>
                         </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
@@ -531,7 +531,7 @@ export default class Sights extends Component {
                     onClick={() => this.setState({photoIndex:38, isOpen: true })}>
                         <button type="button" role="button"
                         alt="opens gallery for Uzungol">
-                            <h2>Uzungöl</h2>
+                            <h2 lang="tr">Uzungöl</h2>
                         </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
@@ -559,7 +559,7 @@ export default class Sights extends Component {
                     onClick={() => this.setState({photoIndex:46, isOpen: true })}>
                         <button type="button" role="button"
                         alt="opens gallery for Aspendos">
-                            <h2>Aspendos</h2>
+                            <h2 lang="tr">Aspendos</h2>
                         </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
@@ -573,14 +573,14 @@ export default class Sights extends Component {
                     onClick={() => this.setState({photoIndex:50, isOpen: true })}>
                        <button type="button" role="button"
                         alt="opens gallery for Zilkale"> 
-                            <h2>Zilkale</h2>
+                            <h2 lang="tr">Zilkale</h2>
                         </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:52, isOpen: true })}>
                        <button type="button" role="button"
                         alt="opens gallery for Kaunos">
-                            <h2>Kaunos</h2>
+                            <h2 lang="tr">Kaunos</h2>
                         </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
@@ -608,7 +608,7 @@ export default class Sights extends Component {
                     onClick={() => this.setState({photoIndex:60, isOpen: true })}>
                         <button type="button" role="button"
                         alt="opens gallery for Amasya">
-                            <h2>Amasya</h2>
+                            <h2 lang="tr">Amasya</h2>
                         </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
