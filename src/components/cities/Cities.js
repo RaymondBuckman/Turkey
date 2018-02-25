@@ -84,7 +84,7 @@ export default class Cities extends Component {
                 <h1 id="sehirler" className="text-center scrollmagic-header" role="heading">En Büyük Şehirler</h1>
                 <h2 id="cities" className="text-center scrollmagic-header" role="heading" tabIndex="0">Largest Cities</h2> 
                 <ul id="istanbul-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
-                    <li><span id="istanbul">İstanbul</span></li>
+                    <li><span id="istanbul" lang="tr">İstanbul</span></li>
                     <li>Economic & Cultural Center</li>
                     <li id="istanbul-location"></li>
                     <li>Population: 14.8 million</li>
@@ -95,7 +95,7 @@ export default class Cities extends Component {
             </div>
             <div className="cities-2-div"> 
                 <ul id="ankara-description" className="col-lg-6 col-lg-offset-0 text-left scrollmagic-desc">
-                    <li><span id="ankara">Ankara</span></li>
+                    <li><span id="ankara" lang="tr">Ankara</span></li>
                     <li>The Capital of Turkey</li>
                     <li id="ankara-location"></li>
                     <li>Population: 5.3 million</li>
@@ -107,7 +107,7 @@ export default class Cities extends Component {
             
             <div className="cities-3-div"> 
                 <ul id="izmir-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
-                    <li><span id="izmir">İzmir</span></li>
+                    <li><span id="izmir" lang="tr">İzmir</span></li>
                     <li>Crusiseline hotspot</li>
                     <li id="izmir-location"></li>
                     <li>Population: 2.8 million</li>
@@ -119,7 +119,7 @@ export default class Cities extends Component {
             
             <div className="cities-4-div">
                 <ul id="bursa-description" className="col-lg-6 col-lg-offset-0 text-left scrollmagic-desc">
-                    <li><span id="bursa">Bursa</span></li>
+                    <li><span id="bursa" lang="tr">Bursa</span></li>
                     <li>~300 Year Capital of the Ottoman Empire</li>
                     <li id="bursa-location"></li>
                     <li>Population: 2.3 million</li>
@@ -131,7 +131,7 @@ export default class Cities extends Component {
             
             <div className="cities-5-div scrollmagic-div-fadeout">
                 <ul id="adana-description" className="col-lg-6 col-lg-offset-6 text-right scrollmagic-desc">
-                    <li><span id="adana">Adana</span></li>
+                    <li><span id="adana" lang="tr">Adana</span></li>
                     <li>Mediterranean Capital</li>
                     <li id="adana-location"></li>
                     <li>Population: 1.7 million</li>

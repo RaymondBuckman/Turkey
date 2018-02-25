@@ -38,9 +38,17 @@
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",
+    "gsap": "^1.20.4",
+    "imports-loader": "^0.8.0",
+    "jquery": "^3.3.1",
+    "lightbox-react": "^0.1.5",
     "react-favicon": "0.0.9",
     "react-icon": "^1.0.0",
+    "react-image-lightbox": "^4.5.0",
+    "react-places-autocomplete": "^6.1.2",
     "react-responsive-carousel": "^3.1.24",
+    "react-tooltip": "^3.4.0",
+    "scrollmagic": "^2.0.5",
     "superagent": "^3.6.3"
   }
 }

@@ -276,7 +276,7 @@ h2 {
         transition: all 0.3s ease-in;
 
         &:hover{
-            color: $red; 
+            color: $turquoise; 
             transform: scale(1.2);
             @include occasional-blur;
         }
@@ -317,6 +317,26 @@ h2 {
         //text-shadow: 4px 4px 2px rgba(200, 0, 0, 0.5);
         @include secondary-font;
         font-size: $main-subheader-size;
+    }
+    
+    #down-arrow{
+        position: absolute;
+        top: 88vh;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        display: inline-block;
+        cursor: pointer;
+        opacity: 0.6;
+
+        //animation: updown 2s infinite 1.1s;
+        transition: opacity 0.3s ease-in-out;
+
+        &:hover{
+            opacity: 1;
+        }
     }
 }
 
@@ -1314,15 +1334,7 @@ h2 {
         border-bottom: transparent 4px solid;
         text-align: center;
         transition: all 0.3s ease-in;
-        
-        .map{
-            position: relative;
-             top: 20px;
-             height: 100px;
-             length: 300px;
-             //opacity: 0.8;
-        }
-        
+
         button{
             position: relative;
             background: rgba(0,0,0,0.5);
@@ -1379,10 +1391,11 @@ h2 {
         &:nth-child(2){
             background: url("img/marmara-1.jpg") $nrs 50% 50%;
             background-size: cover;
+            @include secondary-font;
             
-            .map{
-                background: url("img/marmara-region-1.png") $nrs 50% 50%;
-                background-size: contain;
+            button{
+                z-index: 99;
+                color: $white;
             }
         }
         
@@ -1473,7 +1486,7 @@ h2 {
         }
         
   
-        
+        /*
         &:nth-child(even){
             filter: grayscale(50%);
             -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
@@ -1492,7 +1505,7 @@ h2 {
             transform: scale(1.03);
             border-top: $turquoise 4px solid;
             border-bottom: $turquoise 4px solid;
-        }
+        }*/
     }
 }
 
@@ -2004,8 +2017,8 @@ h2 {
         color: hotpink;
     }
     
-    #translation{
-        color: $turquoise;
+    .translation{
+        color: $turquoise !important;
     }
 }
 
@@ -3149,10 +3162,6 @@ h2 {
         #pronunciation{
             color: hotpink;
         }
-
-        #translation{
-            color: $turquoise;
-        }
     }
     
     .language-4-div{
@@ -4054,10 +4063,6 @@ h2 {
 
         #pronunciation{
             color: hotpink;
-        }
-
-        #translation{
-            color: $turquoise;
         }
     }
     
@@ -4975,10 +4980,6 @@ h2 {
         #pronunciation{
             color: hotpink;
         }
-
-        #translation{
-            color: $turquoise;
-        }
     }
     
     .language-4-div{
@@ -5876,10 +5877,6 @@ h2 {
 
         #pronunciation{
             color: hotpink;
-        }
-
-        #translation{
-            color: $turquoise;
         }
     }
     
