@@ -85,9 +85,9 @@ export default class Geography extends Component {
         
         return(
         <div>
-            <div className="geography-1-div" id="geography-1-div">   
+            <div className="geography-1-div" id="down-arrow-dest">   
                 <div className="container">
-                    <h1 id="cografya" className="text-center scrollmagic-header" role="heading">Coğrafya</h1>
+                    <h1 id="cografya" className="text-center scrollmagic-header" role="heading" lang="tr">Coğrafya</h1>
                     <h2 id="geography" className="text-center scrollmagic-header" role="heading" tabIndex="0">Geography</h2> 
                     <h1 id="uzungol" className="text-right scrollmagic-desc" >Uzungöl</h1>
                     <h2 id="uzungol-desc" className="text-right scrollmagic-desc">Black Sea Region</h2>
@@ -95,7 +95,7 @@ export default class Geography extends Component {
             </div>
             <div className="geography-2-div">   
                 <div className="container">
-                    <h1 id="kapadokya" className="text-left scrollmagic-desc" >Kapadokya</h1>
+                    <h1 id="kapadokya" className="text-left scrollmagic-desc" lang="tr">Kapadokya</h1>
                     <h2 id="kapadokya-desc" className="text-left scrollmagic-desc">Central Anatolia Region</h2>
                 </div>
             </div>
@@ -109,14 +109,14 @@ export default class Geography extends Component {
             <div className="geography-4-div">
                 <ul className="flex-container">
                     <li className="flex-item">
-                        <h1 id="bolgeleri" className="scrollmagic-header" role="heading">Türkiye'nın Bölgeleri</h1>
+                        <h1 id="bolgeleri" className="scrollmagic-header" role="heading" lang="tr">Türkiye'nın Bölgeleri</h1>
                         <h2 id="regions" className="scrollmagic-header" role="heading">Regions of Turkey</h2>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:0, isOpen: true })}>
                         <div className="map" alt="Map of turkey with region highlighted"></div>
                         <button type="button" alt="opens gallery for Marmara region">
-                            <h1>Marmara Bölgesi</h1>
+                            <h1 lang="tr">Marmara Bölgesi</h1>
                             <h2>Marmara region</h2>
                         </button>
                     </li>
@@ -124,7 +124,7 @@ export default class Geography extends Component {
                     onClick={() => this.setState({photoIndex:2, isOpen: true })}>
                         <div className="map" alt="Map of turkey with region highlighted"></div>
                         <button type="button" alt="opens gallery for Aegean region">
-                            <h1>Ege Bölgesi</h1>
+                            <h1 lang="tr">Ege Bölgesi</h1>
                             <h2>Aegean region</h2>
                         </button>
                     </li>
@@ -132,7 +132,7 @@ export default class Geography extends Component {
                     onClick={() => this.setState({photoIndex:4, isOpen: true })}>
                         <div className="map" alt="Map of turkey with region highlighted"></div>
                         <button type="button" alt="opens gallery for Mediterranean region">
-                            <h1>Akdeniz Bölgesi</h1>
+                            <h1 lang="tr">Akdeniz Bölgesi</h1>
                             <h2>Mediterranean region</h2>
                         </button>
                     </li>
@@ -140,7 +140,7 @@ export default class Geography extends Component {
                     onClick={() => this.setState({photoIndex:6, isOpen: true })}>
                         <div className="map" alt="Map of turkey with region highlighted"></div>
                         <button type="button" alt="opens gallery for Central Anatolia region">
-                            <h1>İç Anadolu Bölgesi</h1>
+                            <h1 lang="tr">İç Anadolu Bölgesi</h1>
                             <h2>Central Anatolia region</h2>
                         </button>
                     </li>
@@ -148,7 +148,7 @@ export default class Geography extends Component {
                     onClick={() => this.setState({photoIndex:8, isOpen: true })}>
                         <div className="map" alt="Map of turkey with region highlighted"></div>
                         <button type="button" alt="opens gallery for Black Sea region">
-                            <h1>Karadeniz Bölgesi</h1>
+                            <h1 lang="tr">Karadeniz Bölgesi</h1>
                             <h2>Black sea region</h2>
                         </button>
                     </li>
@@ -156,7 +156,7 @@ export default class Geography extends Component {
                     onClick={() => this.setState({photoIndex:10, isOpen: true })}>
                         <div className="map" alt="Map of turkey with region highlighted"></div>
                         <button type="button" alt="opens gallery for Eastern Anatolia region">
-                            <h1>Doğu Anadolu Bölgesi</h1>
+                            <h1 lang="tr">Doğu Anadolu Bölgesi</h1>
                             <h2>Eastern Anatolia region</h2>
                         </button>
                     </li>
@@ -164,14 +164,14 @@ export default class Geography extends Component {
                     onClick={() => this.setState({photoIndex:13, isOpen: true })}>
                         <div className="map" alt="Map of turkey with region highlighted"></div>
                         <button type="button" alt="opens gallery for Southeastern Anatolia region">
-                            <h1>Güney Doğu Anadolu Bölgesi</h1>
+                            <h1 lang="tr">Güney Doğu Anadolu Bölgesi</h1>
                             <h2>Southeastern Anatolia region</h2>
                         </button>
                     </li>
                     <li className="flex-item scrollmagic-chevron" 
                     onClick={() => this.setState({photoIndex:12, isOpen: true })}>
                         <button type="button" alt="opens gallery for Fun Fact">
-                            <h1>Eğlenceli gerçek</h1>
+                            <h1 lang="tr">Eğlenceli gerçek</h1>
                             <h2>Fun Fact</h2>
                         </button>
                         <p>Although Gotham City is doesn't exist in real life, Batman does! The photo you just viewed is right outside of Batman, Turkey. The more you know....</p>
