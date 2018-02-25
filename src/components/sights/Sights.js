@@ -46,7 +46,7 @@ import mevlana2 from '../../img/mevlana-2.jpg';
 import taksim1 from '../../img/taksim-3.jpg';
 import taksim2 from '../../img/taksim-1.jpg';
 import maiden1 from '../../img/maidens-tower-2.jpg';
-import maiden2 from '../../img/maidens-tower-1.jpg';
+import maiden2 from '../../img/maidens-tower-3.jpg';
 import aspendos1 from '../../img/aspendos-1.jpg';
 import aspendosl2 from '../../img/aspendos-2.jpg';
 import damlatas1 from '../../img/damlatas-1.jpg';
