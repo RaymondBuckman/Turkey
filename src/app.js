@@ -666,7 +666,7 @@ $(document).ready(function(){
     //variable to replace awkward "clear sky" text in AJAX call
     var typofix = "clear skies";
     
-    $.get("http://api.openweathermap.org/data/2.5/weather?id=745044&APPID=f8e382959de83c3f9ca6682d9773d878&units=imperial",function(result){
+    $.get("https://api.openweathermap.org/data/2.5/weather?id=745044&APPID=f8e382959de83c3f9ca6682d9773d878&units=imperial",function(result){
         var istanbulTemp = result.main.temp;
         var istanbulWeather = result.weather[0].description;
         var istanbulWind = result.wind.speed;
@@ -684,7 +684,7 @@ $(document).ready(function(){
         $('#istanbul-wind').html("Wind: " + istanbulWind + " mph");
     });
     
-    $.get("http://api.openweathermap.org/data/2.5/weather?id=323784&APPID=ff3af5a78da68a138c3521f6ff6da08c&units=imperial",function(result){
+    $.get("https://api.openweathermap.org/data/2.5/weather?id=323784&APPID=ff3af5a78da68a138c3521f6ff6da08c&units=imperial",function(result){
         var ankaraTemp = result.main.temp;
         var ankaraWeather = result.weather[0].description;
         var ankaraWind = result.wind.speed;
@@ -701,7 +701,7 @@ $(document).ready(function(){
         $('#ankara-wind').html("Wind: " + ankaraWind + " mph");
     });
     
-    $.get("http://api.openweathermap.org/data/2.5/weather?id=311046&APPID=1f899c3069c68d58f7b6438d243c54ae&units=imperial",function(result){
+    $.get("https://api.openweathermap.org/data/2.5/weather?id=311046&APPID=1f899c3069c68d58f7b6438d243c54ae&units=imperial",function(result){
         var izmirTemp = result.main.temp;
         var izmirWeather = result.weather[0].description;
         var izmirWind = result.wind.speed;
@@ -718,7 +718,7 @@ $(document).ready(function(){
         $('#izmir-wind').html("Wind: " + izmirWind + " mph");
     });
     
-    $.get("http://api.openweathermap.org/data/2.5/weather?id=750268&APPID=f962e1c09b62c5371dcc6604a472ca1d&units=imperial",function(result){
+    $.get("https://api.openweathermap.org/data/2.5/weather?id=750268&APPID=f962e1c09b62c5371dcc6604a472ca1d&units=imperial",function(result){
         var bursaTemp = result.main.temp;
         var bursaWeather = result.weather[0].description;
         var bursaWind = result.wind.speed;
@@ -735,7 +735,7 @@ $(document).ready(function(){
         $('#bursa-wind').html("Wind: " + bursaWind + " mph");
     });
     
-    $.get("http://api.openweathermap.org/data/2.5/weather?id=325361&APPID=121b8eace8bdd51d3cefef594fdbc9aa&units=imperial",function(result){
+    $.get("https://api.openweathermap.org/data/2.5/weather?id=325361&APPID=121b8eace8bdd51d3cefef594fdbc9aa&units=imperial",function(result){
         var adanaTemp = result.main.temp;
         var adanaWeather = result.weather[0].description;
         var adanaWind = result.wind.speed;
