@@ -159,7 +159,7 @@ export default class Language extends Component {
             <div className="language-1-div" id="language-1-div">
                 <ul className="flex-container">
                     <li className="flex-item scrollmagic-info-squares">
-                        <h1 id="dili" className="scrollmagic-header" role="heading">Türk Dili</h1>
+                        <h1 id="dili" className="scrollmagic-header" role="heading" lang="tr">Türk Dili</h1>
                         <h2 id="language" className="scrollmagic-header" role="heading" tabIndex="0">The Turkish Language</h2>
                         <p>By now you've probably noticed some foreign words with odd looking characters. This is the Turkish language. Linguistically, Turkish is unrelated to English, Spanish, or any romance or germanic language. It has an SOV sentence structure (subjuct -> object -> verb), & is highly agglutinative, meaning that numerous suffixes are added on to words to expand their meaning. The longest word in Turkish has 70 letters with more than 10 suffixes! Don't worry though...words like this aren't used in daily speech & being fluent isn't required for tourists as English is fairly widely spoken in the tourist areas. Still, knowing a little Turkish goes a long way!</p>
                     </li>
@@ -172,58 +172,58 @@ export default class Language extends Component {
             </div>
             <div className="language-2-div">            
                 <div className="container">
-                    <h1 id="alfabe" className="text-left scrollmagic-header" role="heading">Alfabe</h1>
+                    <h1 id="alfabe" className="text-left scrollmagic-header" role="heading" lang="tr">Alfabe</h1>
                     <h2 id="alphabet" className="text-left scrollmagic-header" role="heading" tabIndex="0">Alphabet</h2> 
                     <h2 className="col-lg-8 col-lg-offset-4 text-right scrollmagic-desc">
                         A	B	C	Ç	D	E	F	G	Ğ	H	I	İ	J	K	L	M	N	O	Ö	P	R	S	Ş	T	U	Ü	V	Y	Z
                         <br/><br/>
                         The Turkish alphabet consists of 29 letters. There are 8 vowels (a, e, ı, i, o, ö, u, ü) & the rest are consonants. It was written using an Arabic script until Mustafa Kemal Atatürk (pictured) changed it to a Latin-based alphabet in 1929 as part of his reforms to modernize Turkey after the fall of the Ottoman Empire. Most of the letters will be familiar to English speakers, except for 6: ç, ş, ğ, ı , ö, & ü. Some letters are also pronouced differently. 
                         <br/><br/>
-                        <a href="https://www.youtube.com/watch?v=TOZ0CwkRtxI" target="_blank" role="link"
+                        <a href="https://www.youtube.com/watch?v=TOZ0CwkRtxI" target="_blank" rel="noopener" role="link"
                         aria-label="watch a video with more info about the turkish alphabet">More info</a>
                     </h2>
                 </div>
             </div>
             <div className="language-3-div scrollmagic-div-fadeout">            
                 <div className="container">
-                    <h1 id="cumleler" className="text-center scrollmagic-header" role="heading">Temel Cümleler</h1>
+                    <h1 id="cumleler" className="text-center scrollmagic-header" role="heading" lang="tr">Temel Cümleler</h1>
                     <h2 id="phrases" className="text-center scrollmagic-header" role="heading" tabIndex="0">Basic Phrases</h2> 
                     
                     <ul className="col-lg-12 col-lg-offset-0 text-left">
-                        <li className="scrollmagic-vocab">Merhaba <img className="audio-symbol" src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playMerhabaAudio}></img> - <span id="translation">Hello</span></li>
+                        <li className="scrollmagic-vocab" lang="tr">Merhaba <img className="audio-symbol" src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" alt="hear translation" onClick={this.playMerhabaAudio}></img> - <span className="translation">Hello</span></li>
                         
-                        <li className="scrollmagic-vocab">Güle güle <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playGuleGuleAudio}></img> - <span id="translation">Bye</span></li>
+                        <li className="scrollmagic-vocab" lang="tr">Güle güle <img className="audio-symbol" src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" alt="hear translation" onClick={this.playGuleGuleAudio}></img> - <span className="translation">Bye</span></li>
                         
-                        <li className="scrollmagic-vocab">Evet <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playEvetAudio}></img> - <span id="translation">Yes</span></li>
+                        <li className="scrollmagic-vocab" lang="tr">Evet <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" alt="hear translation" onClick={this.playEvetAudio}></img> - <span className="translation">Yes</span></li>
                         
-                        <li className="scrollmagic-vocab">Hayır <img className="audio-symbol" src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playHayirAudio}></img> - <span id="translation">No</span></li> 
+                        <li className="scrollmagic-vocab" lang="tr">Hayır <img className="audio-symbol" src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" alt="hear translation" onClick={this.playHayirAudio}></img> - <span className="translation">No</span></li> 
     
-                        <li className="scrollmagic-vocab">Nasılsınız? <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playNasilsinizAudio}></img> - <span id="translation">How are you? (formal)</span></li>
+                        <li className="scrollmagic-vocab" lang="tr">Nasılsınız? <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" alt="hear translation" onClick={this.playNasilsinizAudio}></img> - <span className="translation">How are you? (formal)</span></li>
                         
-                        <li className="scrollmagic-vocab">İyiyim  <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playIyiyimAudio}></img> - <span id="translation">I'm fine</span></li>
+                        <li className="scrollmagic-vocab" lang="tr">İyiyim  <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" alt="hear translation" onClick={this.playIyiyimAudio}></img> - <span className="translation">I'm fine</span></li>
                         
-                        <li className="scrollmagic-vocab">Teşekkürler <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playTesekkurlerAudio}></img> - <span id="translation">Thanks</span></li>
+                        <li className="scrollmagic-vocab" lang="tr">Teşekkürler <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" alt="hear translation" onClick={this.playTesekkurlerAudio}></img> - <span className="translation">Thanks</span></li>
                         
-                        <li className="scrollmagic-vocab">Birşey değil <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playBirseyDegilAudio}></img> - <span id="translation">You're welcome</span></li>
+                        <li className="scrollmagic-vocab" lang="tr">Birşey değil <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" alt="hear translation" onClick={this.playBirseyDegilAudio}></img> - <span className="translation">You're welcome</span></li>
                         
-                        <li className="scrollmagic-vocab">Lütfen <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playLutfenAudio}></img> - <span id="translation">Please</span></li>
+                        <li className="scrollmagic-vocab" lang="tr">Lütfen <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" alt="hear translation" onClick={this.playLutfenAudio}></img> - <span className="translation">Please</span></li>
                         
-                        <li className="scrollmagic-vocab">Afedersiniz <img className="audio-symbol" src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playAfedersinizAudio}></img> - <span id="translation">Excuse me (formal)</span></li>
+                        <li className="scrollmagic-vocab" lang="tr">Afedersiniz <img className="audio-symbol" src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" alt="hear translation" onClick={this.playAfedersinizAudio}></img> - <span className="translation">Excuse me (formal)</span></li>
                         
-                        <li className="scrollmagic-vocab">Bu otele nerede? <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playBuOteleNeredeAudio}></img> - <span id="translation">Where is this hotel?</span></li>
+                        <li className="scrollmagic-vocab" lang="tr">Bu otele nerede? <img className="audio-symbol" alt="hear translation" src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playBuOteleNeredeAudio}></img> - <span className="translation">Where is this hotel?</span></li>
                         
-                        <li className="scrollmagic-vocab">İngilizce biliyor musunuz? (formal) <img src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" className="audio-symbol" onClick={this.playIngilizceBiliyorMusunuzAudio}></img> - <span id="translation">Do you speak English?</span></li>
+                        <li className="scrollmagic-vocab" lang="tr">İngilizce biliyor musunuz? (formal) <img src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" className="audio-symbol" alt="hear translation" onClick={this.playIngilizceBiliyorMusunuzAudio}></img> - <span className="translation">Do you speak English?</span></li>
                         
-                        <li className="scrollmagic-vocab">Ne kedar? <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playNeKadarAudio}></img> - <span id="translation">How much does it cost?</span></li>
+                        <li className="scrollmagic-vocab" lang="tr">Ne kedar? <img className="audio-symbol"src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" alt="hear translation" onClick={this.playNeKadarAudio}></img> - <span className="translation">How much does it cost?</span></li>
                         
-                        <li className="scrollmagic-vocab">Bana yardım edebilir misiniz? <img className="audio-symbol" src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" onClick={this.playBanaYardımEdebilirMisinizAudio}></img> - <span id="translation">Can you help me?</span></li>
+                        <li className="scrollmagic-vocab" lang="tr">Bana yardım edebilir misiniz? <img className="audio-symbol" src="https://png.icons8.com/ios/20/ffffff/room-sound-filled.png" alt="hear translation" onClick={this.playBanaYardımEdebilirMisinizAudio}></img> - <span className="translation">Can you help me?</span></li>
                     </ul>
                 </div>
             </div>
             <div className="language-4-div">
                  <ul className="flex-container">
                     <li className="flex-item" >
-                        <h1 id="konular" className="scrollmagic-header">Diğer Konular</h1>
+                        <h1 id="konular" className="scrollmagic-header" lang="tr">Diğer Konular</h1>
                         <h2 id="topics" className="scrollmagic-header" tabIndex="0">Other Topics</h2>
                     </li>
                     <li className="flex-item scrollmagic-chevron" onClick={() => this.setState({photoIndex:0, isOpen: true})}>
